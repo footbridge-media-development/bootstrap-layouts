@@ -1,0 +1,103 @@
+/******* Defaults ********/
+img, iframe{
+	max-width:100%;
+}
+/******* ******** ********/
+
+#navigation-container-1{
+	background-color:white;
+	box-shadow:0 0 5px 2px rgba(0,0,0,0.33);
+	position:relative; /* Box shadow doesn't show without a z-index */
+	z-index:1;
+	/*height:100px;*/
+}
+
+#content{
+	background-color:white;
+}
+
+/******* ******** ********/
+/****** Navigation *******/
+/******* ******** ********/
+
+#navigation-container-1 > .d-flex{
+	height:100%;
+}
+
+#navigation-container-1 .navigation-links > div > div:hover{
+	transition:all 150ms;
+	background-color:#4f2094;
+	border-top-left-radius:5px;
+	border-top-right-radius:5px;
+}
+
+#navigation-container-1 .navigation-links > div > div:hover > a{
+	transition:color 150ms;
+	text-decoration:none;
+	color:white;
+}
+
+#navigation-container-1 .navigation-links > div > div > .dropdown{
+	position:absolute;
+	top:100%;
+	left:0;
+	min-width:100%;
+	display:none;
+}
+
+#navigation-container-1 .navigation-links > div > div > .dropdown > div{
+	background-color:#4f2094;
+	text-align:left;
+}
+
+#navigation-container-1 .navigation-links > div > div > .dropdown > div > a{
+	color:white;
+}
+
+#navigation-container-1 .navigation-links > div > div > .dropdown > div:hover{
+	transition:background-color 150ms;
+	background-color:#6429bc;
+}
+
+#navigation-container-1 .navigation-links > div > div > .dropdown > div > a:hover{
+	text-decoration:none;
+}
+
+#navigation-container-1 .navigation-links > div > div > .dropdown > div:not(:last-child){
+	border-bottom:1px dashed gray;
+}
+
+/******* ******** ********/
+/******* ******** ********/
+/******* ******** ********/
+
+.secondary-bg-color{
+	background-color:rgb(50,50,50);
+	color:white;
+}
+
+.carousel-item > div{
+	height:650px;
+	background-size:cover;
+	background-position:center center;
+}
+
+/******* ******** ********/
+/******* Footers ********/
+/******* ******** ********/
+
+#footer-container-1, html, body{
+	background-color:#4f2094;
+}
+
+#footer-container-1 .column-header{
+	color:#f1e8c6;
+}
+
+@media screen and (max-width:900px){
+	.carousel-item > div{
+		height:300px;
+		background-size:cover;
+		background-position:center center;
+	}
+}

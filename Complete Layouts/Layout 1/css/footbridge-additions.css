@@ -1,16 +1,19 @@
+/*
+ *	Bootstrap breakpoints
+ *
+ *	XS = 0;
+ *	SM = 576px;
+ *	MD = 768px;
+ *	LG = 992px;
+ *	XL = 1200px;
+ *
+ */
+
 /******* Defaults ********/
 img, iframe{
 	max-width:100%;
 }
 /******* ******** ********/
-
-#navigation-container-1{
-	background-color:white;
-	box-shadow:0 0 5px 2px rgba(0,0,0,0.33);
-	position:relative; /* Box shadow doesn't show without a z-index */
-	z-index:1;
-	/*height:100px;*/
-}
 
 #content{
 	background-color:white;
@@ -20,52 +23,79 @@ img, iframe{
 /****** Navigation *******/
 /******* ******** ********/
 
-#navigation-container-1 > .d-flex{
-	height:100%;
-}
+	/******* ******** ********/
+	/****** Navigation Setup 1 *******/
+	/******* ******** ********/
 
-#navigation-container-1 .navigation-links > div > div:hover{
-	transition:all 150ms;
-	background-color:#4f2094;
-	border-top-left-radius:5px;
-	border-top-right-radius:5px;
-}
-
-#navigation-container-1 .navigation-links > div > div:hover > a{
-	transition:color 150ms;
-	text-decoration:none;
-	color:white;
-}
-
-#navigation-container-1 .navigation-links > div > div > .dropdown{
-	position:absolute;
-	top:100%;
-	left:0;
-	min-width:100%;
-	display:none;
-}
-
-#navigation-container-1 .navigation-links > div > div > .dropdown > div{
-	background-color:#4f2094;
-	text-align:left;
-}
-
-#navigation-container-1 .navigation-links > div > div > .dropdown > div > a{
-	color:white;
-}
-
-#navigation-container-1 .navigation-links > div > div > .dropdown > div:hover{
-	transition:background-color 150ms;
-	background-color:#6429bc;
-}
-
-#navigation-container-1 .navigation-links > div > div > .dropdown > div > a:hover{
-	text-decoration:none;
-}
-
-#navigation-container-1 .navigation-links > div > div > .dropdown > div:not(:last-child){
-	border-bottom:1px dashed gray;
-}
+		#navigation-container-1{
+			background-color:white;
+			box-shadow:0 0 5px 2px rgba(0,0,0,0.33);
+			position:relative; /* Box shadow doesn't show without a z-index */
+			z-index:1;
+		}
+		
+		#navigation-container-1 > .d-flex{
+			height:100%;
+		}
+		
+		#navigation-container-1 .navigation-links > div > div{
+			transition:all 450ms;
+		}
+		
+		#navigation-container-1 .navigation-links > div > div:hover{
+			background-color:#4f2094;
+			border-top-left-radius:5px;
+			border-top-right-radius:5px;
+		}
+		
+		#navigation-container-1 .navigation-links > div > div:hover > a{
+			transition:color 150ms;
+			text-decoration:none;
+			color:white;
+		}
+		
+		#navigation-container-1 .navigation-links > div > div > .dropdown,
+		#navigation-container-1 .navigation-links > div > div > .dropdown > div > .dropdown{
+			position:absolute;
+			top:100%;
+			left:0;
+			min-width:100%;
+			display:none;
+			z-index:2;
+		}
+		
+		#navigation-container-1 .navigation-links > div > div > .dropdown > div > .dropdown{
+			left:100%;
+			top:0;
+			z-index:3;
+		}
+		
+		/* Affects all divs in any dropdown */
+		#navigation-container-1 .dropdown > div{
+			position:relative;
+		}
+		
+		#navigation-container-1 .navigation-links > div > div .dropdown > div{
+			background-color:#4f2094;
+			text-align:left;
+		}
+		
+		#navigation-container-1 .navigation-links > div > div .dropdown > div > a{
+			color:white;
+		}
+		
+		#navigation-container-1 .navigation-links > div > div .dropdown > div:hover{
+			transition:background-color 150ms;
+			background-color:#6429bc;
+		}
+		
+		#navigation-container-1 .navigation-links > div > div .dropdown > div > a:hover{
+			text-decoration:none;
+		}
+		
+		#navigation-container-1 .navigation-links > div > div .dropdown > div:not(:last-child){
+			border-bottom:1px dashed gray;
+		}
 
 /******* ******** ********/
 /******* ******** ********/
@@ -94,7 +124,15 @@ img, iframe{
 	color:#f1e8c6;
 }
 
-@media screen and (max-width:900px){
+/* XL and below */
+@media screen and (max-width:1200px){
+	.navigation-links a{
+		font-size:0.8em;
+	}
+}
+
+/* MD and below */
+@media screen and (max-width:768px){
 	.carousel-item > div{
 		height:300px;
 		background-size:cover;

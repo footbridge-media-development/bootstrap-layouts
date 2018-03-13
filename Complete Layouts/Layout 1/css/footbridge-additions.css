@@ -24,38 +24,49 @@ img, iframe{
 /******* ******** ********/
 
 	/******* ******** ********/
-	/****** Navigation Setup 1 *******/
+	/****** Small-screen Navigation Setup 1 *******/
+	/******* ******** ********/
+	
+	#small-navigation-container-1{
+		background-color:white;
+		box-shadow:0 0 5px 2px rgba(0,0,0,0.33);
+		position:relative; /* Box shadow doesn't show without a z-index */
+		z-index:1;
+	}
+
+	/******* ******** ********/
+	/****** Large-screen Navigation Setup 1 *******/
 	/******* ******** ********/
 
-		#navigation-container-1{
+		#large-navigation-container-1{
 			background-color:white;
 			box-shadow:0 0 5px 2px rgba(0,0,0,0.33);
 			position:relative; /* Box shadow doesn't show without a z-index */
 			z-index:1;
 		}
 		
-		#navigation-container-1 > .d-flex{
+		#large-navigation-container-1 > .d-flex{
 			height:100%;
 		}
 		
-		#navigation-container-1 .navigation-links > div > div{
+		#large-navigation-container-1 .navigation-links > div > div{
 			transition:all 450ms;
 		}
 		
-		#navigation-container-1 .navigation-links > div > div:hover{
+		#large-navigation-container-1 .navigation-links > div > div:hover{
 			background-color:#4f2094;
 			border-top-left-radius:5px;
 			border-top-right-radius:5px;
 		}
 		
-		#navigation-container-1 .navigation-links > div > div:hover > a{
+		#large-navigation-container-1 .navigation-links > div > div:hover > a{
 			transition:color 150ms;
 			text-decoration:none;
 			color:white;
 		}
 		
-		#navigation-container-1 .navigation-links > div > div > .dropdown,
-		#navigation-container-1 .navigation-links > div > div > .dropdown > div > .dropdown{
+		#large-navigation-container-1 .navigation-links > div > div > .dropdown,
+		#large-navigation-container-1 .navigation-links > div > div > .dropdown > div > .dropdown{
 			position:absolute;
 			top:100%;
 			left:0;
@@ -64,36 +75,36 @@ img, iframe{
 			z-index:2;
 		}
 		
-		#navigation-container-1 .navigation-links > div > div > .dropdown > div > .dropdown{
+		#large-navigation-container-1 .navigation-links > div > div > .dropdown > div > .dropdown{
 			left:100%;
 			top:0;
 			z-index:3;
 		}
 		
 		/* Affects all divs in any dropdown */
-		#navigation-container-1 .dropdown > div{
+		#large-navigation-container-1 .dropdown > div{
 			position:relative;
 		}
 		
-		#navigation-container-1 .navigation-links > div > div .dropdown > div{
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div{
 			background-color:#4f2094;
 			text-align:left;
 		}
 		
-		#navigation-container-1 .navigation-links > div > div .dropdown > div > a{
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div > a{
 			color:white;
 		}
 		
-		#navigation-container-1 .navigation-links > div > div .dropdown > div:hover{
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div:hover{
 			transition:background-color 150ms;
 			background-color:#6429bc;
 		}
 		
-		#navigation-container-1 .navigation-links > div > div .dropdown > div > a:hover{
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div > a:hover{
 			text-decoration:none;
 		}
 		
-		#navigation-container-1 .navigation-links > div > div .dropdown > div:not(:last-child){
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div:not(:last-child){
 			border-bottom:1px dashed gray;
 		}
 

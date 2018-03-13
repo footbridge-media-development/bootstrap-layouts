@@ -11,13 +11,26 @@
 		<script async type="text/javascript" src="js/start-hero-carousel.js"></script>
 	</head>
 	<body>
-		<!-- Navigation -->
-		<div id="navigation-container-1" class="pt-2 px-5">
+		<!-- Small-screen navigation -->
+		<div id="small-navigation-container-1" class="d-block d-md-none">
+			<div class="d-flex align-items-center">
+				<div class="pb-2 col">
+					<img width="100" src="images/bootstrap-stack-logo.png" alt="Bootstrap logo" />
+				</div>
+				<div class="col text-right">
+					<a>
+						<img alt="Hamburger menu" width="42" src="images/menu_hamburger_dark.svg" />
+					</a>
+				</div>
+			</div>
+		</div>
+		<!-- Large-screen navigation -->
+		<div id="large-navigation-container-1" class="d-none d-md-block pt-2 px-5">
 			<div class="d-flex">
 				<div class="pb-2 col-md-3 align-self-center text-center">
 					<img width="100" src="images/bootstrap-stack-logo.png" alt="Bootstrap logo" />
 				</div>
-				<div class="col-md d-none d-md-block">
+				<div class="col-md">
 					<div class="navigation-links h-100 d-flex">
 						<div class="row justify-content-center align-self-end w-100">
 							<div class="d-inline-block text-center position-relative px-md-3 px-xl-4">

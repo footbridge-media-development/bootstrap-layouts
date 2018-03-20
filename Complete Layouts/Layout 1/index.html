@@ -7,7 +7,7 @@
 		<script type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
 		<!-- Load customs after Bootstrap to overwrite any conflicts with our own -->
 		<link rel="stylesheet" type="text/css" href="css/footbridge-additions.css" />
-		<script async type="text/javascript" src="js/dropdown-app.js"></script>
+		<script async type="text/javascript" src="js/navigation-manager-app.js"></script>
 		<script async type="text/javascript" src="js/start-hero-carousel.js"></script>
 	</head>
 	<body>
@@ -18,14 +18,40 @@
 					<img width="100" src="images/bootstrap-stack-logo.png" alt="Bootstrap logo" />
 				</div>
 				<div class="col text-right">
-					<a>
+					<a id="small-navigation-menu-opener-1">
 						<img alt="Hamburger menu" width="42" src="images/menu_hamburger_dark.svg" />
 					</a>
 				</div>
 			</div>
-			<div class="pullout-menu-backdrop position-fixed d-flex flex-direction-column justify-content-end">
+			<div class="pullout-menu-backdrop position-fixed d-none flex-direction-column justify-content-end">
 				<div>
-					
+					<div class="menu-heading">
+						<span>Menu</span>
+					</div>
+					<div class="navigation-links">
+						<div>
+							<a>I Good Service</a>
+						</div>
+						<div>
+							<a>Oh Yes Service</a>
+						</div>
+						<div>
+							<a>More Service Please? +</a>
+							<div class="tap-dropdown">
+								<div>
+									<a>Oh More?</a>
+								</div>
+								<div>
+									<a>How About Another +</a>
+									<div class="tap-dropdown">
+										<div>
+											<a>Yes</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div> 
 		</div>
@@ -58,6 +84,12 @@
 										<div class="dropdown">
 											<div>
 												<a class="px-md-2 px-xl-3 py-2 d-block" href="#">A Service</a>
+											</div>
+											<div>
+												<a class="px-md-2 px-xl-3 py-2 d-block" href="#">B Service</a>
+											</div>
+											<div>
+												<a class="px-md-2 px-xl-3 py-2 d-block" href="#">C Service</a>
 											</div>
 										</div>
 									</div>
@@ -106,13 +138,29 @@
 		
 		<!-- Content -->
 		<div id="content">
+		
 			<div class="secondary-bg-color p-4">
 				<h1 class="text-center">Reimagine the world!</h1>
 				<div class="text-center pt-3">
 					<a class="btn btn-primary" href="#">Push My Buttons</a>
 				</div>
 			</div>
-			<div class="p-5"></div>
+			
+			<div class="big-wrap mx-auto row justify-content-center p-5">
+			
+				<div class="col-12 col-md-6">
+					<h1>Hi, I am an H1 :)</h1>
+					<p>
+						I am paragraph text. I like contractors and business with contractors because I am a well-to-do Bootstrap layout who is friendly to everyone. Smiles help save the soul every day! They just don't end world hunger >.>
+					</p>
+					<p>
+						But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure? On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee
+					</p>
+				</div>
+				<div class="col-12 col-md-6">
+					<img width="500" src="images/bootstrap-stack-logo.png" alt="Bootstrap Logo" />
+				</div>
+			</div>
 		</div>
 		
 		<!-- Footer -->
@@ -121,7 +169,10 @@
 				<div class="col text-center">
 					<strong class="column-header">Company</strong>
 					<p>
-						&copy; <script>document.write(new Date().getFullYear());</script>
+						&copy; 
+						<script>document.write(new Date().getFullYear());</script>
+						<!-- Uncomment the PHP code in builds and remove the above document.write code -->
+						<!-- <?= date("Y"); ?> -->
 						<span>Company Name</span>, Rights Reserved
 					</p>
 				</div>

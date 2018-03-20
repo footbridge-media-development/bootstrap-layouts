@@ -51,6 +51,7 @@ $(document).ready(function(){
 			
 			if ($("#small-navigation-container-1").length > 0){
 		
+				// Open hamburger pressed
 				$("#small-navigation-menu-opener-1").click(function(){
 					var container = $(this).parent().parent().parent(); 
 					var backdrop = container.find(".pullout-menu-backdrop"); // This is the transparent black backdrop
@@ -69,6 +70,7 @@ $(document).ready(function(){
 					navContainer.attr('data-original-margin-right', navContainer.css("margin-right")).css("margin-right", 0);
 				});
 				
+				// Clicked on the transparent backdrop! Close the menu
 				$("#small-navigation-container-1").find(".pullout-menu-backdrop").click(function(){
 					var backdrop = $(this);
 					var navContainer = $(this).children("div");
@@ -82,6 +84,7 @@ $(document).ready(function(){
 					}, 150); // The 150ms timeout here is because the CSS animation is set to 150ms. If you change the CSS animation speed also change the timeout here.
 				});
 				
+				// Disallow bubbling
 				$("#small-navigation-container-1").find(".pullout-menu-backdrop").children("div").click(function(e){
 					// This stops the bubbling.
 					// JavaScript events bubble up through their parent elements.

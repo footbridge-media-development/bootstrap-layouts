@@ -1,0 +1,75 @@
+/*
+Dynamic Hero Section
+*/
+
+
+/* Hero Section Container*/
+.dynamic-fold{
+    position: relative;
+    z-index: 0;
+    display: block;
+    height:auto;
+    background-image: url(hero.jpg);
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+.dynamic-fold>.title{
+    position:relative;
+    z-index:300;
+    height:100%;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+/* Main Title*/
+.dynamic-fold>.title>div{
+    margin-top:-10%;
+    text-align:center;
+}
+
+.dynamic-fold>.title h1{
+    font-size: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.dynamic-fold>.title h2{
+    font-size: 2.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+
+/* Overlays*/
+.dynamic-fold>.color-overlay {
+    position:absolute;
+    top:0;
+    z-index:100;
+    height:100%;
+    width:100%;
+    background: -moz-linear-gradient(-45deg, rgba(255,104,104,0.67) 0%, rgba(60,175,252,0.47) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(255,104,104,0.67) 0%,rgba(60,175,252,0.47) 100%);
+    background: linear-gradient(135deg, rgba(255,104,104,0.67) 0%,rgba(60,175,252,0.47) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abff6868', endColorstr='#783caffc',GradientType=1 );
+}
+
+.dynamic-fold>.tile-overlay {
+    position:absolute;
+    top:0;
+    z-index:200;
+    height:100%;
+    width:100%;
+    background-image: url(tile.png);
+    filter: alpha(opacity=35);
+    opacity: 0.35;
+}

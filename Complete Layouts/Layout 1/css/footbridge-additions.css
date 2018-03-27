@@ -134,6 +134,7 @@ img, iframe, video{
 			display:inline-block;
 			text-align:center;
 			position:relative;
+			padding:1.5rem;
 		}
 		
 		#large-navigation-container-1 .navigation-links > div > div > a{
@@ -222,6 +223,8 @@ img, iframe, video{
 	color:#f1e8c6;
 }
 
+/* XL and "below" is anything outside of a media query */
+
 /* Only XL */
 @media screen (min-width:1200px){
 	.navigation-links a{
@@ -246,6 +249,9 @@ img, iframe, video{
 		background-size:cover;
 		background-position:center center;
 	}
+	
+	#large-navigation-container-1 .navigation-links > div > div{
+		padding:1rem;
 }
 
 /* Only MD */

@@ -141,6 +141,10 @@ img, iframe, video{
 		#large-navigation-container-1 .navigation-links > div > div > a{
 			display:inline-block;
 			text-align:center;
+			padding-left:1.5rem;
+			padding-right:1.5rem;
+			padding-top:1rem;
+			padding-bottom:1rem;
 		}
 		
 		#large-navigation-container-1 .navigation-links > div > div:hover{
@@ -183,6 +187,10 @@ img, iframe, video{
 		
 		#large-navigation-container-1 .navigation-links > div > div .dropdown > div a{
 			display:block;
+			padding-left:0.5rem;
+			padding-right:0.5rem;
+			padding-top:0.5rem;
+			padding-bottom:0.5rem;
 		}
 		
 		#large-navigation-container-1 .navigation-links > div > div .dropdown > div > a{
@@ -235,7 +243,10 @@ img, iframe, video{
 
 /* LG and below */
 @media screen and (max-width:1200px){
-	
+	#large-navigation-container-1 .navigation-links > div > div > a{
+		padding-left:0.5rem;
+		padding-right:0.5rem;
+	}
 }
 
 /* Only LG */

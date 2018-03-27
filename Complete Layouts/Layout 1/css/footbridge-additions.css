@@ -8,6 +8,16 @@
  *	XL = 1200px;
  *
  */
+ /*
+ *	Bootstrap padding amounts
+ *
+ *	1 = 0.25rem;
+ *	2 = 0.5rem;
+ *	3 = 1rem;
+ *	4 = 1.5rem;
+ *	5 = 3rem;
+ *
+ */
 
 /******* Defaults ********/
 img, iframe, video{
@@ -212,20 +222,50 @@ img, iframe, video{
 	color:#f1e8c6;
 }
 
-/* XL and below */
-@media screen and (max-width:1200px){
+/* Only XL */
+@media screen (min-width:1200px){
 	.navigation-links a{
 		font-size:0.8em;
 	}
 }
 
+/* LG and below */
+@media screen and (max-width:1200px){
+	
+}
+
+/* Only LG */
+@media screen and (max-width:1199px) and (min-width:992px){
+	
+}
+
 /* MD and below */
-@media screen and (max-width:768px){
+@media screen and (max-width:991px){
 	.carousel-item > div{
 		height:300px;
 		background-size:cover;
 		background-position:center center;
 	}
+}
+
+/* Only MD */
+@media screen and (max-width:991px) and (min-width:768px){
+	
+}
+
+/* SM and below */
+@media screen and (max-width:767px){
+	
+}
+
+/* Only SM */
+@media screen and (max-width:767px) and (min-width:576px){
+	
+}
+
+/* Only XS & XS and below */
+@media screen and (max-width:575px){
+	
 }
 
 /******* ******** ********/

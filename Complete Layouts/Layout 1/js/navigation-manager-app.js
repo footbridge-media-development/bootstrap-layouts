@@ -5,11 +5,16 @@ $(document).ready(function(){
 	// ***********************************
 	// Code for large-screen dropdowns
 	// ***********************************
-		$(".dropdown").parent().children("a").mouseenter(function(){
-			var container = $(this).parent();
+		$(".dropdown").parent()/*.children("a")*/.mouseenter(function(){
+			var container = $(this);//.parent();
 			var menu = container.children(".dropdown");
 			if (container.length > 0 && !menu.is(":visible")){
 				// Dropdown exists
+				menu.show("fast");
+			}else if (menu.is(":visible")){
+				// The dropdown is currently visible, but the mouse entered? This means it was trying to close.
+				// Close it immediately then open it again.
+				menu.hide();
 				menu.show("fast");
 			}
 		});

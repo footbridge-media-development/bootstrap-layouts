@@ -121,6 +121,14 @@ img, iframe, video{
 		
 		#large-navigation-container-1 .navigation-links > div > div{
 			transition:all 450ms;
+			display:inline-block;
+			text-align:center;
+			position:relative;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div > a{
+			display:inline-block;
+			text-align:center;
 		}
 		
 		#large-navigation-container-1 .navigation-links > div > div:hover{
@@ -159,6 +167,10 @@ img, iframe, video{
 		#large-navigation-container-1 .navigation-links > div > div .dropdown > div{
 			background-color:#4f2094;
 			text-align:left;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div a{
+			display:block;
 		}
 		
 		#large-navigation-container-1 .navigation-links > div > div .dropdown > div > a{

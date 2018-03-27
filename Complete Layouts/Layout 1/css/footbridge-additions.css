@@ -134,7 +134,8 @@ img, iframe, video{
 			display:inline-block;
 			text-align:center;
 			position:relative;
-			padding:1.5rem;
+			padding-left:1.5rem;
+			padding-right:1.5rem;
 		}
 		
 		#large-navigation-container-1 .navigation-links > div > div > a{
@@ -251,7 +252,9 @@ img, iframe, video{
 	}
 	
 	#large-navigation-container-1 .navigation-links > div > div{
-		padding:1rem;
+		padding-left:1rem;
+		padding-right:1rem;
+	}
 }
 
 /* Only MD */

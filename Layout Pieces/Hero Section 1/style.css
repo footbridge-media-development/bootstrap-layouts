@@ -10,7 +10,6 @@ Dynamic Hero Section
     display: block;
     height:auto;
     background-image: url(hero.jpg);
-    background-position: center top;
     background-size: cover;
     background-attachment: fixed;
     
@@ -72,4 +71,26 @@ Dynamic Hero Section
     background-image: url(tile.png);
     filter: alpha(opacity=35);
     opacity: 0.35;
+}
+
+/*Sample Section Styling*/
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 750px;
+}
+
+/*Parallax Effect With Keyframes*/
+
+@keyframes animatedBackground {
+  0% { background-position: 0 0;}
+  100% { background-position: 0 -500px;}
+}
+
+.animate-bg {
+    animation-name: animatedBackground;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
 }

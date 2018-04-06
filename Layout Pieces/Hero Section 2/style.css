@@ -1,0 +1,128 @@
+/*
+Dynamic Hero Section
+*/
+
+@keyframes animatedPointer {
+    0% { bottom: 0px}
+    50% { bottom: -5px}
+    100% { bottom: 0px}
+}
+
+#scroll-next i {
+    position: relative;
+    color: rgba(255,255,255,0.45);
+    animation-name: animatedPointer;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    cursor: pointer;
+}
+
+/* Hero Section Container*/
+.dynamic-hero-section{
+    position: relative;
+    z-index: 0;
+    display: block;
+    height:auto;
+}
+
+.static-hero-bg {
+    background-image: url(hero.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.dynamic-hero-section>.title{
+    position:relative;
+    z-index:300;
+    height:100%;
+    display: -webkit-box; 
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    text-transform: uppercase;
+}
+
+/* Main Title*/
+.dynamic-hero-section>.title>div{
+    margin-top:-10%;
+    text-align:center;
+}
+
+.dynamic-hero-section>.title h1{
+    font-size: 5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.dynamic-hero-section>.title h2{
+    font-size: 2.5vw;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100;
+}
+
+
+/* Overlays*/
+.dynamic-hero-section>.color-overlay {
+    position:absolute;
+    top:0;
+    z-index:100;
+    height:100%;
+    width:100%;
+    background: -moz-linear-gradient(-45deg, rgba(255,104,104,0.67) 0%, rgba(60,175,252,0.47) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(255,104,104,0.67) 0%,rgba(60,175,252,0.47) 100%);
+    background: linear-gradient(135deg, rgba(255,104,104,0.67) 0%,rgba(60,175,252,0.47) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#abff6868', endColorstr='#783caffc',GradientType=1 );
+}
+
+.dynamic-hero-section>.tile-overlay {
+    position:absolute;
+    top:0;
+    z-index:200;
+    height:100%;
+    width:100%;
+    background-image: url(tile.png);
+    filter: alpha(opacity=35);
+    opacity: 0.35;
+}
+
+
+
+/*Parallax Effect With Keyframes*/
+
+@keyframes animatedBackground {
+  0% { background-position: 0 0;}
+  100% { background-position: 0 -500px;}
+}
+
+.animate-bg {
+    animation-name: animatedBackground;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+}
+
+/*Animation for image Slider*/
+
+.hero-slider-container {
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    transition-timing-function: ease-out;
+    transition-duration: 1s;
+}
+
+
+
+
+
+/*Sample Section Styling*/
+.flex {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  height: 750px;
+}

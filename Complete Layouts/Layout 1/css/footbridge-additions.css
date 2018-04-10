@@ -24,6 +24,10 @@ img, iframe, video{
 	max-width:100%;
 }
 
+a {
+    cursor: pointer;
+}
+
 /******* ******** ********/
 /***** Color Scheme ******/
 /******* ******** ********/
@@ -214,7 +218,7 @@ img, iframe, video{
 	/****** Large-screen Navigation Setup 2 *******/
 	/******* ******** ********/
 
-        #large-navigation-container-2 .navigation-links [class~=col]{
+        #large-navigation-container-2 .navigation-links [class^=col]{
             padding-left:unset;
             padding-right:unset;
         }

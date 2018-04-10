@@ -14,8 +14,8 @@
 		<!-- Small-screen navigation -->
 		<div id="small-navigation-container-1" class="d-block d-md-none">
 			<div class="d-flex align-items-center">
-				<div class="pb-2 col">
-					<img width="100" src="images/bootstrap-stack-logo.png" alt="Bootstrap logo" />
+				<div class="p-2 col">
+					<img width="100" src="images/logo.png" alt="Bootstrap logo" />
 				</div>
 				<div class="col text-right">
 					<a id="small-navigation-menu-opener-1">
@@ -164,34 +164,67 @@
 					</p>
 				</div>
 				<div class="col-12 col-md-6">
-					<img width="500" src="images/bootstrap-stack-logo.png" alt="Bootstrap Logo" />
+					<img width="500" src="images/logo.png" alt="Bootstrap Logo" />
 				</div>
 			</div>
 		</div>
 		
 		<!-- Footer -->
-		<div id="footer-container-1" class="p-3 pb-5">
-			<div class="row px-5">
-				<div class="col-6 col-md-3 text-center">
-					<strong class="column-header">Company</strong>
-					<p>
-						&copy; 
-						<script>document.write(new Date().getFullYear());</script>
-						<!-- Uncomment the PHP code in builds and remove the above document.write code -->
-						<!-- <?= date("Y"); ?> -->
-						<span>Company Name</span>, Rights Reserved
-					</p>
-				</div>
-				<div class="col-6 col-md-3 text-center">
-					<strong class="column-header">Follow Us</strong>
-				</div>
-				<div class="col-6 col-md-3 text-center">
-					<strong class="column-header">Quick Links</strong>
-				</div>
-				<div class="col-6 col-md-3 text-center">
-					<strong class="column-header">Service Areas</strong>
-				</div>
-			</div>
-		</div>
+
+      <footer class="fb-ftr-1">
+         <div class="container">
+            <div class="row px-5 py-3">
+               <div class="col-sm-6 col-md-3 pb-3">
+                  <img src="images/logo.png" alt="logo" width="150px">
+               </div>
+               <div class="col-sm-6 col-md-3">
+                  <h4>Contact</h4>
+                    <div class="contact pb-3">
+                        <p itemprop="legalName">CompanyName</p>
+                        <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+                            <p itemprop="streetAddress">StreetAddress</p>
+                            <p><span itemprop="addressLocality">City</span>, <span itemprop="addressRegion">State</span> <span itemprop="postalCode">######</span></p>
+                        </div>
+                        <p>Phone: <span itemprop="telephone">###-###-####</span></p>
+                        <p>Fax: <span itemprop="faxNumber">###-###-####</span></p>
+                  </div>
+               </div>
+               <div class="col-sm-6 col-md-3">
+                  <h4>Quick Links</h4>
+                    <div class="quick-links pb-3">
+                        <a href="#link/">Google Places</a>
+                        <a href="#link/">Articles</a>
+                        <a href="#link/">Privacy Policy</a>
+                        <a href="#link/">Terms of Use</a>
+                        <a href="#link/">Sitemap</a>
+                    </div>
+               </div>
+               <div class="col-sm-6 col-md-3">
+                  <h4>Service Areas</h4>
+                  <div class="service-areas pb-3">
+                        <a href="#link">City-1, ST</a> 
+                        <a href="#link">City-2, ST</a> 
+                        <a href="#link">City-3, ST</a> 
+                        <a href="#link">City-4, ST</a> 
+                        <a href="#link">City-5, ST</a>
+                        <a href="#link">City-6, ST</a>
+                        <a href="#link">City-7, ST</a>
+                        <a href="#link">City-8, ST</a>
+                        <a href="#link">City-9, ST</a>
+                        <a href="#link">City-0, ST</a>
+                  </div>
+               </div>
+            </div>
+            <div class="row px-5 py-3" style="border-top: solid 1px #555">
+               <p>
+                  © 
+                  <script>document.write(new Date().getFullYear());</script>
+                  <!-- Uncomment the PHP code in builds and remove the above document.write code -->
+                  <!-- <?= date("Y"); ?> -->
+                  <span>Company Name</span>, Rights Reserved
+               </p>
+            </div>
+         </div>
+      </footer>
 	</body>
 </html>

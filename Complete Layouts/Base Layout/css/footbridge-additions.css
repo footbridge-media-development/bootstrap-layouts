@@ -388,7 +388,8 @@ footer.fb-ftr-1 a {
   color: Blue;
   font-weight: 900;
   text-shadow: 2px 2px 5px #000;
-  line-height: 1.5em; }
+  line-height: 1.5em;
+  font-family: Helvetica, sans-serif; }
 
 .lilbear {
   font-size: 1.5em;
@@ -485,41 +486,5 @@ footer.fb-ftr-1 a {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
-
-/************ Import Template CSS *****************/
-/*
- *	Bootstrap breakpoints
- *
- *	XS = 0;
- *	SM = 576px;
- *	MD = 768px;
- *	LG = 992px;
- *	XL = 1200px;
- *
- */
-/*
-*	Bootstrap padding amounts
-*
-*	1 = 0.25rem;
-*	2 = 0.5rem;
-*	3 = 1rem;
-*	4 = 1.5rem;
-*	5 = 3rem;
-*
-*/
-/******* ******** ********/
-/****** Navigation *******/
-/******* ******** ********/
-/******* ******** ********/
-/****** Small-screen Navigation Setup 1 *******/
-/******* ******** ********/
-#small-navigation-container-1 {
-  background: none;
-  position: absolute;
-  /* Box shadow doesn't show without a z-index */
-  z-index: 1;
-  width: 100%;
-  margin-top: 5px;
-  box-shadow: none; }
 
 /*# sourceMappingURL=footbridge-additions.css.map */

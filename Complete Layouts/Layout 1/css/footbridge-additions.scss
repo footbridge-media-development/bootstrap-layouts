@@ -1,0 +1,586 @@
+/*
+ *	Bootstrap breakpoints
+ *
+ *	XS = 0;
+ *	SM = 576px;
+ *	MD = 768px;
+ *	LG = 992px;
+ *	XL = 1200px;
+ *
+ */
+ /*
+ *	Bootstrap padding amounts
+ *
+ *	1 = 0.25rem;
+ *	2 = 0.5rem;
+ *	3 = 1rem;
+ *	4 = 1.5rem;
+ *	5 = 3rem;
+ *
+ */
+
+/******* Defaults &imports ********/
+img, iframe, video{
+	max-width:100%;
+}
+
+a {
+    cursor: pointer;
+    color:none;
+}
+a:hover {text-decoration:none;}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+	font-family: 'Unbuntu';
+	src: url(../fonts/Ubuntu-BoldItalic.ttf);
+}
+
+/******* sass vars *******/
+$color-prime: Blue;
+$color-second:red;
+$color-third:green;
+$color-alpha:rgba(28, 115, 255, 0.7);
+$font-prime: Helvetica, sans-serif;
+$font-second: Raleway, sans-serif;
+/****** base sets ********/
+p {font-family: $font-second;}
+h1, h2, h4 {font-family:$font-prime;}
+
+.large {
+    font-size:4rem;
+}
+.med {
+    font-size:3rem;
+}
+.small { font-size:1.5rem;
+}
+/******* ******** ********/
+/***** Color Scheme ******/
+/******* ******** ********/
+
+#content{
+	background-color:white;
+}
+
+.secondary-bg-color{
+	background-color:rgb(50,50,50);
+	color:white;
+}
+
+/******* ******** ********/
+/******** Sizing *********/
+/******* ******** ********/
+
+.big-wrap{
+	max-width:1400px;
+}
+
+.wrap{
+	width:1200px;
+}
+
+/******* ******** ********/
+/****** Navigation *******/
+/******* ******** ********/
+
+	/******* ******** ********/
+	/****** Small-screen Navigation Setup 1 *******/
+	/******* ******** ********/
+	
+		#small-navigation-container-1{
+			background-color:white;
+			box-shadow:0 0 5px 2px rgba(0,0,0,0.33);
+			position:relative; /* Box shadow doesn't show without a z-index */
+			z-index:1;
+		}
+		
+		#small-navigation-container-1 > .pullout-menu-backdrop{
+			top:0;
+			left:0;
+			width:100%;
+			height:100%;
+			background-color:rgba(0,0,0,0.33);
+			z-index:10;
+		}
+		
+		#small-navigation-container-1 > .pullout-menu-backdrop{
+			overflow:hidden; /* So there are no scroll bars when animating the child div into view */
+		}
+		
+		#small-navigation-container-1 > .pullout-menu-backdrop > div{
+			z-index:11;
+			box-shadow:0 0 5px 3px black;
+			background-color:white;
+			width:50%;
+			max-width:240px;
+			transition:margin-right 150ms; /* If you change this timeframe, go to the JS file that handles the menu and also change the setTimeout interval for when it closes. */
+			margin-right:-250px; /* We will animate this to 0 when they open the menu */
+		}
+		
+		#small-navigation-container-1 > .pullout-menu-backdrop > div > .menu-heading{
+			font-size:1.2em;
+			font-weight:bold;
+			text-align:center;
+			padding:0.75em 0.35em;
+			border-bottom:1px solid black;
+		}
+		
+		#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > a{
+			display:block;
+			font-size:1em;
+			font-weight:bold;
+			padding:0.6em 0.75em;
+		}
+
+		#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div a:hover{
+			background-color: #3e1a72;
+			color:white;
+		}
+
+		#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > div a{
+			display:block;
+			font-size:0.88em;
+			font-weight:lighter;
+			padding:0.6em 0.75em;
+		}
+		
+		#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links div:not(:last-child) > a{
+			border-bottom:1px dotted silver;
+		}
+		
+		#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links .tap-dropdown{
+			display:none;
+		}
+		
+		#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links .tap-dropdown > div > a{
+			padding-left: 1.85em; /* Indent sub-menus */
+		}
+
+		#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links .tap-dropdown > div > div a{
+			padding-left: 2.85em; /* Indent deeper sub-menus */
+		}
+
+	/******* ******** ********/
+	/****** Large-screen Navigation Setup 1 *******/
+	/******* ******** ********/
+
+		#large-navigation-container-1{
+			background-color:white;
+			box-shadow:0 0 5px 2px rgba(0,0,0,0.33);
+			position:relative; /* Box shadow doesn't show without a z-index */
+			z-index:1;
+		}
+		
+		#large-navigation-container-1 > .d-flex{
+			height:100%;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div{
+			transition:all 450ms;
+			display:inline-block;
+			text-align:center;
+			position:relative;
+			padding-left:1.5rem;
+			padding-right:1.5rem;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div > a{
+			display:inline-block;
+			text-align:center;
+			padding-left:1.5rem;
+			padding-right:1.5rem;
+			padding-top:1rem;
+			padding-bottom:1rem;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div:hover{
+			background-color:#4f2094;
+			border-top-left-radius:5px;
+			border-top-right-radius:5px;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div:hover > a{
+			transition:color 150ms;
+			text-decoration:none;
+			color:white;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div > .dropdown,
+		#large-navigation-container-1 .navigation-links > div > div > .dropdown > div > .dropdown{
+			position:absolute;
+			top:100%;
+			left:0;
+			min-width:100%;
+			display:none;
+			z-index:2;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div > .dropdown > div > .dropdown{
+			left:100%;
+			top:0;
+			z-index:3;
+		}
+		
+		/* Affects all divs in any dropdown */
+		#large-navigation-container-1 .dropdown > div{
+			position:relative;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div{
+			background-color:#4f2094;
+			text-align:left;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div a{
+			display:block;
+			padding-left:0.5rem;
+			padding-right:0.5rem;
+			padding-top:0.5rem;
+			padding-bottom:0.5rem;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div > a{
+			color:white;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div:hover{
+			transition:background-color 150ms;
+			background-color:#6429bc;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div > a:hover{
+			text-decoration:none;
+		}
+		
+		#large-navigation-container-1 .navigation-links > div > div .dropdown > div:not(:last-child){
+			border-bottom:1px dashed gray;
+		}
+		
+	/******* ******** ********/
+	/****** Large-screen Navigation Setup 2 *******/
+	/******* ******** ********/
+
+        #large-navigation-container-2 .navigation-links [class^=col]{
+            padding-left:unset;
+            padding-right:unset;
+        }
+
+		#large-navigation-container-2{
+			background-color:white;
+			box-shadow:0 0 5px 2px rgba(0,0,0,0.33);
+			position:relative; /* Box shadow doesn't show without a z-index */
+			z-index:1;
+		}
+		
+		#large-navigation-container-2 > div:first-child{
+			
+		}
+		
+		#large-navigation-container-2 > div:nth-child(2){
+			background-color:#4f81dc;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div{
+			transition:all 450ms;
+			display:inline-block;
+			text-align:center;
+			position:relative;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div > a{
+			display:block;
+			text-align:center;
+			color:white;
+			padding-left:1.5rem;
+			padding-right:1.5rem;
+			padding-top:1rem;
+			padding-bottom:1rem;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div:hover{
+			background-color:#436ebb;
+			border-top-left-radius:5px;
+			border-top-right-radius:5px;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div:hover > a{
+			transition:color 150ms;
+			text-decoration:none;
+			color:white;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div > .dropdown,
+		#large-navigation-container-2 .navigation-links > div > div > .dropdown > div > .dropdown{
+			position:absolute;
+			top:100%;
+			left:0;
+			min-width:100%;
+			display:none;
+			z-index:2;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div > .dropdown > div > .dropdown{
+			left:100%;
+			top:0;
+			z-index:3;
+		}
+		
+		/* Affects all divs in any dropdown */
+		#large-navigation-container-2 .dropdown > div{
+			position:relative;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div .dropdown > div{
+			background-color:#4f81dc;
+			text-align:left;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div .dropdown > div a{
+			display:block;
+			padding-left:0.5rem;
+			padding-right:0.5rem;
+			padding-top:0.5rem;
+			padding-bottom:0.5rem;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div .dropdown > div > a{
+			color:white;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div .dropdown > div:hover{
+			transition:background-color 150ms;
+			background-color:#436ebb;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div .dropdown > div > a:hover{
+			text-decoration:none;
+		}
+		
+		#large-navigation-container-2 .navigation-links > div > div .dropdown > div:not(:last-child){
+			border-bottom:1px dashed gray;
+		}
+
+/******* ******** ********/
+/******* ******** ********/
+/******* ******** ********/
+
+.carousel-item > div{
+	height:650px;
+	background-size:cover;
+	background-position:center center;
+}
+
+/******* ******** ********/
+/******* Footers ********/
+/******* ******** ********/
+
+/* *** FOOTER-1 *** */
+
+ footer.fb-ftr-1 {
+    background: #444;
+    color: aliceblue;
+ }
+ footer.fb-ftr-1 h4 {
+    color: antiquewhite;
+ }
+ footer.fb-ftr-1 a {
+    color:aliceblue;
+ }
+.fb-ftr-1 .quick-links a {
+    display: block;
+
+}
+.fb-ftr-1 .service-areas a {
+    border-right: solid #555 2px;
+    padding-right: 6px;
+
+}
+.fb-ftr-1 .service-areas a:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.fb-ftr-1 .contact p {
+    padding:0;
+    margin:0;
+}
+
+/* XL and "below" is anything outside of a media query */
+
+/* Only XL */
+@media screen and (min-width:1200px){
+	.navigation-links a {
+		font-size:0.8em;
+	}
+}
+
+/* LG and below */
+@media screen and (max-width:1200px){
+	#large-navigation-container-1 .navigation-links > div > div > a{
+		padding-left:0.5rem;
+		padding-right:0.5rem;
+	}
+}
+
+/* Only LG */
+@media screen and (max-width:1199px) and (min-width:992px){
+	
+}
+
+/* MD and below */
+@media screen and (max-width:991px){
+	.carousel-item > div{
+		height:300px;
+		background-size:cover;
+		background-position:center center;
+	}
+	
+	#large-navigation-container-1 .navigation-links > div > div{
+		padding-left:1rem;
+		padding-right:1rem;
+	}
+}
+
+/* Only MD */
+@media screen and (max-width:991px) and (min-width:768px){
+	
+}
+
+/* SM and below */
+@media screen and (max-width:767px){
+	
+}
+
+/* Only SM */
+@media screen and (max-width:767px) and (min-width:576px){
+	
+}
+
+/* Only XS & XS and below */
+@media screen and (max-width:575px){
+	
+}
+
+/******* ******** ********/
+/***** Legacy Code *******/
+/******* ******** ********/
+
+.float-img-right, .float-right{
+	float:right;
+}
+
+.float-img-left, .float-left{
+	float:left;
+}
+
+/******* ******** ********/
+/***** Custom Elements ***/
+/******* ******** ********/
+
+.goldylox {
+    font-size:2em; color:$color-prime; font-weight:900; text-shadow: 2px 2px 5px #000; line-height:1.5em; }
+.lilbear {
+    font-size:1.5em; color:$color-second; font-weight:900; line-height:1em;  
+}
+
+.btn-form {
+    background:$color-second; color:$color-prime;
+}
+.btn-form:hover {
+    background:$color-prime; 
+    span {
+        color:$color-second;
+    }
+}
+/******* OVERLAY BOX *************/
+.overlay-container {
+    position:relative;
+}
+.overlay-bg-image {
+    display:block; width:100%; height:auto;
+
+}
+.overlay {
+    background-color:$color-alpha;
+    position:absolute;
+    transition: .35s ease;
+    &.from-left {
+        left:0;
+        right:0;
+        bottom: 0;
+	    width: 0;
+	    height: 100%;
+    }
+    &.from-right {
+        left: 100%;
+	    right: 0;
+	    bottom: 0;
+	    width: 0;
+	    height: 100%;
+    }
+    &.overlay.from-top {
+	left: 0;
+	right: 0;
+	bottom: 100%;
+	width: 100%;
+	height: 0;
+    }
+    &.overlay.from-bottom {
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0;
+    }
+
+}
+.overlay-container:hover>.from-left {
+	width: 100%;
+}
+.overlay-container:hover>.from-right {
+	width: 100%;
+	left: 0;
+}
+.overlay-container:hover>.from-top {
+	height: 100%;
+	bottom: 0;
+}
+.overlay-container:hover>.from-bottom {
+	height: 100%;
+}
+.overlay-text {
+	display: block;
+}
+.overlay-text>span {
+	display: none;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.overlay-text>a {
+	display: none;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.overlay-container:hover .overlay-text>a {
+	display: block;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+
+.overlay-container:hover .overlay-text>span {
+	display: block;
+	color: white;
+	font-size: 1.5em;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+}

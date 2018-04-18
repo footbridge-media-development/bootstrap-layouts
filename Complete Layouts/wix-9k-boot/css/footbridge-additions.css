@@ -390,27 +390,7 @@ footer.fb-ftr-1 a {
 /******* ******** ********/
 /***** Custom Elements ***/
 /******* ******** ********/
-.goldylox {
-  font-size: 2em;
-  color: #333;
-  font-weight: 900;
-  line-height: 1.5em; }
-
-.lilbear {
-  font-size: 1.5em;
-  color: #29abe1;
-  font-weight: 900;
-  line-height: 1em; }
-
-.btn-form {
-  background: #29abe1;
-  color: #333; }
-
-.btn-form:hover {
-  background: #333; }
-  .btn-form:hover span {
-    color: #29abe1; }
-
+/************ Import Template CSS *****************/
 /******* OVERLAY BOX *************/
 .overlay-container {
   position: relative; }
@@ -492,7 +472,28 @@ footer.fb-ftr-1 a {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
 
-/************ Import Template CSS *****************/
+/**** Basic formats for good layouts *****/
+.goldylox {
+  font-size: 2em;
+  color: #333;
+  font-weight: 900;
+  line-height: 1.5em; }
+
+.lilbear {
+  font-size: 1.5em;
+  color: #29abe1;
+  font-weight: 900;
+  line-height: 1em; }
+
+.btn-form {
+  background: #29abe1;
+  color: #333; }
+
+.btn-form:hover {
+  background: #333; }
+  .btn-form:hover span {
+    color: #29abe1; }
+
 /* scss begin for wix-9k begins here */
 #small-navigation-container-1 {
   background: none;

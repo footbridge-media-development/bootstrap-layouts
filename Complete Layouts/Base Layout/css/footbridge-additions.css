@@ -55,6 +55,13 @@ h1, h2, h4 {
 /******* ******** ********/
 /***** Color Scheme ******/
 /******* ******** ********/
+/* Prime color = #333 
+    Second Color = #29abe1
+    Third Color = Green
+    Color Alpha = rbga(41,171,255,0.7)
+    Prime Font = Helvetica
+    Second Font = Raleway
+*/
 #content {
   background-color: white; }
 
@@ -121,7 +128,7 @@ h1, h2, h4 {
   padding: 0.6em 0.75em; }
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div a:hover {
-  background-color: #3e1a72;
+  background-color: #333;
   color: white; }
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > div a {
@@ -383,29 +390,7 @@ footer.fb-ftr-1 a {
 /******* ******** ********/
 /***** Custom Elements ***/
 /******* ******** ********/
-.goldylox {
-  font-size: 2em;
-  color: Blue;
-  font-weight: 900;
-  text-shadow: 2px 2px 5px #000;
-  line-height: 1.5em;
-  font-family: Helvetica, sans-serif; }
-
-.lilbear {
-  font-size: 1.5em;
-  color: red;
-  font-weight: 900;
-  line-height: 1em; }
-
-.btn-form {
-  background: red;
-  color: Blue; }
-
-.btn-form:hover {
-  background: Blue; }
-  .btn-form:hover span {
-    color: red; }
-
+/************ Import Template CSS *****************/
 /******* OVERLAY BOX *************/
 .overlay-container {
   position: relative; }
@@ -416,7 +401,7 @@ footer.fb-ftr-1 a {
   height: auto; }
 
 .overlay {
-  background-color: rgba(28, 115, 255, 0.7);
+  background-color: rgba(41, 171, 255, 0.7);
   position: absolute;
   transition: .35s ease; }
   .overlay.from-left {
@@ -486,5 +471,29 @@ footer.fb-ftr-1 a {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); }
+
+/**** Basic formats for good layouts *****/
+.goldylox {
+  font-size: 2em;
+  color: #333;
+  font-weight: 900;
+  line-height: 1.5em; }
+
+.lilbear {
+  font-size: 1.5em;
+  color: #29abe1;
+  font-weight: 900;
+  line-height: 1em; }
+
+.btn-form {
+  background: #29abe1;
+  color: #333; }
+
+.btn-form:hover {
+  background: #333; }
+  .btn-form:hover span {
+    color: #29abe1; }
+
+/* custom scss for this particular layout */
 
 /*# sourceMappingURL=footbridge-additions.css.map */

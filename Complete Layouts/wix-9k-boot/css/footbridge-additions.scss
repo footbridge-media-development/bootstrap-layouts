@@ -40,10 +40,13 @@ a:hover {text-decoration:none;}
 }
 
 /******* sass vars *******/
-$color-prime: Blue;
-$color-second:red;
+$breaksmall: 576px;
+$breakmed: 768px;
+$breaklrg: 992px;
+$color-prime: #333;
+$color-second:#29abe1;
 $color-third:green;
-$color-alpha:rgba(28, 115, 255, 0.7);
+$color-alpha:rgba(41, 171, 255, 0.7);
 $font-prime: Helvetica, sans-serif;
 $font-second: Raleway, sans-serif;
 /****** base sets ********/
@@ -61,7 +64,13 @@ h1, h2, h4 {font-family:$font-prime;}
 /******* ******** ********/
 /***** Color Scheme ******/
 /******* ******** ********/
-
+/* Prime color = #333 
+    Second Color = #29abe1
+    Third Color = Green
+    Color Alpha = rbga(41,171,255,0.7)
+    Prime Font = Helvetica
+    Second Font = Raleway
+*/
 #content{
 	background-color:white;
 }
@@ -137,7 +146,7 @@ h1, h2, h4 {font-family:$font-prime;}
 		}
 
 		#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div a:hover{
-			background-color: #3e1a72;
+			background-color: $color-prime;
 			color:white;
 		}
 
@@ -482,7 +491,7 @@ h1, h2, h4 {font-family:$font-prime;}
 /******* ******** ********/
 
 .goldylox {
-    font-size:2em; color:$color-prime; font-weight:900; text-shadow: 2px 2px 5px #000; line-height:1.5em; }
+    font-size:2em; color:$color-prime; font-weight:900; line-height:1.5em; }
 .lilbear {
     font-size:1.5em; color:$color-second; font-weight:900; line-height:1em;  
 }

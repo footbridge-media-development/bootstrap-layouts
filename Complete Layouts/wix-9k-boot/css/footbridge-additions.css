@@ -493,32 +493,7 @@ footer.fb-ftr-1 a {
   -ms-transform: translate(-50%, -50%); }
 
 /************ Import Template CSS *****************/
-/*
- *	Bootstrap breakpoints
- *
- *	XS = 0;
- *	SM = 576px;
- *	MD = 768px;
- *	LG = 992px;
- *	XL = 1200px;
- *
- */
-/*
-*	Bootstrap padding amounts
-*
-*	1 = 0.25rem;
-*	2 = 0.5rem;
-*	3 = 1rem;
-*	4 = 1.5rem;
-*	5 = 3rem;
-*
-*/
-/******* ******** ********/
-/****** Navigation *******/
-/******* ******** ********/
-/******* ******** ********/
-/****** Small-screen Navigation Setup 1 *******/
-/******* ******** ********/
+/* scss begin for wix-9k begins here */
 #small-navigation-container-1 {
   background: none;
   position: absolute;
@@ -565,5 +540,7 @@ footer.fb-ftr-1 a {
 #whyChoose {
   background: url(../images/banner/background2.jpg) repeat;
   background-attachment: fixed; }
+
+/* custom scss for this particular layout */
 
 /*# sourceMappingURL=footbridge-additions.css.map */

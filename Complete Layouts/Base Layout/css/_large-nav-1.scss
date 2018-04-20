@@ -93,3 +93,23 @@
 		#large-navigation-container-1 .navigation-links > div > div .dropdown > div:not(:last-child){
 			border-bottom:1px dashed gray;
 		}
+
+
+		/* LG and below */
+@media screen and (max-width:1200px){
+	
+	#large-navigation-container-1 .navigation-links > div > div > a{
+		padding-left:0.5rem;
+		padding-right:0.5rem;
+	}
+}
+
+
+/* MD and below */
+@media screen and (max-width:991px){
+	
+	#large-navigation-container-1 .navigation-links > div > div{
+		padding-left:1rem;
+		padding-right:1rem;
+	}
+}

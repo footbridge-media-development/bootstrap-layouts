@@ -1,0 +1,35 @@
+/******* Defaults********/
+img, iframe, video{
+	max-width:100%;
+}
+
+a {
+    cursor: pointer;
+    color:none;
+}
+a:hover {text-decoration:none;}
+
+
+#content{
+	background-color:white;
+}
+
+#content p {
+	color: #555;
+}
+
+/*** Sizing ******/
+
+.big-wrap{
+	max-width:1400px;
+}
+
+.wrap{
+	width:1200px;
+}
+
+
+.secondary-bg-color{
+	background-color:$color-third;
+	color:white;
+}

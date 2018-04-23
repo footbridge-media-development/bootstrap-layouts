@@ -19,7 +19,7 @@
 		}
 		
 		#large-navigation-container-2 > div:nth-child(2){
-			background-color:#4f81dc;
+			background-color:$color-prime;
 		}
 		
 		#large-navigation-container-2 .navigation-links > div > div{
@@ -40,7 +40,7 @@
 		}
 		
 		#large-navigation-container-2 .navigation-links > div > div:hover{
-			background-color:#436ebb;
+			background-color:darken($color-prime, 10%);
 			border-top-left-radius:5px;
 			border-top-right-radius:5px;
 		}
@@ -73,7 +73,7 @@
 		}
 		
 		#large-navigation-container-2 .navigation-links > div > div .dropdown > div{
-			background-color:#4f81dc;
+			background-color:$color-prime;
 			text-align:left;
 		}
 		
@@ -91,7 +91,7 @@
 		
 		#large-navigation-container-2 .navigation-links > div > div .dropdown > div:hover{
 			transition:background-color 150ms;
-			background-color:#436ebb;
+			background-color:darken($color-prime, 10%);
 		}
 		
 		#large-navigation-container-2 .navigation-links > div > div .dropdown > div > a:hover{

@@ -32,7 +32,7 @@
 		}
 		
 		#large-navigation-container-1 .navigation-links > div > div:hover{
-			background-color:#4f2094;
+			background-color:$color-prime;
 			border-top-left-radius:5px;
 			border-top-right-radius:5px;
 		}
@@ -65,7 +65,7 @@
 		}
 		
 		#large-navigation-container-1 .navigation-links > div > div .dropdown > div{
-			background-color:#4f2094;
+			background-color:$color-prime;
 			text-align:left;
 		}
 		
@@ -83,7 +83,7 @@
 		
 		#large-navigation-container-1 .navigation-links > div > div .dropdown > div:hover{
 			transition:background-color 150ms;
-			background-color:#6429bc;
+			background-color:darken($color-prime, 10%);
 		}
 		
 		#large-navigation-container-1 .navigation-links > div > div .dropdown > div > a:hover{

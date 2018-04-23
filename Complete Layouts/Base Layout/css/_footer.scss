@@ -1,0 +1,34 @@
+/******* ******** ********/
+/******* Footers ********/
+/******* ******** ********/
+
+/* *** FOOTER-1 *** */
+
+ footer.fb-ftr-1 {
+    background: #444;
+    color: aliceblue;
+ }
+ footer.fb-ftr-1 h4 {
+    color: antiquewhite;
+ }
+ footer.fb-ftr-1 a {
+    color:aliceblue;
+ }
+.fb-ftr-1 .quick-links a {
+    display: block;
+
+}
+.fb-ftr-1 .service-areas a {
+    border-right: solid #555 2px;
+    padding-right: 6px;
+
+}
+.fb-ftr-1 .service-areas a:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.fb-ftr-1 .contact p {
+    padding:0;
+    margin:0;
+}

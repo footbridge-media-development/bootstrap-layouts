@@ -1,0 +1,226 @@
+/*
+ *	Bootstrap breakpoints
+ *
+ *	XS = 0;
+ *	SM = 576px;
+ *	MD = 768px;
+ *	LG = 992px;
+ *	XL = 1200px;
+ *
+ */
+ /*
+ *	Bootstrap padding amounts
+ *
+ *	1 = 0.25rem;
+ *	2 = 0.5rem;
+ *	3 = 1rem;
+ *	4 = 1.5rem;
+ *	5 = 3rem;
+ *
+ */
+
+/******* Defaults &imports ********/
+img, iframe, video{
+	max-width:100%;
+}
+
+a {
+    cursor: pointer;
+    color:none;
+}
+a:hover {text-decoration:none;}
+
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+	font-family: 'Unbuntu';
+	src: url(../fonts/Ubuntu-BoldItalic.ttf);
+}
+
+/******* sass vars *******/
+$breaksmall: 576px;
+$breakmed: 768px;
+$breaklrg: 992px;
+$color-prime: #333;
+$color-second:#29abe1;
+$color-third:green;
+$color-alpha:rgba(41, 171, 255, 0.7);
+$font-prime: Helvetica, sans-serif;
+$font-second: Raleway, sans-serif;
+/****** base sets ********/
+p {font-family: $font-second;}
+h1, h2, h4 {font-family:$font-prime;}
+
+.large {
+    font-size:4rem;
+}
+.med {
+    font-size:3rem;
+}
+.small { font-size:1.5rem;
+}
+/******* ******** ********/
+/***** Color Scheme ******/
+/******* ******** ********/
+/* Prime color = #333 
+    Second Color = #29abe1
+    Third Color = Green
+    Color Alpha = rbga(41,171,255,0.7)
+    Prime Font = Helvetica
+    Second Font = Raleway
+*/
+#content{
+	background-color:white;
+}
+
+.secondary-bg-color{
+	background-color:rgb(50,50,50);
+	color:white;
+}
+
+/******* ******** ********/
+/******** Sizing *********/
+/******* ******** ********/
+
+.big-wrap{
+	max-width:1400px;
+}
+
+.wrap{
+	width:1200px;
+}
+
+/******* ******** ********/
+/****** Navigation *******/
+/******* ******** ********/
+@import 'small-nav-1';
+@import 'large-nav-1';	
+@import 'large-nav-2';	
+
+/******* ******** ********/
+/******* ******** ********/
+/******* ******** ********/
+
+.carousel-item > div{
+	height:650px;
+	background-size:cover;
+	background-position:center center;
+}
+
+/******* ******** ********/
+/******* Footers ********/
+/******* ******** ********/
+
+/* *** FOOTER-1 *** */
+
+ footer.fb-ftr-1 {
+    background: #444;
+    color: aliceblue;
+ }
+ footer.fb-ftr-1 h4 {
+    color: antiquewhite;
+ }
+ footer.fb-ftr-1 a {
+    color:aliceblue;
+ }
+.fb-ftr-1 .quick-links a {
+    display: block;
+
+}
+.fb-ftr-1 .service-areas a {
+    border-right: solid #555 2px;
+    padding-right: 6px;
+
+}
+.fb-ftr-1 .service-areas a:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.fb-ftr-1 .contact p {
+    padding:0;
+    margin:0;
+}
+
+/* XL and "below" is anything outside of a media query */
+
+/* Only XL */
+@media screen and (min-width:1200px){
+	.navigation-links a {
+		font-size:0.8em;
+	}
+}
+
+/* LG and below */
+@media screen and (max-width:1200px){
+	#large-navigation-container-1 .navigation-links > div > div > a{
+		padding-left:0.5rem;
+		padding-right:0.5rem;
+	}
+}
+
+/* Only LG */
+@media screen and (max-width:1199px) and (min-width:992px){
+	
+}
+
+/* MD and below */
+@media screen and (max-width:991px){
+	.carousel-item > div{
+		height:300px;
+		background-size:cover;
+		background-position:center center;
+	}
+	
+	#large-navigation-container-1 .navigation-links > div > div{
+		padding-left:1rem;
+		padding-right:1rem;
+	}
+}
+
+/* Only MD */
+@media screen and (max-width:991px) and (min-width:768px){
+	
+}
+
+/* SM and below */
+@media screen and (max-width:767px){
+	
+}
+
+/* Only SM */
+@media screen and (max-width:767px) and (min-width:576px){
+	
+}
+
+/* Only XS & XS and below */
+@media screen and (max-width:575px){
+	
+}
+
+/******* ******** ********/
+/***** Legacy Code *******/
+/******* ******** ********/
+
+.float-img-right, .float-right{
+	float:right;
+}
+
+.float-img-left, .float-left{
+	float:left;
+}
+
+/******* ******** ********/
+/***** Custom Elements ***/
+/******* ******** ********/
+
+
+
+/************ Import Template CSS *****************/
+@import 'overlay-box';
+@import 'goldylox';
+@import 'wix-9k';
+@import 'custom';
+

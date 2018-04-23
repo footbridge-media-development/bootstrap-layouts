@@ -1,0 +1,16 @@
+/**** Basic formats for good layouts *****/
+.goldylox {
+    font-size:2em; color:$color-prime; font-weight:900; line-height:1.5em; }
+.lilbear {
+    font-size:1.5em; color:$color-second; font-weight:900; line-height:1em;  
+}
+
+.btn-form {
+    background:$color-second; color:$color-prime;
+}
+.btn-form:hover {
+    background:$color-prime; 
+    span {
+        color:$color-second;
+    }
+}

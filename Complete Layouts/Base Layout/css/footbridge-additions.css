@@ -18,13 +18,24 @@
 *	5 = 3rem;
 *
 */
-/******* sass vars *******/
+/******* Defaults &imports ********/
+img, iframe, video {
+  max-width: 100%; }
+
+a {
+  cursor: pointer;
+  color: none; }
+
+a:hover {
+  text-decoration: none; }
+
 @font-face {
   font-family: 'Raleway';
   src: url(../fonts/Raleway-Regular.ttf); }
 @font-face {
   font-family: 'Unbuntu';
   src: url(../fonts/Ubuntu-BoldItalic.ttf); }
+/******* sass vars *******/
 /****** base sets ********/
 p {
   font-family: Raleway, sans-serif; }
@@ -41,33 +52,31 @@ h1, h2, h4 {
 .small {
   font-size: 1.5rem; }
 
-/******* Defaults********/
-img, iframe, video {
-  max-width: 100%; }
-
-a {
-  cursor: pointer;
-  color: none; }
-
-a:hover {
-  text-decoration: none; }
-
+/******* ******** ********/
+/***** Color Scheme ******/
+/******* ******** ********/
+/* Prime color = #333 
+    Second Color = #29abe1
+    Third Color = Green
+    Color Alpha = rbga(41,171,255,0.7)
+    Prime Font = Helvetica
+    Second Font = Raleway
+*/
 #content {
   background-color: white; }
 
-#content p {
-  color: #555; }
+.secondary-bg-color {
+  background-color: #323232;
+  color: white; }
 
-/*** Sizing ******/
+/******* ******** ********/
+/******** Sizing *********/
+/******* ******** ********/
 .big-wrap {
   max-width: 1400px; }
 
 .wrap {
   width: 1200px; }
-
-.secondary-bg-color {
-  background-color: green;
-  color: white; }
 
 /******* ******** ********/
 /****** Navigation *******/
@@ -223,16 +232,6 @@ a:hover {
 #large-navigation-container-1 .navigation-links > div > div .dropdown > div:not(:last-child) {
   border-bottom: 1px dashed gray; }
 
-/* LG and below */
-@media screen and (max-width: 1200px) {
-  #large-navigation-container-1 .navigation-links > div > div > a {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem; } }
-/* MD and below */
-@media screen and (max-width: 991px) {
-  #large-navigation-container-1 .navigation-links > div > div {
-    padding-left: 1rem;
-    padding-right: 1rem; } }
 /******* ******** ********/
 /****** Large-screen Navigation Setup 2 *******/
 /******* ******** ********/
@@ -317,13 +316,14 @@ a:hover {
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div:not(:last-child) {
   border-bottom: 1px dashed gray; }
 
-/* Only XL */
-@media screen and (min-width: 1200px) {
-  .navigation-links a {
-    font-size: 0.8em; } }
 /******* ******** ********/
 /******* ******** ********/
 /******* ******** ********/
+.carousel-item > div {
+  height: 650px;
+  background-size: cover;
+  background-position: center center; }
+
 /******* ******** ********/
 /******* Footers ********/
 /******* ******** ********/
@@ -353,6 +353,31 @@ footer.fb-ftr-1 a {
   padding: 0;
   margin: 0; }
 
+/* XL and "below" is anything outside of a media query */
+/* Only XL */
+@media screen and (min-width: 1200px) {
+  .navigation-links a {
+    font-size: 0.8em; } }
+/* LG and below */
+@media screen and (max-width: 1200px) {
+  #large-navigation-container-1 .navigation-links > div > div > a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem; } }
+/* Only LG */
+/* MD and below */
+@media screen and (max-width: 991px) {
+  .carousel-item > div {
+    height: 300px;
+    background-size: cover;
+    background-position: center center; }
+
+  #large-navigation-container-1 .navigation-links > div > div {
+    padding-left: 1rem;
+    padding-right: 1rem; } }
+/* Only MD */
+/* SM and below */
+/* Only SM */
+/* Only XS & XS and below */
 /******* ******** ********/
 /***** Legacy Code *******/
 /******* ******** ********/
@@ -362,21 +387,10 @@ footer.fb-ftr-1 a {
 .float-img-left, .float-left {
   float: left; }
 
-.carousel-item > div {
-  height: 650px;
-  background-size: cover;
-  background-position: center center; }
-
-/* MD and below */
-@media screen and (max-width: 991px) {
-  .carousel-item > div {
-    height: 300px;
-    background-size: cover;
-    background-position: center center; } }
 /******* ******** ********/
 /***** Custom Elements ***/
 /******* ******** ********/
-/***** Import Template CSS *****/
+/************ Import Template CSS *****************/
 /******* OVERLAY BOX *************/
 .overlay-container {
   position: relative; }

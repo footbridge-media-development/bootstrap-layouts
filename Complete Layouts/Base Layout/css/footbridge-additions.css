@@ -367,6 +367,9 @@ footer.fb-ftr-1 a {
   background-size: cover;
   background-position: center center; }
 
+.carousel-item {
+  padding: 10px; }
+
 /* MD and below */
 @media screen and (max-width: 991px) {
   .carousel-item > div {

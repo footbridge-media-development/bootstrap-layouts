@@ -9,3 +9,8 @@
 .float-img-left, .float-left{
 	float:left;
 }
+
+.video-box > iframe, video-box > video, video-box > audio{
+	width:100%;
+	max-width:100%;
+}

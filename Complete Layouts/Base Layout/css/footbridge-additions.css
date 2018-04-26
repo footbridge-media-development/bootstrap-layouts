@@ -362,6 +362,10 @@ footer.fb-ftr-1 a {
 .float-img-left, .float-left {
   float: left; }
 
+.video-box > iframe, video-box > video, video-box > audio {
+  width: 100%;
+  max-width: 100%; }
+
 .carousel-item > div {
   height: 650px;
   background-size: cover;

@@ -80,7 +80,7 @@ a:hover {
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.33);
   position: relative;
   /* Box shadow doesn't show without a z-index */
-  z-index: 1; }
+  z-index: 20; }
 
 #small-navigation-container-1 > .pullout-menu-backdrop {
   top: 0;

@@ -55,6 +55,19 @@ $(document).ready(function(){
 			// Does this menu exist?
 			
 			if ($("#small-navigation-container-1").length > 0){
+				
+				function closeSmallMenu1(){
+					var backdrop = $("#small-navigation-container-1 .pullout-menu-backdrop");
+					var navContainer = backdrop.children("div");
+					
+					// Close the menu
+					navContainer.css("margin-right", navContainer.attr('data-original-margin-right'));
+					
+					setTimeout(function(){
+						backdrop.removeClass("d-flex");
+						backdrop.addClass("d-none");
+					}, 150); // The 150ms timeout here is because the CSS animation is set to 150ms. If you change the CSS animation speed also change the timeout here.
+				}
 		
 				// Open hamburger pressed
 				$("#small-navigation-menu-opener-1").click(function(){
@@ -77,16 +90,7 @@ $(document).ready(function(){
 				
 				// Clicked on the transparent backdrop! Close the menu
 				$("#small-navigation-container-1").find(".pullout-menu-backdrop").click(function(){
-					var backdrop = $(this);
-					var navContainer = $(this).children("div");
-					
-					// Close the menu
-					navContainer.css("margin-right", navContainer.attr('data-original-margin-right'));
-					
-					setTimeout(function(){
-						backdrop.removeClass("d-flex");
-						backdrop.addClass("d-none");
-					}, 150); // The 150ms timeout here is because the CSS animation is set to 150ms. If you change the CSS animation speed also change the timeout here.
+					closeSmallMenu1();
 				});
 				
 				// Disallow bubbling
@@ -97,6 +101,17 @@ $(document).ready(function(){
 					// That is ... undesirable ...
 					e.stopPropagation();
 					return false;
+				});
+				
+				// Close the small menu on resize.
+				$(window).on('resize', function(){
+					// timeout because of the "window resize" event fires before the resize happens
+					setTimeout(function(){
+						// Check if it's open first.
+						if ($("#small-navigation-container-1 .pullout-menu-backdrop").is(":visible")){
+							closeSmallMenu1();
+						}
+					}, 50);
 				});
 	
 			}

@@ -1,23 +1,22 @@
 /**** Basic formats for good layouts *****/
 .goldylox {
-    font-size:2em; color:$color-prime; font-weight:900; line-height:1.5em; font-family:$font-prime; }
+    font-size:2rem; color:$color-prime; font-weight:900; line-height:1.25em; font-family:$font-prime; }
 .lilbear {
-    font-size:1.5em; color:$color-second; font-weight:900; line-height:1em;  
+    font-size:1.5rem; color:$color-second; font-weight:900; line-height:1em;  
     @media screen and (max-width:$breakmed){
         font-size:1rem;
     }
 }
 
 .btn-form {
-    background:$color-second; color:$color-prime;
+    background:$color-second; color:lighten($color-second,30%);
     span {
-        color:$color-prime;
         font-family:$font-prime;
         font-size:1.5em;
     }
 }
 .btn-form:hover {
-    background: darken($color-prime, 10%);
+    background: darken($color-second, 10%);
     span {
         color:$color-second !important;    
     }
@@ -35,7 +34,7 @@
     -o-transition: all .5s ease;
     transition: all .5s ease;
     a {
-        color:$color-second;
+        color:#fff;
         font-family:$font-prime;
         font-size:1.5em;
         -webkit-transition: all .5s ease;
@@ -66,6 +65,32 @@
         transition: all .5s ease;
     }
   
+}
+.btn-banner {
+    width:60%;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    background-color:$color-prime;
+    color:#fff;
+    font-size:1.5rem;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    &:hover {
+        background-color: darken( $color-prime, 20% );
+        color:#fff !important;
+    }
+    
+}
+
+.card {
+    h2 {
+        font-size:1.5rem;
+        font-weight:bold;
+        font-family:$font-prime;
+    }
 }
 
 #heroCarousel {
@@ -99,5 +124,5 @@ border-radius: 10px;
     }
 }
 
-.seconds { color:$color-second;}
+.seconds { color:$color-second !important;}
 .thirds {color:$color-third;}

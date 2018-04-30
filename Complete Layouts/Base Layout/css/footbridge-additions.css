@@ -33,13 +33,22 @@ h1, h2, h4 {
   font-family: Helvetica, sans-serif; }
 
 .large {
-  font-size: 4rem; }
+  font-size: 4rem !important; }
+  @media screen and (max-width: 768px) {
+    .large {
+      font-size: 2rem !important; } }
 
 .med {
-  font-size: 3rem; }
+  font-size: 3rem !important; }
+  @media screen and (max-width: 768px) {
+    .med {
+      font-size: 1.5rem !important; } }
 
 .small {
-  font-size: 1.5rem; }
+  font-size: 1.5rem !important; }
+  @media screen and (max-width: 768px) {
+    .small {
+      font-size: 1rem !important; } }
 
 /******* Defaults********/
 img, iframe, video {
@@ -467,14 +476,14 @@ footer.fb-ftr-1 a {
 
 /**** Basic formats for good layouts *****/
 .goldylox {
-  font-size: 2em;
+  font-size: 2rem;
   color: #333;
   font-weight: 900;
-  line-height: 1.5em;
+  line-height: 1.25em;
   font-family: Helvetica, sans-serif; }
 
 .lilbear {
-  font-size: 1.5em;
+  font-size: 1.5rem;
   color: #29abe1;
   font-weight: 900;
   line-height: 1em; }
@@ -484,14 +493,13 @@ footer.fb-ftr-1 a {
 
 .btn-form {
   background: #29abe1;
-  color: #333; }
+  color: #afe0f4; }
   .btn-form span {
-    color: #333;
     font-family: Helvetica, sans-serif;
     font-size: 1.5em; }
 
 .btn-form:hover {
-  background: #1a1a1a; }
+  background: #1a8dbd; }
   .btn-form:hover span {
     color: #29abe1 !important; }
 
@@ -508,7 +516,7 @@ footer.fb-ftr-1 a {
   -o-transition: all .5s ease;
   transition: all .5s ease; }
   .btn-sidebar a {
-    color: #29abe1;
+    color: #fff;
     font-family: Helvetica, sans-serif;
     font-size: 1.5em;
     -webkit-transition: all .5s ease;
@@ -535,6 +543,27 @@ footer.fb-ftr-1 a {
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
     transition: all .5s ease; }
+
+.btn-banner {
+  width: 60%;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5rem;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+  .btn-banner:hover {
+    background-color: black;
+    color: #fff !important; }
+
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Helvetica, sans-serif; }
 
 #heroCarousel h5 {
   font-size: 2.5rem;
@@ -563,7 +592,7 @@ footer.fb-ftr-1 a {
     border-bottom: 3px solid #333; }
 
 .seconds {
-  color: #29abe1; }
+  color: #29abe1 !important; }
 
 .thirds {
   color: green; }

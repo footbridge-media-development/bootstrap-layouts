@@ -12,10 +12,19 @@ p {font-family: $font-second;}
 h1, h2, h4 {font-family:$font-prime;}
 
 .large {
-    font-size:4rem;
+    font-size:4rem !important;
+    @media screen and (max-width:$breakmed) {
+        font-size:2rem !important;
+    }
 }
 .med {
-    font-size:3rem;
+    font-size:3rem !important;
+     @media screen and (max-width:$breakmed) {
+        font-size:1.5rem !important;
+    }
 }
-.small { font-size:1.5rem;
+.small { font-size:1.5rem !important;
+     @media screen and (max-width:$breakmed) {
+        font-size:1rem !important;
+    }
 }

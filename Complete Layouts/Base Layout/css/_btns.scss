@@ -1,0 +1,77 @@
+/************** BTN CSS ********************/
+.btn-form {
+    background:$color-second; color:lighten($color-second,30%);
+    span {
+        font-family:$font-prime;
+        font-size:1.5em;
+    }
+    &:hover {
+        background: darken($color-second, 10%);
+        span {
+        color:$color-second !important;    
+        }
+    }
+}
+.btn-sidebar {
+    background:$color-prime;
+    width:80%;
+    margin-left:10%;
+    box-sizing:border-box;
+    -webkit-border-radius: 30px;
+    border-radius: 30px;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    a {
+        color:#fff;
+        font-family:$font-prime;
+        font-size:1.5em;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+    }
+    &:hover {
+        background: darken($color-prime, 10%);
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        a {
+        
+        color:white;
+        -webkit-transition: all .5s ease;
+        -moz-transition: all .5s ease;
+        -ms-transition: all .5s ease;
+        -o-transition: all .5s ease;
+        transition: all .5s ease;
+        }
+    }
+     @media screen and (max-width:$breakmed){
+        width:90%;
+        margin-left:5%;
+    }
+}
+.btn-banner {
+    width:60%;
+    -webkit-border-radius: 30px;
+    font-family:$font-prime;
+    border-radius: 30px;
+    background-color:$color-prime;
+    color:#fff;
+    font-size:1.5rem;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    &:hover {
+        background-color: darken( $color-prime, 20% );
+        color:#fff !important;
+    }
+    
+}

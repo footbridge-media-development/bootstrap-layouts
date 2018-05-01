@@ -30,7 +30,7 @@ p {
   font-family: Raleway, sans-serif; }
 
 h1, h2, h4 {
-  font-family: Helvetica, sans-serif; }
+  font-family: Unbuntu, sans-serif; }
 
 .large {
   font-size: 4rem !important; }
@@ -389,6 +389,75 @@ footer.fb-ftr-1 a {
     height: 300px;
     background-size: cover;
     background-position: center center; } }
+/************** BTN CSS ********************/
+.btn-form {
+  background: #29abe1;
+  color: #afe0f4; }
+  .btn-form span {
+    font-family: Unbuntu, sans-serif;
+    font-size: 1.5em; }
+  .btn-form:hover {
+    background: #1a8dbd; }
+    .btn-form:hover span {
+      color: #29abe1 !important; }
+
+.btn-sidebar {
+  background: #333;
+  width: 80%;
+  margin-left: 10%;
+  box-sizing: border-box;
+  -webkit-border-radius: 30px;
+  border-radius: 30px;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+  .btn-sidebar a {
+    color: #fff;
+    font-family: Unbuntu, sans-serif;
+    font-size: 1.5em;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+  .btn-sidebar:hover {
+    background: #1a1a1a;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -ms-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    .btn-sidebar:hover a {
+      color: white;
+      -webkit-transition: all .5s ease;
+      -moz-transition: all .5s ease;
+      -ms-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+  @media screen and (max-width: 768px) {
+    .btn-sidebar {
+      width: 90%;
+      margin-left: 5%; } }
+
+.btn-banner {
+  width: 60%;
+  -webkit-border-radius: 30px;
+  font-family: Unbuntu, sans-serif;
+  border-radius: 30px;
+  background-color: #333;
+  color: #fff;
+  font-size: 1.5rem;
+  -webkit-transition: all .5s ease;
+  -moz-transition: all .5s ease;
+  -ms-transition: all .5s ease;
+  -o-transition: all .5s ease;
+  transition: all .5s ease; }
+  .btn-banner:hover {
+    background-color: black;
+    color: #fff !important; }
+
 /******* ******** ********/
 /***** Custom Elements ***/
 /******* ******** ********/
@@ -480,7 +549,7 @@ footer.fb-ftr-1 a {
   color: #333;
   font-weight: 900;
   line-height: 1.25em;
-  font-family: Helvetica, sans-serif; }
+  font-family: Unbuntu, sans-serif; }
 
 .lilbear {
   font-size: 1.5rem;
@@ -491,79 +560,10 @@ footer.fb-ftr-1 a {
     .lilbear {
       font-size: 1rem; } }
 
-.btn-form {
-  background: #29abe1;
-  color: #afe0f4; }
-  .btn-form span {
-    font-family: Helvetica, sans-serif;
-    font-size: 1.5em; }
-
-.btn-form:hover {
-  background: #1a8dbd; }
-  .btn-form:hover span {
-    color: #29abe1 !important; }
-
-.btn-sidebar {
-  background: #333;
-  width: 80%;
-  margin-left: 10%;
-  box-sizing: border-box;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-  .btn-sidebar a {
-    color: #fff;
-    font-family: Helvetica, sans-serif;
-    font-size: 1.5em;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease; }
-  @media screen and (max-width: 768px) {
-    .btn-sidebar {
-      width: 90%;
-      margin-left: 5%; } }
-
-.btn-sidebar:hover {
-  background: #1a1a1a;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-  .btn-sidebar:hover a {
-    color: white;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease; }
-
-.btn-banner {
-  width: 60%;
-  -webkit-border-radius: 30px;
-  border-radius: 30px;
-  background-color: #333;
-  color: #fff;
-  font-size: 1.5rem;
-  -webkit-transition: all .5s ease;
-  -moz-transition: all .5s ease;
-  -ms-transition: all .5s ease;
-  -o-transition: all .5s ease;
-  transition: all .5s ease; }
-  .btn-banner:hover {
-    background-color: black;
-    color: #fff !important; }
-
 .card h2 {
   font-size: 1.5rem;
   font-weight: bold;
-  font-family: Helvetica, sans-serif; }
+  font-family: Unbuntu, sans-serif; }
 
 #heroCarousel h5 {
   font-size: 2.5rem;
@@ -587,7 +587,7 @@ footer.fb-ftr-1 a {
     color: #333;
     background: #29abe1;
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+    font-family: Unbuntu, sans-serif;
     margin-bottom: 0;
     border-bottom: 3px solid #333; }
 

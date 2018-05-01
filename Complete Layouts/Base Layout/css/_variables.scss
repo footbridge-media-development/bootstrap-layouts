@@ -1,4 +1,12 @@
 /******* sass vars *******/
+@font-face {
+	font-family: 'Raleway';
+	src: url(../fonts/Raleway-Regular.ttf);
+}
+@font-face {
+	font-family: 'Unbuntu';
+	src: url(../fonts/Ubuntu-BoldItalic.ttf);
+}
 $breaksmall: 576px;
 $breakmed: 768px;
 $breaklrg: 992px;
@@ -6,5 +14,5 @@ $color-prime: #333;
 $color-second:#29abe1;
 $color-third:green;
 $color-alpha:rgba(41, 171, 255, 0.7);
-$font-prime: Helvetica, sans-serif;
+$font-prime: Unbuntu, sans-serif;
 $font-second: Raleway, sans-serif;

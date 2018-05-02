@@ -1,5 +1,7 @@
 /*************** constrained layout ************************/
-
+#large-navigation-container-2 {
+    background:none !important;
+}
 #large-navigation-container-2 > div:nth-child(2){
 			background:none;
 		}
@@ -16,18 +18,32 @@
 .cTop {
     border:2px solid $color-prime; 
     --webkit-border-radius: 20px 20px 0 0; border-radius: 20px 20px 0 0;
+    background:url(../images/header-bg.jpg) no-repeat center;
+    background-size:cover;
 }
 
 #heroCarousel, .bBorder {
     border-left:2px solid $color-prime;
     border-right:2px solid $color-prime;
 }
-
+#content {
+    background:none;
+}
 #body {
+    background:#fff;
     -webkit-border-radius: 0 0 20px 20px;
     border-radius: 0 0 20px 20px;
     margin-bottom:20px;
     border-bottom:2px $color-prime solid;
     border-left:2px solid $color-prime;
     border-right:2px solid $color-prime;
+}
+.sBg {
+    background:url(../images/bg1.jpg) no-repeat center top;
+    background-size:cover;
+}
+body {
+    background:url(../images/main-bg.jpg) no-repeat top;
+    background-size:cover;
+    background-attachment:fixed;
 }

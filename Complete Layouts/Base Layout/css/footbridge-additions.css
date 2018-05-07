@@ -50,6 +50,18 @@ h1, h2, h4 {
     .small {
       font-size: 1rem !important; } }
 
+.breadcrumb {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: .5rem 1rem; }
+  .breadcrumb a {
+    color: #c2cad1;
+    font-size: .75rem; }
+
+.breadcrumb-item::before {
+  color: #c2cad1 !important; }
+.breadcrumb-item + .active {
+  color: #c2cad1; }
+
 /******* Defaults********/
 img, iframe, video {
   max-width: 100%; }
@@ -325,7 +337,7 @@ a:hover {
   text-decoration: none; }
 
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div:not(:last-child) {
-  border-bottom: 1px dashed gray; }
+  /* border-bottom:1px dashed gray; */ }
 
 /* Only XL */
 @media screen and (min-width: 1200px) {

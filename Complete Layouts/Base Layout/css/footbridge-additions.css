@@ -417,7 +417,6 @@ footer.fb-ftr-1 a {
 .btn-sidebar {
   background: #333;
   width: 80%;
-  margin-left: 10%;
   box-sizing: border-box;
   -webkit-border-radius: 30px;
   border-radius: 30px;
@@ -425,37 +424,25 @@ footer.fb-ftr-1 a {
   -moz-transition: all .5s ease;
   -ms-transition: all .5s ease;
   -o-transition: all .5s ease;
-  transition: all .5s ease; }
-  .btn-sidebar a {
-    color: #fff;
-    font-family: Unbuntu, sans-serif;
-    font-size: 1.5em;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease; }
+  transition: all .5s ease;
+  color: #fff;
+  font-family: Unbuntu, sans-serif;
+  font-size: 1.5em; }
   .btn-sidebar:hover {
     background: #1a1a1a;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
     -o-transition: all .5s ease;
-    transition: all .5s ease; }
-    .btn-sidebar:hover a {
-      color: white;
-      -webkit-transition: all .5s ease;
-      -moz-transition: all .5s ease;
-      -ms-transition: all .5s ease;
-      -o-transition: all .5s ease;
-      transition: all .5s ease; }
+    transition: all .5s ease;
+    color: white; }
   @media screen and (max-width: 768px) {
     .btn-sidebar {
-      width: 90%;
-      margin-left: 5%; } }
+      width: 90%; } }
 
 .btn-banner {
   width: 60%;
+  padding: .5rem;
   -webkit-border-radius: 30px;
   font-family: Unbuntu, sans-serif;
   border-radius: 30px;

@@ -1,0 +1,79 @@
+/* Custom classes and css for menu in the header */
+.absolutey {
+    position:absolute;
+    top:0;
+    left:35%;
+    margin-top:-75px;
+}
+
+.btn {
+    border-radius:0 !important;
+}
+.darken {
+    background-color:$color-prime;
+    p {
+        color:white !important;
+        line-height:2rem !important;
+    }
+    div {
+        padding:5%;
+    }
+}
+
+.col-md-border {
+        &:not(:last-child) {
+            border-right: 1px solid rgba(255,255,255,.4);
+        }
+
+        & + .col-md-border {
+            border-left: 1px solid rgba(255,255,255,.4);
+            margin-left: -1px;
+        }
+      @media screen and (max-width: $breakmed){
+        border-right: 0px solid rgba(255,255,255,.0) !important;
+        }
+    }
+#spec1 {
+    background:url(../images/banner-2.png) center no-repeat;
+      @media screen and (max-width: $breakmed){
+        background:$color-prime;
+    }
+}
+.bgcover {
+    background-size:cover !important;
+    background-attachment:fixed !important;
+    p {
+        color:#fff !important;
+    }
+    h2 {
+        color:$color-second !important;
+    }
+}
+.gradcover {
+    background: rgba(19,19,19,1);
+    background: -moz-linear-gradient(left, rgba(19,19,19,1) 0%, rgba(28,28,28,1) 15%, rgba(38,38,38,0.75) 34%, rgba(76,76,76,0) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(19,19,19,1)), color-stop(15%, rgba(28,28,28,1)), color-stop(34%, rgba(38,38,38,0.75)), color-stop(100%, rgba(76,76,76,0)));
+    background: -webkit-linear-gradient(left, rgba(19,19,19,1) 0%, rgba(28,28,28,1) 15%, rgba(38,38,38,0.75) 34%, rgba(76,76,76,0) 100%);
+    background: -o-linear-gradient(left, rgba(19,19,19,1) 0%, rgba(28,28,28,1) 15%, rgba(38,38,38,0.75) 34%, rgba(76,76,76,0) 100%);
+    background: -ms-linear-gradient(left, rgba(19,19,19,1) 0%, rgba(28,28,28,1) 15%, rgba(38,38,38,0.75) 34%, rgba(76,76,76,0) 100%);
+    background: linear-gradient(to right, rgba(19,19,19,1) 0%, rgba(28,28,28,1) 15%, rgba(38,38,38,0.75) 34%, rgba(76,76,76,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#4c4c4c', GradientType=1 );
+}
+
+#large-navigation-container-2{
+			background-color:rgba($color-prime, .6);
+			position:relative; /* Box shadow doesn't show without a z-index */
+			z-index:1;
+		}
+#large-navigation-container-2 .navigation-links > div > div{
+			transition:all 450ms;
+			display:inline-block;
+			text-align:center;
+			position:relative;
+            border-bottom:3px rgba(0,0,0,.0) solid
+		}
+#large-navigation-container-2 .navigation-links > div > div:hover{
+		    border-bottom:rgba(0,0,0,.5) solid 3px;
+            background:none
+           
+		}

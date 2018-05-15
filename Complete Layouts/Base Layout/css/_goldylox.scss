@@ -46,6 +46,46 @@ border-radius: 10px;
         border-bottom:3px solid $color-prime;
     }
 }
+.darken {
+    background-color:$color-prime;
+    p {
+        color:white !important;
+        line-height:2rem !important;
+    }
+    div {
+        padding:5%;
+    }
+}
+
+.col-md-border {
+        &:not(:last-child) {
+            border-right: 1px solid rgba(255,255,255,.4);
+        }
+
+        & + .col-md-border {
+            border-left: 1px solid rgba(255,255,255,.4);
+            margin-left: -1px;
+        }
+      @media screen and (max-width: $breakmed){
+        border-right: 0px solid rgba(255,255,255,.0) !important;
+        }
+    }
+#spec1 {
+    background:url(../images/banner-2.png) center no-repeat;
+      @media screen and (max-width: $breakmed){
+        background:$color-prime;
+    }
+}
+.bgcover {
+    background-size:cover !important;
+    background-attachment:fixed !important;
+    p {
+        color:#fff !important;
+    }
+    h2 {
+        color:$color-second !important;
+    }
+}
 
 .seconds { color:$color-second !important;}
 .thirds {color:$color-third;}

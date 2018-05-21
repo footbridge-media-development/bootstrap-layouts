@@ -40,18 +40,27 @@ h1, h2, h4 {
   @media screen and (max-width: 768px) {
     .large {
       font-size: 2rem !important; } }
+  @media screen and (max-width: 576px) {
+    .large {
+      font-size: 1.3rem; } }
 
 .med {
   font-size: 3rem !important; }
   @media screen and (max-width: 768px) {
     .med {
       font-size: 1.5rem !important; } }
+  @media screen and (max-width: 576px) {
+    .med {
+      font-size: 1.1rem; } }
 
 .small {
   font-size: 1.5rem !important; }
   @media screen and (max-width: 768px) {
     .small {
       font-size: 1rem !important; } }
+  @media screen and (max-width: 768px) and (max-width: 576px) {
+    .small {
+      font-size: .8rem; } }
 
 .breadcrumb {
   background-color: rgba(0, 0, 0, 0.05);

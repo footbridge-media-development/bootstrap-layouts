@@ -1,15 +1,12 @@
 /************** BTN CSS ********************/
 .btn-form {
-    background:$color-second; color:lighten($color-second,30%);
-    span {
-        font-family:$font-prime;
-        font-size:1.5em;
-    }
+    background:$color-second; 
+    color:lighten($color-second,30%);
+    font-family:$font-prime;
+    font-size:1.5em;
     &:hover {
         background: darken($color-second, 10%);
-        span {
-        color:$color-second !important;    
-        }
+        color:$color-second !important;     
     }
 }
 .btn-sidebar {

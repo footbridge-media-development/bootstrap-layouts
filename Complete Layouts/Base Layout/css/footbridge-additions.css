@@ -408,14 +408,12 @@ footer.fb-ftr-1 a {
 /************** BTN CSS ********************/
 .btn-form {
   background: #29abe1;
-  color: #afe0f4; }
-  .btn-form span {
-    font-family: Unbuntu, sans-serif;
-    font-size: 1.5em; }
+  color: #afe0f4;
+  font-family: Unbuntu, sans-serif;
+  font-size: 1.5em; }
   .btn-form:hover {
-    background: #1a8dbd; }
-    .btn-form:hover span {
-      color: #29abe1 !important; }
+    background: #1a8dbd;
+    color: #29abe1 !important; }
 
 .btn-sidebar {
   background: #333;

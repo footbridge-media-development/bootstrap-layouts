@@ -468,6 +468,53 @@ footer.fb-ftr-1 a {
     background-color: black;
     color: #fff !important; }
 
+.btn-tri-arrow {
+  background: #333;
+  color: #29abe1;
+  font-family: Unbuntu, sans-serif; }
+  .btn-tri-arrow::before {
+    content: "\25B2";
+    display: inline-block;
+    -webkit-transform: rotate(90deg) scale(1.5);
+    -moz-transform: rotate(90deg) scale(1.5);
+    -o-transform: rotate(90deg) scale(1.5);
+    -ms-transform: rotate(90deg) scale(1.5);
+    transform: rotate(90deg) scale(1.5);
+    padding: 2%; }
+  .btn-tri-arrow:hover {
+    color: #1a8dbd !important; }
+
+div.btn-tri-up {
+  position: relative; }
+  div.btn-tri-up div {
+    margin: 0 auto;
+    width: 25%;
+    height: 0;
+    padding-left: 25%;
+    padding-bottom: 25%;
+    overflow: hidden;
+    box-sizing: content-box; }
+    div.btn-tri-up div a {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      text-align: center;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      background: #333;
+      font-family: Unbuntu, sans-serif;
+      color: #dbdbdb; }
+    div.btn-tri-up div::before {
+      content: "";
+      display: block;
+      width: 0;
+      height: 0;
+      margin-left: -500px;
+      border-left: 500px solid transparent;
+      border-right: 500px solid transparent;
+      border-bottom: 500px solid #333; }
+
 /******* ******** ********/
 /***** Custom Elements ***/
 /******* ******** ********/
@@ -663,9 +710,6 @@ footer.fb-ftr-1 a {
   top: 0;
   left: 35%;
   margin-top: -75px; }
-
-.btn {
-  border-radius: 0 !important; }
 
 #large-navigation-container-2 {
   background-color: rgba(51, 51, 51, 0.6);

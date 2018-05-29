@@ -99,6 +99,9 @@ $(document).ready(function(){
 					// JavaScript events bubble up through their parent elements.
 					// Without this code the event would bubble to the transparent backdrop and cause the menu to close whenever a user clicks or taps inside the actual menu.
 					// That is ... undesirable ...
+					if (e.target.tagName == "A"){
+						return;
+					}
 					e.stopPropagation();
 					return false;
 				});

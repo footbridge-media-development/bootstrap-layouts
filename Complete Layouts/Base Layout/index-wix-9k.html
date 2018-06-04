@@ -338,6 +338,10 @@
             </div>
          </div>
       </footer>
-		<script async type="text/javascript">$(function(){heroSlider({images: ['images/banner/banner-1.jpg','images/banner/banner-2.jpg','images/banner/banner-3.jpg'],speed: 5000,heroContainer: $(".hero-slider-container")});});</script>
+		<script type="text/javascript">
+			window.addEventListener('DOMContentLoaded', function() {
+				$(function(){heroSlider({images: ['images/banner/banner-1.jpg','images/banner/banner-2.jpg','images/banner/banner-3.jpg'],speed: 5000,heroContainer: $(".hero-slider-container")});});
+			});
+		</script>
 	</body>
 </html>

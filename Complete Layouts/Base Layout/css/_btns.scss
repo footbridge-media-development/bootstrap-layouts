@@ -115,3 +115,15 @@ div.btn-tri-up {
     
     
 }
+.btn-info {
+    background-color:$color-prime;
+    border:none !important;
+    &:hover {
+        background-color:$color-second;
+    }
+    &:focus {
+        background-color:$color-second;
+        border:none !important;
+        box-shadow:lighten($color-second, 10%);
+    }
+}

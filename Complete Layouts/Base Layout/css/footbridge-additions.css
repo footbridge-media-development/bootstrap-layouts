@@ -29,6 +29,9 @@
   font-family: 'Lato';
   src: url(../fonts/Lato-Regular.ttf); }
 /****** base sets ********/
+h1, h2, h3, h4, h5, p {
+  word-wrap: break-word; }
+
 p {
   font-family: Raleway, sans-serif; }
 
@@ -101,6 +104,8 @@ a:hover {
 .secondary-bg-color {
   background-color: #dbdbdb;
   color: white; }
+  .secondary-bg-color p, .secondary-bg-color h2 {
+    color: white !important; }
 
 /******* ******** ********/
 /****** Navigation *******/
@@ -514,6 +519,16 @@ div.btn-tri-up {
       border-left: 500px solid transparent;
       border-right: 500px solid transparent;
       border-bottom: 500px solid #333; }
+
+.btn-info {
+  background-color: #333;
+  border: none !important; }
+  .btn-info:hover {
+    background-color: #29abe1; }
+  .btn-info:focus {
+    background-color: #29abe1;
+    border: none !important;
+    box-shadow: #56bde7; }
 
 /******* ******** ********/
 /***** Custom Elements ***/

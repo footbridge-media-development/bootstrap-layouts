@@ -50,6 +50,7 @@
 .icon-certificate:before { content: '\f0a3'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-comment-empty:before { content: '\f0e5'; } /* '' */
+.icon-chat-empty:before { content: '\f0e6'; } /* '' */
 .icon-lightbulb:before { content: '\f0eb'; } /* '' */
 .icon-food:before { content: '\f0f5'; } /* '' */
 .icon-plus-squared:before { content: '\f0fe'; } /* '' */
@@ -64,6 +65,7 @@
 .icon-paper-plane:before { content: '\f1d8'; } /* '' */
 .icon-paper-plane-empty:before { content: '\f1d9'; } /* '' */
 .icon-plug:before { content: '\f1e6'; } /* '' */
+.icon-yelp:before { content: '\f1e9'; } /* '' */
 .icon-cc-visa:before { content: '\f1f0'; } /* '' */
 .icon-cc-mastercard:before { content: '\f1f1'; } /* '' */
 .icon-cc-discover:before { content: '\f1f2'; } /* '' */

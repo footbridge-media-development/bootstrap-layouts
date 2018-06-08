@@ -32,6 +32,9 @@ a:hover {text-decoration:none;}
 	width:1200px;
 }
 
+.append-pipe > a:not(:last-child)::after{
+  content: " \007C ";
+}
 
 .secondary-bg-color{
 	background-color:$color-third;

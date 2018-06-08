@@ -24,7 +24,7 @@ $(document).ready(function(){
 			var container = element.parent();
 			var menu = container.children(".dropdown");
 			container.mouseleave(function(){
-				menu.hide("fast");
+				menu.hide();
 			})
 		});
 		

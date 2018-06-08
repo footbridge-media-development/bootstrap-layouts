@@ -96,32 +96,40 @@ RewriteRule ^(.+)$ / [L,R=301]
 
 RewriteCond %{REQUEST_URI} (.+)\.jpg$
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %1.jpeg -f
 RewriteRule ^(.+)$ %1.jpeg
 
 RewriteCond %{REQUEST_URI} (.+)\.jpeg$
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %1.JPG -f
 RewriteRule ^(.+)$ %1.JPG
 
 RewriteCond %{REQUEST_URI} (.+)\.JPG$
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %1.JPEG -f
 RewriteRule ^(.+)$ %1.JPEG
 
 RewriteCond %{REQUEST_URI} (.+)\.JPEG$
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %1.JPG -f
 RewriteRule ^(.+)$ %1.JPG [L]
 
 RewriteCond %{REQUEST_URI} (.+)\.png$
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %1.PNG -f
 RewriteRule ^(.+)$ %1.PNG
 
 RewriteCond %{REQUEST_URI} (.+)\.PNG$
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %1.png -f
 RewriteRule ^(.+)$ %1.png [L]
 
 RewriteCond %{REQUEST_URI} (.+)\.pdf$
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %1.PDF -f
 RewriteRule ^(.+)$ %1.PDF
 
 RewriteCond %{REQUEST_URI} (.+)\.PDF$
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %1.pdf -f
 RewriteRule ^(.+)$ %1.pdf [L]

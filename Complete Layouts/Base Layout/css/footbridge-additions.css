@@ -77,12 +77,15 @@ h1, h2, h4 {
   color: #c2cad1; }
 
 /******* Defaults********/
+* {
+  white-space: normal; }
+
 img, iframe, video {
   max-width: 100%; }
 
 a {
   cursor: pointer;
-  color: none; }
+  color: #333; }
 
 a:hover {
   text-decoration: none; }

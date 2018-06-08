@@ -1,4 +1,7 @@
 /******* Defaults********/
+* {
+    white-space:normal;
+}
 img, iframe, video{
 	max-width:100%;
 }
@@ -6,6 +9,7 @@ img, iframe, video{
 a {
     cursor: pointer;
     color:none;
+    color:$color-prime;
 }
 a:hover {text-decoration:none;}
 

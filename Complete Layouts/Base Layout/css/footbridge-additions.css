@@ -92,7 +92,7 @@ img, iframe, video {
 
 a {
   cursor: pointer;
-  color: #ff0000; }
+  color: #91AA9D; }
 
 a:hover {
   text-decoration: none; }
@@ -114,7 +114,7 @@ a:hover {
   content: " \007C "; }
 
 .secondary-bg-color {
-  background-color: #00B233;
+  background-color: #D1DBBD;
   color: white; }
   .secondary-bg-color p, .secondary-bg-color h2 {
     color: white !important; }
@@ -170,7 +170,7 @@ a:hover {
   padding: 0.6em 0.75em; }
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div a:hover {
-  background-color: #ff0000;
+  background-color: #91AA9D;
   color: white; }
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > div a {
@@ -223,7 +223,7 @@ a:hover {
   padding-bottom: 1rem; }
 
 #large-navigation-container-1 .navigation-links > div > div:hover {
-  background-color: #ff0000;
+  background-color: #91AA9D;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; }
 
@@ -251,7 +251,7 @@ a:hover {
   position: relative; }
 
 #large-navigation-container-1 .navigation-links > div > div .dropdown > div {
-  background-color: #ff0000;
+  background-color: #91AA9D;
   text-align: left; }
 
 #large-navigation-container-1 .navigation-links > div > div .dropdown > div a {
@@ -266,7 +266,7 @@ a:hover {
 
 #large-navigation-container-1 .navigation-links > div > div .dropdown > div:hover {
   transition: background-color 150ms;
-  background-color: #cc0000; }
+  background-color: #749483; }
 
 #large-navigation-container-1 .navigation-links > div > div .dropdown > div > a:hover {
   text-decoration: none; }
@@ -299,7 +299,7 @@ a:hover {
   z-index: 1; }
 
 #large-navigation-container-2 > div:nth-child(2) {
-  background-color: #ff0000; }
+  background-color: #91AA9D; }
 
 #large-navigation-container-2 .navigation-links > div > div {
   transition: all 450ms;
@@ -310,14 +310,14 @@ a:hover {
 #large-navigation-container-2 .navigation-links > div > div > a {
   display: block;
   text-align: center;
-  color: #00B233;
+  color: #D1DBBD;
   padding-left: .5rem;
   padding-right: .5rem;
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
 #large-navigation-container-2 .navigation-links > div > div:hover {
-  background-color: #cc0000;
+  background-color: #749483;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; }
 
@@ -348,7 +348,7 @@ a:hover {
   position: relative; }
 
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div {
-  background-color: #ff0000;
+  background-color: #91AA9D;
   text-align: left; }
 
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div a {
@@ -363,7 +363,7 @@ a:hover {
 
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div:hover {
   transition: background-color 150ms;
-  background-color: #cc0000; }
+  background-color: #749483; }
 
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div > a:hover {
   text-decoration: none; }
@@ -436,16 +436,16 @@ footer.fb-ftr-1 a {
     background-position: center center; } }
 /************** BTN CSS ********************/
 .btn-form {
-  background: #ff7300;
-  color: #ffc799;
+  background: #3E606F;
+  color: #89adbd;
   font-family: Unbuntu, sans-serif;
   font-size: 1.5em; }
   .btn-form:hover {
-    background: #cc5c00;
-    color: #ff7300 !important; }
+    background: #2c444e;
+    color: #3E606F !important; }
 
 .btn-sidebar {
-  background: #ff0000;
+  background: #91AA9D;
   width: 80%;
   box-sizing: border-box;
   -webkit-border-radius: 30px;
@@ -459,7 +459,7 @@ footer.fb-ftr-1 a {
   font-family: Unbuntu, sans-serif;
   font-size: 1.5em; }
   .btn-sidebar:hover {
-    background: #cc0000;
+    background: #749483;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
@@ -476,7 +476,7 @@ footer.fb-ftr-1 a {
   -webkit-border-radius: 30px;
   font-family: Unbuntu, sans-serif;
   border-radius: 30px;
-  background-color: #ff0000;
+  background-color: #91AA9D;
   color: #fff;
   font-size: 1.5rem;
   -webkit-transition: all .5s ease;
@@ -485,12 +485,12 @@ footer.fb-ftr-1 a {
   -o-transition: all .5s ease;
   transition: all .5s ease; }
   .btn-banner:hover {
-    background-color: #990000;
+    background-color: #5d786a;
     color: #fff !important; }
 
 .btn-tri-arrow {
-  background: #ff0000;
-  color: #ff7300;
+  background: #91AA9D;
+  color: #3E606F;
   font-family: Unbuntu, sans-serif; }
   .btn-tri-arrow::before {
     content: "\25B2";
@@ -502,7 +502,7 @@ footer.fb-ftr-1 a {
     transform: rotate(90deg) scale(1.5);
     padding: 2%; }
   .btn-tri-arrow:hover {
-    color: #cc5c00 !important; }
+    color: #2c444e !important; }
 
 div.btn-tri-up {
   position: relative; }
@@ -522,9 +522,9 @@ div.btn-tri-up {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
-      background: #ff0000;
+      background: #91AA9D;
       font-family: Unbuntu, sans-serif;
-      color: #00B233; }
+      color: #D1DBBD; }
     div.btn-tri-up div::before {
       content: "";
       display: block;
@@ -533,17 +533,17 @@ div.btn-tri-up {
       margin-left: -500px;
       border-left: 500px solid transparent;
       border-right: 500px solid transparent;
-      border-bottom: 500px solid #ff0000; }
+      border-bottom: 500px solid #91AA9D; }
 
 .btn-info {
-  background-color: #ff0000;
+  background-color: #91AA9D;
   border: none !important; }
   .btn-info:hover {
-    background-color: #ff7300; }
+    background-color: #3E606F; }
   .btn-info:focus {
-    background-color: #ff7300;
+    background-color: #3E606F;
     border: none !important;
-    box-shadow: #ff8f33; }
+    box-shadow: #507c90; }
 
 #accordion .card-header button {
   white-space: normal;
@@ -639,7 +639,7 @@ div.btn-tri-up {
 /**** Basic formats for good layouts *****/
 .goldylox {
   font-size: 2rem;
-  color: #ff0000;
+  color: #91AA9D;
   font-weight: 900;
   line-height: 1.25em;
   font-family: Unbuntu, sans-serif; }
@@ -649,7 +649,7 @@ div.btn-tri-up {
 
 .lilbear {
   font-size: 1.5rem;
-  color: #ff7300;
+  color: #3E606F;
   font-weight: 900;
   line-height: 1em; }
   @media screen and (max-width: 768px) {
@@ -658,7 +658,7 @@ div.btn-tri-up {
 
 .mamabear {
   font-size: 1.25rem;
-  color: #ff7300;
+  color: #3E606F;
   line-height: 1rem;
   font-family: Lato, sans-serif; }
 
@@ -686,15 +686,15 @@ div.btn-tri-up {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    color: #ff0000;
-    background: #ff7300;
+    color: #91AA9D;
+    background: #3E606F;
     box-sizing: border-box;
     font-family: Unbuntu, sans-serif;
     margin-bottom: 0;
-    border-bottom: 3px solid #ff0000; }
+    border-bottom: 3px solid #91AA9D; }
 
 .darken {
-  background-color: #ff0000; }
+  background-color: #91AA9D; }
   .darken p {
     color: white !important;
     line-height: 2rem !important; }
@@ -727,10 +727,10 @@ div.btn-tri-up {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#4c4c4c', GradientType=1 ); }
 
 .seconds {
-  color: #ff7300 !important; }
+  color: #3E606F !important; }
 
 .thirds {
-  color: #00B233; }
+  color: #D1DBBD; }
 
 .white {
   color: #fff !important; }
@@ -744,7 +744,7 @@ div.btn-tri-up {
   margin-top: -75px; }
 
 #large-navigation-container-2 {
-  background-color: rgba(255, 0, 0, 0.6);
+  background-color: rgba(62, 96, 111, 0.1);
   position: relative;
   /* Box shadow doesn't show without a z-index */
   z-index: 1; }

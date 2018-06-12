@@ -321,12 +321,14 @@ a:hover {
 
 #large-navigation-container-2 .navigation-links > div > div > .dropdown,
 #large-navigation-container-2 .navigation-links > div > div > .dropdown > div > .dropdown {
+  width: 100%;
   position: absolute;
   top: 100%;
   left: 0;
   min-width: 140%;
   max-width: 200%;
-  display: none;
+  /*display:none;*/
+  visibility: hidden;
   z-index: 2; }
 
 #large-navigation-container-2 .navigation-links > div > div > .dropdown > div > .dropdown {

@@ -737,12 +737,6 @@ div.btn-tri-up {
 
 /* custom scss for this particular layout */
 /* Custom classes and css for menu in the header */
-.absolutey {
-  position: absolute;
-  top: 0;
-  left: 35%;
-  margin-top: -75px; }
-
 #large-navigation-container-2 {
   background-color: rgba(62, 96, 111, 0.1);
   position: relative;

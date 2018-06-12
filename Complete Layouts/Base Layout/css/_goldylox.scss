@@ -1,6 +1,10 @@
 /**** Basic formats for good layouts *****/
 .goldylox {
-    font-size:2rem; color:$color-prime; font-weight:900; line-height:1.25em; font-family:$font-prime; }
+    font-size:2rem; color:$color-prime; font-weight:900; line-height:1.25em; font-family:$font-prime; 
+    @media screen and (max-width:$breakmed) {
+        font-size:18pt;
+    }
+}
 .lilbear {
     font-size:1.5rem; color:$color-second; font-weight:900; line-height:1em;  
     @media screen and (max-width:$breakmed){
@@ -70,20 +74,12 @@ border-radius: 10px;
         border-right: 0px solid rgba(255,255,255,.0) !important;
         }
     }
-#spec1 {
-    background:url(../images/banner-2.png) center no-repeat;
-      @media screen and (max-width: $breakmed){
-        background:$color-prime;
-    }
-}
+#spec1 {}
 .bgcover {
     background-size:cover !important;
     background-attachment:fixed !important;
     p {
         color:#fff !important;
-    }
-    h2 {
-        color:$color-second !important;
     }
 }
 .gradcover {
@@ -99,3 +95,4 @@ border-radius: 10px;
 
 .seconds { color:$color-second !important;}
 .thirds {color:$color-third;}
+.white {color:#fff !important;}

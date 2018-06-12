@@ -4,9 +4,15 @@ p {font-family: $font-second;}
 h1, h2, h4 {font-family:$font-prime;}
 
 .large {
-    font-size:4rem !important;
+    font-size:3rem !important;
+    @media screen and (min-width:$breakxl) {
+        font-size:4rem !important;
+    }
+    @media screen and (max-width:$breaklrg){
+        font-size:2.5rem !important;
+    }
     @media screen and (max-width:$breakmed) {
-        font-size:2rem !important;
+        font-size:1.75rem !important;
     }
     @media screen and (max-width:$breaksmall) {
         font-size:1.3rem;
@@ -15,7 +21,7 @@ h1, h2, h4 {font-family:$font-prime;}
 .med {
     font-size:3rem !important;
      @media screen and (max-width:$breakmed) {
-        font-size:1.5rem !important;
+        font-size:1.35rem !important;
     }
     @media screen and (max-width:$breaksmall) {
         font-size:1.1rem;
@@ -30,6 +36,7 @@ h1, h2, h4 {font-family:$font-prime;}
     }
 }
 .breadcrumb {
+    background-color: rgba(0,0,0,.05);
     padding: .5rem 1rem;
     a {
         color:#c2cad1;

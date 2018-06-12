@@ -39,10 +39,16 @@ h1, h2, h4 {
   font-family: Unbuntu, sans-serif; }
 
 .large {
-  font-size: 4rem !important; }
+  font-size: 3rem !important; }
+  @media screen and (min-width: 1200px) {
+    .large {
+      font-size: 4rem !important; } }
+  @media screen and (max-width: 992px) {
+    .large {
+      font-size: 2.5rem !important; } }
   @media screen and (max-width: 768px) {
     .large {
-      font-size: 2rem !important; } }
+      font-size: 1.75rem !important; } }
   @media screen and (max-width: 576px) {
     .large {
       font-size: 1.3rem; } }
@@ -51,7 +57,7 @@ h1, h2, h4 {
   font-size: 3rem !important; }
   @media screen and (max-width: 768px) {
     .med {
-      font-size: 1.5rem !important; } }
+      font-size: 1.35rem !important; } }
   @media screen and (max-width: 576px) {
     .med {
       font-size: 1.1rem; } }
@@ -66,6 +72,7 @@ h1, h2, h4 {
       font-size: .8rem; } }
 
 .breadcrumb {
+  background-color: rgba(0, 0, 0, 0.05);
   padding: .5rem 1rem; }
   .breadcrumb a {
     color: #c2cad1;
@@ -85,7 +92,7 @@ img, iframe, video {
 
 a {
   cursor: pointer;
-  color: #333; }
+  color: #ff0000; }
 
 a:hover {
   text-decoration: none; }
@@ -107,7 +114,7 @@ a:hover {
   content: " \007C "; }
 
 .secondary-bg-color {
-  background-color: #dbdbdb;
+  background-color: #00B233;
   color: white; }
   .secondary-bg-color p, .secondary-bg-color h2 {
     color: white !important; }
@@ -163,7 +170,7 @@ a:hover {
   padding: 0.6em 0.75em; }
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div a:hover {
-  background-color: #333;
+  background-color: #ff0000;
   color: white; }
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > div a {
@@ -216,7 +223,7 @@ a:hover {
   padding-bottom: 1rem; }
 
 #large-navigation-container-1 .navigation-links > div > div:hover {
-  background-color: #333;
+  background-color: #ff0000;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; }
 
@@ -244,7 +251,7 @@ a:hover {
   position: relative; }
 
 #large-navigation-container-1 .navigation-links > div > div .dropdown > div {
-  background-color: #333;
+  background-color: #ff0000;
   text-align: left; }
 
 #large-navigation-container-1 .navigation-links > div > div .dropdown > div a {
@@ -259,7 +266,7 @@ a:hover {
 
 #large-navigation-container-1 .navigation-links > div > div .dropdown > div:hover {
   transition: background-color 150ms;
-  background-color: #1a1a1a; }
+  background-color: #cc0000; }
 
 #large-navigation-container-1 .navigation-links > div > div .dropdown > div > a:hover {
   text-decoration: none; }
@@ -292,7 +299,7 @@ a:hover {
   z-index: 1; }
 
 #large-navigation-container-2 > div:nth-child(2) {
-  background-color: #333; }
+  background-color: #ff0000; }
 
 #large-navigation-container-2 .navigation-links > div > div {
   transition: all 450ms;
@@ -303,14 +310,14 @@ a:hover {
 #large-navigation-container-2 .navigation-links > div > div > a {
   display: block;
   text-align: center;
-  color: #dbdbdb;
+  color: #00B233;
   padding-left: .5rem;
   padding-right: .5rem;
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
 #large-navigation-container-2 .navigation-links > div > div:hover {
-  background-color: #1a1a1a;
+  background-color: #cc0000;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px; }
 
@@ -341,7 +348,7 @@ a:hover {
   position: relative; }
 
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div {
-  background-color: #333;
+  background-color: #ff0000;
   text-align: left; }
 
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div a {
@@ -356,7 +363,7 @@ a:hover {
 
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div:hover {
   transition: background-color 150ms;
-  background-color: #1a1a1a; }
+  background-color: #cc0000; }
 
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div > a:hover {
   text-decoration: none; }
@@ -429,16 +436,16 @@ footer.fb-ftr-1 a {
     background-position: center center; } }
 /************** BTN CSS ********************/
 .btn-form {
-  background: #29abe1;
-  color: #afe0f4;
+  background: #ff7300;
+  color: #ffc799;
   font-family: Unbuntu, sans-serif;
   font-size: 1.5em; }
   .btn-form:hover {
-    background: #1a8dbd;
-    color: #29abe1 !important; }
+    background: #cc5c00;
+    color: #ff7300 !important; }
 
 .btn-sidebar {
-  background: #333;
+  background: #ff0000;
   width: 80%;
   box-sizing: border-box;
   -webkit-border-radius: 30px;
@@ -452,7 +459,7 @@ footer.fb-ftr-1 a {
   font-family: Unbuntu, sans-serif;
   font-size: 1.5em; }
   .btn-sidebar:hover {
-    background: #1a1a1a;
+    background: #cc0000;
     -webkit-transition: all .5s ease;
     -moz-transition: all .5s ease;
     -ms-transition: all .5s ease;
@@ -469,7 +476,7 @@ footer.fb-ftr-1 a {
   -webkit-border-radius: 30px;
   font-family: Unbuntu, sans-serif;
   border-radius: 30px;
-  background-color: #333;
+  background-color: #ff0000;
   color: #fff;
   font-size: 1.5rem;
   -webkit-transition: all .5s ease;
@@ -478,12 +485,12 @@ footer.fb-ftr-1 a {
   -o-transition: all .5s ease;
   transition: all .5s ease; }
   .btn-banner:hover {
-    background-color: black;
+    background-color: #990000;
     color: #fff !important; }
 
 .btn-tri-arrow {
-  background: #333;
-  color: #29abe1;
+  background: #ff0000;
+  color: #ff7300;
   font-family: Unbuntu, sans-serif; }
   .btn-tri-arrow::before {
     content: "\25B2";
@@ -495,7 +502,7 @@ footer.fb-ftr-1 a {
     transform: rotate(90deg) scale(1.5);
     padding: 2%; }
   .btn-tri-arrow:hover {
-    color: #1a8dbd !important; }
+    color: #cc5c00 !important; }
 
 div.btn-tri-up {
   position: relative; }
@@ -515,9 +522,9 @@ div.btn-tri-up {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
-      background: #333;
+      background: #ff0000;
       font-family: Unbuntu, sans-serif;
-      color: #dbdbdb; }
+      color: #00B233; }
     div.btn-tri-up div::before {
       content: "";
       display: block;
@@ -526,17 +533,17 @@ div.btn-tri-up {
       margin-left: -500px;
       border-left: 500px solid transparent;
       border-right: 500px solid transparent;
-      border-bottom: 500px solid #333; }
+      border-bottom: 500px solid #ff0000; }
 
 .btn-info {
-  background-color: #333;
+  background-color: #ff0000;
   border: none !important; }
   .btn-info:hover {
-    background-color: #29abe1; }
+    background-color: #ff7300; }
   .btn-info:focus {
-    background-color: #29abe1;
+    background-color: #ff7300;
     border: none !important;
-    box-shadow: #56bde7; }
+    box-shadow: #ff8f33; }
 
 #accordion .card-header button {
   white-space: normal;
@@ -632,14 +639,17 @@ div.btn-tri-up {
 /**** Basic formats for good layouts *****/
 .goldylox {
   font-size: 2rem;
-  color: #333;
+  color: #ff0000;
   font-weight: 900;
   line-height: 1.25em;
   font-family: Unbuntu, sans-serif; }
+  @media screen and (max-width: 768px) {
+    .goldylox {
+      font-size: 18pt; } }
 
 .lilbear {
   font-size: 1.5rem;
-  color: #29abe1;
+  color: #ff7300;
   font-weight: 900;
   line-height: 1em; }
   @media screen and (max-width: 768px) {
@@ -648,7 +658,7 @@ div.btn-tri-up {
 
 .mamabear {
   font-size: 1.25rem;
-  color: #29abe1;
+  color: #ff7300;
   line-height: 1rem;
   font-family: Lato, sans-serif; }
 
@@ -676,15 +686,15 @@ div.btn-tri-up {
     width: 100%;
     text-align: center;
     text-transform: uppercase;
-    color: #333;
-    background: #29abe1;
+    color: #ff0000;
+    background: #ff7300;
     box-sizing: border-box;
     font-family: Unbuntu, sans-serif;
     margin-bottom: 0;
-    border-bottom: 3px solid #333; }
+    border-bottom: 3px solid #ff0000; }
 
 .darken {
-  background-color: #333; }
+  background-color: #ff0000; }
   .darken p {
     color: white !important;
     line-height: 2rem !important; }
@@ -700,19 +710,11 @@ div.btn-tri-up {
   .col-md-border {
     border-right: 0px solid rgba(255, 255, 255, 0) !important; } }
 
-#spec1 {
-  background: url(../images/banner-2.png) center no-repeat; }
-  @media screen and (max-width: 768px) {
-    #spec1 {
-      background: #333; } }
-
 .bgcover {
   background-size: cover !important;
   background-attachment: fixed !important; }
   .bgcover p {
     color: #fff !important; }
-  .bgcover h2 {
-    color: #29abe1 !important; }
 
 .gradcover {
   background: #131313;
@@ -725,10 +727,13 @@ div.btn-tri-up {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#4c4c4c', GradientType=1 ); }
 
 .seconds {
-  color: #29abe1 !important; }
+  color: #ff7300 !important; }
 
 .thirds {
-  color: #dbdbdb; }
+  color: #00B233; }
+
+.white {
+  color: #fff !important; }
 
 /* custom scss for this particular layout */
 /* Custom classes and css for menu in the header */
@@ -739,7 +744,7 @@ div.btn-tri-up {
   margin-top: -75px; }
 
 #large-navigation-container-2 {
-  background-color: rgba(51, 51, 51, 0.6);
+  background-color: rgba(255, 0, 0, 0.6);
   position: relative;
   /* Box shadow doesn't show without a z-index */
   z-index: 1; }

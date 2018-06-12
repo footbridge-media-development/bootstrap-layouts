@@ -138,6 +138,7 @@ a:hover {
   /* So there are no scroll bars when animating the child div into view */ }
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div {
+  overflow: auto;
   z-index: 11;
   box-shadow: 0 0 5px 3px black;
   background-color: white;

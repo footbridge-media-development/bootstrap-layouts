@@ -82,6 +82,7 @@ ErrorDocument 404 /404.php
 # New servers may not handle .php errors correctly
 RewriteCond %{REQUEST_URI} \.php$
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond /404.php -f
 RewriteRule ^(.+)$ /404.php
 
 # Redirect index pages to non-index duplicates

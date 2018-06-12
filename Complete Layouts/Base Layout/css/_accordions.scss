@@ -1,0 +1,6 @@
+// Fix Bootstrap's accordion headers overflowing
+
+#accordion .card-header button{
+	white-space:normal;
+	text-align:left;
+}

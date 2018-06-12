@@ -535,6 +535,10 @@ div.btn-tri-up {
     border: none !important;
     box-shadow: #56bde7; }
 
+#accordion .card-header button {
+  white-space: normal;
+  text-align: left; }
+
 /******* ******** ********/
 /***** Custom Elements ***/
 /******* ******** ********/

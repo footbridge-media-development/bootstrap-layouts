@@ -119,6 +119,13 @@ a:hover {
   .secondary-bg-color p, .secondary-bg-color h2 {
     color: white !important; }
 
+.gallthumbs {
+  margin-bottom: 0 !important;
+  margin-top: 0; }
+
+.thumbnail {
+  margin: 0 !important; }
+
 /******* ******** ********/
 /****** Navigation *******/
 /******* ******** ********/

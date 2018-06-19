@@ -17,3 +17,24 @@
             background:none
            
         }
+#large-navigation-container-2 {
+    .logo-cntr {
+        position:relative;
+        margin: 0 10%;
+
+        img {
+            position: absolute;
+            top: 75%;
+            left:50%;
+            -webkit-transform: translate(-50%,-50%);
+            -ms-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+            max-width:none;
+            width:400px;
+            @media screen and (max-width:$breaklrg) {
+                width:200px !important;
+            }
+            
+        }
+    }
+}

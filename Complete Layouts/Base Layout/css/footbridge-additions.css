@@ -663,6 +663,9 @@ div.btn-tri-up {
   -ms-transform: translate(-50%, -50%); }
 
 /**** Basic formats for good layouts *****/
+@font-face {
+  font-family: 'fontello';
+  src: url(../fontello/font/fontello.ttf); }
 .goldylox {
   font-size: 2rem;
   color: #91AA9D;
@@ -767,6 +770,39 @@ div.btn-tri-up {
   background: white;
   -webkit-border-radius: 20px;
   border-radius: 20px; }
+
+ol.listbad li {
+  padding: 1%; }
+
+ul.listpad li {
+  padding: 1%; }
+
+.icon {
+  list-style-type: none;
+  padding: 0; }
+  .icon li::before {
+    font-family: "fontello";
+    text-decoration: none;
+    content: "\e819 \00a0";
+    display: inline-block;
+    speak: none; }
+
+.dashed {
+  list-style-type: none;
+  padding: 0; }
+  .dashed li::before {
+    content: "-\00a0";
+    display: inline-block; }
+
+.checked {
+  list-style-type: none;
+  padding: 0; }
+  .checked li::before {
+    font-family: "fontello";
+    text-decoration: none;
+    content: "\e80f \00a0";
+    display: inline-block;
+    speak: none; }
 
 /* custom scss for this particular layout */
 /* Custom classes and css for menu in the header */

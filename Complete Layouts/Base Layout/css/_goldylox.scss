@@ -1,4 +1,8 @@
 /**** Basic formats for good layouts *****/
+@font-face {
+    font-family:'fontello';
+    src:url(../fontello/font/fontello.ttf);
+}
 .goldylox {
     font-size:2rem; color:$color-prime; font-weight:900; line-height:1.25em; font-family:$font-prime; 
     @media screen and (max-width:$breakmed) {
@@ -104,4 +108,58 @@ border-radius: 10px;
     -webkit-border-radius: 20px;
     border-radius: 20px;
    
+}
+ol {
+    &.listbad {
+        li {
+            padding:1%;
+        }
+    }
+}
+ul {
+    &.listpad {
+        li {
+            padding:1%;
+        }
+    }
+}
+.icon {
+    list-style-type:none;
+    padding:0;
+       
+    li {
+        
+        &::before {
+            font-family: "fontello";
+            text-decoration:none;
+            content: "\e819 \00a0";
+            display:inline-block;
+            speak:none;
+        } 
+    }
+}
+.dashed {
+    list-style-type:none;
+    padding:0;
+    li {
+        
+        &::before {
+            content: "-\00a0";
+            display:inline-block;
+        } 
+    }
+}
+.checked {
+    list-style-type:none;
+    padding:0;
+    li {
+        
+        &::before {
+            font-family: "fontello";
+            text-decoration:none;
+            content: "\e80f \00a0";
+            display:inline-block;
+            speak:none;
+        } 
+    }
 }

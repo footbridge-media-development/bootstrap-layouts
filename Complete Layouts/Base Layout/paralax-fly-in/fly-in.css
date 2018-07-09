@@ -1,0 +1,67 @@
+.fly-in {
+  position: relative; }
+  .fly-in .flybox2 {
+    width: 50%;
+    margin: 10% 0; }
+    .fly-in .flybox2 p {
+      background: #fff; }
+    @media screen and (min-width: 1100px) {
+      .fly-in .flybox2 {
+        width: 25%; } }
+    @media screen and (max-width: 768px) {
+      .fly-in .flybox2 {
+        width: 90%;
+        margin-left: 5%; } }
+  .fly-in .flybox {
+    width: 50%;
+    margin: 10% 0;
+    margin-left: 50%; }
+    .fly-in .flybox p {
+      background: #fff; }
+    @media screen and (min-width: 1100px) {
+      .fly-in .flybox {
+        margin-left: 75%; } }
+    @media screen and (max-width: 768px) {
+      .fly-in .flybox {
+        width: 90%;
+        margin-left: 5%; } }
+
+.fly-ins {
+  transform: translateX(150px);
+  animation: come-in 1s ease forwards;
+  animation-delay: .15s; }
+  .fly-ins:nth-child(odd) {
+    animation-duration: 0.6s; }
+  @media screen and (max-width: 768px) {
+    .fly-ins {
+      animation-delay: 0s; } }
+
+.fly-ins2 {
+  transform: translateX(-150px);
+  animation: come-in 1s ease forwards;
+  animation-delay: .15s; }
+  .fly-ins2:nth-child(odd) {
+    animation-duration: 0.6s; }
+  @media screen and (max-width: 768px) {
+    .fly-ins2 {
+      animation-delay: 0s; } }
+
+.already-visible {
+  transform: translateX(0);
+  animation: none; }
+
+@keyframes come-in {
+  to {
+    transform: translateY(0); } }
+.bg-1 {
+  background: url(../images/banner-1-1.jpg); }
+
+.bg-2 {
+  background: url(../images/banner-2.png); }
+
+.large-bg {
+  min-height: 500px;
+  background-size: cover;
+  background-position: center; }
+
+/*# sourceMappingURL=fly-in.css.map */

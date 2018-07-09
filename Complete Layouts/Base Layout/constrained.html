@@ -43,6 +43,7 @@
 				</div>
 				<div class="navigation-links">
 					<div>
+					
 						<a href="#">Home</a>
 					</div>
 					<div>
@@ -296,6 +297,30 @@
 				<h1>H1 goes here</h1>
 				<p><strong>Your Company</strong>'s new web site will look like this. At this stage of the web site creation and build process, we are only concerned with the visual aesthetics of your page - the look and feel of your new website.</p>
 				<p>Our graphic designers have prepared this unique layout - based on any previous marketing materials you may have provided and the style of site you indicated. This written content will be replaced once you approve the look and feel of your design.</p>
+				<div class="row">
+                    <ul class="checked col-4">
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                    </ul>
+                    <ul class="icon col-4 listpad">
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                    </ul>
+                    <ul class="dashed col-4">
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                        <li>Lipsum lipsum lipsum</li>
+                    </ul>    
+				</div>
+				
 				<div class="container row">
 					<div class="col-md-6 my-3 my-md-1">
 						<h2 class="goldylox">What Our Clients Are Saying:</h2>
@@ -412,44 +437,51 @@
 					</div>
 				</div>
 			</div><!--- SIDEBAR STARTS=============================================-->
-			<div class="col-12 col-md-4 sidebar p-1">
-				<p class="goldylox text-center">Contact Us!</p>
-				<div id="wufoo-mywt4d81dxoh3v">
-					Fill out my <a href="https://aarono.wufoo.com/forms/mywt4d81dxoh3v">online form</a>.
-				</div>
-				<script type="text/javascript">
-				var mywt4d81dxoh3v;(function(d, t) {
-				                var s = d.createElement(t), options = {
-				                'userName':'aarono',
-				                'formHash':'mywt4d81dxoh3v',
-				                'autoResize':true,
-				                'height':'580',
-				                'async':true,
-				                'host':'wufoo.com',
-				                'header':'hide',
-				                'ssl':true};
-				                s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-				                s.onload = s.onreadystatechange = function() {
-				                var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-				                try { mywt4d81dxoh3v = new WufooForm();mywt4d81dxoh3v.initialize(options);mywt4d81dxoh3v.display(); } catch (e) {}};
-				                var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-				                })(document, 'script');
-				</script>
-				<div class="w-100"></div>
-				<div class="justify-content-center text-center align-middle my-3">
-					<a href="#" class="btn btn-sidebar">Submit Feedback</a>
-				</div>
-				<div class="justify-content-center text-center align-middle my-5">
-					<a href="#link"><i class="icon-facebook-circled goldylox"></i></a><a href="#link"><i class="icon-twitter goldylox"></i></a><a href="#link"><i class="icon-gplus-circled goldylox"></i></a>
-				</div>
+			<div id="sidebar" class="col-12 col-md-4 d-inline-block">
+			    <div class="row h-100 d-flex">
+                    <div id="wufoo-hold " class="col-12 mt-3">
+                        <p class="goldylox text-center">Contact Us!</p>
+                        <div id="wufoo-mywt4d81dxoh3v">
+                        Fill out my <a href="https://aarono.wufoo.com/forms/mywt4d81dxoh3v">online form</a>.
+                        </div>
+                        <script type="text/javascript">
+                        var mywt4d81dxoh3v;(function(d, t) {
+                                        var s = d.createElement(t), options = {
+                                        'userName':'aarono',
+                                        'formHash':'mywt4d81dxoh3v',
+                                        'autoResize':true,
+                                        'height':'580',
+                                        'async':true,
+                                        'host':'wufoo.com',
+                                        'header':'hide',
+                                        'ssl':true};
+                                        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+                                        s.onload = s.onreadystatechange = function() {
+                                        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                                        try { mywt4d81dxoh3v = new WufooForm();mywt4d81dxoh3v.initialize(options);mywt4d81dxoh3v.display(); } catch (e) {}};
+                                        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                                        })(document, 'script');
+                        </script>
+				        <div class="w-100"></div>
+                    </div>
+                    <div id="button-hold" class="col-12 justify-content-center text-center align-self-start">
+                         <a href="#" class="btn btn-sidebar my-2">Submit Feedback</a>
+                         <a href="#" class="btn btn-sidebar my-2">Submit Feedback</a>
+                         <a href="#" class="btn btn-sidebar my-2">Submit Feedback</a>
+                    </div>
+				 
+				    <div class="justify-content-center text-center align-items-end d-flex w-100 mb-3">
+                        <a href="#link"><i class="icon-facebook-circled goldylox"></i></a><a href="#link"><i class="icon-twitter goldylox"></i></a><a href="#link"><i class="icon-gplus-circled goldylox"></i></a>
+                    </div>
+			    </div>
 			</div>
 		</div>
 	</div><!-- Footer -->
 	<footer class="fb-ftr-1">
 		<div class="container">
 			<div class="row px-5 py-3">
-				<div class="col-sm-6 col-md-3 pb-3"><img alt="logo" src="images/logo.png" width="150px"></div>
-				<div class="col-sm-6 col-md-3">
+				<div class="col-sm-6 col-md-3 pb-3 text-center text-md-left"><img alt="logo" src="images/logo.png" width="150px"></div>
+				<div class="col-sm-6 col-md-3 text-center text-md-left">
 					<h4>Contact</h4>
 					<div class="contact pb-3">
 						<p itemprop="legalName">Company Name</p>
@@ -460,7 +492,7 @@
 						<p>Phone: <span itemprop="telephone">xxx-xxx-xxxx</span></p>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
+				<div class="col-sm-6 col-md-3 text-center text-md-left">
 					<h4>Quick Links</h4>
 					<div class="quick-links pb-3">
 						<a href="#link/">Google Places</a>
@@ -470,7 +502,7 @@
 						<a href="#link/">Sitemap</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3">
+				<div class="col-sm-6 col-md-3 text-center text-md-left">
 					<h4>Service Areas</h4>
 					<div class="service-areas pb-3">
 						<a href="#link">City, ST</a>

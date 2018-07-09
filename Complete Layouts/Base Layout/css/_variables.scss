@@ -8,16 +8,18 @@
 	src: url(../fonts/Ubuntu-BoldItalic.ttf);
 }
 @font-face {
-    font-family:'Lato';
-    src: url(../fonts/Lato-Regular.ttf);
+    font-family:'Lime';
+    src: url(../fonts/Limelight-Regular.ttf);
 }
 $breaksmall: 576px;
 $breakmed: 768px;
 $breaklrg: 992px;
-$color-prime: #333;
-$color-second:#29abe1;
-$color-third:#dbdbdb;
+$breakxl: 1200px;
+$color-prime: #91AA9D;
+$color-second:#3E606F;
+$color-third:#D1DBBD;
 $color-alpha:rgba(41, 171, 255, 0.7);
 $font-prime: Unbuntu, sans-serif;
 $font-second: Raleway, sans-serif;
 $font-third: Lato, sans-serif;
+$bg-special: url(../images/btn-cover2.png) repeat;

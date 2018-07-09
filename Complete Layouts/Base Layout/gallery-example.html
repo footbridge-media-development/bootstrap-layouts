@@ -26,7 +26,7 @@
 </head>
 <body>
 	<!-- Small-screen navigation -->
-	<div class="d-block d-lg-none" id="small-navigation-container-1">
+	<div class="d-block d-md-none" id="small-navigation-container-1">
 		<div class="d-flex align-items-center">
 			<div class="p-2 col"><img alt="Bootstrap logo" src="images/logo.png" width="100"></div>
 			<div class="p-1 col-6">
@@ -112,8 +112,8 @@
 			</div>
 		</div>
 	</div><!-- Large-screen navigation -->
-	<div class="d-none d-lg-block pt-2" id="large-navigation-container-2">
-		<div class="row big-wrap mx-auto py-2 align-items-center">
+	<div class="d-none d-md-block pt-2" id="large-navigation-container-2">
+		<div class="row big-wrap mx-auto py-2 align-items-center cTop">
 			<div class="col-6 text-center"><img src="images/logo.png" width="60%;"></div>
 			<div class="col text-center">
 
@@ -126,7 +126,7 @@
 		</div>
 		<div>
 			<div class="container-fluid navigation-links big-wrap mx-auto">
-				<div class="row">
+				<div class="row cMenub">
 					<div class="col">
 						<a href="#">Home</a>
 					</div>
@@ -197,182 +197,24 @@
 			</div>
 		</div>
 	</div><!-- Banner -->
-	<div id="banner">
-		<div class="carousel slide" data-ride="carousel" id="heroCarousel">
-			<ol class="carousel-indicators">
-				<li class="active" data-slide-to="0" data-target="#heroCarousel"></li>
-				<li data-slide-to="1" data-target="#heroCarousel"></li>
-				<li data-slide-to="2" data-target="#heroCarousel"></li>
-			</ol>
-			<div class="carousel-inner">
-				<div class="carousel-item active align-items-center p-0">
-					<div style="background-image:url('images/banner-1.jpg');"></div>
-					<div class="carousel-caption d-flex align-items-center text-center">
-						<div class="flex-flow text-center align-items-center col-12">
-						  <h5 class="text-center">Some Banner Text Here</h5>
-						  <a href="#" class="btn btn-banner">Get A Quote</a>
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item align-items-center p-0">
-					<div style="background-image:url('images/banner-1.jpg');"></div>
-					<div class="carousel-caption d-flex align-items-center text-center">
-						<div class="flex-flow text-center align-items-center col-12">
-						  <h5 class="text-center">Some Banner Text Here</h5>
-
-						</div>
-					</div>
-				</div>
-				<div class="carousel-item align-items-center p-0">
-					<div style="background-image:url('images/banner-1.jpg');"></div>
-					<div class="carousel-caption d-flex align-items-center text-center">
-						<div class="flex-flow text-center align-items-center col-12">
-						  <h5 class="text-center">Some Banner Text Here</h5>
-
-						</div>
-					</div>
-				</div>
-			</div><a class="carousel-control-prev" data-slide="prev" href="#heroCarousel" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next" href="#heroCarousel" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
-		</div>
-	</div><!-- Content -->
-	<div class="container-fluid" id="content">
-		<div class="row">
-			<div class="secondary-bg-color p-4 col-12">
-				<h1 class="text-center">Emergency Service Contact</h1>
-				<p class="goldylox text-center">xxx-xxx-xxxx</p>
-				<div class="text-center pt-3">
-					<a class="btn btn-form" href="#"><span>REQUEST SERVICE NOW!</span></a>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<div class="p-4 col-md col-sm-12 servbox">
-				<h2 class="p-2">service1</h2>
-				<div class="overlay-container">
-					<img alt="" class="overlay-bg-image" src="images/emergency-service.jpg">
-					<div class="overlay from-top">
-						<div class="overlay-text">
-							<span>Learn More</span> <a href="#link"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="p-4 col-md col-sm-12 servbox">
-				<h2 class="p-2">service2</h2>
-				<div class="overlay-container">
-					<img alt="" class="overlay-bg-image" src="images/emergency-service.jpg">
-					<div class="overlay from-top">
-						<div class="overlay-text">
-							<span>Learn More</span> <a href="#link"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="p-4 col-md col-sm-12 servbox">
-				<h2 class="p-2">Service3</h2>
-				<div class="overlay-container">
-					<img alt="" class="overlay-bg-image" src="images/emergency-service.jpg">
-					<div class="overlay from-top">
-						<div class="overlay-text">
-							<span>Learn More</span> <a href="#link"></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="big-wrap mx-auto row justify-content-center p-md-5 p-1">
-		<div class="w-100"></div>
-            <nav aria-label="breadcrumb" class="w-100">
+	
+	<!-- Content -->
+	 <nav aria-label="breadcrumb" class="w-100">
                 <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
                     <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
-                    <li class="breadcrumb-item"><a href="#" itemprop="item"><span itemprop="name">Library</span></a><meta itemprop="position" content="2"></li>
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Library</span></a><meta itemprop="position" content="2"></li>
                     <li class="breadcrumb-item active" aria-current="page"><a href="#" itemprop="item"><span itemprop="name">Data</span></a><meta itemprop="position" content="3"></li>
                 </ol>
             </nav>
-			<div class="col-12 col-md-8">
+	<div class="container big-wrap mx-auto" id="content">
+        <div id="body" class="row justify-content-center p-1">
+			<div class="col-12 col-md-8 p-md-3">
 				<h1>H1 goes here</h1>
 				<p><strong>Your Company</strong>'s new web site will look like this. At this stage of the web site creation and build process, we are only concerned with the visual aesthetics of your page - the look and feel of your new website.</p>
 				<p>Our graphic designers have prepared this unique layout - based on any previous marketing materials you may have provided and the style of site you indicated. This written content will be replaced once you approve the look and feel of your design.</p>
-				<div class="container row">
-					<div class="col-md-6 my-3 my-md-1">
-						<h2 class="goldylox">What Our Clients Are Saying:</h2>
-						<div class="carousel slide" data-ride="carousel" id="testimonials">
-							<div class="carousel-inner" role="listbox">
-								<div class="carousel-item active">
-									<p class="testimonial p-3"><i class="icon-quote-left"></i>Review body text Lipsum Lipsum Lipsum LipsumLipsumLipsum LipsumLipsum Lipsum Lipsum Lipsum LipsumLipsum[...]<i class="icon-quote-right"></i></p><a class="btn btn-info" href="#link">Read More</a>
-								</div>
-								<div class="carousel-item">
-									<p class="testimonial p-3"><i class="icon-quote-left"></i>Review body text Lipsum Lipsum Lipsum LipsumLipsumLipsum LipsumLipsum Lipsum Lipsum Lipsum LipsumLipsum[...]<i class="icon-quote-right"></i></p><a class="btn btn-info" href="#link">Read More</a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!------- EXPANDABLE CONTENT --------->
-                      <div class="col-md-6 my-3 my-md-1">
-                          <h2 class="goldylox">Why Choose Us?</h2>
-                          <p>In this final section, we'll review the reasons why site visitors should use your services. Our skilled writing staff will hit main key points about your unique services and what sets you apart from the competition.</p>
-                          <a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">+</a>
-                          <div class="collapse" id="collapseExample">
-                              <div class="card card-body">
-                                  <p>Hidden content to show here</p>
-                                  <p>Hidden content to show here</p>
-                                  <p>Hidden content to show here</p>
-                                  <p>Hidden content to show here</p>
-                                  <p>Hidden content to show here</p>
-                                  <p>Hidden content to show here</p>
-                                  <p>Hidden content to show here</p>
-                                  <p>Hidden content to show here</p>
-                              </div>
-                          </div>
-                      </div>
-				</div>
-				<!------ ACRODIAN EXAMPLE --------->
-                      <div id="accordion" class="col-12 py-4">
-                          <div class="card">
-                            <div class="card-header" id="headingOne">
-                              <h5 class="mb-0">
-                                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Collapsible Group Item #1
-                                </button>
-                              </h5>
-                            </div>
-                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                              <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header" id="headingTwo">
-                              <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                  Collapsible Group Item #2
-                                </button>
-                              </h5>
-                            </div>
-                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                              <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                            </div>
-                          </div>
-                          <div class="card">
-                            <div class="card-header" id="headingThree">
-                              <h5 class="mb-0">
-                                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                  Collapsible Group Item #3
-                                </button>
-                              </h5>
-                            </div>
-                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                              <div class="card-body">
-                                Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                              </div>
-                            </div>
-                          </div>
-                        </div>
+				<h2>Gallery Light Box</h2>
                 <!---- LIGHT BOX THUMBS------>
-				<div class="container row">
+				<div class="row container-fluid">
 					<div class="col p-0">
 						<div class="thumbnail"><img data-target="#myModal1" data-toggle="modal" src="images/gallery/benches.jpg"></div>
 					</div>
@@ -385,6 +227,7 @@
 					<div class="col p-0">
 						<div class="thumbnail"><img data-target="#myModal1" data-toggle="modal" src="images/gallery/benches.jpg"></div>
 					</div>
+					
 				</div><!---The Lighbox =-->
 				<div class="modal fade" id="myModal1" role="img">
 					<div class="modal-dialog modal-lg">
@@ -401,16 +244,154 @@
 						<div class="modal-content"><img src="images/gallery/tunnel.jpg" style="width:100%;"></div>
 					</div>
 				</div>
-				<div class="container-fluid row">
+				<!---Scrolling Gallery With Thumbs----->
+				<hr>
+				<h2>Gallery Scroller</h2>
+				
+				<div class="row container-fluid justify-content-center">
+                    <div id="carouselGallery" class="carousel slide cGal" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/gallery/benches.jpg" class="d-block w-100" alt="alt here">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/gallery/bridge.jpg" class="d-block" alt="alt here">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/gallery/coast.jpg" class="d-block" alt="alt here">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/gallery/tunnel.jpg" class="d-block" alt="alt here">
+                            </div>
+                        </div>
+                            <a class="carousel-control-prev" href="#carouselGallery" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselGallery" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>        
+                    </div>
+			    </div>
+                <div class="row container-fluid justify-content-center">
+                    <div class="col p-0">
+                        <div class="thumbnail">
+                            <img data-target="#carouselGallery" data-slide-to="0" class="active" src="images/gallery/benches.jpg">
+                        </div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="thumbnail">
+                            <img data-target="#carouselGallery" data-slide-to="1" class="active" src="images/gallery/bridge.jpg">
+                        </div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="thumbnail">
+                            <img data-target="#carouselGallery" data-slide-to="2" class="active" src="images/gallery/coast.jpg">
+                        </div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="thumbnail">
+                            <img data-target="#carouselGallery" data-slide-to="3" class="active" src="images/gallery/tunnel.jpg">
+                        </div>
+                    </div>
+				</div>
+				<!---Scrolling Gallery With Thumbs and light box ----->
+				<hr>
+				<h2>Gallery Scroller In Light Box</h2>
+				<div class="modal fade" id="sBm">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+                            <div>
+                                <div id="lCg" class="carousel slide cGal align-self-middle justify-content-center" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="images/gallery/benches.jpg" class="d-block w-100" alt="alt here">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/gallery/bridge.jpg" class="d-block" alt="alt here">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/gallery/coast.jpg" class="d-block" alt="alt here">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/gallery/tunnel.jpg" class="d-block" alt="alt here">
+                                        </div>
+                                    </div>
+                                        <a class="carousel-control-prev" href="#lCg" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#lCg" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                        </a>        
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+				
+			
+                <div class="row container justify-content-center mx-auto">
+                   <ul class="list-inline d-flex gallthumbs">
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="0">
+                               <img src="images/gallery/benches.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="1">
+                               <img src="images/gallery/bridge.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="2">
+                               <img src="images/gallery/coast.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="3">
+                               <img src="images/gallery/tunnel.jpg">
+                           </a>
+                       </li>
+                   </ul>  
+                   <ul class="list-inline d-flex gallthumbs">
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="0">
+                               <img src="images/gallery/benches.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="1">
+                               <img src="images/gallery/bridge.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="2">
+                               <img src="images/gallery/coast.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="3">
+                               <img src="images/gallery/tunnel.jpg">
+                           </a>
+                       </li>
+                   </ul>                                      
+				</div>
+				
+				
+				<div class="row">
 					<div class="col-12 mt-5">
 						<h3 class="small text-center">
-							If you are looking for a *********** in the ******* area, please call (xxx) xxx-xxxx or complete our <a class="btn btn-form p-2 m-1" href="#"><span>Online Request Form</span></a>
+							If you are looking for a *********** in the ******* area, please call (xxx) xxx-xxxx or complete our <a class="btn btn-form p-1 m-1" href="#"><span>Online Request Form</span></a>
 						</h3>
 					</div>
 				</div>
 			</div>
-<!--- SIDE BARSTARTS=============================================-->
-			<div id="sidebar" class="col-12 col-md-4 d-inline-block">
+			
+			<!--- SIDEBAR STARTS=============================================-->
+			<div id="sidebar" class="col-12 col-md-4 d-inline-block p-md-2">
 			    <div class="row h-100 d-flex">
                     <div id="wufoo-hold " class="col-12 mt-3">
                         <p class="goldylox text-center">Contact Us!</p>
@@ -448,13 +429,17 @@
                     </div>
 			    </div>
 			</div>
-		</div>
-	</div><!-- Footer -->
+        </div> 
+    </div>
+
+		
+	
+	<!-- Footer -->
 	<footer class="fb-ftr-1">
 		<div class="container">
 			<div class="row px-5 py-3">
-				<div class="col-sm-6 col-md-3 pb-3 text-center text-md-left"><img alt="logo" src="images/logo.png" width="150px"></div>
-				<div class="col-sm-6 col-md-3 text-center text-md-left">
+				<div class="col-sm-6 col-md-3 pb-3"><img alt="logo" src="images/logo.png" width="150px"></div>
+				<div class="col-sm-6 col-md-3">
 					<h4>Contact</h4>
 					<div class="contact pb-3">
 						<p itemprop="legalName">Company Name</p>
@@ -465,7 +450,7 @@
 						<p>Phone: <span itemprop="telephone">xxx-xxx-xxxx</span></p>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3 text-center text-md-left">
+				<div class="col-sm-6 col-md-3">
 					<h4>Quick Links</h4>
 					<div class="quick-links pb-3">
 						<a href="#link/">Google Places</a>
@@ -475,7 +460,7 @@
 						<a href="#link/">Sitemap</a>
 					</div>
 				</div>
-				<div class="col-sm-6 col-md-3 text-center text-md-left">
+				<div class="col-sm-6 col-md-3">
 					<h4>Service Areas</h4>
 					<div class="service-areas pb-3">
 						<a href="#link">City, ST</a>

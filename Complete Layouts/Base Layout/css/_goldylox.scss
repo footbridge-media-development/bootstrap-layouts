@@ -1,6 +1,14 @@
 /**** Basic formats for good layouts *****/
+@font-face {
+    font-family:'fontello';
+    src:url(../fontello/font/fontello.ttf);
+}
 .goldylox {
-    font-size:2rem; color:$color-prime; font-weight:900; line-height:1.25em; font-family:$font-prime; }
+    font-size:2rem; color:$color-prime; font-weight:900; line-height:1.25em; font-family:$font-prime; 
+    @media screen and (max-width:$breakmed) {
+        font-size:18pt;
+    }
+}
 .lilbear {
     font-size:1.5rem; color:$color-second; font-weight:900; line-height:1em;  
     @media screen and (max-width:$breakmed){
@@ -26,7 +34,7 @@
     }
 }
 
-.sidebar {
+#sidebar {
     background:rgba(0,0,0,.1);
     -webkit-border-radius: 10px;
 border-radius: 10px;
@@ -70,20 +78,12 @@ border-radius: 10px;
         border-right: 0px solid rgba(255,255,255,.0) !important;
         }
     }
-#spec1 {
-    background:url(../images/banner-2.png) center no-repeat;
-      @media screen and (max-width: $breakmed){
-        background:$color-prime;
-    }
-}
+#spec1 {}
 .bgcover {
     background-size:cover !important;
     background-attachment:fixed !important;
     p {
         color:#fff !important;
-    }
-    h2 {
-        color:$color-second !important;
     }
 }
 .gradcover {
@@ -95,7 +95,71 @@ border-radius: 10px;
     background: -ms-linear-gradient(left, rgba(19,19,19,1) 0%, rgba(28,28,28,1) 15%, rgba(38,38,38,0.75) 34%, rgba(76,76,76,0) 100%);
     background: linear-gradient(to right, rgba(19,19,19,1) 0%, rgba(28,28,28,1) 15%, rgba(38,38,38,0.75) 34%, rgba(76,76,76,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#4c4c4c', GradientType=1 );
+    h2 {
+        color:$color-prime;
+    }
 }
 
 .seconds { color:$color-second !important;}
 .thirds {color:$color-third;}
+.white {color:#fff !important;}
+#wufoo-hold {
+    background:rgba(255,255,255,1);
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+   
+}
+ol {
+    &.listbad {
+        li {
+            padding:1%;
+        }
+    }
+}
+ul {
+    &.listpad {
+        li {
+            padding:1%;
+        }
+    }
+}
+.icon {
+    list-style-type:none;
+    padding:0;
+       
+    li {
+        
+        &::before {
+            font-family: "fontello";
+            text-decoration:none;
+            content: "\e819 \00a0";
+            display:inline-block;
+            speak:none;
+        } 
+    }
+}
+.dashed {
+    list-style-type:none;
+    padding:0;
+    li {
+        
+        &::before {
+            content: "-\00a0";
+            display:inline-block;
+        } 
+    }
+}
+.checked {
+    list-style-type:none;
+    padding:0;
+    li {
+        
+        &::before {
+            font-family: "fontello";
+            text-decoration:none;
+            content: "\e80f \00a0";
+            display:inline-block;
+            speak:none;
+        } 
+    }
+}

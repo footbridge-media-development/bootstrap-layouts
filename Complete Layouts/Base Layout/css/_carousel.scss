@@ -1,7 +1,7 @@
 .carousel-item > div{
-	height:650px;
+	height:800px;
 	background-size:cover;
-	background-position:center center;
+	background-position:left bottom;
 }
 .carousel-item{
 	padding:10px;
@@ -9,11 +9,3 @@
 
 
 /* MD and below */
-@media screen and (max-width:991px){
-	.carousel-item > div{
-		height:300px;
-		background-size:cover;
-		background-position:center center;
-	}
-	
-}

@@ -1,7 +1,6 @@
 // DYNAMIC ABOVE THE FOLD HERO IMAGE SECTION
     
-$(function(){
-    
+$(function(){    
     //FIND THE HEIGHT AND DEFINE IT IN CSS
     
     function defineHeight(){
@@ -16,9 +15,10 @@ $(function(){
 
     function scrollDown(){
         var windowHeight = $(window).height();
+        var headerHeight = $('#large-navigation-container-2').height();
 
         $('html, body').animate({
-        scrollTop: windowHeight
+        scrollTop: windowHeight - headerHeight
       }, 1000);
 
     }

@@ -12,7 +12,7 @@ var URI = window.location.pathname;
 // Below checks if the URI is not a /. This is a "if this page is not the home page" check
 if (URI !== "/"){
 	var smallNavContainer = document.getElementById("small-navigation-container-1");
-	var boxSizedHeight = smallNavContainer.clientHeight; // Includes the height + padding + borders
+	var boxSizedHeight = smallNavContainer.getElementsByTagName("div")[0].clientHeight; // Includes the height + padding + borders
 	smallNavContainer.style.position = "fixed";
 	smallNavContainer.style.top = 0;
 	smallNavContainer.style.marginTop = 0;
@@ -25,9 +25,7 @@ if (URI !== "/"){
 	pusher.style.height = String(boxSizedHeight) + "px";
 
 	window.addEventListener("DOMContentLoaded", function(){
-		var smallNavContainer = document.getElementById("small-navigation-container-1");
-		var pusher = document.getElementById("pusher");
-		var boxSizedHeight = smallNavContainer.clientHeight;
+		var boxSizedHeight = smallNavContainer.getElementsByTagName("div")[0].clientHeight;
 		pusher.style.height = String(boxSizedHeight) + "px";
 	});
 }

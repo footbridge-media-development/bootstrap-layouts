@@ -4,6 +4,7 @@
     color:lighten($color-second,30%);
     font-family:$font-prime;
     font-size:1.5em;
+    white-space:normal !important;
     &:hover {
         background: darken($color-second, 10%);
         color:$color-second !important;     
@@ -127,3 +128,4 @@ div.btn-tri-up {
         box-shadow:lighten($color-second, 10%);
     }
 }
+

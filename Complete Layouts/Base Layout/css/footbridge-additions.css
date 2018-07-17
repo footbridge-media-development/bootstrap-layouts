@@ -469,7 +469,8 @@ footer.fb-ftr-1 a {
   background: #3E606F;
   color: #89adbd;
   font-family: Unbuntu, sans-serif;
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  white-space: normal !important; }
   .btn-form:hover {
     background: #2c444e;
     color: #3E606F !important; }

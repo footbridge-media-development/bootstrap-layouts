@@ -18,7 +18,7 @@ $breakxl: 1200px;
 $color-prime: #91AA9D;
 $color-second:#3E606F;
 $color-third:#D1DBBD;
-$color-alpha:rgba(41, 171, 255, 0.7);
+$color-alpha:rgba($color-prime, 0.7);
 $font-prime: Unbuntu, sans-serif;
 $font-second: Raleway, sans-serif;
 $font-third: Lato, sans-serif;

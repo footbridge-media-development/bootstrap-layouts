@@ -595,7 +595,7 @@ div.btn-tri-up {
   height: auto; }
 
 .overlay {
-  background-color: rgba(41, 171, 255, 0.7);
+  background-color: rgba(145, 170, 157, 0.7);
   position: absolute;
   transition: .35s ease; }
   .overlay.from-left {

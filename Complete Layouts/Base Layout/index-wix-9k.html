@@ -1,363 +1,362 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="https://schema.org/<?= $companyInfo->getSchema(); ?>">
-	<head>
-		<title>Index</title>
-		<meta name="description" property="og:description" content="" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
-		<meta property="og:type" content="website" />
-		<meta itemprop="logo" content="<?= $baseUrl ?>/images/logo.png">
-		<meta content="<?= $tools->getOGTitle(); ?>" property="og:title">
-		<meta property="og:image" content="<?= $baseUrl ?>/images/facebook-og-1.jpg" >
-		<meta property="og:image" content="<?= $baseUrl ?>/images/facebook-og-2.jpg" >
-		<meta property="og:image" content="<?= $baseUrl ?>/images/facebook-og-3.jpg" >
-		<meta property="og:image" itemprop="image" content="<?= $tools->getOGImage(); ?>" >
-		<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css" />
-		<link rel="stylesheet" type="text/css" href="css/footbridge-additions.css" />
-		<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" />
-		<link rel="stylesheet" type="text/css" href="heroSection-2/dynamicHero.css" />
-		<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-		<link href="favicon.ico" rel="icon" type="image/x-icon">
-		<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<script defer type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
-		<script defer src="js/navigation-manager-app.min.js" type="text/javascript"></script>
-		<script defer type="text/javascript" src="js/start-hero-carousel.js"></script>
-		<script defer type="text/javascript" src="heroSection-2/dynamicHero.js"></script>
-		<script defer type="text/javascript" src="heroSection-2/scrollingHero.js"></script>
-		<script defer src="/js/links.min.js"></script>
-		<script defer type="text/javascript" src="js/w9k-interior-navigation.js"></script>
-    <script defer src="/js/paginate.js"></script>
-    <script defer src="/js/accordion.js"></script>
-	</head>
-	<body>
-		<!-- Small-screen navigation -->
-		<div id="small-navigation-container-1" class="d-block">
-			<div class="d-flex align-items-center">
-				<div class="pb-2 col">
-					<img width="200" src="images/logo.png" alt=" logo" />
-				</div>
-				<div class="col text-right">
-					<a id="small-navigation-menu-opener-1">
-						<img alt="Hamburger menu" width="42" src="images/menu_hamburger_white.svg" />
-					</a>
-				</div>
+<head>
+	<title>Index</title>
+	<meta name="description" property="og:description" content="" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta property="og:type" content="website" />
+	<meta itemprop="logo" content="<?= $baseUrl ?>/images/logo.png">
+	<meta content="<?= $tools->getOGTitle(); ?>" property="og:title">
+	<meta property="og:image" content="<?= $baseUrl ?>/images/facebook-og-1.jpg" >
+	<meta property="og:image" content="<?= $baseUrl ?>/images/facebook-og-2.jpg" >
+	<meta property="og:image" content="<?= $baseUrl ?>/images/facebook-og-3.jpg" >
+	<meta property="og:image" itemprop="image" content="<?= $tools->getOGImage(); ?>" >
+	<link rel="stylesheet" type="text/css" href="Bootstrap/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/footbridge-additions.css" />
+	<link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" />
+	<link rel="stylesheet" type="text/css" href="heroSection-2/dynamicHero.css" />
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="favicon.ico" rel="icon" type="image/x-icon">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script defer type="text/javascript" src="Bootstrap/js/bootstrap.min.js"></script>
+	<script defer src="js/navigation-manager-app.min.js" type="text/javascript"></script>
+	<script defer type="text/javascript" src="js/start-hero-carousel.js"></script>
+	<script defer type="text/javascript" src="heroSection-2/dynamicHero.js"></script>
+	<script defer type="text/javascript" src="heroSection-2/scrollingHero.js"></script>
+	<script defer src="/js/links.min.js"></script>
+	<script defer type="text/javascript" src="js/w9k-interior-navigation.js"></script>
+	<script defer src="/js/paginate.js"></script>
+	<script defer src="/js/accordion.js"></script>
+</head>
+<body>
+	<!-- Small-screen navigation -->
+	<div id="small-navigation-container-1" class="d-block">
+		<div class="d-flex align-items-center">
+			<div class="pb-2 col">
+				<img width="200" src="images/logo.png" alt=" logo" />
 			</div>
-			<div class="pullout-menu-backdrop position-fixed d-none flex-direction-column justify-content-end">
-				<div>
-					<div class="menu-heading">
-						<span>Menu</span>
+			<div class="col text-right">
+				<a id="small-navigation-menu-opener-1">
+					<img alt="Hamburger menu" width="42" src="images/menu_hamburger_white.svg" />
+				</a>
+			</div>
+		</div>
+		<div class="pullout-menu-backdrop position-fixed d-none flex-direction-column justify-content-end">
+			<div>
+				<div class="menu-heading">
+					<span>Menu</span>
+				</div>
+				<div class="navigation-links">
+					<div>
+						<a>About +</a>
+						<div class="tap-dropdown">
+							<div>
+								<a href="#">Service Area</a>
+							</div>
+							<div>
+								<a href="#">Newsletter</a>
+							</div>
+							<div>
+								<a href="#">Submit Feedback</a>
+							</div>
+						</div>
 					</div>
-					<div class="navigation-links">
-						<div>
-							<a>About +</a>
-							<div class="tap-dropdown">
-								<div>
-									<a href="#">Service Area</a>
-								</div>
-								<div>
-									<a href="#">Newsletter</a>
-								</div>
-								<div>
-									<a href="#">Submit Feedback</a>
-								</div>
+					<div>
+						<a>Services +</a>
+						<div class="tap-dropdown">
+							<div>
+								<a href="#">Service 1</a>
+							</div>
+							<div>
+								<a href="#">Service 2</a>
+							</div>
+							<div>
+								<a href="#">Service 3</a>
 							</div>
 						</div>
-						<div>
-							<a>Services +</a>
-							<div class="tap-dropdown">
-								<div>
-									<a href="#">Service 1</a>
-								</div>
-								<div>
-									<a href="#">Service 2</a>
-								</div>
-								<div>
-									<a href="#">Service 3</a>
-								</div>
-							</div>
-						</div>
-						<div>
-							<a href="#">Reviews</a>
-						</div>
-						<div>
-							<a href="#">FAQs</a>
-						</div>
-						<div>
-							<a href="#">Home Tips</a>
-						</div>
-						<div>
-							<a href="#">Contact</a>
-						</div>
-
+					</div>
+					<div>
+						<a href="#">Reviews</a>
+					</div>
+					<div>
+						<a href="#">FAQs</a>
+					</div>
+					<div>
+						<a href="#">Home Tips</a>
+					</div>
+					<div>
+						<a href="#">Contact</a>
 					</div>
 				</div>
 			</div>
 		</div>
-    <header>
+	</div>
 
-        <div class="dynamic-hero-section parallax-bg hero-slider-container">
-          <!--For Scrolly Text uncomment below div if you change the timing on the images you will need to set the timing to the same for this div-->
-                          <!-- <div id="titleCar" class="carousel slide" data-ride="carousel">
-                           <div class="carousel-inner" role="listbox">
-                                <div class="carousel-item active">
-                                    <p class="p-3">
-                                       Quality &amp; Custom Woodworking
-                                    </p>
-
-                                </div>
-                                <div class="carousel-item">
-                                    <p class="p-3">
-                                      Charlottesville's Top Custom Cabinet Company
-                                    </p>
-
-                                </div>
-                                <div class="carousel-item">
-                                    <p class="p-3">
-                                      custom made to match your unique taste
-                                    </p>
-
-                                </div>
-
-                           </div>
-                        </div>-->
-           <div class="title">
-                <div>
-                    <h1>This Is The Main Keyphrase!</h1>
-                    <h2>Subtitle With Tag Line</h2>
-                    <p id="scroll-next" style="align-text: center;"><i style="font-size: 3em;" class="icon-angle-circled-down"> </i></p>
-                </div>
-            </div>
-            <div class="color-overlay"></div>
-             <div class="tile-overlay"></div>
-        </div>
-    </header>
-		<!-- Banner -->
-		<!--<div id="banner">
-			<div id="heroCarousel" class="carousel slide" data-ride="carousel">
-				<ol class="carousel-indicators">
-					<li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
-					<li data-target="#heroCarousel" data-slide-to="1"></li>
-				</ol>
-				<div class="carousel-inner">
+	<header>
+		<div class="dynamic-hero-section parallax-bg hero-slider-container">
+			<!--For Scrolly Text uncomment below div if you change the timing on the images you will need to set the timing to the same for this div-->
+			<!--<div id="titleCar" class="carousel slide" data-ride="carousel">
+				<div class="carousel-inner" role="listbox">
 					<div class="carousel-item active">
-						<div style="background-image:url('images/banner-1.jpg');"></div>
+						<p class="p-3">
+							Quality &amp; Custom Woodworking
+						</p>
 					</div>
 					<div class="carousel-item">
-						<div style="background-image:url('images/banner-2.png');"></div>
+						<p class="p-3">
+							Charlottesville's Top Custom Cabinet Company
+						</p>
+					</div>
+					<div class="carousel-item">
+						<p class="p-3">
+							custom made to match your unique taste
+						</p>
 					</div>
 				</div>
-				<a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
-					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					<span class="sr-only">Previous</span>
-				</a>
-				<a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
-					<span class="carousel-control-next-icon" aria-hidden="true"></span>
-					<span class="sr-only">Next</span>
-				</a>
-			</div>
-		</div>-->
-
-		<!-- Content -->
-		<div class="secondary-bg-color p-4 container-fluid">
-				<h1 class="text-center">Reimagine the world!</h1>
-				<div class="text-center pt-3">
-					<a class="btn btn-primary" href="#">Push My Buttons</a>
+			</div>-->
+			<div class="title">
+				<div>
+					<h1>This Is The Main Keyphrase!</h1>
+					<h2>Subtitle With Tag Line</h2>
+					<p id="scroll-next" style="align-text: center;"><i style="font-size: 3em;" class="icon-angle-circled-down"> </i></p>
 				</div>
 			</div>
-			<div class="w-100"></div>
-            <nav aria-label="breadcrumb" class="w-100">
-                <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
-                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Library</span></a><meta itemprop="position" content="2"></li>
-                    <li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Data</span></a><meta itemprop="position" content="3"></li>
-                </ol>
-            </nav>
-		<div id="content" class="container-fluid">
-      <!--
-    <div class="container-fluid">
-      <div class="row big-wrap mx-auto">
-        <nav aria-label="breadcrumb" class="col-12">
-          <ol class="breadcrumb px-5" itemscope itemtype="https://schema.org/BreadcrumbList">
-            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?= $baseUrl ?>" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
-            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?= $baseUrl ?>/DIR_URL.php" itemprop="item"><span itemprop="name">DIRECTORY</span></a><meta itemprop="position" content="2"></li>
-            <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?= $baseUrl ?>/PAGE_URL.php" itemprop="item"><span itemprop="name">PAGE</span></a><meta itemprop="position" content="2"></li>
-          </ol>
-        </nav>
-      </div>
-    </div>
-    -->
+			<div class="color-overlay"></div>
+			<div class="tile-overlay"></div>
+		</div>
+	</header>
 
-			<div class="big-wrap mx-auto row justify-content-center p-5">
-
-				<div class="col-12 text-center">
-
-					<h1>Charlottesville Premier Custom Cabinet &amp; Woodworking Company</h1>
+	<!-- Banner -->
+	<!--<div id="banner">
+		<div id="heroCarousel" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
+				<li data-target="#heroCarousel" data-slide-to="1"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<div style="background-image:url('images/banner-1.jpg');"></div>
 				</div>
-				<div class="row w-100 services">
-				    <div class="col-md-4 col-sm-12 text-center p-2">
-                        <span class="icon-crop  seconds large"></span>
-				        <h2>Custom Serivce</h2>
-				        <p>Our skilled writing staff will hit main key points about your unique services and what sets you apart from the competition.</p>
-				    </div>
-				     <div class="col-md-4 col-sm-12 text-center p-2">
-                        <span class="icon-tools large"></span>
-				        <h2>Custom Service</h2>
-				        <p>Our skilled writing staff will hit main key points about your unique services and what sets you apart from the competition.</p>
-				    </div>
-                    <div class="col-md-4 col-sm-12 text-center p-2">
-                        <span class="icon-tree large"></span>
-				        <h2>Custom Service</h2>
-				        <p>Our skilled writing staff will hit main key points about your unique services and what sets you apart from the competition.</p>
-				    </div>
-
+				<div class="carousel-item">
+					<div style="background-image:url('images/banner-2.png');"></div>
 				</div>
-            </div>
-            </div>
-            <div id="reviewTime" class="container-fluid align-items-center d-flex">
-                <div class="row align-items-center big-wrap mx-auto p-md-5 p-1">
-                     <div class="col mx-auto text-center">
-                        <h2 class="goldylox">What Our Clients Are Saying:</h2>
-                        <div id="testimonials" class="carousel slide" data-ride="carousel">
-                           <div class="carousel-inner p-2" role="listbox">
-                                <div class="carousel-item active">
-                                    <p class="testimonial p-3">
-                                        <i class="icon-quote-left"></i>Review body text Lipsum Lipsum Lipsum LipsumLipsumLipsum LipsumLipsum Lipsum Lipsum Lipsum LipsumLipsum[...]<i class="icon-quote-right"></i>
-                                    </p>
-                                    <a href="#link" class="btn btn-info">Read More</a>
-                                </div>
-                                <div class="carousel-item">
-                                    <p class="testimonial p-3">
-                                        <i class="icon-quote-left"></i>Review body text Lipsum Lipsum Lipsum LipsumLipsumLipsum LipsumLipsum Lipsum Lipsum Lipsum LipsumLipsum[...]<i class="icon-quote-right"></i>
-                                    </p>
-                                    <a href="#link" class="btn btn-info">Read More</a>
-                                </div>
+			</div>
+			<a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+		</div>
+	</div>-->
 
-                           </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
-				<div class="container-fluid">
-				    <div class="row align-items-center">
-				        <div class="col-md col-sm-12 no-gutters p-0">
-                            <div class="overlay-container">
-                                  <img src="images/project1.jpg" alt class="overlay-bg-image">
-                                  <div class="overlay from-left">
-                                      <div class="overlay-text">
-                                      <span>Learn More</span>
-                                      <a href="#link"></a>
-                                      </div>
-                                  </div>
-                            </div>
-				        </div>
-				        <div class="col-md col-sm-12 no-gutters p-0">
-                                <div class="overlay-container">
-                                  <img src="images/project2.jpg" alt class="overlay-bg-image">
-                                  <div class="overlay from-bottom">
-                                      <div class="overlay-text">
-                                      <span>Learn More</span>
-                                      <a href="#link"></a>
-                                      </div>
-                                  </div>
-                                </div>
-				        </div>
-				        <div class="col-md col-sm-12 no-gutters p-0">
-                                <div class="overlay-container">
-                                  <img src="images/project3.jpg" alt class="overlay-bg-image">
-                                  <div class="overlay from-right">
-                                      <div class="overlay-text">
-                                      <span>Learn More</span>
-                                      <a href="#link"></a>
-                                      </div>
-                                  </div>
-                                </div>
-				        </div>
-				    </div>
+	<!-- Content -->
+	<div class="secondary-bg-color p-4 container-fluid">
+		<h1 class="text-center">Reimagine the world!</h1>
+		<div class="text-center pt-3">
+			<a class="btn btn-primary" href="#">Push My Buttons</a>
+		</div>
+	</div>
+
+	<div class="w-100"></div>
+
+	<nav aria-label="breadcrumb" class="w-100">
+		<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+			<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
+			<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Library</span></a><meta itemprop="position" content="2"></li>
+			<li class="breadcrumb-item active" aria-current="page" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Data</span></a><meta itemprop="position" content="3"></li>
+		</ol>
+	</nav>
+
+	<div id="content" class="container-fluid">
+	<!--
+		<div class="container-fluid">
+			<div class="row big-wrap mx-auto">
+				<nav aria-label="breadcrumb" class="col-12">
+					<ol class="breadcrumb px-5" itemscope itemtype="https://schema.org/BreadcrumbList">
+						<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?= $baseUrl ?>" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
+						<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?= $baseUrl ?>/DIR_URL.php" itemprop="item"><span itemprop="name">DIRECTORY</span></a><meta itemprop="position" content="2"></li>
+						<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="<?= $baseUrl ?>/PAGE_URL.php" itemprop="item"><span itemprop="name">PAGE</span></a><meta itemprop="position" content="2"></li>
+					</ol>
+				</nav>
+			</div>
+		</div>
+	-->
+
+		<div class="big-wrap mx-auto row justify-content-center p-5">
+			<div class="col-12 text-center">
+				<h1>Charlottesville Premier Custom Cabinet &amp; Woodworking Company</h1>
+			</div>
+			<div class="row w-100 services">
+				<div class="col-md-4 col-sm-12 text-center p-2">
+					<span class="icon-crop  seconds large"></span>
+					<h2>Custom Serivce</h2>
+					<p>Our skilled writing staff will hit main key points about your unique services and what sets you apart from the competition.</p>
 				</div>
-				<div id="whyChoose" class="container-fluid align-items-center d-flex">
-                    <div class="row align-items-center big-wrap mx-auto p-5">
-                        <div class="col-md-3 col-sm-12 mx-auto">
-                            <img src="images/logo.png">
-                        </div>
-                        <div class="col mx-auto">
-                        <h2 class="goldylox">Why Choose Us?</h2>
-                        <p>In this final section, we'll review the reasons why site visitors should use your services. Our skilled writing staff will hit main key points about your unique services and what sets you apart from the competition.</p>
+				<div class="col-md-4 col-sm-12 text-center p-2">
+					<span class="icon-tools large"></span>
+					<h2>Custom Service</h2>
+					<p>Our skilled writing staff will hit main key points about your unique services and what sets you apart from the competition.</p>
+				</div>
+				<div class="col-md-4 col-sm-12 text-center p-2">
+					<span class="icon-tree large"></span>
+					<h2>Custom Service</h2>
+					<p>Our skilled writing staff will hit main key points about your unique services and what sets you apart from the competition.</p>
+				</div>
+			</div>
+		</div>
+	</div>
 
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid align-items-center d-flex">
-                    <div class="row align-items-center big-wrap mx-auto p-5">
-                        <div class="col mx-auto">
-                            <h3>If you are looking for custom cabinets &amp; woodworking then please call <a href="#">xxx-xxx-xxxx</a>.</h3>
-                        </div>
-                    </div>
-                </div>
+	<div id="reviewTime" class="container-fluid align-items-center d-flex">
+		<div class="row align-items-center big-wrap mx-auto p-md-5 p-1">
+			<div class="col mx-auto text-center">
+				<h2 class="goldylox">What Our Clients Are Saying:</h2>
+				<div id="testimonials" class="carousel slide" data-ride="carousel">
+					<div class="carousel-inner p-2" role="listbox">
+						<div class="carousel-item active">
+							<p class="testimonial p-3">
+								<i class="icon-quote-left"></i>Review body text Lipsum Lipsum Lipsum LipsumLipsumLipsum LipsumLipsum Lipsum Lipsum Lipsum LipsumLipsum[...]<i class="icon-quote-right"></i>
+							</p>
+							<a href="#link" class="btn btn-info">Read More</a>
+						</div>
+						<div class="carousel-item">
+							<p class="testimonial p-3">
+								<i class="icon-quote-left"></i>Review body text Lipsum Lipsum Lipsum LipsumLipsumLipsum LipsumLipsum Lipsum Lipsum Lipsum LipsumLipsum[...]<i class="icon-quote-right"></i>
+							</p>
+							<a href="#link" class="btn btn-info">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div class="container-fluid">
+		<div class="row align-items-center">
+			<div class="col-md col-sm-12 no-gutters p-0">
+				<div class="overlay-container">
+					<img src="images/project1.jpg" alt class="overlay-bg-image">
+					<div class="overlay from-left">
+						<div class="overlay-text">
+							<span>Learn More</span>
+							<a href="#link"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md col-sm-12 no-gutters p-0">
+				<div class="overlay-container">
+					<img src="images/project2.jpg" alt class="overlay-bg-image">
+					<div class="overlay from-bottom">
+						<div class="overlay-text">
+							<span>Learn More</span>
+							<a href="#link"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md col-sm-12 no-gutters p-0">
+				<div class="overlay-container">
+					<img src="images/project3.jpg" alt class="overlay-bg-image">
+					<div class="overlay from-right">
+						<div class="overlay-text">
+							<span>Learn More</span>
+							<a href="#link"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<div id="whyChoose" class="container-fluid align-items-center d-flex">
+		<div class="row align-items-center big-wrap mx-auto p-5">
+			<div class="col-md-3 col-sm-12 mx-auto">
+				<img src="images/logo.png">
+			</div>
+			<div class="col mx-auto">
+				<h2 class="goldylox">Why Choose Us?</h2>
+				<p>In this final section, we'll review the reasons why site visitors should use your services. Our skilled writing staff will hit main key points about your unique services and what sets you apart from the competition.</p>
+			</div>
+		</div>
+	</div>
 
+	<div class="container-fluid align-items-center d-flex">
+		<div class="row align-items-center big-wrap mx-auto p-5">
+			<div class="col mx-auto">
+				<h3>If you are looking for custom cabinets &amp; woodworking then please call <a href="#">xxx-xxx-xxxx</a>.</h3>
+			</div>
+		</div>
+	</div>
 
-		<!-- Footer -->
-      <footer class="fb-ftr-1">
-         <div class="container">
-            <div class="row px-5 py-3">
-               <div class="col-sm-6 col-md-3 pb-3 text-center text-md-left">
-                  <img src="images/logo.png" alt="logo">
-               </div>
-               <div class="col-sm-6 col-md-3 text-center text-md-left">
-                  <h4>Contact</h4>
-                    <div class="contact pb-3">
-                        <p itemprop="legalName">Company Name</p>
-                        <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
-                            <p itemprop="streetAddress">Street Address</p>
-                            <p><span itemprop="addressLocality">City</span>, <span itemprop="addressRegion">ST</span> <span itemprop="postalCode">Zip Code</span></p>
-                        </div>
-                        <p>Phone: <span itemprop="telephone">xxx-xxx-xxxx</span></p>
-
-                  </div>
-               </div>
-               <div class="col-sm-6 col-md-3 text-center text-md-left">
-                  <h4>Quick Links</h4>
-                    <div class="quick-links pb-3">
-                        <a href="#link/">Google Places</a>
-                        <a href="#link/">Articles</a>
-                        <a href="#link/">Privacy Policy</a>
-                        <a href="#link/">Terms of Use</a>
-                        <a href="#link/">Sitemap</a>
-                    </div>
-               </div>
-               <div class="col-sm-6 col-md-3 text-center text-md-left">
-                  <h4>Service Areas</h4>
-                  <div class="service-areas pb-3">
-                        <a href="#link">City, ST</a>
-                        <a href="#link">City 2, ST</a>
-                        <a href="#link">City 3, ST</a>
-                        <a href="#link">city 4, ST</a>
-                        <a href="#link">city 5, ST</a>
-                        <a href="#link">city 6, ST</a>
-                        <a href="#link">city 7, ST</a>
-                        <a href="#link">city 8, ST</a>
-                        <a href="#link">city 9, ST</a>
-                        <a href="#link">city 10, ST</a>
-
-                  </div>
-               </div>
-            </div>
-            <div class="row px-5 py-3" style="border-top: solid 1px #555">
-               <p>
-                  &copy;
-                  <script>document.write(new Date().getFullYear());</script>
-                  <!-- Uncomment the PHP code in builds and remove the above document.write code -->
-                  <!-- <?= date("Y"); ?> -->
-                  <span itemprop="name"><a itemprop="url" href="#">Company Name</a></span>, Rights Reserved
-               </p>
-            </div>
-         </div>
-		 <script type="text/javascript">
+	<!-- Footer -->
+	<footer class="fb-ftr-1">
+		<div class="container">
+			<div class="row px-5 py-3">
+				<div class="col-sm-6 col-md-3 pb-3 text-center text-md-left">
+					<img src="images/logo.png" alt="logo">
+				</div>
+				<div class="col-sm-6 col-md-3 text-center text-md-left">
+					<h4>Contact</h4>
+					<div class="contact pb-3">
+						<p itemprop="legalName">Company Name</p>
+						<div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+							<p itemprop="streetAddress">Street Address</p>
+							<p>
+								<span itemprop="addressLocality">City</span>,
+								<span itemprop="addressRegion">ST</span>
+								<span itemprop="postalCode">Zip Code</span>
+							</p>
+						</div>
+						<p>
+							Phone: <span itemprop="telephone">xxx-xxx-xxxx</span>
+						</p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center text-md-left">
+					<h4>Quick Links</h4>
+					<div class="quick-links pb-3">
+						<a href="#link/">Google Places</a>
+						<a href="#link/">Articles</a>
+						<a href="#link/">Privacy Policy</a>
+						<a href="#link/">Terms of Use</a>
+						<a href="#link/">Sitemap</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3 text-center text-md-left">
+					<h4>Service Areas</h4>
+					<div class="service-areas pb-3">
+						<a href="#link">City, ST</a>
+						<a href="#link">City 2, ST</a>
+						<a href="#link">City 3, ST</a>
+						<a href="#link">city 4, ST</a>
+						<a href="#link">city 5, ST</a>
+						<a href="#link">city 6, ST</a>
+						<a href="#link">city 7, ST</a>
+						<a href="#link">city 8, ST</a>
+						<a href="#link">city 9, ST</a>
+						<a href="#link">city 10, ST</a>
+					</div>
+				</div>
+			</div>
+			<div class="row px-5 py-3" style="border-top: solid 1px #555">
+				<p>
+					&copy;
+					<script>document.write(new Date().getFullYear());</script>
+					<!-- Uncomment the PHP code in builds and remove the above document.write code -->
+					<!-- <?= date("Y"); ?> -->
+					<span itemprop="name"><a itemprop="url" href="#">Company Name</a></span>, Rights Reserved
+				</p>
+			</div>
+		</div>
+		<script type="text/javascript">
 			window.addEventListener('DOMContentLoaded', function() {
-				$(function(){heroSlider({images: ['images/banner/banner-1.jpg','images/banner/banner-2.jpg','images/banner/banner-3.jpg'],speed: 5000,heroContainer: $(".hero-slider-container")});});
+			$(function(){heroSlider({images: ['images/banner/banner-1.jpg','images/banner/banner-2.jpg','images/banner/banner-3.jpg'],speed: 5000,heroContainer: $(".hero-slider-container")});});
 			});
 		</script>
-      </footer>
-	</body>
+	</footer>
+</body>
 </html>

@@ -150,7 +150,7 @@ a.skip-main {
     font-size: 1.2em;
     z-index: 999; }
 
-#reviews {
+#reviews #revList {
   display: grid;
   grid-template-columns: repeat(2, 1fr); }
 

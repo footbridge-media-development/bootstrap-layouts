@@ -53,7 +53,7 @@ a.skip-main { left:-999px;position:absolute;top:auto;width:1px;height:1px;overfl
     }
 }
 
-#reviews {
+#reviews #revList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }

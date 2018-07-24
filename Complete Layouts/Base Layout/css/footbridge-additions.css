@@ -62,13 +62,13 @@ h1, h2, h4 {
     .med {
       font-size: 1.1rem; } }
 
-.small {
+.sml {
   font-size: 1.5rem !important; }
   @media screen and (max-width: 768px) {
-    .small {
+    .sml {
       font-size: 1rem !important; } }
   @media screen and (max-width: 768px) and (max-width: 576px) {
-    .small {
+    .sml {
       font-size: .8rem; } }
 
 .breadcrumb {
@@ -152,8 +152,12 @@ a.skip-main {
 
 #reviews #revList {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); }
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px; }
 
+@media screen and (max-width: 992px) {
+  #reviews #revList {
+    display: block; } }
 /******* ******** ********/
 /****** Navigation *******/
 /******* ******** ********/

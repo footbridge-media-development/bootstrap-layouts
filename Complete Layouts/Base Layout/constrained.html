@@ -34,7 +34,7 @@
 		<div class="d-flex align-items-center">
 			<div class="p-2 col"><img alt="Bootstrap logo" src="images/logo.png" width="100"></div>
 			<div class="p-1 col-6">
-				<span class="lilbear">xxx-xxx-xxxx</span>
+				<a href="tel:1<?= $phoneNumber; ?>" class="lilbear ga-phone">xxx-xxx-xxxx</a>
 			</div>
 			<div class="col-2 text-right">
 				<a id="small-navigation-menu-opener-1"><img alt="Hamburger menu" src="images/menu_hamburger_dark.svg" width="42"></a>
@@ -47,12 +47,14 @@
 				</div>
 				<div class="navigation-links">
 					<div>
-
 						<a href="#">Home</a>
 					</div>
 					<div>
 						<a>About +</a>
 						<div class="tap-dropdown">
+							<div>
+								<a href="#">About</a>
+							</div>
 							<div>
 								<a href="#">Service Area</a>
 							</div>
@@ -68,6 +70,9 @@
 						<a>Services +</a>
 						<div class="tap-dropdown">
 							<div>
+								<a href="#">Services</a>
+							</div>
+							<div>
 								<a href="#">Service 1</a>
 							</div>
 							<div>
@@ -82,6 +87,9 @@
 							<div>
 								<a>Services 5+</a>
 								<div class="tap-dropdown">
+									<div>
+										<a href="#">Services 5</a>
+									</div>
 									<div>
 										<a href="#">Sub Service</a>
 									</div>
@@ -120,14 +128,13 @@
 	<!-- Large-screen navigation -->
 	<div class="d-none d-lg-block pt-2" id="large-navigation-container-2">
 		<div class="row big-wrap mx-auto py-2 align-items-center cTop">
-			<div class="col-6 text-center"><img src="images/logo.png" width="60%;"></div>
+			<div class="col-6 text-center"><img alt="Bootstrap logo" src="images/logo.png" width="60%;"></div>
 			<div class="col text-center">
 
 			</div>
 			<div class="col-4 text-center">
-				<a href="#link">
-				<p class="icon-phone goldylox seconds">xxx-xxx-xxxx</p>
-				<p class="btn btn-form goldylox">Request Service</p></a>
+				<p><a href="tel:1<?= $phoneNumber; ?>" class="icon-phone goldylox seconds ga-phone">xxx-xxx-xxxx</a></p>
+				<p><a href="<?= $baseUrl ?>" class="btn btn-form goldylox ga-contact">Request Service</a></p>
 			</div>
 		</div>
 		<div>
@@ -203,6 +210,7 @@
 			</div>
 		</div>
 	</div>
+
 	<!-- Banner -->
 	<div id="banner" class="big-wrap mx-auto">
 		<div class="carousel slide" data-ride="carousel" id="heroCarousel">
@@ -239,9 +247,20 @@
 						</div>
 					</div>
 				</div>
-			</div><a class="carousel-control-prev" data-slide="prev" href="#heroCarousel" role="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="sr-only">Previous</span></a> <a class="carousel-control-next" data-slide="next" href="#heroCarousel" role="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="sr-only">Next</span></a>
+			</div>
+
+			<a class="carousel-control-prev" data-slide="prev" href="#heroCarousel" role="button">
+				<span aria-hidden="true" class="carousel-control-prev-icon"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" data-slide="next" href="#heroCarousel" role="button">
+				<span aria-hidden="true" class="carousel-control-next-icon"></span>
+				<span class="sr-only">Next</span>
+			</a>
+
 		</div>
 	</div>
+
 	<!-- Content -->
 	<div class="container-fluid big-wrap mx-auto" id="content">
 		<div class="row bBorder">
@@ -260,7 +279,8 @@
 					<img alt="" class="overlay-bg-image" src="images/emergency-service.jpg">
 					<div class="overlay from-top">
 						<div class="overlay-text">
-							<span>Learn More</span> <a href="#link"></a>
+							<span>Learn More</span>
+							<a href="#link"></a>
 						</div>
 					</div>
 				</div>
@@ -271,7 +291,8 @@
 					<img alt="" class="overlay-bg-image" src="images/emergency-service.jpg">
 					<div class="overlay from-top">
 						<div class="overlay-text">
-							<span>Learn More</span> <a href="#link"></a>
+							<span>Learn More</span>
+							<a href="#link"></a>
 						</div>
 					</div>
 				</div>
@@ -282,7 +303,8 @@
 					<img alt="" class="overlay-bg-image" src="images/emergency-service.jpg">
 					<div class="overlay from-top">
 						<div class="overlay-text">
-							<span>Learn More</span> <a href="#link"></a>
+							<span>Learn More</span>
+							<a href="#link"></a>
 						</div>
 					</div>
 				</div>
@@ -423,17 +445,17 @@
 				<!---The Lighbox =-->
 				<div class="modal fade" id="myModal1" role="img">
 					<div class="modal-dialog modal-lg">
-						<div class="modal-content"><img src="images/gallery/benches.jpg" style="width:100%;"></div>
+						<div class="modal-content"><img alt="" src="images/gallery/benches.jpg" style="width:100%;"></div>
 					</div>
 				</div>
 				<div class="modal fade" id="myModal2" role="img">
 					<div class="modal-dialog modal-lg">
-						<div class="modal-content"><img src="images/gallery/bridge.jpg" style="width:100%;"></div>
+						<div class="modal-content"><img alt="" src="images/gallery/bridge.jpg" style="width:100%;"></div>
 					</div>
 				</div>
 				<div class="modal fade" id="myModal3" role="img">
 					<div class="modal-dialog modal-lg">
-						<div class="modal-content"><img src="images/gallery/tunnel.jpg" style="width:100%;"></div>
+						<div class="modal-content"><img alt="" src="images/gallery/tunnel.jpg" style="width:100%;"></div>
 					</div>
 				</div>
 				<div class="container-fluid row">
@@ -495,9 +517,15 @@
 						<p itemprop="legalName">Company Name</p>
 						<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 							<p itemprop="streetAddress">Adress</p>
-							<p><span itemprop="addressLocality">City</span>, <span itemprop="addressRegion">ST</span> <span itemprop="postalCode">ZIP</span></p>
+							<p>
+								<span itemprop="addressLocality">City</span>,
+								<span itemprop="addressRegion">ST</span>
+								<span itemprop="postalCode">ZIP</span>
+							</p>
 						</div>
-						<p>Phone: <span itemprop="telephone">xxx-xxx-xxxx</span></p>
+						<p>
+							Phone: <span itemprop="telephone">xxx-xxx-xxxx</span>
+						</p>
 					</div>
 				</div>
 				<div class="col-sm-6 col-md-3 text-center text-md-left">

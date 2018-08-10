@@ -161,76 +161,44 @@ a.skip-main {
 /******* ******** ********/
 /****** Navigation *******/
 /******* ******** ********/
-/******* ******** ********/
-/****** Small-screen Navigation Setup 1 *******/
-/******* ******** ********/
-#small-navigation-container-1 {
-  background-color: white;
+#small-navigation-container-2 {
+  background-color: #ebebeb;
   box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.33);
   position: relative;
-  /* Box shadow doesn't show without a z-index */
   z-index: 20; }
-
-#small-navigation-container-1 > .pullout-menu-backdrop {
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.33);
-  z-index: 10; }
-
-#small-navigation-container-1 > .pullout-menu-backdrop {
-  overflow: hidden;
-  /* So there are no scroll bars when animating the child div into view */ }
-
-#small-navigation-container-1 > .pullout-menu-backdrop > div {
-  overflow: auto;
-  z-index: 11;
-  box-shadow: 0 0 5px 3px black;
-  background-color: white;
-  width: 50%;
-  max-width: 240px;
-  transition: margin-right 150ms;
-  /* If you change this timeframe, go to the JS file that handles the menu and also change the setTimeout interval for when it closes. */
-  margin-right: -250px;
-  /* We will animate this to 0 when they open the menu */ }
-
-#small-navigation-container-1 > .pullout-menu-backdrop > div > .menu-heading {
-  font-size: 1.2em;
-  font-weight: bold;
-  text-align: center;
-  padding: 0.75em 0.35em;
-  border-bottom: 1px solid black; }
-
-#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > a {
-  display: block;
-  font-size: 1em;
-  font-weight: bold;
-  padding: 0.6em 0.75em; }
-
-#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div a:hover {
-  background-color: #91AA9D;
-  color: white; }
-
-#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > div a {
-  display: block;
-  font-size: 0.88em;
-  font-weight: lighter;
-  padding: 0.6em 0.75em; }
-
-#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links div:not(:last-child) > a {
-  border-bottom: 1px dotted silver; }
-
-#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links .tap-dropdown {
-  display: none; }
-
-#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links .tap-dropdown > div > a {
-  padding-left: 1.85em;
-  /* Indent sub-menus */ }
-
-#small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links .tap-dropdown > div > div a {
-  padding-left: 2.85em;
-  /* Indent deeper sub-menus */ }
+  #small-navigation-container-2 > .pullout-menu-backdrop {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+    overflow: hidden; }
+    #small-navigation-container-2 > .pullout-menu-backdrop > div {
+      overflow: auto;
+      z-index: 11;
+      box-shadow: 0 0 5px 3px black;
+      width: 100%;
+      transition: margin-top 150ms;
+      margin-top: 0; }
+      #small-navigation-container-2 > .pullout-menu-backdrop > div > .menu-heading {
+        font-size: 1.2em;
+        font-weight: bold;
+        text-align: center;
+        padding: .75em 0.25em;
+        border-bottom: 1px solid black; }
+      #small-navigation-container-2 > .pullout-menu-backdrop > div > .navigation-links .sub-head i::before {
+        display: block;
+        font-size: 3rem;
+        -webkit-border-radius: 200px;
+        border-radius: 200px;
+        border: 2px white solid;
+        padding: 20%;
+        width: auto;
+        margin: 0; }
+      #small-navigation-container-2 > .pullout-menu-backdrop > div > .navigation-links > div a {
+        color: white;
+        font-size: 2em; }
 
 /******* ******** ********/
 /****** Large-screen Navigation Setup 1 *******/

@@ -4,12 +4,14 @@ $(document.createElement("style")).html(`
 	.accordion-content.default {display:block}
 `).appendTo($("head"));
 
-$('#accordion').find('.accordion-toggle').click(function(){
+$('.accordion').find('.accordion-toggle').click(function(){
 
-	//Expand or collapse this panel
-	$(this).next().slideToggle('fast');
+	var thisContent = $(this).parent().find(".accordion-content");
 
 	//Hide the other panels
-	$(".accordion-content").not($(this).next()).slideUp('fast');
+	$(".accordion-content").not(thisContent).slideUp('fast');
+
+	//Expand or collapse this panel
+	thisContent.slideToggle('fast');
 
 });

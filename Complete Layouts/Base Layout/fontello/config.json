@@ -551,6 +551,30 @@
       "css": "chat-empty",
       "code": 61670,
       "src": "fontawesome"
+    },
+    {
+      "uid": "212ab54aac31030950fec3e2448ebee9",
+      "css": "money",
+      "code": 59438,
+      "src": "modernpics"
+    },
+    {
+      "uid": "f279f25007794fa6837ff78fe94b216e",
+      "css": "money-1",
+      "code": 61654,
+      "src": "fontawesome"
+    },
+    {
+      "uid": "fhpup8jff2yw9kmuwavhyqxogczcbbhj",
+      "css": "dollar",
+      "code": 59439,
+      "src": "modernpics"
+    },
+    {
+      "uid": "026007bd17bfc67f3fe013199676f620",
+      "css": "dollar-1",
+      "code": 61781,
+      "src": "fontawesome"
     }
   ]
 }

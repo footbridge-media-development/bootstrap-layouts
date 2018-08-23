@@ -45,9 +45,12 @@
 .icon-phone-1:before { content: '\e82b'; } /* '' */
 .icon-phone-circled:before { content: '\e82c'; } /* '' */
 .icon-megaphone:before { content: '\e82d'; } /* '' */
+.icon-money:before { content: '\e82e'; } /* '' */
+.icon-dollar:before { content: '\e82f'; } /* '' */
 .icon-warehouse:before { content: '\e840'; } /* '' */
 .icon-mobile-1:before { content: '\f034'; } /* '' */
 .icon-certificate:before { content: '\f0a3'; } /* '' */
+.icon-money-1:before { content: '\f0d6'; } /* '' */
 .icon-mail-alt:before { content: '\f0e0'; } /* '' */
 .icon-comment-empty:before { content: '\f0e5'; } /* '' */
 .icon-chat-empty:before { content: '\f0e6'; } /* '' */
@@ -60,6 +63,7 @@
 .icon-angle-circled-up:before { content: '\f139'; } /* '' */
 .icon-angle-circled-down:before { content: '\f13a'; } /* '' */
 .icon-ok-squared:before { content: '\f14a'; } /* '' */
+.icon-dollar-1:before { content: '\f155'; } /* '' */
 .icon-plus-squared-alt:before { content: '\f196'; } /* '' */
 .icon-tree:before { content: '\f1bb'; } /* '' */
 .icon-paper-plane:before { content: '\f1d8'; } /* '' */

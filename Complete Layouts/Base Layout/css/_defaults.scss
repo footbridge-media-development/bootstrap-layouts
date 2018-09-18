@@ -2,6 +2,10 @@
 * {
     white-space:normal;
 }
+a[href^=tel] {
+text-decoration:inherit;
+color: inherit;
+}
 img, iframe, video{
 	max-width:100%;
 }

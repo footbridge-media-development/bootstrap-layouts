@@ -1,0 +1,18 @@
+.img-dynamic{
+	@extend .d-lg-inline;
+	@extend .d-block;
+	@extend .mx-auto;
+	@extend .pb-3;
+}
+
+.img-r-dynamic{
+	@extend .float-lg-right;
+	@extend .img-dynamic;
+	@extend .pl-lg-3;
+}
+
+.img-l-dynamic{
+	@extend .float-lg-left;
+	@extend .img-dynamic;
+	@extend .pr-lg-3;
+}

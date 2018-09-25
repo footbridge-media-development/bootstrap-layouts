@@ -1,3 +1,5 @@
-# Footbridge Media's Bootstrap Layouts
+Markdown editor: https://dillinger.io/
 
-Our translation cheatsheet is located at this repository's home page here: [Flex-Bootstrap Cheatsheet](https://footbridgemediapensacola.github.io/bootstrap-layouts/)
+Current version: v1.0.0
+
+This is the home of Footbridge Media's Bootstrap layouts. In the layouts folder you will find multiple HTML files which serve as different layout templates. 

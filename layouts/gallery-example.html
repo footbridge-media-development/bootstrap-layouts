@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/<?= $companyInfo->getSchema(); ?>">
+<head>
+	<title>PROOF</title>
+	<meta name="description" property="og:description" content="" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta property="og:type" content="website" />
+	<meta itemprop="logo" content="<?= $baseUrl ?>/images/logo.png">
+	<meta content="<?= $tools->getOGTitle(); ?>" property="og:title">
+	<meta property="og:image" itemprop="image" content="<?= $tools->getOGImage(); ?>" >
+	<meta name="format-detection" content="telephone=no">
+	<link href="Bootstrap/site-theme/master-theme.css" rel="stylesheet" type="text/css">
+	<link href="css/footbridge-additions.css" rel="stylesheet" type="text/css">
+	<link href="fontello/css/fontello.css" rel="stylesheet" type="text/css">
+	<link href="js/lightbox/css/lightbox.min.css" rel="stylesheet" type="text/css">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="favicon.ico" rel="icon" type="image/x-icon">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script defer src="Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+	<script defer src="js/navigation-manager-app.min.js" type="text/javascript"></script>
+	<script defer src="js/start-hero-carousel.js" type="text/javascript"></script>
+	<script defer src="js/links.min.js"></script>
+	<script defer src="js/paginate.js"></script>
+	<script defer src="js/accordion.js"></script>
+	<script defer src="js/lightbox/js/lightbox.min.js"></script>
+</head>
+<body>
+	<!-- Small-screen navigation -->
+	<div class="d-block d-xl-none" id="small-navigation-container-1">
+		<div class="d-flex align-items-center">
+			<div class="p-2 col"><img alt="Bootstrap logo" src="images/logo.png" width="100"></div>
+			<div class="p-1 col-6">
+				<span class="lilbear">xxx-xxx-xxxx</span>
+			</div>
+			<div class="col-2 text-right">
+				<a id="small-navigation-menu-opener-1"><img alt="Hamburger menu" src="images/menu_hamburger_dark.svg" width="42"></a>
+			</div>
+		</div>
+		<div class="pullout-menu-backdrop position-fixed d-none flex-direction-column justify-content-end">
+			<div>
+				<div class="menu-heading">
+					<span>Menu</span>
+				</div>
+				<div class="navigation-links">
+					<div>
+						<a href="#">Home</a>
+					</div>
+					<div>
+						<a>About +</a>
+						<div class="tap-dropdown">
+							<div>
+								<a href="#">Service Area</a>
+							</div>
+							<div>
+								<a href="#">Submit Feedback</a>
+							</div>
+							<div>
+								<a href="#">Latest Projeccts</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<a>Services +</a>
+						<div class="tap-dropdown">
+							<div>
+								<a href="#">Service 1</a>
+							</div>
+							<div>
+								<a href="#">Service 2</a>
+							</div>
+							<div>
+								<a href="#">Service 3</a>
+							</div>
+							<div>
+								<a href="#">Service 4</a>
+							</div>
+							<div>
+								<a>Services 5+</a>
+								<div class="tap-dropdown">
+									<div>
+										<a href="#">Sub Service</a>
+									</div>
+									<div>
+										<a href="#">Sub Service</a>
+									</div>
+									<div>
+										<a href="#">Sub Service</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<a href="#">Service 6</a>
+							</div>
+							<div>
+								<a href="#">Service 6</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<a href="#">Home Tips</a>
+					</div>
+					<div>
+						<a href="#">Reviews</a>
+					</div>
+					<div>
+						<a href="#">FAQS</a>
+					</div>
+					<div>
+						<a href="#">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- Large-screen navigation -->
+	<div class="d-none d-xl-block pt-2" id="large-navigation-container-2">
+		<div class="row big-wrap mx-auto py-2 align-items-center cTop">
+			<div class="col-6 text-center"><img src="images/logo.png" width="60%;"></div>
+			<div class="col text-center">
+
+			</div>
+			<div class="col-4 text-center">
+				<a href="#link">
+				<p class="icon-phone goldylox seconds">xxx-xxx-xxxx</p>
+				<p class="btn btn-form goldylox">Request Service</p></a>
+			</div>
+		</div>
+		<div>
+			<div class="container-fluid navigation-links big-wrap mx-auto">
+				<div class="row cMenub">
+					<div class="col">
+						<a href="#">Home</a>
+					</div>
+					<div class="col">
+						<a href="#">About Us</a>
+						<div class="dropdown">
+							<div>
+								<a href="#">Service Area</a>
+							</div>
+							<div>
+								<a href="#">Submit Feedback</a>
+							</div>
+							<div>
+								<a href="#">Latest Projects</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<a href="#">Services +</a>
+						<div class="dropdown">
+							<div>
+								<a href="#">Service 1</a>
+							</div>
+							<div>
+								<a href="#">Service 2</a>
+							</div>
+							<div>
+								<a href="#">Service 3</a>
+							</div>
+							<div>
+								<a href="#">Service 4</a>
+							</div>
+							<div>
+								<a href="#">Services 5+</a>
+								<div class="dropdown">
+									<div>
+										<a href="#">Sub Service</a>
+									</div>
+									<div>
+										<a href="#">Sub Service</a>
+									</div>
+									<div>
+										<a href="#">Sub Service</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<a href="#">Service 6</a>
+							</div>
+							<div>
+								<a href="#">Service 6</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<a href="#">Home Tips</a>
+					</div>
+					<div class="col">
+						<a href="#">Reviews</a>
+					</div>
+					<div class="col">
+						<a href="#">FAQS</a>
+					</div>
+					<div class="col">
+						<a href="#">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div><!-- Banner -->
+
+	<!-- Content -->
+	 <nav aria-label="breadcrumb" class="w-100">
+                <ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
+                    <li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Library</span></a><meta itemprop="position" content="2"></li>
+                    <li class="breadcrumb-item active" aria-current="page"><a href="#" itemprop="item"><span itemprop="name">Data</span></a><meta itemprop="position" content="3"></li>
+                </ol>
+            </nav>
+	<div class="container big-wrap mx-auto" id="content">
+        <div id="body" class="row justify-content-center p-1">
+			<div class="col-12 col-md-8 p-md-3">
+				<h1>H1 goes here</h1>
+				<p><strong>Your Company</strong>'s new web site will look like this. At this stage of the web site creation and build process, we are only concerned with the visual aesthetics of your page - the look and feel of your new website.</p>
+				<p>Our graphic designers have prepared this unique layout - based on any previous marketing materials you may have provided and the style of site you indicated. This written content will be replaced once you approve the look and feel of your design.</p>
+				<h2>Gallery Light Box</h2>
+                <!---- LIGHT BOX THUMBS------>
+				<div class="row container-fluid">
+					<div class="col p-0">
+						<div class="thumbnail"><img data-target="#myModal1" data-toggle="modal" src="images/gallery/benches.jpg"></div>
+					</div>
+					<div class="col p-0">
+						<div class="thumbnail"><img data-target="#myModal2" data-toggle="modal" src="images/gallery/bridge.jpg"></div>
+					</div>
+					<div class="col p-0">
+						<div class="thumbnail"><img data-target="#myModal3" data-toggle="modal" src="images/gallery/tunnel.jpg"></div>
+					</div>
+					<div class="col p-0">
+						<div class="thumbnail"><img data-target="#myModal1" data-toggle="modal" src="images/gallery/benches.jpg"></div>
+					</div>
+
+				</div><!---The Lighbox =-->
+				<div class="modal fade" id="myModal1" role="img">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content"><img src="images/gallery/benches.jpg" style="width:100%;"></div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal2" role="img">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content"><img src="images/gallery/bridge.jpg" style="width:100%;"></div>
+					</div>
+				</div>
+				<div class="modal fade" id="myModal3" role="img">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content"><img src="images/gallery/tunnel.jpg" style="width:100%;"></div>
+					</div>
+				</div>
+				<!---Scrolling Gallery With Thumbs----->
+				<hr>
+				<h2>Gallery Scroller</h2>
+
+				<div class="row container-fluid justify-content-center">
+                    <div id="carouselGallery" class="carousel slide cGal" data-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="images/gallery/benches.jpg" class="d-block w-100" alt="alt here">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/gallery/bridge.jpg" class="d-block" alt="alt here">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/gallery/coast.jpg" class="d-block" alt="alt here">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="images/gallery/tunnel.jpg" class="d-block" alt="alt here">
+                            </div>
+                        </div>
+                            <a class="carousel-control-prev" href="#carouselGallery" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselGallery" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                            </a>
+                    </div>
+			    </div>
+                <div class="row container-fluid justify-content-center">
+                    <div class="col p-0">
+                        <div class="thumbnail">
+                            <img data-target="#carouselGallery" data-slide-to="0" class="active" src="images/gallery/benches.jpg">
+                        </div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="thumbnail">
+                            <img data-target="#carouselGallery" data-slide-to="1" class="active" src="images/gallery/bridge.jpg">
+                        </div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="thumbnail">
+                            <img data-target="#carouselGallery" data-slide-to="2" class="active" src="images/gallery/coast.jpg">
+                        </div>
+                    </div>
+                    <div class="col p-0">
+                        <div class="thumbnail">
+                            <img data-target="#carouselGallery" data-slide-to="3" class="active" src="images/gallery/tunnel.jpg">
+                        </div>
+                    </div>
+				</div>
+				<!---Scrolling Gallery With Thumbs and light box ----->
+				<hr>
+				<h2>Gallery Scroller In Light Box</h2>
+				<div class="modal fade" id="sBm">
+					<div class="modal-dialog modal-lg">
+						<div class="modal-content">
+                            <div>
+                                <div id="lCg" class="carousel slide cGal align-self-middle justify-content-center" data-interval="false">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="images/gallery/benches.jpg" class="d-block w-100" alt="alt here">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/gallery/bridge.jpg" class="d-block" alt="alt here">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/gallery/coast.jpg" class="d-block" alt="alt here">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/gallery/tunnel.jpg" class="d-block" alt="alt here">
+                                        </div>
+                                    </div>
+                                        <a class="carousel-control-prev" href="#lCg" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#lCg" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                        </a>
+                                </div>
+                            </div>
+                        </div>
+					</div>
+				</div>
+
+
+                <div class="row container justify-content-center mx-auto">
+                   <ul class="list-inline d-flex gallthumbs">
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="0">
+                               <img src="images/gallery/benches.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="1">
+                               <img src="images/gallery/bridge.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="2">
+                               <img src="images/gallery/coast.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="3">
+                               <img src="images/gallery/tunnel.jpg">
+                           </a>
+                       </li>
+                   </ul>
+                   <ul class="list-inline d-flex gallthumbs">
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="0">
+                               <img src="images/gallery/benches.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="1">
+                               <img src="images/gallery/bridge.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="2">
+                               <img src="images/gallery/coast.jpg">
+                           </a>
+                       </li>
+                       <li data-toggle="modal" data-target="#sBm" class="list-inline-item thumbnail">
+                           <a href="#lCg" data-slide-to="3">
+                               <img src="images/gallery/tunnel.jpg">
+                           </a>
+                       </li>
+                   </ul>
+				</div>
+
+
+				<div class="row">
+					<div class="col-12 mt-5">
+						<h3 class="small text-center">
+							If you are looking for a *********** in the ******* area, please call (xxx) xxx-xxxx or complete our <a class="btn btn-form p-1 m-1" href="#"><span>Online Request Form</span></a>
+						</h3>
+					</div>
+				</div>
+			</div>
+
+			<!--- SIDEBAR STARTS=============================================-->
+			<div id="sidebar" class="col-12 col-md-4 d-inline-block p-md-2">
+			    <div class="row h-100 d-flex">
+                    <div id="wufoo-hold " class="col-12 mt-3">
+                        <p class="goldylox text-center">Contact Us!</p>
+                        <div id="wufoo-mywt4d81dxoh3v">
+                        Fill out my <a href="https://aarono.wufoo.com/forms/mywt4d81dxoh3v">online form</a>.
+                        </div>
+                        <script type="text/javascript">
+                        var mywt4d81dxoh3v;(function(d, t) {
+                                        var s = d.createElement(t), options = {
+                                        'userName':'aarono',
+                                        'formHash':'mywt4d81dxoh3v',
+                                        'autoResize':true,
+                                        'height':'580',
+                                        'async':true,
+                                        'host':'wufoo.com',
+                                        'header':'hide',
+                                        'ssl':true};
+                                        s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+                                        s.onload = s.onreadystatechange = function() {
+                                        var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+                                        try { mywt4d81dxoh3v = new WufooForm();mywt4d81dxoh3v.initialize(options);mywt4d81dxoh3v.display(); } catch (e) {}};
+                                        var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+                                        })(document, 'script');
+                        </script>
+				        <div class="w-100"></div>
+                    </div>
+                    <div id="button-hold" class="col-12 justify-content-center text-center align-self-start">
+                         <a href="#" class="btn btn-sidebar my-2">Submit Feedback</a>
+                         <a href="#" class="btn btn-sidebar my-2">Submit Feedback</a>
+                         <a href="#" class="btn btn-sidebar my-2">Submit Feedback</a>
+                    </div>
+
+				    <div class="justify-content-center text-center align-items-end d-flex w-100 mb-3">
+                        <a href="#link"><i class="icon-facebook-circled goldylox"></i></a><a href="#link"><i class="icon-twitter goldylox"></i></a><a href="#link"><i class="icon-gplus-circled goldylox"></i></a>
+                    </div>
+			    </div>
+			</div>
+        </div>
+    </div>
+
+
+
+	<!-- Footer -->
+	<footer class="fb-ftr-1">
+		<div class="container">
+			<div class="row px-5 py-3">
+				<div class="col-sm-6 col-md-3 pb-3"><img alt="logo" src="images/logo.png" width="150px"></div>
+				<div class="col-sm-6 col-md-3">
+					<h4>Contact</h4>
+					<div class="contact pb-3">
+						<p itemprop="legalName">Company Name</p>
+						<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							<p itemprop="streetAddress">Adress</p>
+							<p><span itemprop="addressLocality">City</span>, <span itemprop="addressRegion">ST</span> <span itemprop="postalCode">ZIP</span></p>
+						</div>
+						<p>Phone: <span itemprop="telephone">xxx-xxx-xxxx</span></p>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h4>Quick Links</h4>
+					<div class="quick-links pb-3">
+						<a href="#link/">Google Places</a>
+						<a href="#link/">Articles</a>
+						<a href="#link/">Privacy Policy</a>
+						<a href="#link/">Terms of Use</a>
+						<a href="#link/">Sitemap</a>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-3">
+					<h4>Service Areas</h4>
+					<div class="service-areas pb-3">
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+					</div>
+				</div>
+			</div>
+			<div class="row px-5 py-3" style="border-top: solid 1px #555">
+				<p>
+				&copy;
+				<script>
+					document.write(new Date().getFullYear());
+				</script>
+				<!-- Uncomment the PHP code in builds and remove the above document.write code -->
+				<!-- <?= date("Y"); ?> -->
+				<span itemprop="name"><a itemprop="url" href="#">Company Name</a></span>, Rights Reserved</p>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

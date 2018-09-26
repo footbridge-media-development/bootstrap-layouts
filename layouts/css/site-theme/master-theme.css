@@ -27,6 +27,7 @@
   --danger: #dc3545;
   --light: #f8f9fa;
   --dark: #343a40;
+  --info2: #17a2b8;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
@@ -1323,6 +1324,17 @@ pre {
   .table-hover .table-dark:hover > th {
     background-color: #b9bbbe; }
 
+.table-info2,
+.table-info2 > th,
+.table-info2 > td {
+  background-color: #bee5eb; }
+
+.table-hover .table-info2:hover {
+  background-color: #abdde5; }
+  .table-hover .table-info2:hover > td,
+  .table-hover .table-info2:hover > th {
+    background-color: #abdde5; }
+
 .table-active,
 .table-active > th,
 .table-active > td {
@@ -1945,6 +1957,27 @@ fieldset:disabled a.btn {
     .btn-dark:not(:disabled):not(.disabled):active:focus, .btn-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
 
+.btn-info2 {
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8; }
+  .btn-info2:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b; }
+  .btn-info2:focus, .btn-info2.focus {
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
+  .btn-info2.disabled, .btn-info2:disabled {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8; }
+  .btn-info2:not(:disabled):not(.disabled):active, .btn-info2:not(:disabled):not(.disabled).active, .show > .btn-info2.dropdown-toggle {
+    color: #fff;
+    background-color: #117a8b;
+    border-color: #10707f; }
+    .btn-info2:not(:disabled):not(.disabled):active:focus, .btn-info2:not(:disabled):not(.disabled).active:focus, .show > .btn-info2.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
+
 .btn-outline-primary {
   color: #3d88c8;
   background-color: transparent;
@@ -2112,6 +2145,27 @@ fieldset:disabled a.btn {
     border-color: #343a40; }
     .btn-outline-dark:not(:disabled):not(.disabled):active:focus, .btn-outline-dark:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-dark.dropdown-toggle:focus {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
+
+.btn-outline-info2 {
+  color: #17a2b8;
+  background-color: transparent;
+  background-image: none;
+  border-color: #17a2b8; }
+  .btn-outline-info2:hover {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8; }
+  .btn-outline-info2:focus, .btn-outline-info2.focus {
+    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
+  .btn-outline-info2.disabled, .btn-outline-info2:disabled {
+    color: #17a2b8;
+    background-color: transparent; }
+  .btn-outline-info2:not(:disabled):not(.disabled):active, .btn-outline-info2:not(:disabled):not(.disabled).active, .show > .btn-outline-info2.dropdown-toggle {
+    color: #fff;
+    background-color: #17a2b8;
+    border-color: #17a2b8; }
+    .btn-outline-info2:not(:disabled):not(.disabled):active:focus, .btn-outline-info2:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-info2.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5); }
 
 .btn-link {
   font-weight: 400;
@@ -3052,7 +3106,7 @@ input[type="button"].btn-block {
   margin-bottom: 0;
   background-color: rgba(0, 0, 0, 0.03);
   border-bottom: 1px solid rgba(0, 0, 0, 0.125); }
-  .card-header + .list-group .list-group-item:first-child, .card-header + .checks-primary .list-group-item:first-child, .card-header + .checks-secondary .list-group-item:first-child, .card-header + .checks-success .list-group-item:first-child, .card-header + .checks-info .list-group-item:first-child, .card-header + .checks-warning .list-group-item:first-child, .card-header + .checks-danger .list-group-item:first-child, .card-header + .checks-light .list-group-item:first-child, .card-header + .checks-dark .list-group-item:first-child, .card-header + .list-group .checks-primary li:first-child, .checks-primary .card-header + .list-group li:first-child, .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-primary li:first-child, .checks-primary .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-primary li:first-child, .checks-primary .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-primary li:first-child, .checks-primary .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-primary li:first-child, .checks-primary .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-primary li:first-child, .checks-primary .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-primary li:first-child, .checks-primary .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-primary li:first-child, .checks-primary .card-header + .checks-dark li:first-child, .card-header + .list-group .checks-secondary li:first-child, .checks-secondary .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-secondary li:first-child, .checks-secondary .card-header + .checks-primary li:first-child, .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-secondary li:first-child, .checks-secondary .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-secondary li:first-child, .checks-secondary .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-secondary li:first-child, .checks-secondary .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-secondary li:first-child, .checks-secondary .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-secondary li:first-child, .checks-secondary .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-secondary li:first-child, .checks-secondary .card-header + .checks-dark li:first-child, .card-header + .list-group .checks-success li:first-child, .checks-success .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-success li:first-child, .checks-success .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-success li:first-child, .checks-success .card-header + .checks-secondary li:first-child, .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-success li:first-child, .checks-success .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-success li:first-child, .checks-success .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-success li:first-child, .checks-success .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-success li:first-child, .checks-success .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-success li:first-child, .checks-success .card-header + .checks-dark li:first-child, .card-header + .list-group .checks-info li:first-child, .checks-info .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-info li:first-child, .checks-info .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-info li:first-child, .checks-info .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-info li:first-child, .checks-info .card-header + .checks-success li:first-child, .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-info li:first-child, .checks-info .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-info li:first-child, .checks-info .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-info li:first-child, .checks-info .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-info li:first-child, .checks-info .card-header + .checks-dark li:first-child, .card-header + .list-group .checks-warning li:first-child, .checks-warning .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-warning li:first-child, .checks-warning .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-warning li:first-child, .checks-warning .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-warning li:first-child, .checks-warning .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-warning li:first-child, .checks-warning .card-header + .checks-info li:first-child, .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-warning li:first-child, .checks-warning .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-warning li:first-child, .checks-warning .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-warning li:first-child, .checks-warning .card-header + .checks-dark li:first-child, .card-header + .list-group .checks-danger li:first-child, .checks-danger .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-danger li:first-child, .checks-danger .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-danger li:first-child, .checks-danger .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-danger li:first-child, .checks-danger .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-danger li:first-child, .checks-danger .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-danger li:first-child, .checks-danger .card-header + .checks-warning li:first-child, .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-danger li:first-child, .checks-danger .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-danger li:first-child, .checks-danger .card-header + .checks-dark li:first-child, .card-header + .list-group .checks-light li:first-child, .checks-light .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-light li:first-child, .checks-light .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-light li:first-child, .checks-light .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-light li:first-child, .checks-light .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-light li:first-child, .checks-light .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-light li:first-child, .checks-light .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-light li:first-child, .checks-light .card-header + .checks-danger li:first-child, .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-light li:first-child, .checks-light .card-header + .checks-dark li:first-child, .card-header + .list-group .checks-dark li:first-child, .checks-dark .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-dark li:first-child, .checks-dark .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-dark li:first-child, .checks-dark .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-dark li:first-child, .checks-dark .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-dark li:first-child, .checks-dark .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-dark li:first-child, .checks-dark .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-dark li:first-child, .checks-dark .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-dark li:first-child, .checks-dark .card-header + .checks-light li:first-child, .card-header + .checks-dark li:first-child {
+  .card-header + .list-group .list-group-item:first-child, .card-header + .checks-primary .list-group-item:first-child, .card-header + .checks-secondary .list-group-item:first-child, .card-header + .checks-success .list-group-item:first-child, .card-header + .checks-info .list-group-item:first-child, .card-header + .checks-warning .list-group-item:first-child, .card-header + .checks-danger .list-group-item:first-child, .card-header + .checks-light .list-group-item:first-child, .card-header + .checks-dark .list-group-item:first-child, .card-header + .checks-info2 .list-group-item:first-child, .card-header + .list-group .checks-primary li:first-child, .checks-primary .card-header + .list-group li:first-child, .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-primary li:first-child, .checks-primary .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-primary li:first-child, .checks-primary .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-primary li:first-child, .checks-primary .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-primary li:first-child, .checks-primary .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-primary li:first-child, .checks-primary .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-primary li:first-child, .checks-primary .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-primary li:first-child, .checks-primary .card-header + .checks-dark li:first-child, .card-header + .checks-info2 .checks-primary li:first-child, .checks-primary .card-header + .checks-info2 li:first-child, .card-header + .list-group .checks-secondary li:first-child, .checks-secondary .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-secondary li:first-child, .checks-secondary .card-header + .checks-primary li:first-child, .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-secondary li:first-child, .checks-secondary .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-secondary li:first-child, .checks-secondary .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-secondary li:first-child, .checks-secondary .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-secondary li:first-child, .checks-secondary .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-secondary li:first-child, .checks-secondary .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-secondary li:first-child, .checks-secondary .card-header + .checks-dark li:first-child, .card-header + .checks-info2 .checks-secondary li:first-child, .checks-secondary .card-header + .checks-info2 li:first-child, .card-header + .list-group .checks-success li:first-child, .checks-success .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-success li:first-child, .checks-success .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-success li:first-child, .checks-success .card-header + .checks-secondary li:first-child, .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-success li:first-child, .checks-success .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-success li:first-child, .checks-success .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-success li:first-child, .checks-success .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-success li:first-child, .checks-success .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-success li:first-child, .checks-success .card-header + .checks-dark li:first-child, .card-header + .checks-info2 .checks-success li:first-child, .checks-success .card-header + .checks-info2 li:first-child, .card-header + .list-group .checks-info li:first-child, .checks-info .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-info li:first-child, .checks-info .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-info li:first-child, .checks-info .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-info li:first-child, .checks-info .card-header + .checks-success li:first-child, .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-info li:first-child, .checks-info .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-info li:first-child, .checks-info .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-info li:first-child, .checks-info .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-info li:first-child, .checks-info .card-header + .checks-dark li:first-child, .card-header + .checks-info2 .checks-info li:first-child, .checks-info .card-header + .checks-info2 li:first-child, .card-header + .list-group .checks-warning li:first-child, .checks-warning .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-warning li:first-child, .checks-warning .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-warning li:first-child, .checks-warning .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-warning li:first-child, .checks-warning .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-warning li:first-child, .checks-warning .card-header + .checks-info li:first-child, .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-warning li:first-child, .checks-warning .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-warning li:first-child, .checks-warning .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-warning li:first-child, .checks-warning .card-header + .checks-dark li:first-child, .card-header + .checks-info2 .checks-warning li:first-child, .checks-warning .card-header + .checks-info2 li:first-child, .card-header + .list-group .checks-danger li:first-child, .checks-danger .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-danger li:first-child, .checks-danger .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-danger li:first-child, .checks-danger .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-danger li:first-child, .checks-danger .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-danger li:first-child, .checks-danger .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-danger li:first-child, .checks-danger .card-header + .checks-warning li:first-child, .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-danger li:first-child, .checks-danger .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-danger li:first-child, .checks-danger .card-header + .checks-dark li:first-child, .card-header + .checks-info2 .checks-danger li:first-child, .checks-danger .card-header + .checks-info2 li:first-child, .card-header + .list-group .checks-light li:first-child, .checks-light .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-light li:first-child, .checks-light .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-light li:first-child, .checks-light .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-light li:first-child, .checks-light .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-light li:first-child, .checks-light .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-light li:first-child, .checks-light .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-light li:first-child, .checks-light .card-header + .checks-danger li:first-child, .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-light li:first-child, .checks-light .card-header + .checks-dark li:first-child, .card-header + .checks-info2 .checks-light li:first-child, .checks-light .card-header + .checks-info2 li:first-child, .card-header + .list-group .checks-dark li:first-child, .checks-dark .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-dark li:first-child, .checks-dark .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-dark li:first-child, .checks-dark .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-dark li:first-child, .checks-dark .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-dark li:first-child, .checks-dark .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-dark li:first-child, .checks-dark .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-dark li:first-child, .checks-dark .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-dark li:first-child, .checks-dark .card-header + .checks-light li:first-child, .card-header + .checks-dark li:first-child, .card-header + .checks-info2 .checks-dark li:first-child, .checks-dark .card-header + .checks-info2 li:first-child, .card-header + .list-group .checks-info2 li:first-child, .checks-info2 .card-header + .list-group li:first-child, .card-header + .checks-primary .checks-info2 li:first-child, .checks-info2 .card-header + .checks-primary li:first-child, .card-header + .checks-secondary .checks-info2 li:first-child, .checks-info2 .card-header + .checks-secondary li:first-child, .card-header + .checks-success .checks-info2 li:first-child, .checks-info2 .card-header + .checks-success li:first-child, .card-header + .checks-info .checks-info2 li:first-child, .checks-info2 .card-header + .checks-info li:first-child, .card-header + .checks-warning .checks-info2 li:first-child, .checks-info2 .card-header + .checks-warning li:first-child, .card-header + .checks-danger .checks-info2 li:first-child, .checks-info2 .card-header + .checks-danger li:first-child, .card-header + .checks-light .checks-info2 li:first-child, .checks-info2 .card-header + .checks-light li:first-child, .card-header + .checks-dark .checks-info2 li:first-child, .checks-info2 .card-header + .checks-dark li:first-child, .card-header + .checks-info2 li:first-child {
     border-top: 0; }
 
 .card-footer {
@@ -3302,6 +3356,14 @@ input[type="button"].btn-block {
     text-decoration: none;
     background-color: #1d2124; }
 
+.badge-info2 {
+  color: #fff;
+  background-color: #17a2b8; }
+  .badge-info2[href]:hover, .badge-info2[href]:focus {
+    color: #fff;
+    text-decoration: none;
+    background-color: #117a8b; }
+
 .jumbotron {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
@@ -3407,6 +3469,15 @@ input[type="button"].btn-block {
   .alert-dark .alert-link {
     color: #040505; }
 
+.alert-info2 {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb; }
+  .alert-info2 hr {
+    border-top-color: #abdde5; }
+  .alert-info2 .alert-link {
+    color: #062c33; }
+
 @keyframes progress-bar-stripes {
   from {
     background-position: 1rem 0; }
@@ -3446,7 +3517,7 @@ input[type="button"].btn-block {
 .media-body {
   flex: 1; }
 
-.list-group, .checks-primary, .checks-secondary, .checks-success, .checks-info, .checks-warning, .checks-danger, .checks-light, .checks-dark {
+.list-group, .checks-primary, .checks-secondary, .checks-success, .checks-info, .checks-warning, .checks-danger, .checks-light, .checks-dark, .checks-info2 {
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -3464,33 +3535,33 @@ input[type="button"].btn-block {
     color: #212529;
     background-color: #e9ecef; }
 
-.list-group-item, .checks-primary li, .checks-secondary li, .checks-success li, .checks-info li, .checks-warning li, .checks-danger li, .checks-light li, .checks-dark li {
+.list-group-item, .checks-primary li, .checks-secondary li, .checks-success li, .checks-info li, .checks-warning li, .checks-danger li, .checks-light li, .checks-dark li, .checks-info2 li {
   position: relative;
   display: block;
   padding: 0.75rem 1.25rem;
   margin-bottom: -1px;
   background-color: #fff;
   border: 1px solid rgba(0, 0, 0, 0.125); }
-  .list-group-item:last-child, .checks-primary li:last-child, .checks-secondary li:last-child, .checks-success li:last-child, .checks-info li:last-child, .checks-warning li:last-child, .checks-danger li:last-child, .checks-light li:last-child, .checks-dark li:last-child {
+  .list-group-item:last-child, .checks-primary li:last-child, .checks-secondary li:last-child, .checks-success li:last-child, .checks-info li:last-child, .checks-warning li:last-child, .checks-danger li:last-child, .checks-light li:last-child, .checks-dark li:last-child, .checks-info2 li:last-child {
     margin-bottom: 0; }
-  .list-group-item:hover, .checks-primary li:hover, .checks-secondary li:hover, .checks-success li:hover, .checks-info li:hover, .checks-warning li:hover, .checks-danger li:hover, .checks-light li:hover, .checks-dark li:hover, .list-group-item:focus, .checks-primary li:focus, .checks-secondary li:focus, .checks-success li:focus, .checks-info li:focus, .checks-warning li:focus, .checks-danger li:focus, .checks-light li:focus, .checks-dark li:focus {
+  .list-group-item:hover, .checks-primary li:hover, .checks-secondary li:hover, .checks-success li:hover, .checks-info li:hover, .checks-warning li:hover, .checks-danger li:hover, .checks-light li:hover, .checks-dark li:hover, .checks-info2 li:hover, .list-group-item:focus, .checks-primary li:focus, .checks-secondary li:focus, .checks-success li:focus, .checks-info li:focus, .checks-warning li:focus, .checks-danger li:focus, .checks-light li:focus, .checks-dark li:focus, .checks-info2 li:focus {
     z-index: 1;
     text-decoration: none; }
-  .list-group-item.disabled, .checks-primary li.disabled, .checks-secondary li.disabled, .checks-success li.disabled, .checks-info li.disabled, .checks-warning li.disabled, .checks-danger li.disabled, .checks-light li.disabled, .checks-dark li.disabled, .list-group-item:disabled, .checks-primary li:disabled, .checks-secondary li:disabled, .checks-success li:disabled, .checks-info li:disabled, .checks-warning li:disabled, .checks-danger li:disabled, .checks-light li:disabled, .checks-dark li:disabled {
+  .list-group-item.disabled, .checks-primary li.disabled, .checks-secondary li.disabled, .checks-success li.disabled, .checks-info li.disabled, .checks-warning li.disabled, .checks-danger li.disabled, .checks-light li.disabled, .checks-dark li.disabled, .checks-info2 li.disabled, .list-group-item:disabled, .checks-primary li:disabled, .checks-secondary li:disabled, .checks-success li:disabled, .checks-info li:disabled, .checks-warning li:disabled, .checks-danger li:disabled, .checks-light li:disabled, .checks-dark li:disabled, .checks-info2 li:disabled {
     color: #6c757d;
     background-color: #fff; }
-  .list-group-item.active, .checks-primary li.active, .checks-secondary li.active, .checks-success li.active, .checks-info li.active, .checks-warning li.active, .checks-danger li.active, .checks-light li.active, .checks-dark li.active {
+  .list-group-item.active, .checks-primary li.active, .checks-secondary li.active, .checks-success li.active, .checks-info li.active, .checks-warning li.active, .checks-danger li.active, .checks-light li.active, .checks-dark li.active, .checks-info2 li.active {
     z-index: 2;
     color: #fff;
     background-color: #3d88c8;
     border-color: #3d88c8; }
 
-.list-group-flush .list-group-item, .checks-primary .list-group-item, .checks-secondary .list-group-item, .checks-success .list-group-item, .checks-info .list-group-item, .checks-warning .list-group-item, .checks-danger .list-group-item, .checks-light .list-group-item, .checks-dark .list-group-item, .list-group-flush .checks-primary li, .checks-primary .list-group-flush li, .checks-primary li, .list-group-flush .checks-secondary li, .checks-secondary .list-group-flush li, .checks-secondary li, .list-group-flush .checks-success li, .checks-success .list-group-flush li, .checks-success li, .list-group-flush .checks-info li, .checks-info .list-group-flush li, .checks-info li, .list-group-flush .checks-warning li, .checks-warning .list-group-flush li, .checks-warning li, .list-group-flush .checks-danger li, .checks-danger .list-group-flush li, .checks-danger li, .list-group-flush .checks-light li, .checks-light .list-group-flush li, .checks-light li, .list-group-flush .checks-dark li, .checks-dark .list-group-flush li, .checks-dark li {
+.list-group-flush .list-group-item, .checks-primary .list-group-item, .checks-secondary .list-group-item, .checks-success .list-group-item, .checks-info .list-group-item, .checks-warning .list-group-item, .checks-danger .list-group-item, .checks-light .list-group-item, .checks-dark .list-group-item, .checks-info2 .list-group-item, .list-group-flush .checks-primary li, .checks-primary .list-group-flush li, .checks-primary li, .list-group-flush .checks-secondary li, .checks-secondary .list-group-flush li, .checks-secondary li, .list-group-flush .checks-success li, .checks-success .list-group-flush li, .checks-success li, .list-group-flush .checks-info li, .checks-info .list-group-flush li, .checks-info li, .list-group-flush .checks-warning li, .checks-warning .list-group-flush li, .checks-warning li, .list-group-flush .checks-danger li, .checks-danger .list-group-flush li, .checks-danger li, .list-group-flush .checks-light li, .checks-light .list-group-flush li, .checks-light li, .list-group-flush .checks-dark li, .checks-dark .list-group-flush li, .checks-dark li, .list-group-flush .checks-info2 li, .checks-info2 .list-group-flush li, .checks-info2 li {
   border-right: 0;
   border-left: 0; }
-.list-group-flush:first-child .list-group-item:first-child, .checks-primary:first-child .list-group-item:first-child, .checks-secondary:first-child .list-group-item:first-child, .checks-success:first-child .list-group-item:first-child, .checks-info:first-child .list-group-item:first-child, .checks-warning:first-child .list-group-item:first-child, .checks-danger:first-child .list-group-item:first-child, .checks-light:first-child .list-group-item:first-child, .checks-dark:first-child .list-group-item:first-child, .list-group-flush:first-child .checks-primary li:first-child, .checks-primary .list-group-flush:first-child li:first-child, .checks-primary:first-child li:first-child, .list-group-flush:first-child .checks-secondary li:first-child, .checks-secondary .list-group-flush:first-child li:first-child, .checks-secondary:first-child li:first-child, .list-group-flush:first-child .checks-success li:first-child, .checks-success .list-group-flush:first-child li:first-child, .checks-success:first-child li:first-child, .list-group-flush:first-child .checks-info li:first-child, .checks-info .list-group-flush:first-child li:first-child, .checks-info:first-child li:first-child, .list-group-flush:first-child .checks-warning li:first-child, .checks-warning .list-group-flush:first-child li:first-child, .checks-warning:first-child li:first-child, .list-group-flush:first-child .checks-danger li:first-child, .checks-danger .list-group-flush:first-child li:first-child, .checks-danger:first-child li:first-child, .list-group-flush:first-child .checks-light li:first-child, .checks-light .list-group-flush:first-child li:first-child, .checks-light:first-child li:first-child, .list-group-flush:first-child .checks-dark li:first-child, .checks-dark .list-group-flush:first-child li:first-child, .checks-dark:first-child li:first-child {
+.list-group-flush:first-child .list-group-item:first-child, .checks-primary:first-child .list-group-item:first-child, .checks-secondary:first-child .list-group-item:first-child, .checks-success:first-child .list-group-item:first-child, .checks-info:first-child .list-group-item:first-child, .checks-warning:first-child .list-group-item:first-child, .checks-danger:first-child .list-group-item:first-child, .checks-light:first-child .list-group-item:first-child, .checks-dark:first-child .list-group-item:first-child, .checks-info2:first-child .list-group-item:first-child, .list-group-flush:first-child .checks-primary li:first-child, .checks-primary .list-group-flush:first-child li:first-child, .checks-primary:first-child li:first-child, .list-group-flush:first-child .checks-secondary li:first-child, .checks-secondary .list-group-flush:first-child li:first-child, .checks-secondary:first-child li:first-child, .list-group-flush:first-child .checks-success li:first-child, .checks-success .list-group-flush:first-child li:first-child, .checks-success:first-child li:first-child, .list-group-flush:first-child .checks-info li:first-child, .checks-info .list-group-flush:first-child li:first-child, .checks-info:first-child li:first-child, .list-group-flush:first-child .checks-warning li:first-child, .checks-warning .list-group-flush:first-child li:first-child, .checks-warning:first-child li:first-child, .list-group-flush:first-child .checks-danger li:first-child, .checks-danger .list-group-flush:first-child li:first-child, .checks-danger:first-child li:first-child, .list-group-flush:first-child .checks-light li:first-child, .checks-light .list-group-flush:first-child li:first-child, .checks-light:first-child li:first-child, .list-group-flush:first-child .checks-dark li:first-child, .checks-dark .list-group-flush:first-child li:first-child, .checks-dark:first-child li:first-child, .list-group-flush:first-child .checks-info2 li:first-child, .checks-info2 .list-group-flush:first-child li:first-child, .checks-info2:first-child li:first-child {
   border-top: 0; }
-.list-group-flush:last-child .list-group-item:last-child, .checks-primary:last-child .list-group-item:last-child, .checks-secondary:last-child .list-group-item:last-child, .checks-success:last-child .list-group-item:last-child, .checks-info:last-child .list-group-item:last-child, .checks-warning:last-child .list-group-item:last-child, .checks-danger:last-child .list-group-item:last-child, .checks-light:last-child .list-group-item:last-child, .checks-dark:last-child .list-group-item:last-child, .list-group-flush:last-child .checks-primary li:last-child, .checks-primary .list-group-flush:last-child li:last-child, .checks-primary:last-child li:last-child, .list-group-flush:last-child .checks-secondary li:last-child, .checks-secondary .list-group-flush:last-child li:last-child, .checks-secondary:last-child li:last-child, .list-group-flush:last-child .checks-success li:last-child, .checks-success .list-group-flush:last-child li:last-child, .checks-success:last-child li:last-child, .list-group-flush:last-child .checks-info li:last-child, .checks-info .list-group-flush:last-child li:last-child, .checks-info:last-child li:last-child, .list-group-flush:last-child .checks-warning li:last-child, .checks-warning .list-group-flush:last-child li:last-child, .checks-warning:last-child li:last-child, .list-group-flush:last-child .checks-danger li:last-child, .checks-danger .list-group-flush:last-child li:last-child, .checks-danger:last-child li:last-child, .list-group-flush:last-child .checks-light li:last-child, .checks-light .list-group-flush:last-child li:last-child, .checks-light:last-child li:last-child, .list-group-flush:last-child .checks-dark li:last-child, .checks-dark .list-group-flush:last-child li:last-child, .checks-dark:last-child li:last-child {
+.list-group-flush:last-child .list-group-item:last-child, .checks-primary:last-child .list-group-item:last-child, .checks-secondary:last-child .list-group-item:last-child, .checks-success:last-child .list-group-item:last-child, .checks-info:last-child .list-group-item:last-child, .checks-warning:last-child .list-group-item:last-child, .checks-danger:last-child .list-group-item:last-child, .checks-light:last-child .list-group-item:last-child, .checks-dark:last-child .list-group-item:last-child, .checks-info2:last-child .list-group-item:last-child, .list-group-flush:last-child .checks-primary li:last-child, .checks-primary .list-group-flush:last-child li:last-child, .checks-primary:last-child li:last-child, .list-group-flush:last-child .checks-secondary li:last-child, .checks-secondary .list-group-flush:last-child li:last-child, .checks-secondary:last-child li:last-child, .list-group-flush:last-child .checks-success li:last-child, .checks-success .list-group-flush:last-child li:last-child, .checks-success:last-child li:last-child, .list-group-flush:last-child .checks-info li:last-child, .checks-info .list-group-flush:last-child li:last-child, .checks-info:last-child li:last-child, .list-group-flush:last-child .checks-warning li:last-child, .checks-warning .list-group-flush:last-child li:last-child, .checks-warning:last-child li:last-child, .list-group-flush:last-child .checks-danger li:last-child, .checks-danger .list-group-flush:last-child li:last-child, .checks-danger:last-child li:last-child, .list-group-flush:last-child .checks-light li:last-child, .checks-light .list-group-flush:last-child li:last-child, .checks-light:last-child li:last-child, .list-group-flush:last-child .checks-dark li:last-child, .checks-dark .list-group-flush:last-child li:last-child, .checks-dark:last-child li:last-child, .list-group-flush:last-child .checks-info2 li:last-child, .checks-info2 .list-group-flush:last-child li:last-child, .checks-info2:last-child li:last-child {
   border-bottom: 0; }
 
 .list-group-item-primary {
@@ -3580,6 +3651,17 @@ input[type="button"].btn-block {
     color: #fff;
     background-color: #1b1e21;
     border-color: #1b1e21; }
+
+.list-group-item-info2 {
+  color: #0c5460;
+  background-color: #bee5eb; }
+  .list-group-item-info2.list-group-item-action:hover, .list-group-item-info2.list-group-item-action:focus {
+    color: #0c5460;
+    background-color: #abdde5; }
+  .list-group-item-info2.list-group-item-action.active {
+    color: #fff;
+    background-color: #0c5460;
+    border-color: #0c5460; }
 
 .close {
   float: right;
@@ -4174,6 +4256,14 @@ button.bg-dark:hover,
 button.bg-dark:focus {
   background-color: #1d2124 !important; }
 
+.bg-info2 {
+  background-color: #17a2b8 !important; }
+
+a.bg-info2:hover, a.bg-info2:focus,
+button.bg-info2:hover,
+button.bg-info2:focus {
+  background-color: #117a8b !important; }
+
 .bg-white {
   background-color: #fff !important; }
 
@@ -4233,6 +4323,9 @@ button.bg-dark:focus {
 
 .border-dark {
   border-color: #343a40 !important; }
+
+.border-info2 {
+  border-color: #17a2b8 !important; }
 
 .border-white {
   border-color: #fff !important; }
@@ -6491,6 +6584,12 @@ a.text-light:hover, a.text-light:focus {
 a.text-dark:hover, a.text-dark:focus {
   color: #1d2124 !important; }
 
+.text-info2 {
+  color: #17a2b8 !important; }
+
+a.text-info2:hover, a.text-info2:focus {
+  color: #117a8b !important; }
+
 .text-body {
   color: #212529 !important; }
 
@@ -6757,5 +6856,128 @@ a.text-dark:hover, a.text-dark:focus {
     margin-right: 0.5rem; }
   .checks-dark li:not(:last-child) {
     border-bottom: 1px; }
+
+.checks-info2 {
+  list-style: none; }
+  .checks-info2 li::before {
+    display: inline-block;
+    font-family: "fontello";
+    color: white;
+    font-size: 90%;
+    padding: 0.25rem;
+    content: "";
+    background-color: #17a2b8;
+    border-radius: 5px;
+    margin-right: 0.5rem; }
+  .checks-info2 li:not(:last-child) {
+    border-bottom: 1px; }
+
+.border-bottom-primary {
+  border-bottom: 2px solid #3d88c8; }
+
+.border-top-primary {
+  border-top: 2px solid #3d88c8; }
+
+.border-left-primary {
+  border-left: 2px solid #3d88c8; }
+
+.border-right-primary {
+  border-right: 2px solid #3d88c8; }
+
+.border-bottom-secondary {
+  border-bottom: 2px solid #6c757d; }
+
+.border-top-secondary {
+  border-top: 2px solid #6c757d; }
+
+.border-left-secondary {
+  border-left: 2px solid #6c757d; }
+
+.border-right-secondary {
+  border-right: 2px solid #6c757d; }
+
+.border-bottom-success {
+  border-bottom: 2px solid #28a745; }
+
+.border-top-success {
+  border-top: 2px solid #28a745; }
+
+.border-left-success {
+  border-left: 2px solid #28a745; }
+
+.border-right-success {
+  border-right: 2px solid #28a745; }
+
+.border-bottom-info {
+  border-bottom: 2px solid #17a2b8; }
+
+.border-top-info {
+  border-top: 2px solid #17a2b8; }
+
+.border-left-info {
+  border-left: 2px solid #17a2b8; }
+
+.border-right-info {
+  border-right: 2px solid #17a2b8; }
+
+.border-bottom-warning {
+  border-bottom: 2px solid #ffc107; }
+
+.border-top-warning {
+  border-top: 2px solid #ffc107; }
+
+.border-left-warning {
+  border-left: 2px solid #ffc107; }
+
+.border-right-warning {
+  border-right: 2px solid #ffc107; }
+
+.border-bottom-danger {
+  border-bottom: 2px solid #dc3545; }
+
+.border-top-danger {
+  border-top: 2px solid #dc3545; }
+
+.border-left-danger {
+  border-left: 2px solid #dc3545; }
+
+.border-right-danger {
+  border-right: 2px solid #dc3545; }
+
+.border-bottom-light {
+  border-bottom: 2px solid #f8f9fa; }
+
+.border-top-light {
+  border-top: 2px solid #f8f9fa; }
+
+.border-left-light {
+  border-left: 2px solid #f8f9fa; }
+
+.border-right-light {
+  border-right: 2px solid #f8f9fa; }
+
+.border-bottom-dark {
+  border-bottom: 2px solid #343a40; }
+
+.border-top-dark {
+  border-top: 2px solid #343a40; }
+
+.border-left-dark {
+  border-left: 2px solid #343a40; }
+
+.border-right-dark {
+  border-right: 2px solid #343a40; }
+
+.border-bottom-info2 {
+  border-bottom: 2px solid #17a2b8; }
+
+.border-top-info2 {
+  border-top: 2px solid #17a2b8; }
+
+.border-left-info2 {
+  border-left: 2px solid #17a2b8; }
+
+.border-right-info2 {
+  border-right: 2px solid #17a2b8; }
 
 /*# sourceMappingURL=master-theme.css.map */

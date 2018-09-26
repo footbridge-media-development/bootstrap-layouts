@@ -1,11 +1,12 @@
 // Define theme colors
 $theme-colors: (
-
+	"primary":#3d88c8
 );
 
 // Enable rounded?
-$enable-rounded: true;
+$enable-rounded: false;
 
-@import "../Bootstrap/scss/bootstrap.scss";
+@import "../Bootstrap/SASS/bootstrap.scss";
 @import "breadcrumbs.scss";
+@import "lists.scss";
 @import "images.scss";

@@ -1,0 +1,29 @@
+@mixin check-variant($themeColor){
+	@extend .list-group;
+	@extend .list-group-flush;
+	list-style:none;
+	& li::before{
+		display:inline-block;
+		font-family:"fontello";
+		color:white;
+		font-size:90%;
+		padding:map-get($spacers, 1);
+		content:"";
+		background-color:$themeColor;
+		border-radius:5px;
+		margin-right:map-get($spacers, 2);
+	}
+	& li{
+		@extend .list-group-item;
+	}
+
+	& li:not(:last-child){
+		border-bottom:1px
+	}
+}
+
+@each $color, $value in $theme-colors {
+	.checks-#{$color} {
+		@include check-variant($value);
+	}
+}

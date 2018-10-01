@@ -87,6 +87,10 @@ h1, h2, h4 {
 * {
   white-space: normal; }
 
+a[href^=tel] {
+  text-decoration: inherit;
+  color: inherit; }
+
 img, iframe, video {
   max-width: 100%; }
 
@@ -814,38 +818,5 @@ ul.listpad li {
     speak: none; }
 
 /* custom scss for this particular layout */
-/* Custom classes and css for menu in the header */
-#large-navigation-container-2 {
-  background-color: rgba(62, 96, 111, 0.1);
-  position: relative;
-  /* Box shadow doesn't show without a z-index */
-  z-index: 1; }
-
-#large-navigation-container-2 .navigation-links > div > div {
-  transition: all 450ms;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  border-bottom: 3px rgba(0, 0, 0, 0) solid; }
-
-#large-navigation-container-2 .navigation-links > div > div:hover {
-  border-bottom: rgba(0, 0, 0, 0.5) solid 3px;
-  background: none; }
-
-#large-navigation-container-2 .logo-cntr {
-  position: relative;
-  margin: 0 10%; }
-  #large-navigation-container-2 .logo-cntr img {
-    position: absolute;
-    top: 75%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    max-width: none;
-    width: 400px; }
-    @media screen and (max-width: 992px) {
-      #large-navigation-container-2 .logo-cntr img {
-        width: 200px !important; } }
 
 /*# sourceMappingURL=footbridge-additions.css.map */

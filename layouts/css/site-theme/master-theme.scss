@@ -10,7 +10,7 @@ $enable-rounded: false;
 // Border classes width
 $theme-borders-width: 2px;
 
-@import "../Bootstrap/SASS/bootstrap.scss";
+@import "../Bootstrap/scss/bootstrap.scss";
 @import "breadcrumbs.scss";
 @import "lists.scss";
 @import "borders.scss";

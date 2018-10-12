@@ -1,6 +1,6 @@
 Markdown editor: https://dillinger.io/
 
-# Bootstrap v4.1.0 Layouts
+# Bootstrap v4.1.3 Layouts
 
 Current version: v1.0.0
 

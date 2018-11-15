@@ -23,7 +23,7 @@
 	z-index:10 !important;
 }
 
-.fancy-breadcrumb a:first-of-type{
+.fancy-breadcrumb > a:first-of-type, .fancy-breadcrumb > div:first-of-type a{
 	padding-left:10px;
 }
 

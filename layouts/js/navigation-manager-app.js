@@ -1,6 +1,50 @@
 $(document).ready(function(){
-
 	var dropdownOpenSpeed = 200; // in milliseconds
+
+	// ***********************************
+	// Code for large-screen dropdowns
+	// ***********************************
+		function turnRGBToRGBA(colorString, alpha){
+			if (colorString.indexOf("rgba") !== -1){
+				console.log("Already is rgba");
+				return colorString.replace(/[\d\.]+\)/, alpha + ")"); // Already rgba
+			}else{
+				// Assume RGB
+				if (alpha !== undefined){
+					colorString = colorString.replace(")", ", " + alpha + ")").replace("rgb", "rgba");
+				}else{
+					colorString = colorString.replace(")", "0)").replace("rgb", "rgba");
+				}
+				return colorString
+			}
+		}
+
+		function adjustNavFixedOpacity(){
+			var windowScrollThreshold = 400; // How far to scroll, in pixels, before full opacity
+			var currentScroll = $(window).scrollTop();
+			var percentageScrolled = currentScroll / windowScrollThreshold;
+
+			if (percentageScrolled > 1){
+				percentageScrolled = 1;
+			}
+
+			var colorString = turnRGBToRGBA($(".nav-fixed").css("background-color"), percentageScrolled);
+			console.log("Setting color of nav to " + colorString);
+
+			$(".nav-fixed").css("background-color", colorString);
+		}
+
+		// Determine if the navigation is compatible with nav-fixed
+		var supportedFixedNavs = ["large-navigation-container-3"];
+		if ($(".nav-fixed").length > 0){
+			if (supportedFixedNavs.indexOf($(".nav-fixed").attr("id")) == -1){
+				alert("You have placed the class 'nav-fixed' on an element that does not support it.");
+			}else{
+				// Hook the events and call the function once for the page load
+				$(window).on('scroll', adjustNavFixedOpacity);
+				adjustNavFixedOpacity();
+			}
+		}
 
 	// ***********************************
 	// Code for large-screen dropdowns

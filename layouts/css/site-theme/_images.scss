@@ -16,3 +16,9 @@
 	@extend .img-dynamic;
 	@extend .pr-lg-3;
 }
+
+.bg-image{
+	background-position:center;
+	background-size:cover;
+	min-height:200px;
+}

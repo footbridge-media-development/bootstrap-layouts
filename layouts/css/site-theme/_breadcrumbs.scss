@@ -1,3 +1,26 @@
+// Minimal breadcrumbs
+.minimal-breadcrumb > .trail{
+	display:inline-block;
+}
+
+.minimal-breadcrumb > .trail:not(:first-child)::before{
+	display:inline-block;
+	content:"/";
+}
+
+// Color here covers the pseudo element
+.minimal-breadcrumb > .trail{
+	color:$gray-600;
+	font-size:0.9rem;
+}
+
+// For anchors
+.minimal-breadcrumb > .trail a{
+	color:$gray-600;
+}
+
+
+// Fancy breadcrumbs
 .fancy-breadcrumb > div{
 	display:inline-block;
 }

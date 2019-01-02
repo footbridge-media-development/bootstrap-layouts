@@ -3,7 +3,7 @@
 	display:inline-block;
 }
 
-.minimal-breadcrumb > .trail:not(:first-child)::before{
+.minimal-breadcrumb > div:not(:first-of-type)::before{
 	display:inline-block;
 	content:"/";
 }

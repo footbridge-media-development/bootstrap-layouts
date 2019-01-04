@@ -36,3 +36,7 @@ To use it, here is a code sample:
     <div class="rippleJS"></div>
 </a>
 ```
+
+## Using the isInView jQuery Plugin
+
+Please read the readme at this repository (it's short): https://github.com/nox7/jQuery-inView-Plugin

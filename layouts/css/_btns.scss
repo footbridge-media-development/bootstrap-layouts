@@ -128,4 +128,26 @@ div.btn-tri-up {
         box-shadow:lighten($color-second, 10%);
     }
 }
+.btn-cta {
+	background-color: $color-prime;
+	&:hover {
+		background-color: $color-second;
+	}
+}
+.btn-reviews {
+	background-color: darken($color-third, 15%);
+
+	&:hover {
+		background-color: $color-second;
+	
+	}
+}
+.btn-more {
+	background-color: $color-second !important;
+
+	&:hover {
+		background-color: lighten($color-second, 25%) !important;
+
+	}
+}
 

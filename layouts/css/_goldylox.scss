@@ -4,21 +4,17 @@
     src:url(../fontello/font/fontello.ttf);
 }
 .goldylox {
-    font-size:2rem; color:$color-prime; font-weight:900; line-height:1.25em; font-family:$font-prime; 
-    @media screen and (max-width:$breakmed) {
-        font-size:18pt;
-    }
+   color:$color-prime;  font-weight:900; line-height:1.25em; font-family:$font-prime; 
+   
 }
 .lilbear {
-    font-size:1.5rem; color:$color-second; font-weight:900; line-height:1em;  
-    @media screen and (max-width:$breakmed){
-        font-size:1rem;
-    }
+     color:$color-second; font-weight:900; line-height:1em;  
+  
 }
-.mamabear {font-size:1.25rem; color:$color-second; line-height:1rem; font-family:$font-third;}
+.mamabear { color:$color-second; font-family:$font-third;}
 .card {
     h2 {
-        font-size:1.5rem;
+       
         font-weight:bold;
         font-family:$font-prime;
     }
@@ -26,11 +22,9 @@
 
 #heroCarousel {
     h5 {
-        font-size:2.5rem;
+        
         text-shadow: 1px 1px 5px #000000;
-        @media screen and (max-width: $breakmed) {
-            font-size:1.5rem;
-        }
+       
     }
 }
 
@@ -85,6 +79,9 @@ border-radius: 10px;
     p {
         color:#fff !important;
     }
+	@media screen and (max-width:$breaklrg) {
+		background-attachment:scroll !important;
+	}
 }
 .gradcover {
     background: rgba(19,19,19,1);
@@ -99,10 +96,12 @@ border-radius: 10px;
         color:$color-prime;
     }
 }
-
+.primes {color:$color-prime !important; }
 .seconds { color:$color-second !important;}
 .thirds {color:$color-third;}
 .white {color:#fff !important;}
+.black {color:#333 !important; }
+.shadows { text-shadow: 1px 2px 4px rgba(0,0,0,0.33) !important; }
 #wufoo-hold {
     background:rgba(255,255,255,1);
     -webkit-border-radius: 20px;
@@ -161,5 +160,49 @@ ul {
             display:inline-block;
             speak:none;
         } 
+    }
+}
+
+.call-num {
+
+	color: $color-second !important;
+
+	&:hover {
+
+		color: $color-prime !important;
+	
+	}
+
+}
+.req-form {
+	color: white !important;
+	&:hover {
+		color: $color-second !important;
+	}
+}
+.breadcrumb {
+    background-color: transparent;
+    border-left: 6px solid darken($color-third, 15%);
+    border-bottom: 1px solid darken($color-third, 15%);
+    background: none;
+    padding: 0.33rem 1rem;
+    font-family: $font-third;
+    font-size: 0.88rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: $color-second !important;
+    a {
+        color: $color-second !important;
+    }
+}
+.breadcrumb-item {
+    font-family: $font-third;
+    font-size: 0.88rem;
+    font-weight: normal;
+    &::before {
+        color: darken($color-third, 15%) !important;
+    }
+    +.active {
+        color: darken($color-third, 15%) !important;
     }
 }

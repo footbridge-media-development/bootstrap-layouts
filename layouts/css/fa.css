@@ -109,20 +109,17 @@ a:hover {
   color: #555; }
 
 /*** Sizing ******/
-.big-wrap {
-  max-width: 1400px; }
-
-.wrap {
-  width: 1200px; }
-
 .append-pipe > a:not(:last-child)::after {
   content: " \007C "; }
 
 .secondary-bg-color {
-  background-color: #D1DBBD;
-  color: white; }
-  .secondary-bg-color p, .secondary-bg-color h2 {
-    color: white !important; }
+  background-color: #3E606F; }
+
+.prime-bg-color {
+  background-color: #91AA9D; }
+
+.third-bg-color {
+  background-color: #D1DBBD; }
 
 .gallthumbs {
   margin-bottom: 0 !important;
@@ -675,6 +672,21 @@ div.btn-tri-up {
     border: none !important;
     box-shadow: #507c90; }
 
+.btn-cta {
+  background-color: #91AA9D; }
+  .btn-cta:hover {
+    background-color: #3E606F; }
+
+.btn-reviews {
+  background-color: #afc08c; }
+  .btn-reviews:hover {
+    background-color: #3E606F; }
+
+.btn-more {
+  background-color: #3E606F !important; }
+  .btn-more:hover {
+    background-color: #79a2b4 !important; }
+
 #accordion .card-header button {
   white-space: normal;
   text-align: left; }
@@ -771,41 +783,26 @@ div.btn-tri-up {
   font-family: 'fontello';
   src: url(../fontello/font/fontello.ttf); }
 .goldylox {
-  font-size: 2rem;
   color: #91AA9D;
   font-weight: 900;
   line-height: 1.25em;
   font-family: Unbuntu, sans-serif; }
-  @media screen and (max-width: 768px) {
-    .goldylox {
-      font-size: 18pt; } }
 
 .lilbear {
-  font-size: 1.5rem;
   color: #3E606F;
   font-weight: 900;
   line-height: 1em; }
-  @media screen and (max-width: 768px) {
-    .lilbear {
-      font-size: 1rem; } }
 
 .mamabear {
-  font-size: 1.25rem;
   color: #3E606F;
-  line-height: 1rem;
   font-family: Lato, sans-serif; }
 
 .card h2 {
-  font-size: 1.5rem;
   font-weight: bold;
   font-family: Unbuntu, sans-serif; }
 
 #heroCarousel h5 {
-  font-size: 2.5rem;
   text-shadow: 1px 1px 5px #000000; }
-  @media screen and (max-width: 768px) {
-    #heroCarousel h5 {
-      font-size: 1.5rem; } }
 
 #sidebar {
   background: rgba(0, 0, 0, 0.1);
@@ -848,6 +845,9 @@ div.btn-tri-up {
   background-attachment: fixed !important; }
   .bgcover p {
     color: #fff !important; }
+  @media screen and (max-width: 992px) {
+    .bgcover {
+      background-attachment: scroll !important; } }
 
 .gradcover {
   background: #131313;
@@ -861,6 +861,9 @@ div.btn-tri-up {
   .gradcover h2 {
     color: #91AA9D; }
 
+.primes {
+  color: #91AA9D !important; }
+
 .seconds {
   color: #3E606F !important; }
 
@@ -869,6 +872,12 @@ div.btn-tri-up {
 
 .white {
   color: #fff !important; }
+
+.black {
+  color: #333 !important; }
+
+.shadows {
+  text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.33) !important; }
 
 #wufoo-hold {
   background: white;
@@ -907,6 +916,39 @@ ul.listpad li {
     content: "\e80f \00a0";
     display: inline-block;
     speak: none; }
+
+.call-num {
+  color: #3E606F !important; }
+  .call-num:hover {
+    color: #91AA9D !important; }
+
+.req-form {
+  color: white !important; }
+  .req-form:hover {
+    color: #3E606F !important; }
+
+.breadcrumb {
+  background-color: transparent;
+  border-left: 6px solid #afc08c;
+  border-bottom: 1px solid #afc08c;
+  background: none;
+  padding: 0.33rem 1rem;
+  font-family: Lato, sans-serif;
+  font-size: 0.88rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #3E606F !important; }
+  .breadcrumb a {
+    color: #3E606F !important; }
+
+.breadcrumb-item {
+  font-family: Lato, sans-serif;
+  font-size: 0.88rem;
+  font-weight: normal; }
+  .breadcrumb-item::before {
+    color: #afc08c !important; }
+  .breadcrumb-item + .active {
+    color: #afc08c !important; }
 
 /* custom scss for this particular layout */
 

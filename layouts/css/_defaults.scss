@@ -27,23 +27,21 @@ a:hover {text-decoration:none;}
 
 /*** Sizing ******/
 
-.big-wrap{
-	max-width:1400px;
-}
-
-.wrap{
-	width:1200px;
-}
 
 .append-pipe > a:not(:last-child)::after{
   content: " \007C ";
 }
 
 .secondary-bg-color{
-	background-color:$color-third;
-	color:white;
-    p,h2 {color:white !important;}
+	background-color:$color-second;
 }
+.prime-bg-color{
+	background-color:$color-prime;
+}
+.third-bg-color{
+	background-color:$color-third;
+}
+
 
 .gallthumbs {
     margin-bottom:0 !important;

@@ -19,12 +19,12 @@ $(document).ready(function(){
 			}
 		}
 
-		function adjustNavFixedOpacity(){
+		function adjustNavFixedOpacity(forceFullOpacity){
 			var windowScrollThreshold = 400; // How far to scroll, in pixels, before full opacity
 			var currentScroll = $(window).scrollTop();
 			var percentageScrolled = currentScroll / windowScrollThreshold;
 
-			if (percentageScrolled > 1){
+			if (percentageScrolled > 1 || forceFullOpacity === true){
 				percentageScrolled = 1;
 			}
 
@@ -34,6 +34,12 @@ $(document).ready(function(){
 			$(".nav-fixed").css("background-color", colorString);
 		}
 
+		function setPageTopPaddingToHeight(height){
+			$("#page").css({
+				"padding-top":height
+			});
+		}
+
 		// Determine if the navigation is compatible with nav-fixed
 		var supportedFixedNavs = ["large-navigation-container-3"];
 		if ($(".nav-fixed").length > 0){
@@ -41,8 +47,16 @@ $(document).ready(function(){
 				alert("You have placed the class 'nav-fixed' on an element that does not support it.");
 			}else{
 				// Hook the events and call the function once for the page load
-				$(window).on('scroll', adjustNavFixedOpacity);
-				adjustNavFixedOpacity();
+				if ($(".nav-fixed").hasClass("interior")){
+					adjustNavFixedOpacity(true);
+					setPageTopPaddingToHeight($(".nav-fixed").height());
+					$(window).on("scroll", function(){
+						setPageTopPaddingToHeight($(".nav-fixed").height());
+					});
+				}else{
+					$(window).on('scroll', adjustNavFixedOpacity);
+					adjustNavFixedOpacity();
+				}
 			}
 		}
 

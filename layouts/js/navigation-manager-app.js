@@ -53,6 +53,11 @@ $(document).ready(function(){
 					$(window).on("scroll", function(){
 						setPageTopPaddingToHeight($(".nav-fixed").height());
 					});
+					$(window).on("resize", function(){
+						setTimeout(function(){
+							setPageTopPaddingToHeight($(".nav-fixed").height());
+						}, 55);
+					});
 				}else{
 					$(window).on('scroll', adjustNavFixedOpacity);
 					adjustNavFixedOpacity();

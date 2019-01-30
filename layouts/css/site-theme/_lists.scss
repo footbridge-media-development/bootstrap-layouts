@@ -15,6 +15,7 @@
 	}
 	& li{
 		@extend .list-group-item;
+		background-color:unset;
 	}
 
 	& li:not(:last-child){

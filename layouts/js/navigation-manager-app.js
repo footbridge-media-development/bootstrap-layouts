@@ -68,12 +68,28 @@ $(document).ready(function(){
 	// ***********************************
 	// Code for large-screen dropdowns
 	// ***********************************
+		/**
+		*	Because the scrollHeight property of an element includes absolute-positioned
+		*	children's height, this function exists to get the the total height of all
+		*	direct children.
+		*
+		*	@param jQuery jQueryDropDown - the jQuery object of the dropdown div
+		*/
+		function getTotalHeightOfAllDirectChildren(jQueryDropdown){
+			let totalHeight = 0;
+			jQueryDropdown.children().each(function(){
+				totalHeight += $(this).height();
+			});
+
+			return totalHeight;
+		}
+
 		$(".dropdown").parent()/*.children("a")*/.mouseenter(function(){
 			var container = $(this);//.parent();
 			var menu = container.children(".dropdown");
 			if (container.length > 0 && menu.css("visibility") === "hidden"){
 				// Dropdown exists
-				menu.css("visibility", "visible").css("height", 0).animate({height: menu.get(0).scrollHeight}, dropdownOpenSpeed);
+				menu.css("visibility", "visible").css("height", 0).animate({height: getTotalHeightOfAllDirectChildren(menu)}, dropdownOpenSpeed);
 			}else if (menu.css("visibility") === "visible"){
 				// The dropdown is currently visible, but the mouse entered? This means it was trying to close.
 				// Close it immediately then open it again.

@@ -5,15 +5,14 @@ $(document.createElement("style")).html(`
 	.accordion-content.default {display:block}
 `).appendTo($("head"));
 
+$('.accordion').find('.accordion-toggle').click(function () {
 
 	var thisContent = $(this).parent().find(".accordion-content");
 
 	//Hide the other panels
-	$(".accordion-content").not(thisContent).slideUp('fast');
 	$(".accordion-content").not(thisContent).slideUp('fast').parent().find(".collapser").toggleClass("icon-cancel", false).toggleClass("icon-plus", true);
 
 	//Expand or collapse this panel
-	thisContent.slideToggle('fast');
 	thisContent.slideToggle('fast').parent().find(".collapser").toggleClass("icon-cancel").toggleClass("icon-plus");
 
 });

@@ -5,7 +5,12 @@ if ($ === undefined){
 }
 
 $(document).ready(function(){
-	var baseUrl = window.location.protocol + "//" + window.location.hostname;
+	var portOut = '';
+	var portVal = window.location.port;
+	if (portVal != '') {
+		portOut = ':' + portVal;
+	}
+	var baseUrl = window.location.protocol + "//" + window.location.hostname + portOut;
 	var convertedLinks = 0;
 
 	$("a").each(function(i,v){

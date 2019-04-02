@@ -1,14 +1,21 @@
-.carousel-item > div{
-	height:800px;
-	background-size:cover;
-	background-position:center;
-	@media screen and (max-width:$breaklrg) {
-		height:400px;
+/* ******************************************************************************************** */
+/* CAROUSEL STYLING *************************************************************************** */
+/* ******************************************************************************************** */
+
+.carousel-item > div {
+	background-attachment: scroll;
+	background-position: center;
+	background-size: cover;
+	height: 700px;
+	@media screen and (max-width: $breaklrg) {
+		height: 600px;
+	}
+	@media screen and (max-width: $breakmed) {
+		height: 500px;
 	}
 }
-.carousel-item{
-	padding:10px;
+.carousel-item {
+	padding: 10px;
 }
 
-
-/* MD and below */
+/* ******************************************************************************************** */

@@ -1,78 +1,179 @@
-/**** Basic formats for good layouts *****/
+/* ******************************************************************************************** */
+/* GOLDYLOX STYLING *************************************************************************** */
+/* ******************************************************************************************** */
+
 @font-face {
-    font-family:'fontello';
-    src:url(../fontello/font/fontello.ttf);
+    font-family: 'fontello';
+    src: url(../fontello/fonts/fontello.ttf);
 }
-.goldylox {
-   color:$color-prime;  font-weight:900; line-height:1.25em; font-family:$font-prime; 
-   
+
+/* ******************************************************************************************** */
+/* DEFINING FONT FAMILIES ********************************************************************* */
+
+.f-prime {
+    font-family: $font-prime !important;
 }
-.lilbear {
-     color:$color-second; font-weight:900; line-height:1em;  
-  
+.f-second {
+    font-family: $font-second !important;
 }
-.mamabear { color:$color-second; font-family:$font-third;}
-.card {
-    h2 {
-       
-        font-weight:bold;
-        font-family:$font-prime;
+.f-third {
+    font-family: $font-third !important;
+}
+
+/* ******************************************************************************************** */
+/* DEFINING FONT COLORS *********************************************************************** */
+
+.primes {
+    color: $color-prime !important;
+}
+.seconds {
+    color: $color-second !important;
+}
+.thirds {
+    color: $color-third !important;
+}
+.white {
+    color: #FFFFFF !important;
+}
+.black {
+    color: #000000 !important;
+}
+.shadows {
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
+}
+
+/* ******************************************************************************************** */
+/* DEFINING BACKGROUND COLORS ***************************************************************** */
+
+.prime-bg-color {
+    background-color: $color-prime !important;
+}
+.secondary-bg-color {
+    background-color: $color-second !important;
+}
+.third-bg-color {
+    background-color: $color-third !important;
+}
+
+/* ******************************************************************************************** */
+/* DEFINING PARAGRAPH COLOR BASED ON BACKGROUND COLOR ***************************************** */
+
+.prime-bg-color, .secondary-bg-color, .third-bg-color {
+    color: #FFFFFF;
+    p {
+        color: #FFFFFF !important;
     }
 }
 
-#heroCarousel {
-    h5 {
-        
-        text-shadow: 1px 1px 5px #000000;
-       
+/* ******************************************************************************************** */
+/* LISTS STYLING ****************************************************************************** */
+
+ol {
+    &.listbad {
+        li {
+            padding: 1%;
+        }
     }
 }
+ul {
+    &.listpad {
+        li {
+            padding: 1%;
+        }
+    }
+}
+
+/* ******************************************************************************************** */
+/* LIST LI STYLING **************************************************************************** */
+
+.checked, .dashed, .icon {
+    list-style-type: none;
+    padding: 0;
+    &::before {
+        display: inline-block;
+    }
+}
+.checked {
+    li {
+        &::before {
+            font-family: "fontello";
+            text-decoration: none;
+            content: "\e80f \00a0";
+            speak: none;
+        }
+    }
+}
+.dashed {
+    li {
+        &::before {
+            content: "-\00a0";
+        }
+    }
+}
+.icon {
+    li {
+        &::before {
+            font-family: "fontello";
+            text-decoration: none;
+            content: "\e819 \00a0";
+            speak: none;
+        }
+    }
+}
+
+/* ******************************************************************************************** */
+/* SIDEBAR ADJUSTMENTS ************************************************************************ */
 
 #sidebar {
-    background:rgba(0,0,0,.1);
-    -webkit-border-radius: 10px;
-border-radius: 10px;
-    box-sizing:border-box;
+    background-color: rgba($color-third, 0.10);
+    box-sizing: border-box;
 }
-.servbox {
-    background:#d0d0d0;
+#wufoo-hold {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+#totheright {
+    border-right: 2px solid white;
+    @media screen and (max-width: $breakmed) {
+        border-right: 0px;
+        border-bottom: 2px solid white;
+    }
+}
+/* ******************************************************************************************** */
+/* CARD STYLING ADJUSTMENTS ******************************************************************* */
+
+.card {
     h2 {
-        width:100%;
-        text-align:center;
-        text-transform:uppercase;
-        color:$color-prime;
-        background:$color-second;
-        box-sizing:border-box;
-        font-family:$font-prime;
-        margin-bottom:0;
-        border-bottom:3px solid $color-prime;
-    }
-}
-.darken {
-    background-color:$color-prime;
-    p {
-        color:white !important;
-        line-height:2rem !important;
-    }
-    div {
-        padding:5%;
+        font-family: $font-prime;
+        font-weight: bold;
     }
 }
 
-.col-md-border {
-        &:not(:last-child) {
-            border-right: 1px solid rgba(255,255,255,.4);
-        }
+/* ******************************************************************************************** */
+/* SERVICE OVERLAY BOX HEADERS **************************************************************** */
 
-        & + .col-md-border {
-            border-left: 1px solid rgba(255,255,255,.4);
-            margin-left: -1px;
-        }
-      @media screen and (max-width: $breakmed){
-        border-right: 0px solid rgba(255,255,255,.0) !important;
-        }
+.services-box {
+    background-color: $color-second;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 0px;
+}
+
+/* ******************************************************************************************** */
+/* GRADIENT BG COVER ************************************************************************** */
+
+#gradient-background {
+    background-image: url(../images/banner/banner-1.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 400px;
+    @media screen and (max-width: $breakmed) {
+        background-attachment: scroll;
+        min-height: 300px;
     }
-#spec1 {}
+}
+
 .bgcover {
     background-size:cover !important;
     background-attachment:fixed !important;
@@ -83,6 +184,7 @@ border-radius: 10px;
 		background-attachment:scroll !important;
 	}
 }
+
 .gradcover {
     background: rgba(19,19,19,1);
     background: -moz-linear-gradient(left, rgba(19,19,19,1) 0%, rgba(28,28,28,1) 15%, rgba(38,38,38,0.75) 34%, rgba(76,76,76,0) 100%);
@@ -96,72 +198,7 @@ border-radius: 10px;
         color:$color-prime;
     }
 }
-.primes {color:$color-prime !important; }
-.seconds { color:$color-second !important;}
-.thirds {color:$color-third;}
-.white {color:#fff !important;}
-.black {color:#333 !important; }
-.shadows { text-shadow: 1px 2px 4px rgba(0,0,0,0.33) !important; }
-#wufoo-hold {
-    background:rgba(255,255,255,1);
-    -webkit-border-radius: 20px;
-    border-radius: 20px;
-   
-}
-ol {
-    &.listbad {
-        li {
-            padding:1%;
-        }
-    }
-}
-ul {
-    &.listpad {
-        li {
-            padding:1%;
-        }
-    }
-}
-.icon {
-    list-style-type:none;
-    padding:0;
-       
-    li {
-        
-        &::before {
-            font-family: "fontello";
-            text-decoration:none;
-            content: "\e819 \00a0";
-            display:inline-block;
-            speak:none;
-        } 
-    }
-}
-.dashed {
-    list-style-type:none;
-    padding:0;
-    li {
-        
-        &::before {
-            content: "-\00a0";
-            display:inline-block;
-        } 
-    }
-}
-.checked {
-    list-style-type:none;
-    padding:0;
-    li {
-        
-        &::before {
-            font-family: "fontello";
-            text-decoration:none;
-            content: "\e80f \00a0";
-            display:inline-block;
-            speak:none;
-        } 
-    }
-}
+
 
 .call-num {
 
@@ -170,7 +207,7 @@ ul {
 	&:hover {
 
 		color: $color-prime !important;
-	
+
 	}
 
 }

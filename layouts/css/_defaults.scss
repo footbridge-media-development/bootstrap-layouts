@@ -1,68 +1,104 @@
-/******* Defaults********/
+/* ******************************************************************************************** */
+/* DEFAULT STYLING **************************************************************************** */
+/* ******************************************************************************************** */
+
 * {
-    white-space:normal;
+    white-space: normal;
 }
 a[href^=tel] {
-text-decoration:inherit;
-color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
-img, iframe, video{
-	max-width:100%;
-}
-
 a {
     cursor: pointer;
-    color:$color-prime;
-}
-a:hover {text-decoration:none;}
-
-
-#content{
-	background-color:white;
-}
-
-#content p {
-	color: #555;
-}
-
-/*** Sizing ******/
-
-
-.append-pipe > a:not(:last-child)::after{
-  content: " \007C ";
-}
-
-.secondary-bg-color{
-	background-color:$color-second;
-}
-.prime-bg-color{
-	background-color:$color-prime;
-}
-.third-bg-color{
-	background-color:$color-third;
-}
-
-
-.gallthumbs {
-    margin-bottom:0 !important;
-    margin-top:0;
-}
-.thumbnail {margin:0 !important;}
-
-a.skip-main { left:-999px;position:absolute;top:auto;width:1px;height:1px;overflow:hidden;z-index:-999;
-    &:focus, &:active {
-        color:#fff;background-color:#000;left:auto;top:auto;width:30%;height:auto;overflow:auto;margin:10px 35%;padding:5px;border-radius:15px;border:4px solid yellow;text-align:center;font-size:1.2em;z-index:999;
+    color: $color-prime;
+    &:hover {
+        text-decoration: none;
     }
 }
+
+/* ******************************************************************************************** */
+
+img, iframe, video {
+    max-width: 100%;
+}
+
+/* ******************************************************************************************** */
+
+#content {
+    background-color: #FFFFFF;
+}
+#content p {
+    color: #555555;
+}
+
+/* ******************************************************************************************** */
+
+.bigger-wrap {
+    max-width: 1600px;
+}
+.big-wrap {
+    max-width: 1400px;
+}
+.wrap {
+    max-width: 1200px;
+}
+
+/* ******************************************************************************************** */
+
+.append-pipe > a:not(:last-child)::after {
+    content: " \007C ";
+}
+
+/* ******************************************************************************************** */
+
+.gallthumbs {
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+}
+.thumbnail {
+    margin: 0px !important;
+}
+
+/* ******************************************************************************************** */
+
+a.skip-main {
+    position: absolute;
+    top: auto;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+    &:focus, &:active {
+        background-color: #000000;
+        color: #FFFFFF;
+        top: auto;
+        left: auto;
+        width: 30%;
+        height: auto;
+        overflow: auto;
+        margin: 10px 35%;
+        padding: 5px;
+        border-radius: 15px;
+        border: 4px solid yellow;
+        text-align: center;
+        font-size: 1.2rem;
+        z-index: 999;
+    }
+}
+
+/* ******************************************************************************************** */
 
 #reviews #revList {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-	grid-gap:15px;
+    grid-gap: 15px;
+}
+@media screen and (max-width: 992px) {
+    #reviews #revList {
+        display: block;
+    }
 }
 
-@media screen and (max-width:992px){
-	#reviews #revList {
-	    display: block;
-	}
-}
+/* ******************************************************************************************** */

@@ -1,40 +1,44 @@
-/* Custom classes and css for menu in the header */
+/* ******************************************************************************************** */
+/* CUSTOM CLASSES FOR THE NAVIGATION MENU IN HEADER STYLING *********************************** */
+/* ******************************************************************************************** */
 
-#large-navigation-container-2{
-			background-color:rgba($color-second, .1);
-			position:relative; /* Box shadow doesn't show without a z-index */
-			z-index:1;
-		}
-#large-navigation-container-2 .navigation-links > div > div{
-			transition:all 450ms;
-			display:inline-block;
-			text-align:center;
-			position:relative;
-            border-bottom:3px rgba(0,0,0,.0) solid
-		}
-#large-navigation-container-2 .navigation-links > div > div:hover{
-		    border-bottom:rgba(0,0,0,.5) solid 3px;
-            background:none
-           
-        }
 #large-navigation-container-2 {
-    .logo-cntr {
-        position:relative;
-        margin: 0 10%;
+	background-color: rgba($color-second, 0.15);
+	position: relative;
+	z-index: 1;
+}
+#large-navigation-container-2 .navigation-links > div > div {
+	display: inline-block;
+	position: relative;
+	transition: all 450ms;
+	text-align: center;
+	border-bottom: 3px solid rgba(0, 0, 0, 0);
+}
+#large-navigation-container-2 .navigation-links > div > div:hover {
+	background-color: rgba(0, 0, 0, 0);
+	border-bottom: 3px solid $color-prime;
+}
 
-        img {
-            position: absolute;
-            top: 75%;
-            left:50%;
-            -webkit-transform: translate(-50%,-50%);
+/* CENTER LOGO LAYOUT EXAMPLE ***************************************************************** */
+
+#large-navigation-container-2 {
+	.logo-cntr {
+		position: relative;
+		margin: 0 10%;
+		img {
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			-webkit-transform: translate(-50%,-50%);
             -ms-transform: translate(-50%,-50%);
             transform: translate(-50%,-50%);
-            max-width:none;
-            width:400px;
-            @media screen and (max-width:$breaklrg) {
-                width:200px !important;
+            max-width: none;
+            width: 400px;
+            @media screen and (max-width: $breaklrg) {
+                width: 300px !important;
             }
-            
-        }
-    }
+		}
+	}
 }
+
+/* ******************************************************************************************** */

@@ -1,6 +1,48 @@
-// Fix Bootstrap's accordion headers overflowing
+/* ******************************************************************************************** */
+/* ACCORDION STYLING ************************************************************************** */
+/* ******************************************************************************************** */
 
-#accordion .card-header button{
-	white-space:normal;
-	text-align:left;
+#accordion .card-header button, .accordion .card-header button {
+	white-space: normal;
+	text-align: left;
 }
+
+#accordion {
+	.card {
+		border: 0px;
+		margin: 0.25rem;
+		.card-header {
+			background-color: lighten($color-prime, 25%);
+			border: 0px;
+			padding: 0.5rem;
+			h5 {
+				button {
+					font-family: $font-prime;
+					font-weight: normal;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					text-align: left;
+					color: white !important;
+					text-decoration: none;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.card-body {
+			font-family: $font-second;
+			font-weight: normal;
+			font-size: 0.9rem !important;
+			color: #555555 !important;
+			p {
+				font-family: $font-second;
+				font-weight: normal;
+				font-size: 0.9rem !important;
+				color: #555555 !important;
+			}
+		}
+	}
+}
+
+/* ******************************************************************************************** */

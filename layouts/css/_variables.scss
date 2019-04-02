@@ -1,33 +1,51 @@
-/******* sass vars *******/
+/* ******************************************************************************************** */
+/* SASS VARIABLES SETUP *********************************************************************** */
+
 @font-face {
-	font-family: 'Raleway';
+	font-family: 'FiraSans-ExtraBold';
+	src: url(../fonts/FiraSans-ExtraBold.otf);
+}
+@font-face {
+	font-family: 'Montserrat-Light';
+	src: url(../fonts/Montserrat-Light.otf);
+}
+@font-face {
+	font-family: 'Raleway-Regular';
 	src: url(../fonts/Raleway-Regular.ttf);
 }
-@font-face {
-	font-family: 'Unbuntu';
-	src: url(../fonts/Ubuntu-BoldItalic.ttf);
-}
-@font-face {
-    font-family:'Lime';
-    src: url(../fonts/Limelight-Regular.ttf);
-}
+
+/* ******************************************************************************************** */
+
 $breaksmall: 576px;
-$breakmed: 768px;
-$breaklrg: 992px;
-$breakxl: 1200px;
-$color-prime: #91AA9D;
-$color-second:#3E606F;
-$color-third:#D1DBBD;
-$color-alpha:rgba($color-prime, 0.7);
-$font-prime: Unbuntu, sans-serif;
-$font-second: Raleway, sans-serif;
-$font-third: Lato, sans-serif;
+$breakmed:   768px;
+$breaklrg:   992px;
+$breakxl:    1200px;
+
+/* ******************************************************************************************** */
+
+$color-prime:  #3E606F;
+$color-second: #91AA9D;
+$color-third:  #D1DBBD;
+$color-alpha:  rgba($color-second, 0.50);
+
+/* ******************************************************************************************** */
+
+$font-prime:  FiraSans-ExtraBold, sans-serif;
+$font-second: Montserrat-Light, sans-serif;
+$font-third:  Raleway-Regular, sans-serif;
+
+/* ******************************************************************************************** */
+
 $bg-special: url(../images/btn-cover2.png) repeat;
 
-/* Settings for the Large Nav #3 [Creamy] */
+/* ******************************************************************************************** */
+/* LARGE NAV 3 COLOR SETUP [CREAMY] *********************************************************** */
+
 $lg-nav-3-bg-color: rgb(50,50,50);
 $lg-nav-3-text-color: rgb(240,240,240);
 $lg-nav-3-hover-text-color: rgb(240,240,240);
 $lg-nav-3-hover-bg-color: rgb(70,70,70);
 $lg-nav-3-dropdown-bg-color: rgb(239, 173, 89);
 $lg-nav-3-dropdown-hover-bg-color: rgb(239, 157, 53);
+
+/* ******************************************************************************************** */

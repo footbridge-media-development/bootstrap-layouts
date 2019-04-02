@@ -19,23 +19,11 @@
  *
  */
 
-
-
 @import 'variables';
 @import 'typography';
 @import 'defaults';
 
-
-/******* ******** ********/
-/****** Navigation *******/
-/******* ******** ********/
 @import 'navigation';
-
-
-/******* ******** ********/
-/******* ******** ********/
-/******* ******** ********/
-
 
 @import 'footer';
 @import 'legacy';
@@ -43,13 +31,9 @@
 @import 'btns';
 @import 'accordions';
 
-/******* ******** ********/
-/***** Custom Elements ***/
-/******* ******** ********/
-/* @import 'him' /* For Header in Menu Uncomment this Import */
-/* @import 'wix-9k' /* For Wix 9k uncomment this import */
-/***** Import Template CSS *****/
 @import 'overlay-box';
 @import 'goldylox';
 @import 'custom';
 
+/* @import 'him'; */
+/* @import 'shrink-nav'; */

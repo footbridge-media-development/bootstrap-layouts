@@ -1,9 +1,122 @@
-/* custom scss for this particular layout */
-@import 'fixynav';
-/* kill this import to kill the fixed nav */
-		
-		
-		
-		
+/* ******************************************************************************************** */
+/* CUSTOM SCSS FOR THIS PARTICULAR LAYOUT ***************************************************** */
+/* ******************************************************************************************** */
 
-	
+/* KILL THIS IMPORT TO KILL THE FIXED NAV ***************************************************** */
+@import 'fixynav';
+
+/* COLLAPSE CARDS STYLING ********************************************************************* */
+#collapseExample {
+	.card {
+		.card-body {
+			p {
+				font-family: $font-second;
+				font-weight: normal;
+				font-size: 0.9rem !important;
+				color: #555555 !important;
+			}
+		}
+	}
+}
+
+/* ZOOMING BOXES FOR SERVICES ***************************************************************** */
+.zoombox {
+	overflow: hidden;
+}
+.zooming img {
+    transition: 1s ease;
+}
+.zooming img:hover {
+    transform: scale(1.5);
+    overflow: hidden;
+}
+.zoomtext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+    font-family: $font-prime;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
+    text-align: center;
+}
+
+/* HIGHLIGHTED SERVICE BOXES ON HOVER ********************************************************* */
+.highlightbox {
+	overflow: hidden;
+}
+.highlighting img {
+	filter: brightness(0.7);
+	transition: 1s ease;
+}
+.highlighting img:hover {
+	overflow: hidden;
+	filter: brightness(1.0);
+}
+.highlightbox-text {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+    font-family: $font-prime;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
+    text-align: center;
+}
+
+/* DARKEN SERVICE BOXES ON HOVER ************************************************************** */
+.darkenbox {
+	overflow: hidden;
+}
+.darkening img {
+	filter: brightness(1.0);
+	transition: 1s ease;
+}
+.darkening img:hover {
+	filter: brightness(0.5);
+	overflow: hidden;
+}
+.darkenbox-text {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+    font-family: $font-prime;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    width: 100%;
+    color: white;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
+    text-align: center;
+}
+
+/* JUMPING ICONS ****************************************************************************** */
+#jumping-icons {
+	transition: all .1s linear;
+	&:hover {
+		transform: translateY(-10px);
+	}
+}
+
+/* RIGHT-SIDE BORDER UNTIL MOBILE VIEW ******************************************************** */
+#totheright {
+	border-right: 2px solid white;
+	@media screen and (max-width: $breakmed) {
+		border-right: 0px;
+		border-bottom: 2px solid white;
+	}
+}
+
+/* ******************************************************************************************** */

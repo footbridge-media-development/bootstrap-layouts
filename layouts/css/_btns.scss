@@ -1,153 +1,111 @@
-/************** BTN CSS ********************/
-.btn-form {
-    background:$color-second; 
-    color:lighten($color-second,30%);
-    font-family:$font-prime;
-    font-size:1.5em;
-    white-space:normal !important;
-    &:hover {
-        background: darken($color-second, 10%);
-        color:$color-second !important;     
-    }
+/* ******************************************************************************************** */
+/* BUTTONS STYLING **************************************************************************** */
+/* ******************************************************************************************** */
+
+.btn-banner, .btn-cta, .btn-info, .btn-about, .btn-more, .btn-reviews, .btn-sidebar {
+    font-weight: normal;
+    border: 0px;
+    transition: .5s ease;
 }
-.btn-sidebar {
-    background:$color-prime;
-    width:80%;
-    box-sizing:border-box;
-    -webkit-border-radius: 30px;
-    border-radius: 30px;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-    color:#fff;
-    font-family:$font-prime;
-    font-size:1.5em;
-    
-    &:hover {
-        background: darken($color-prime, 10%);
-        -webkit-transition: all .5s ease;
-        -moz-transition: all .5s ease;
-        -ms-transition: all .5s ease;
-        -o-transition: all .5s ease;
-        transition: all .5s ease;
-        color:white;
-    }
-     @media screen and (max-width:$breakmed){
-        width:90%;
-    }
-}
+
 .btn-banner {
-    width:60%;
-    padding:.5rem;
-    -webkit-border-radius: 30px;
-    font-family:$font-prime;
-    border-radius: 30px;
-    background-color:$color-prime;
-    color:#fff;
-    font-size:1.5rem;
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -ms-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
-    &:hover {
-        background-color: darken( $color-prime, 20% );
-        color:#fff !important;
+    background-color: $color-prime;
+    color: white !important;
+    width: 40%;
+    @media screen and (max-width: $breaklrg) {
+        width: 60%;
     }
-    
+    @media screen and (max-width: $breakmed) {
+        width: 80%;
+    }
+    &:hover {
+        background-color: $color-second;
+    }
 }
+.btn-cta {
+    background-color: $color-second;
+    font-family: $font-second;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+    &:hover {
+        background-color: lighten($color-second, 15%);
+        color: white;
+    }
+}
+.btn-info, .btn-about, .btn-more, .btn-reviews {
+    background-color: $color-prime;
+    font-family: $font-second;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: white;
+    &:hover {
+        background-color: lighten($color-prime, 15%);
+        color: white;
+    }
+}
+
+/* ******************************************************************************************** */
+
+.btn-sidebar {
+
+}
+
+/* ******************************************************************************************** */
+
 .btn-tri-arrow {
-    background:$color-prime;
-    color:$color-second;
-    font-family:$font-prime;
+    background-color: $color-prime;
+    font-family: $font-prime;
+    color: $color-second;
     &::before {
-        content:"\25B2";
-        display:inline-block;
+        display: inline-block;
+        content: "\25B2";
         -webkit-transform: rotate(90deg) scale(1.5);
         -moz-transform: rotate(90deg) scale(1.5);
         -o-transform: rotate(90deg) scale(1.5);
         -ms-transform: rotate(90deg) scale(1.5);
-        transform: rotate(90deg) scale(1.5);
-        padding:2%;
-        
+        padding: 2%;
     }
     &:hover {
-        color:darken($color-second, 10%) !important;
+        color: darken($color-second, 10%) !important;
     }
-   
 }
+
+/* ******************************************************************************************** */
 
 div.btn-tri-up {
-    position:relative;
+    position: relative;
     div {
-        margin: 0 auto;
-        width: 25%;
-        height: 0;    
-        padding-left:25%;
+        box-sizing: content-box;
         padding-bottom: 25%;
+        padding-left: 25%;
+        margin: 0 auto;
         overflow: hidden;
-        box-sizing:content-box;
+        width: 25%;
+        height: 0;
         a {
-            position:absolute;
-            bottom:0;
-            left:0;
-            text-align:center;
-            width:100%;
-            margin-left:auto;
-            margin-right:auto;
-            background:$color-prime;
-            font-family:$font-prime;
-            color:$color-third;
+            background-color: $color-prime;
+            font-family: $font-prime;
+            color: $color-third;
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            width: 100%;
+            bottom: 0;
+            left: 0;
         }
         &::before {
-            content: "";
+            border-bottom: 500px solid $color-prime;
+            border-right: 500px solid transparent;
+            border-left: 500px solid transparent;
+            margin-left: -500px;
             display: block;
+            content: "";
             width: 0;
             height: 0;
-            margin-left:-500px;
-            border-left: 500px solid transparent;
-            border-right: 500px solid transparent;
-            border-bottom: 500px solid $color-prime;
-         
-            } 
-    }
-    
-    
-}
-.btn-info {
-    background-color:$color-prime;
-    border:none !important;
-    &:hover {
-        background-color:$color-second;
-    }
-    &:focus {
-        background-color:$color-second;
-        border:none !important;
-        box-shadow:lighten($color-second, 10%);
+        }
     }
 }
-.btn-cta {
-	background-color: $color-prime;
-	&:hover {
-		background-color: $color-second;
-	}
-}
-.btn-reviews {
-	background-color: darken($color-third, 15%);
 
-	&:hover {
-		background-color: $color-second;
-	
-	}
-}
-.btn-more {
-	background-color: $color-second !important;
-
-	&:hover {
-		background-color: lighten($color-second, 25%) !important;
-
-	}
-}
-
+/* ******************************************************************************************** */

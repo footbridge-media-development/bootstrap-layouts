@@ -7881,6 +7881,22 @@ a[data-lightbox] img {
   width: 150px;
   height: 150px; }
 
+.gallery-grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-areas: ". . . . . c c" ". . . . . c c"; }
+  .gallery-grid > :nth-child(1) {
+    grid-area: c; }
+  .gallery-grid img {
+    width: 100% !important;
+    height: 100% !important; }
+
+@media screen and (max-width: 1200px) {
+  .gallery-grid {
+    display: block; }
+    .gallery-grid > a {
+      display: inline-block;
+      padding: 10px; } }
 .animated-expand-container {
   position: relative;
   display: inline-block; }

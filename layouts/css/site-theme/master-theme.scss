@@ -1,7 +1,6 @@
 // Define theme colors
 $theme-colors: (
 	"primary":#3d88c8,
-	"info2":#17a2b8
 );
 
 // Enable rounded?
@@ -13,14 +12,11 @@ $enable-responsive-font-sizes: true;
 // Border classes width
 $theme-borders-width: 2px;
 
+@import "spacers-extended";
 @import "../Bootstrap/scss/bootstrap.scss";
-@import "breadcrumbs.scss";
-@import "lists.scss";
-@import "borders.scss";
-@import "images.scss";
-@import "gallery.scss";
+@import "breadcrumbs";
+@import "lists";
+@import "borders";
+@import "images";
+@import "gallery";
 @import "animation-engine-views";
-
-.text-shadow {
-	text-shadow: 1px 2px 4px rgba(0,0,0,.33);
-}

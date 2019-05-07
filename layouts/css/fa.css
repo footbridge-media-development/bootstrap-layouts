@@ -423,6 +423,128 @@ a.skip-main {
   text-decoration: none; }
 
 /* ******************************************************************************************** */
+/* ******************************************************************************************** */
+/* LARGE NAVIGATION 2 SETUP ******************************************************************* */
+/* ******************************************************************************************** */
+@keyframes menuload {
+  from {
+    height: 0; }
+  to {
+    height: 100%; } }
+.current {
+  border-bottom: #3E606F solid 4px; }
+
+#large-navigation-container-3 .navigation-links [class^=col] {
+  padding-left: unset;
+  padding-right: unset; }
+
+#large-navigation-container-3 {
+  position: fixed;
+  z-index: 200 !important;
+  width: 100%; }
+  #large-navigation-container-3 .mco {
+    height: 0;
+    background-color: #3E606F;
+    position: absolute;
+    bottom: 0;
+    width: 100%; }
+    #large-navigation-container-3 .mco a {
+      font-family: Montserrat-Light, sans-serif;
+      font-weight: normal;
+      font-size: 1rem;
+      text-transform: uppercase;
+      text-align: center;
+      vertical-align: middle;
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%);
+      display: none;
+      color: white !important;
+      width: 100%; }
+
+#large-navigation-container-3 .navigation-links > div > div {
+  display: inline-block;
+  position: relative;
+  transition: all 450ms;
+  text-align: center;
+  background: #91AA9D;
+  border-right: grey solid .1px; }
+  #large-navigation-container-3 .navigation-links > div > div.last {
+    border-right: none !important; }
+
+#large-navigation-container-3 .navigation-links > div > div > a {
+  display: block;
+  font-family: Montserrat-Light, sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  padding-top: 1.75rem;
+  padding-bottom: 1.75rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem; }
+
+#large-navigation-container-3 .navigation-links > div > div:hover .mco {
+  animation: menuload .5s ease;
+  height: 100%;
+  bottom: 0; }
+  #large-navigation-container-3 .navigation-links > div > div:hover .mco a {
+    display: block; }
+
+#large-navigation-container-3 .navigation-links > div > div:hover > a {
+  transition: color 150ms;
+  text-decoration: none;
+  color: #FFFFFF; }
+
+#large-navigation-container-3 .navigation-links > div > div > .dropdown,
+#large-navigation-container-3 .navigation-links > div > div > .dropdown > div > .dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  min-width: 150%;
+  max-width: 200%;
+  /* display: none; */
+  visibility: hidden;
+  z-index: 2; }
+
+#large-navigation-container-3 .navigation-links > div > div > .dropdown > div > .dropdown {
+  left: 100%;
+  top: 0;
+  z-index: 3; }
+
+/* Affects all divs in any dropdown */
+#large-navigation-container-3 .dropdown > div {
+  position: relative; }
+
+#large-navigation-container-3 .navigation-links > div > div .dropdown > div {
+  background-color: #3E606F;
+  text-align: left;
+  border-bottom: solid grey .1px; }
+
+#large-navigation-container-3 .navigation-links > div > div .dropdown > div a {
+  display: block;
+  font-family: Montserrat-Light, sans-serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-align: left;
+  padding: 0.5rem;
+  color: #FFFFFF; }
+
+#large-navigation-container-3 .navigation-links > div > div .dropdown > div > a {
+  color: #FFFFFF; }
+
+#large-navigation-container-3 .navigation-links > div > div .dropdown > div:hover {
+  background-color: #688777;
+  transition: background-color 150ms; }
+
+#large-navigation-container-3 .navigation-links > div > div .dropdown > div > a:hover {
+  text-decoration: none; }
+
+/* ******************************************************************************************** */
 /* Only XL */
 @media screen and (min-width: 1200px) {
   /*.navigation-links a {
@@ -711,7 +833,7 @@ div.btn-tri-up {
 /* ******************************************************************************************** */
 @font-face {
   font-family: 'fontello';
-  src: url(../fontello/fonts/fontello.ttf); }
+  src: url(../fontello/font/fontello.ttf); }
 /* ******************************************************************************************** */
 /* DEFINING FONT FAMILIES ********************************************************************* */
 .f-prime {
@@ -893,6 +1015,51 @@ ul.listpad li {
 /* ******************************************************************************************** */
 /* CUSTOM SCSS FOR THIS PARTICULAR LAYOUT ***************************************************** */
 /* ******************************************************************************************** */
+.upper {
+  text-transform: uppercase !important; }
+
+#bg2 {
+  background: #292929; }
+
+#bg3 {
+  background: url(../images/banner/banner-3.jpg) center; }
+
+#bg4 {
+  background: url(../images/banner/banner-4.jpg) center; }
+
+.next-btn {
+  text-align: right; }
+
+.fullwindow .row {
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.75) 51%, rgba(0, 0, 0, 0.5) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.75) 51%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.75) 51%, rgba(0, 0, 0, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
+  .fullwindow .row .col-12 {
+    z-index: 2; }
+
+.overlay-vid {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.75) 51%, rgba(0, 0, 0, 0.5) 100%);
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.75) 51%, rgba(0, 0, 0, 0.5) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.75) 51%, rgba(0, 0, 0, 0.5) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 ); }
+
+#myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: 0;
+  overflow: hidden;
+  object-fit: cover; }
+
 /* KILL THIS IMPORT TO KILL THE FIXED NAV ***************************************************** */
 /* custom scss for this particular layout */
 @keyframes loload {
@@ -929,6 +1096,9 @@ ul.listpad li {
 /* ZOOMING BOXES FOR SERVICES ***************************************************************** */
 .zoombox {
   overflow: hidden; }
+  .zoombox .zooming {
+    height: 100%;
+    position: relative; }
 
 .zooming img {
   transition: 1s ease; }
@@ -943,10 +1113,11 @@ ul.listpad li {
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
-  font-family: FiraSans-ExtraBold, sans-serif;
+  font-family: Montserrat-Light, sans-serif;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: 1.5rem;
+  font-weight: 800;
   width: 100%;
   color: white;
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);

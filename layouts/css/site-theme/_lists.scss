@@ -23,8 +23,24 @@
 	}
 }
 
+@mixin arrow-variant($themeColor){
+	list-style: none;
+	padding-inline-start: .5rem;
+	& li::before{
+		font-family: "fontello";
+		color: $themeColor;
+		font-size: 100%;
+		padding: 0.2rem;
+		content: "";
+		margin-right: 0.2rem;
+	}
+}
+
 @each $color, $value in $theme-colors {
 	.checks-#{$color} {
 		@include check-variant($value);
+	}
+	.arrow-#{$color} {
+		@include arrow-variant($value);
 	}
 }

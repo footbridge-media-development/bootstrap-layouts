@@ -6,7 +6,7 @@
 	position: relative;
 	display: inline-block;
 }
-.outline-breadcrumb a::before, .outline-breadcrumb a::after {
+.outline-breadcrumb a:not(:last-child)::before, .outline-breadcrumb a:not(:last-child)::after {
 	position: absolute;
 	content: "";
 	height: 24px;

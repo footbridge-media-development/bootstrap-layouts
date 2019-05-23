@@ -3,6 +3,9 @@
 	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
 }
 .outline-breadcrumb a {
+	@extend .py-2;
+	@extend .pr-3;
+	@extend .mr-3;
 	position: relative;
 	display: inline-block;
 }

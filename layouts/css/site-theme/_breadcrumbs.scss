@@ -1,3 +1,32 @@
+// Outline breadcrumbs
+.outline-breadcrumb {
+	box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+}
+.outline-breadcrumb a {
+	position: relative;
+	display: inline-block;
+}
+.outline-breadcrumb a::before, .outline-breadcrumb a::after {
+	position: absolute;
+	content: "";
+	height: 24px;
+	width: 1px;
+	right: 0;
+	background: #e2e2e2;
+}
+.outline-breadcrumb a::before {
+	top: -2px;
+	-webkit-transform: rotate(-30deg);
+	-ms-transform: rotate(-30deg);
+	transform: rotate(-30deg);
+}
+.outline-breadcrumb a::after {
+	bottom: -2px;
+	-webkit-transform: rotate(30deg);
+	-ms-transform: rotate(30deg);
+	transform: rotate(30deg);
+}
+
 // Minimal breadcrumbs
 .minimal-breadcrumb > .trail{
 	display:inline-block;

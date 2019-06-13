@@ -1,6 +1,14 @@
-@for $i from 1 through 12 {
-	.grid-#{$i}{
-		display: grid;
-		grid-template-columns: repeat(#{$i}, 1fr);
+@each $breakpoint, $pixel-value in $grid-breakpoints{
+	@for $i from 1 through 12 {
+		@media screen and (min-width: $pixel-value){
+			.grid-#{$breakpoint}-#{$i}{
+				display: grid;
+				grid-template-columns: repeat(#{$i}, 1fr);
+			}
+		}
+		.grid-#{$i}{
+			display: grid;
+			grid-template-columns: repeat(#{$i}, 1fr);
+		}
 	}
 }

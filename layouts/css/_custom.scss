@@ -1,6 +1,22 @@
 /* ******************************************************************************************** */
 /* CUSTOM SCSS FOR THIS PARTICULAR LAYOUT ***************************************************** */
 /* ******************************************************************************************** */
+.user {
+  @extend %fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}
+.twitter {
+  @extend %fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}
 .upper {
 	text-transform:uppercase !important;
 }

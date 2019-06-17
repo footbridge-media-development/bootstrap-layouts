@@ -1,4 +1,6 @@
+@charset "UTF-8";
 
+ 
 .icon-sun:before { content: '\e800'; } /* '' */
 .icon-sun-filled:before { content: '\e801'; } /* '' */
 .icon-cloud-flash:before { content: '\e802'; } /* '' */
@@ -48,6 +50,11 @@
 .icon-money:before { content: '\e82e'; } /* '' */
 .icon-dollar:before { content: '\e82f'; } /* '' */
 .icon-air:before { content: '\e830'; } /* '' */
+.icon-home:before { content: '\e831'; } /* '' */
+.icon-wallet:before { content: '\e832'; } /* '' */
+.icon-cog-alt:before { content: '\e833'; } /* '' */
+.icon-cloud:before { content: '\e834'; } /* '' */
+.icon-map:before { content: '\e835'; } /* '' */
 .icon-warehouse:before { content: '\e840'; } /* '' */
 .icon-mobile-1:before { content: '\f034'; } /* '' */
 .icon-certificate:before { content: '\f0a3'; } /* '' */
@@ -66,6 +73,7 @@
 .icon-ok-squared:before { content: '\f14a'; } /* '' */
 .icon-dollar-1:before { content: '\f155'; } /* '' */
 .icon-plus-squared-alt:before { content: '\f196'; } /* '' */
+.icon-google:before { content: '\f1a0'; } /* '' */
 .icon-tree:before { content: '\f1bb'; } /* '' */
 .icon-paper-plane:before { content: '\f1d8'; } /* '' */
 .icon-paper-plane-empty:before { content: '\f1d9'; } /* '' */
@@ -85,13 +93,11 @@
 .icon-superpowers:before { content: '\f2dd'; } /* '' */
 .icon-twitter:before { content: '\f309'; } /* '' */
 .icon-twitter-circled:before { content: '\f30a'; } /* '' */
-.icon-facebook:before { content: '\f30c'; } /* '' */
 .icon-facebook-circled:before { content: '\f30d'; } /* '' */
-.icon-gplus:before { content: '\f30f'; } /* '' */
-.icon-gplus-circled:before { content: '\f310'; } /* '' */
 .icon-pinterest:before { content: '\f312'; } /* '' */
 .icon-pinterest-circled:before { content: '\f313'; } /* '' */
 .icon-linkedin:before { content: '\f318'; } /* '' */
 .icon-linkedin-circled:before { content: '\f319'; } /* '' */
 .icon-instagram:before { content: '\f32d'; } /* '' */
 .icon-paypal:before { content: '\f342'; } /* '' */
+.icon-facebook:before { content: '󻌌'; } /* '\fb30c' */

@@ -11323,6 +11323,542 @@ h3 {
   color: #6c757d;
 }
 
+.fancy-breadcrumb-primary > div {
+  display: inline-block;
+}
+
+.fancy-breadcrumb-primary a {
+  cursor: pointer;
+  color: white !important;
+  padding: 3px 0 3px 45px;
+  background-color: #3d88c8;
+  position: relative;
+  display: inline-block;
+}
+
+.fancy-breadcrumb-primary a:hover {
+  background-color: #5999d0;
+}
+
+.fancy-breadcrumb-primary a:hover::after {
+  border-left-color: #5999d0;
+}
+
+.fancy-breadcrumb-primary > a:first-of-type, .fancy-breadcrumb > div:first-of-type a {
+  padding-left: 10px;
+}
+
+.fancy-breadcrumb-primary a:hover {
+  text-decoration: none;
+}
+
+.fancy-breadcrumb-primary a::after {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #3d88c8;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.fancy-breadcrumb-primary {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.fancy-breadcrumb-primary a::before {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+
+.fancy-breadcrumb-secondary > div {
+  display: inline-block;
+}
+
+.fancy-breadcrumb-secondary a {
+  cursor: pointer;
+  color: white !important;
+  padding: 3px 0 3px 45px;
+  background-color: #6c757d;
+  position: relative;
+  display: inline-block;
+}
+
+.fancy-breadcrumb-secondary a:hover {
+  background-color: #7e878f;
+}
+
+.fancy-breadcrumb-secondary a:hover::after {
+  border-left-color: #7e878f;
+}
+
+.fancy-breadcrumb-secondary > a:first-of-type, .fancy-breadcrumb > div:first-of-type a {
+  padding-left: 10px;
+}
+
+.fancy-breadcrumb-secondary a:hover {
+  text-decoration: none;
+}
+
+.fancy-breadcrumb-secondary a::after {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #6c757d;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.fancy-breadcrumb-secondary {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.fancy-breadcrumb-secondary a::before {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+
+.fancy-breadcrumb-success > div {
+  display: inline-block;
+}
+
+.fancy-breadcrumb-success a {
+  cursor: pointer;
+  color: white !important;
+  padding: 3px 0 3px 45px;
+  background-color: #28a745;
+  position: relative;
+  display: inline-block;
+}
+
+.fancy-breadcrumb-success a:hover {
+  background-color: #2fc451;
+}
+
+.fancy-breadcrumb-success a:hover::after {
+  border-left-color: #2fc451;
+}
+
+.fancy-breadcrumb-success > a:first-of-type, .fancy-breadcrumb > div:first-of-type a {
+  padding-left: 10px;
+}
+
+.fancy-breadcrumb-success a:hover {
+  text-decoration: none;
+}
+
+.fancy-breadcrumb-success a::after {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #28a745;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.fancy-breadcrumb-success {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.fancy-breadcrumb-success a::before {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+
+.fancy-breadcrumb-info > div {
+  display: inline-block;
+}
+
+.fancy-breadcrumb-info a {
+  cursor: pointer;
+  color: white !important;
+  padding: 3px 0 3px 45px;
+  background-color: #17a2b8;
+  position: relative;
+  display: inline-block;
+}
+
+.fancy-breadcrumb-info a:hover {
+  background-color: #1bbed8;
+}
+
+.fancy-breadcrumb-info a:hover::after {
+  border-left-color: #1bbed8;
+}
+
+.fancy-breadcrumb-info > a:first-of-type, .fancy-breadcrumb > div:first-of-type a {
+  padding-left: 10px;
+}
+
+.fancy-breadcrumb-info a:hover {
+  text-decoration: none;
+}
+
+.fancy-breadcrumb-info a::after {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #17a2b8;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.fancy-breadcrumb-info {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.fancy-breadcrumb-info a::before {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+
+.fancy-breadcrumb-warning > div {
+  display: inline-block;
+}
+
+.fancy-breadcrumb-warning a {
+  cursor: pointer;
+  color: white !important;
+  padding: 3px 0 3px 45px;
+  background-color: #ffc107;
+  position: relative;
+  display: inline-block;
+}
+
+.fancy-breadcrumb-warning a:hover {
+  background-color: #ffca2b;
+}
+
+.fancy-breadcrumb-warning a:hover::after {
+  border-left-color: #ffca2b;
+}
+
+.fancy-breadcrumb-warning > a:first-of-type, .fancy-breadcrumb > div:first-of-type a {
+  padding-left: 10px;
+}
+
+.fancy-breadcrumb-warning a:hover {
+  text-decoration: none;
+}
+
+.fancy-breadcrumb-warning a::after {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #ffc107;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.fancy-breadcrumb-warning {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.fancy-breadcrumb-warning a::before {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+
+.fancy-breadcrumb-danger > div {
+  display: inline-block;
+}
+
+.fancy-breadcrumb-danger a {
+  cursor: pointer;
+  color: white !important;
+  padding: 3px 0 3px 45px;
+  background-color: #dc3545;
+  position: relative;
+  display: inline-block;
+}
+
+.fancy-breadcrumb-danger a:hover {
+  background-color: #e15361;
+}
+
+.fancy-breadcrumb-danger a:hover::after {
+  border-left-color: #e15361;
+}
+
+.fancy-breadcrumb-danger > a:first-of-type, .fancy-breadcrumb > div:first-of-type a {
+  padding-left: 10px;
+}
+
+.fancy-breadcrumb-danger a:hover {
+  text-decoration: none;
+}
+
+.fancy-breadcrumb-danger a::after {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #dc3545;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.fancy-breadcrumb-danger {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.fancy-breadcrumb-danger a::before {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+
+.fancy-breadcrumb-light > div {
+  display: inline-block;
+}
+
+.fancy-breadcrumb-light a {
+  cursor: pointer;
+  color: white !important;
+  padding: 3px 0 3px 45px;
+  background-color: #f8f9fa;
+  position: relative;
+  display: inline-block;
+}
+
+.fancy-breadcrumb-light a:hover {
+  background-color: white;
+}
+
+.fancy-breadcrumb-light a:hover::after {
+  border-left-color: white;
+}
+
+.fancy-breadcrumb-light > a:first-of-type, .fancy-breadcrumb > div:first-of-type a {
+  padding-left: 10px;
+}
+
+.fancy-breadcrumb-light a:hover {
+  text-decoration: none;
+}
+
+.fancy-breadcrumb-light a::after {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #f8f9fa;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.fancy-breadcrumb-light {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.fancy-breadcrumb-light a::before {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+
+.fancy-breadcrumb-dark > div {
+  display: inline-block;
+}
+
+.fancy-breadcrumb-dark a {
+  cursor: pointer;
+  color: white !important;
+  padding: 3px 0 3px 45px;
+  background-color: #343a40;
+  position: relative;
+  display: inline-block;
+}
+
+.fancy-breadcrumb-dark a:hover {
+  background-color: #444c54;
+}
+
+.fancy-breadcrumb-dark a:hover::after {
+  border-left-color: #444c54;
+}
+
+.fancy-breadcrumb-dark > a:first-of-type, .fancy-breadcrumb > div:first-of-type a {
+  padding-left: 10px;
+}
+
+.fancy-breadcrumb-dark a:hover {
+  text-decoration: none;
+}
+
+.fancy-breadcrumb-dark a::after {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid #343a40;
+  top: 50%;
+  margin-top: -50px;
+  left: 100%;
+  z-index: 2;
+}
+
+.fancy-breadcrumb-dark {
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.fancy-breadcrumb-dark a::before {
+  cursor: pointer;
+  content: " ";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 50px solid transparent;
+  border-bottom: 50px solid transparent;
+  border-left: 30px solid white;
+  position: absolute;
+  top: 50%;
+  margin-top: -50px;
+  margin-left: 1px;
+  left: 100%;
+  z-index: 1;
+}
+
 .fancy-breadcrumb > div {
   display: inline-block;
 }

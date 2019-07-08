@@ -7,9 +7,7 @@
     src: url(../fontello/font/fontello.ttf);
 }
 
-/* ******************************************************************************************** */
-/* DEFINING FONT FAMILIES ********************************************************************* */
-
+/* Defining Font Families ********************************************************************* */
 .f-prime {
     font-family: $font-prime !important;
 }
@@ -20,9 +18,7 @@
     font-family: $font-third !important;
 }
 
-/* ******************************************************************************************** */
-/* DEFINING FONT COLORS *********************************************************************** */
-
+/* Defining Font Colors *********************************************************************** */
 .primes {
     color: $color-prime !important;
 }
@@ -42,9 +38,7 @@
     text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
 }
 
-/* ******************************************************************************************** */
-/* DEFINING BACKGROUND COLORS ***************************************************************** */
-
+/* Defining Background Colors ***************************************************************** */
 .prime-bg-color {
     background-color: $color-prime !important;
 }
@@ -55,9 +49,7 @@
     background-color: $color-third !important;
 }
 
-/* ******************************************************************************************** */
-/* DEFINING PARAGRAPH COLOR BASED ON BACKGROUND COLOR ***************************************** */
-
+/* Defining Paragraph Colors Based on Background Color **************************************** */
 .prime-bg-color, .secondary-bg-color, .third-bg-color {
     color: #FFFFFF;
     p {
@@ -65,103 +57,35 @@
     }
 }
 
-/* ******************************************************************************************** */
-/* LISTS STYLING ****************************************************************************** */
-
-ol {
-    &.listbad {
-        li {
-            padding: 1%;
-        }
-    }
-}
-ul {
-    &.listpad {
-        li {
-            padding: 1%;
-        }
-    }
-}
-
-/* ******************************************************************************************** */
-/* LIST LI STYLING **************************************************************************** */
-
-.checked, .dashed, .icon {
-    list-style-type: none;
-    padding: 0;
-    &::before {
-        display: inline-block;
-    }
-}
-.checked {
-    li {
-        &::before {
-            font-family: "fontello";
-            text-decoration: none;
-            content: "\e80f \00a0";
-            speak: none;
-        }
-    }
-}
-.dashed {
-    li {
-        &::before {
-            content: "-\00a0";
-        }
-    }
-}
-.icon {
-    li {
-        &::before {
-            font-family: "fontello";
-            text-decoration: none;
-            content: "\e819 \00a0";
-            speak: none;
-        }
-    }
-}
-
-/* ******************************************************************************************** */
-/* SIDEBAR ADJUSTMENTS ************************************************************************ */
-
+/* Sidebar Background Styling ***************************************************************** */
 #sidebar {
-    background-color: rgba($color-third, 0.10);
+    background-color: rgba($color-third, 0.50);
     box-sizing: border-box;
 }
-#wufoo-hold {
-    background-color: rgba(0, 0, 0, 0.15);
-}
+
+/* Border Right Styling *********************************************************************** */
 #totheright {
-    border-right: 2px solid white;
+    border-right: 2px solid #FFFFFF;
     @media screen and (max-width: $breakmed) {
+        border-bottom: 2px solid #FFFFFF;
         border-right: 0px;
-        border-bottom: 2px solid white;
-    }
-}
-/* ******************************************************************************************** */
-/* CARD STYLING ADJUSTMENTS ******************************************************************* */
-
-.card {
-    h2 {
-        font-family: $font-prime;
-        font-weight: bold;
     }
 }
 
-/* ******************************************************************************************** */
-/* SERVICE OVERLAY BOX HEADERS **************************************************************** */
-
-.services-box {
-    background-color: $color-second;
-    box-sizing: border-box;
+/* Overlay Service Boxes Headers ************************************************************** */
+.overlay-title {
+    font-family: $font-prime;
+    font-weight: normal;
+    font-size: inherit;
     text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    box-sizing: border-box;
     color: white;
     margin-bottom: 0px;
 }
 
-/* ******************************************************************************************** */
-/* GRADIENT BG COVER ************************************************************************** */
-
+/* Gradient BG Cover ************************************************************************** */
 #gradient-background {
     background-image: url(../images/banner/banner-1.jpg);
     background-position: center center;
@@ -173,18 +97,16 @@ ul {
         min-height: 300px;
     }
 }
-
 .bgcover {
-    background-size:cover !important;
-    background-attachment:fixed !important;
+    background-attachment: fixed !important;
+    background-size: cover !important;
     p {
-        color:#fff !important;
+        color: #FFFFFF !important;
     }
-	@media screen and (max-width:$breaklrg) {
-		background-attachment:scroll !important;
-	}
+    @media screen and (max-width: $breaklrg) {
+        background-attachment: scroll !important;
+    }
 }
-
 .gradcover {
     background: rgba(19,19,19,1);
     background: -moz-linear-gradient(left, rgba(19,19,19,1) 0%, rgba(28,28,28,1) 15%, rgba(38,38,38,0.75) 34%, rgba(76,76,76,0) 100%);
@@ -194,52 +116,136 @@ ul {
     background: -ms-linear-gradient(left, rgba(19,19,19,1) 0%, rgba(28,28,28,1) 15%, rgba(38,38,38,0.75) 34%, rgba(76,76,76,0) 100%);
     background: linear-gradient(to right, rgba(19,19,19,1) 0%, rgba(28,28,28,1) 15%, rgba(38,38,38,0.75) 34%, rgba(76,76,76,0) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#4c4c4c', GradientType=1 );
-    h2 {
-        color:$color-prime;
-    }
 }
 
-
+/* Top Navigation Phone Number **************************************************************** */
 .call-num {
-
 	color: $color-second !important;
-
+    transition: all 0.5s ease;
 	&:hover {
-
 		color: $color-prime !important;
-
-	}
-
-}
-.req-form {
-	color: white !important;
-	&:hover {
-		color: $color-second !important;
 	}
 }
-.breadcrumb {
-    background-color: transparent;
-    border-left: 6px solid darken($color-third, 15%);
-    border-bottom: 1px solid darken($color-third, 15%);
-    background: none;
-    padding: 0.33rem 1rem;
-    font-family: $font-third;
-    font-size: 0.88rem;
-    font-weight: normal;
-    text-transform: uppercase;
-    color: $color-second !important;
-    a {
-        color: $color-second !important;
-    }
-}
-.breadcrumb-item {
-    font-family: $font-third;
-    font-size: 0.88rem;
-    font-weight: normal;
+
+/* FontAwesome List Icon Styling ************************************************************** */
+.icon-li, .checkmark-li, .dashed-li {
+    list-style-type: none;
+    padding: 0px;
     &::before {
-        color: darken($color-third, 15%) !important;
+        display: inline-block;
     }
-    +.active {
-        color: darken($color-third, 15%) !important;
+    li {
+        &::before {
+            text-decoration: none;
+            padding-right: 0.5rem;
+            speak: none;
+        }
     }
 }
+.icon-li {
+    li {
+        &::before {
+            font-family: "FontAwesome-Brands";
+            content: fa-content($fa-var-twitter);
+        }
+    }
+}
+.checkmark-li {
+    li {
+        &::before {
+            font-family: "FontAwesome-Solids";
+            content: fa-content($fa-var-check);
+        }
+    }
+}
+.dashed-li {
+    li {
+        &::before {
+            font-family: "FontAwesome-Solids";
+            content: fa-content($fa-var-grip-lines);
+        }
+    }
+}
+
+/* Overlay Service Boxes Icons Styling */
+.user-icon, .envelope-icon, .twitter-icon, .search-icon {
+    @extend %fa-icon;
+}
+.user-icon {
+  @extend .fas;
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}
+.envelope-icon {
+    @extend .fas;
+    &:before {
+        content: fa-content($fa-var-envelope);
+    }
+}
+.twitter-icon {
+    @extend .fab;
+    &:before {
+        content: fa-content($fa-var-twitter);
+    }
+}
+.search-icon {
+    @extend .fas;
+    &:before {
+        content: fa-content($fa-var-search);
+    }
+}
+
+/* H3 Request Form Link *********************************************************************** */
+.req-form {
+	color: $color-third !important;
+    transition: all 0.5s ease;
+	&:hover {
+		color: $color-prime !important;
+	}
+}
+
+/* Accordion Styling ************************************************************************** */
+#accordion .card-header button, .accordion .card-header button {
+	white-space: normal;
+	text-align: left;
+}
+#accordion {
+	.card {
+		border: 0px;
+		margin: 0.25rem;
+		.card-header {
+			background-color: lighten($color-prime, 25%);
+			border: 0px;
+			padding: 0.5rem;
+			h5 {
+				button {
+					font-family: $font-prime;
+					font-weight: normal;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					text-align: left;
+					color: white !important;
+					text-decoration: none;
+					&:hover {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		.card-body {
+			font-family: $font-second;
+			font-weight: normal;
+			font-size: 0.9rem !important;
+			color: #555555 !important;
+			p {
+				font-family: $font-second;
+				font-weight: normal;
+				font-size: 0.9rem !important;
+				color: #555555 !important;
+			}
+		}
+	}
+}
+
+/* ******************************************************************************************** */

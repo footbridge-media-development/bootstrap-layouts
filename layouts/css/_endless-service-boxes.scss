@@ -1,0 +1,610 @@
+/* ******************************************************************************************** */
+/* This is a gigantic file referencing all service box / image hover effects                    */
+/* Please delete all unused references in this file to decrease the file size upon approval     */
+/* Created by Sarah Wallick, July 05, 2019                                                      */
+/* ******************************************************************************************** */
+
+/* DEMO 1 - Fade in on Hover with Links */
+.service-fadein-hover {
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .service-content {
+        background-color: rgba(0, 0, 0, 0.7);
+        overflow: hidden;
+        opacity: 0;
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+        transition: all 0.5s ease;
+        .service-title {
+            position: absolute;
+            top: 35%;
+            left: 0%;
+            width: 100%;
+            height: auto;
+            font-family: $font-prime;
+            font-weight: normal;
+            font-size: 25px;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            transform: scale(0);
+            transition: all 0.5s ease; color: #FFFFFF;
+        }
+        .service-links {
+            position: absolute;
+            bottom: 35%;
+            left: 0%;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            transition: all 0.5s ease;
+            transform: scale(0);
+            a {
+                display: inline-block;
+                padding: 0px;
+                margin-right: 5px;
+                width: 35px;
+                height: 35px;
+                line-height: 33px;
+                font-size: 16px;
+                border: 1px solid white;
+                color: white !important;
+                border-radius: 50%;
+                transform: rotate(0deg);
+                transition: all 0.75s ease 0s;
+                &:hover {
+                    transform: rotate(360deg);
+                }
+            }
+        }
+    }
+    &:hover {
+        .service-content {
+            opacity: 1;
+            .service-title, .service-links {
+                transform: scale(1);
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        /* adjusting hover effects for ipad pro screen sizes and smaller */
+        .service-content {
+            opacity: 1;
+            .service-title {
+                transform: scale(1);
+                top: 30%;
+            }
+            .service-links {
+                transform: scale(1);
+                bottom: 30%;
+            }
+        }
+    }
+}
+
+/* DEMO 2 - Border Zoom on Hover */
+.service-bordered-zoom {
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        filter: brightness(1);
+        transform: scale(1.25);
+        transition: all 0.5s ease;
+    }
+    .service-content {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid #FFFFFF;
+        transition: all 0.5s ease;
+        opacity: 0;
+        .service-title {
+            position: absolute;
+            top: 35%;
+            left: 0%;
+            width: 100%;
+            height: auto;
+            font-family: $font-prime;
+            font-weight: normal;
+            font-size: 25px;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .service-button {
+            position: absolute;
+            bottom: 35%;
+            left: 0%;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            .btn-service {
+                background-color: $color-prime;
+                font-family: $font-second;
+                font-weight: normal;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #FFFFFF;
+                transition: all 0.5s ease;
+                &:hover {
+                    background-color: $color-second;
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+    }
+    &:hover {
+        img {
+            transform: scale(1);
+            filter: brightness(0.5);
+        }
+        .service-content {
+            opacity: 1;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        /* adjusting hover effects for ipad pro screen sizes and smaller */
+        img {
+            transform: scale(1);
+            filter: brightness(0.5);
+        }
+        .service-content {
+            opacity: 1;
+        }
+    }
+}
+
+/* DEMO 3 - Closing Door Effect on Hover */
+.service-closing-door {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .service-content {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.6);
+        transform: perspective(400px) rotateX(-90deg);
+        transform-origin: center top 0;
+        transition: all 0.5s ease;
+        opacity: 0;
+        .service-links {
+            position: absolute;
+            top: 42%;
+            left: 0%;
+            right: 0%;
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            li {
+                display: inline-block;
+                a {
+                    display: block;
+                    background-color: $color-second;
+                    color: #FFFFFF;
+                    transition: all 0.35s ease 0s; margin-right: 7px;
+            		line-height: 40px; width: 40px; height: 40px;
+            		text-align: center; border-radius: 50%; font-size: 20px;
+                    &:hover {
+                        background-color: #FFFFFF; color: #000000;
+                    }
+                }
+            }
+        }
+    }
+    .service-title {
+        font-family: $font-prime;
+        font-weight: normal;
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        position: absolute;
+        bottom: 20px;
+        left: 20px;
+        margin: 0px;
+        padding: 0.5rem 1.5rem;
+        background-color: $color-second;
+        transition: all 0.9s ease 0s;
+        display: inline-block;
+        color: #FFFFFF;
+    }
+    &:hover {
+		.service-content {
+            transform: perspective(400px) rotateX(0);
+            opacity: 1;
+        }
+		.service-title {
+            bottom: -60px;
+        }
+	}
+    @media screen and (max-width: 1024px) {
+        /* adjusting hover effects for ipad pro screen sizes and smaller */
+        .service-content {
+            transform: perspective(400px) rotateX(0);
+            opacity: 1;
+        }
+        .service-title {
+            bottom: -60px;
+        }
+    }
+}
+
+/* DEMO 4 - Image Zoom on Hover */
+.service-image-zoom {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        filter: brightness(0.8);
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+    .service-content {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        .service-title {
+            position: absolute;
+            top: 45%;
+            left: 0%;
+            width: 100%;
+            height: auto;
+            a {
+                font-family: $font-prime;
+                font-weight: normal;
+                font-size: 25px;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+                color: #FFFFFF !important;
+            }
+        }
+    }
+    &:hover {
+        img {
+            transform: scale(1.25);
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        /* adjusting hover effects for ipad pro screen sizes and smaller */
+        img {
+            transform: scale(1.25);
+        }
+    }
+}
+
+/* DEMO 5 - Image Darken on Hover */
+.service-image-darken {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        filter: brightness(1);
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+    .service-content {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        .service-title {
+            position: absolute;
+            top: 45%;
+            left: 0%;
+            width: 100%;
+            height: auto;
+            a {
+                font-family: $font-prime;
+                font-weight: normal;
+                font-size: 25px;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+                color: #FFFFFF !important;
+            }
+        }
+    }
+    &:hover {
+        img {
+            filter: brightness(0.6);
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        /* adjusting hover effects for ipad pro screen sizes and smaller */
+        img {
+            filter: brightness(0.6);
+        }
+    }
+}
+
+/* DEMO 6 - Image Brighten on Hover */
+.service-image-brighten {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        filter: brightness(0.5);
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+    .service-content {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        .service-title {
+            position: absolute;
+            top: 45%;
+            left: 0%;
+            width: 100%;
+            height: auto;
+            a {
+                font-family: $font-prime;
+                font-weight: normal;
+                font-size: 25px;
+                text-transform: uppercase;
+                text-decoration: none;
+                text-align: center;
+                text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+                color: #FFFFFF !important;
+            }
+        }
+    }
+    &:hover {
+        img {
+            filter: brightness(1);
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        /* adjusting hover effects for ipad pro screen sizes and smaller */
+        img {
+            filter: brightness(1);
+        }
+    }
+}
+
+/* DEMO 7 - Zoom Slide Info on Hover */
+.service-sliding-zoombox {
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        filter: brightness(0.8);
+        transition: all 0.5s ease;
+    }
+    .service-content {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+        .service-title {
+            font-family: $font-prime;
+            font-weight: normal;
+            font-size: 40px;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: left;
+            width: 100%;
+            height: auto;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transform: translateX(-200%);
+            transition: all 0.5s ease;
+        }
+        .service-info {
+            font-family: $font-second;
+            font-weight: normal;
+            font-size: 0.9rem;
+            text-transform: none;
+            text-decoration: none;
+            text-align: right;
+            width: 60%;
+            height: auto;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            bottom: 0px;
+            right: 0px;
+            transform: translateX(200%);
+            transition: all 0.5s ease;
+        }
+        .service-links {
+            font-family: $font-prime;
+            font-weight: normal;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: left;
+            width: 100%;
+            height: auto;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 60px;
+            left: 0px;
+            transform: translateX(-200%);
+            transition: all 0.5s ease;
+        }
+    }
+    &:hover {
+        img {
+            filter: brightness(0.6);
+        }
+        .service-content {
+            .service-title, .service-info, .service-links {
+                transform: translateX(0);
+            }
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        /* adjusting hover effects for ipad pro screen sizes and smaller */
+        img, img:hover {
+            filter: brightness(0.6);
+        }
+        .service-content, .service-content:hover {
+            .service-title, .service-info, .service-links {
+                transform: translateX(0);
+            }
+            .service-title {
+                font-size: 32px !important;
+            }
+            .service-info {
+                width: 100% !important;
+            }
+            .service-links {
+                top: 40px !important;
+            }
+        }
+    }
+    @media screen and (max-width: 768px) {
+        /* adjusting hover effects for standard ipad screen sizes and smaller */
+        img, img:hover {
+            filter: brightness(0.6);
+        }
+        .service-content, .service-content:hover {
+            .service-title, .service-info, .service-links {
+                transform: translateX(0);
+            }
+            .service-title {
+                font-size: 24px !important;
+            }
+            .service-info {
+                width: 100% !important;
+                opacity: 0;
+            }
+            .service-links {
+                top: 40px !important;
+            }
+        }
+    }
+}
+
+/* DEMO 8 - Pop Up Info on Hover */
+.popup-service-box {
+	position: relative;
+	overflow: hidden;
+	img {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+		transition: all 0.35s ease;
+		filter: brightness(1);
+	}
+	.popup-content {
+		position: absolute;
+		top: 5%;
+		left: 5%;
+		width: 90%;
+		height: 90%;
+		.popup-title {
+			position: absolute;
+			top: 10%;
+			left: 0px;
+			width: 100%;
+			height: auto;
+			font-family: $font-prime;
+			font-weight: normal;
+			font-size: 30px;
+			text-transform: uppercase;
+			text-decoration: none;
+			text-align: right;
+			color: #FFFFFF;
+			transition: all 0.35s ease;
+		}
+		.popup-line {
+			position: absolute;
+			top: 30%;
+			left: 0%;
+			width: 100%;
+			height: 4px;
+			background-color: rgba(255, 255, 255, 0.75);
+			opacity: 0;
+			transition: all 0.35s ease;
+		}
+		.popup-desc {
+			position: absolute;
+			bottom: 0%;
+			left: 0%;
+			width: 100%;
+			height: auto;
+			font-family: $font-second;
+			font-weight: normal;
+			font-size: 0.9rem;
+			text-transform: uppercase;
+			text-decoration: none;
+			text-align: right;
+			transition: all 0.35s ease;
+			color: #FFFFFF;
+			opacity: 0;
+			a {
+				color: #FFFFFF !important;
+			}
+		}
+	}
+	&:hover {
+		img {
+			filter: brightness(0.8);
+		}
+		.popup-content {
+			.popup-title {
+				top: 5%;
+			}
+			.popup-line {
+				top: 20%;
+				opacity: 1;
+			}
+			.popup-desc {
+				bottom: 12%;
+				opacity: 1;
+			}
+		}
+	}
+}
+
+/* ******************************************************************************************** */

@@ -14,6 +14,9 @@
 	<meta property="og:image" itemprop="image" content="<?= $tools->getOGImage(); ?>" >
 	<meta name="format-detection" content="telephone=no">
 
+	<!-- DEVELOPER NOTES - Remove NoIndex/NoFollow on Build -->
+	<meta name="robots" content="noindex, nofollow">
+	
 	<link href="css/site-theme/master-theme.css" rel="stylesheet" type="text/css">
 	<link href="css/fa.css" rel="stylesheet" type="text/css">
 	<link href="fontello/css/fontello.css" rel="stylesheet" type="text/css">
@@ -37,7 +40,7 @@
 <body>
 
 	<a class="skip-main" href="#content">Skip to main content</a>
-	
+
 	<!-- START SMALL NAVIGATION -->
 	<div class="d-block d-xl-none" id="small-navigation-container-1">
 		<div class="d-flex align-items-center">

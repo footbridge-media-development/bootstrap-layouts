@@ -6,7 +6,8 @@ footer.fb-ftr-1 {
     background-color: darken($color-prime, 5%);
     font-family: $font-second;
     font-weight: normal;
-    color: white;
+    font-size: 0.9rem;
+    color: #FFFFFF;
 }
 footer.fb-ftr-1 h4 {
     font-family: $font-prime;
@@ -16,8 +17,9 @@ footer.fb-ftr-1 h4 {
 footer.fb-ftr-1 a {
     font-family: $font-second;
     font-weight: normal;
-    color: white;
-    transition: .5s ease;
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    transition: all 0.5s ease;
     &:hover {
         color: $color-second;
     }
@@ -26,7 +28,7 @@ footer.fb-ftr-1 a {
     display: block;
 }
 .fb-ftr-1 .service-areas a {
-    border-right: 2px solid $color-third;
+    border-right: 1px solid $color-third;
     padding-right: 6px;
 }
 .fb-ftr-1 .service-areas a:last-child {

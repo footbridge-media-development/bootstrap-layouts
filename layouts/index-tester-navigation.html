@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" itemscope itemtype="https://schema.org/<?= $companyInfo->getSchema(); ?>">
 <head>
+
 	<title>PROOF</title>
+
 	<meta name="description" property="og:description" content="" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -13,12 +15,17 @@
 	<meta property="og:image" content="<?= $baseUrl ?>/images/facebook-og-3.jpg" >
 	<meta property="og:image" itemprop="image" content="<?= $tools->getOGImage(); ?>" >
 	<meta name="format-detection" content="telephone=no">
+
+	<!-- DEVELOPER NOTES - Remove NoIndex/NoFollow on Build -->
+	<meta name="robots" content="noindex, nofollow">
+
 	<link href="Bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
 	<link href="css/fa.css" rel="stylesheet" type="text/css">
 	<link href="fontello/css/fontello.css" rel="stylesheet" type="text/css">
 	<link href="js/lightbox/css/lightbox.min.css" rel="stylesheet" type="text/css">
 	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
 	<link href="favicon.ico" rel="icon" type="image/x-icon">
+
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script defer src="Bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 	<script defer src="js/navigation-manager-app.min.js" type="text/javascript"></script>
@@ -26,14 +33,16 @@
 	<script defer src="/js/paginate.js"></script>
 	<script defer src="/js/accordion.js"></script>
 	<script defer src="js/lightbox/js/lightbox.min.js"></script>
+
 </head>
+
 <body>
 	<a class="skip-main" href="#content">Skip to main content</a>
 	<!-- Small-screen navigation -->
 	<div class="d-block d-lg-none" id="small-navigation-container-2">
 		<div class="d-flex align-items-center">
 			<div class="p-2 col"><img alt="Bootstrap logo" src="images/logo.png"></div>
-			
+
 			<div class="col-3 text-right">
 				<a id="small-navigation-menu-opener-1"><i class="icon-plus-circled"></i></a>
 			</div>
@@ -53,7 +62,7 @@
 					<div class="col-4">
 						<a class="sub-head"><i class="icon-tools"></i></a>
 					</div>
-					
+
 				</div>
 			</div>
 		</div>

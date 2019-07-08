@@ -2,16 +2,30 @@
 /* SASS VARIABLES SETUP *********************************************************************** */
 
 @font-face {
-	font-family: 'FiraSans-ExtraBold';
-	src: url(../fonts/FiraSans-ExtraBold.otf);
+	font-family: 'Montserrat-Bold';
+	src: url(../fonts/Montserrat-Bold.otf);
 }
 @font-face {
-	font-family: 'Montserrat-Light';
-	src: url(../fonts/Montserrat-Light.otf);
+	font-family: 'Montserrat-Medium';
+	src: url(../fonts/Montserrat-Medium.otf);
 }
 @font-face {
-	font-family: 'Raleway-Regular';
-	src: url(../fonts/Raleway-Regular.ttf);
+	font-family: 'Roboto-Regular';
+	src: url(../fonts/Roboto-Regular.ttf);
+}
+
+/* All FontAwesome Families ******************************************************************* */
+@font-face {
+    font-family: 'FontAwesome-Brands';
+    src: url(../webfonts/fa-brands-400.ttf);
+}
+@font-face {
+    font-family: 'FontAwesome-Regular';
+    src: url(../webfonts/fa-regular-400.ttf);
+}
+@font-face {
+    font-family: 'FontAwesome-Solids';
+    src: url(../webfonts/fa-solid-900.ttf);
 }
 
 /* ******************************************************************************************** */
@@ -30,22 +44,8 @@ $color-alpha:  rgba($color-second, 0.50);
 
 /* ******************************************************************************************** */
 
-$font-prime:  FiraSans-ExtraBold, sans-serif;
-$font-second: Montserrat-Light, sans-serif;
-$font-third:  Raleway-Regular, sans-serif;
-
-/* ******************************************************************************************** */
-
-$bg-special: url(../images/btn-cover2.png) repeat;
-
-/* ******************************************************************************************** */
-/* LARGE NAV 3 COLOR SETUP [CREAMY] *********************************************************** */
-
-$lg-nav-3-bg-color: rgb(50,50,50);
-$lg-nav-3-text-color: rgb(240,240,240);
-$lg-nav-3-hover-text-color: rgb(240,240,240);
-$lg-nav-3-hover-bg-color: rgb(70,70,70);
-$lg-nav-3-dropdown-bg-color: rgb(239, 173, 89);
-$lg-nav-3-dropdown-hover-bg-color: rgb(239, 157, 53);
+$font-prime:  Montserrat-Bold, sans-serif;
+$font-second: Montserrat-Medium, sans-serif;
+$font-third:  Roboto-Regular, sans-serif;
 
 /* ******************************************************************************************** */

@@ -1,40 +1,57 @@
 /* ******************************************************************************************** */
 /* CUSTOM SCSS FOR THIS PARTICULAR LAYOUT ***************************************************** */
 /* ******************************************************************************************** */
-.user {
-  @extend %fa-icon;
-  @extend .fas;
 
-  &:before {
-    content: fa-content($fa-var-user);
-  }
+/* Custom Styling for the Constrained Layout Template ***************************************** */
+body {
+    background-image: url(../images/patterns/classic-fabric-pattern.jpg);
+    background-position: center center;
+    background-attachment: scroll;
+    background-repeat: repeat;
 }
-.twitter {
-  @extend %fa-icon;
-  @extend .fab;
+.boxy-shadows {
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 1;
+}
+#background-what-clients-are-saying {
+    background-image: url(../images/banner/background-what-clients-are-saying.jpg);
+    background-position: center center;
+    background-attachment: scroll;
+    background-size: cover;
+    min-height: 400px;
+}
 
-  &:before {
-    content: fa-content($fa-var-twitter);
-  }
+/* Jumping Icons Styling ********************************************************************** */
+#jumping-icons {
+	transition: all .1s linear;
+	&:hover {
+		transform: translateY(-10px);
+	}
 }
+
+/* Change to Uppercase ************************************************************************ */
 .upper {
-	text-transform:uppercase !important;
+    text-transform: uppercase !important;
 }
+
+/* Background ID References ******************************************************************* */
 #bg1 {
-	
-	
+    /* add styling here */
+    background: url(../images/banner/banner-1.jpg) center;
 }
 #bg2 {
-	background:#292929;
+    background-color: #292929;
 }
 #bg3 {
-	background:url(../images/banner/banner-3.jpg) center;
+    background: url(../images/banner/banner-2.jpg) center;
 }
 #bg4 {
-	background:url(../images/banner/banner-4.jpg) center;
+    background: url(../images/banner/banner-3.jpg) center;
 }
+
 .next-btn {
-	text-align:right;
+	text-align: right;
 }
 .fullwindow {
 	.row {
@@ -47,6 +64,8 @@
 		}
 	}
 }
+
+/* Banner Video Styling *********************************************************************** */
 .overlay-vid {
 	position:absolute;
 	z-index:1;
@@ -58,7 +77,7 @@
 		background: -webkit-linear-gradient(top, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.75) 51%,rgba(0,0,0,0.5) 100%);
 		background: linear-gradient(to bottom, rgba(0,0,0,0.5) 0%,rgba(0,0,0,0.75) 51%,rgba(0,0,0,0.5) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#80000000', endColorstr='#80000000',GradientType=0 );
-	
+
 }
 #myVideo {
 	position:absolute;
@@ -70,6 +89,7 @@
 	overflow:hidden;
 	object-fit:cover;
 }
+
 /* KILL THIS IMPORT TO KILL THE FIXED NAV ***************************************************** */
 @import 'fixynav';
 
@@ -84,112 +104,6 @@
 				color: #555555 !important;
 			}
 		}
-	}
-}
-
-/* ZOOMING BOXES FOR SERVICES ***************************************************************** */
-.zoombox {
-	overflow: hidden;
-	.zooming {
-		height:100%;
-		position:relative;
-		
-	}
-}
-.zooming img {
-    transition: 1s ease;
-}
-.zooming img:hover {
-    transform: scale(1.5);
-    overflow: hidden;
-}
-.zoomtext {
-		position:absolute;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		-ms-transform: translate(-50%, -50%);
-		font-family: $font-second;
-		text-transform: uppercase;
-		letter-spacing: 1px;
-		font-size: 1.5rem;
-		font-weight:800;
-		width: 100%;
-		color: white;
-		text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
-		text-align: center;
-}
-
-/* HIGHLIGHTED SERVICE BOXES ON HOVER ********************************************************* */
-.highlightbox {
-	overflow: hidden;
-}
-.highlighting img {
-	filter: brightness(0.7);
-	transition: 1s ease;
-}
-.highlighting img:hover {
-	overflow: hidden;
-	filter: brightness(1.0);
-}
-.highlightbox-text {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-    font-family: $font-prime;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1.5rem;
-    width: 100%;
-    color: white;
-    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
-    text-align: center;
-}
-
-/* DARKEN SERVICE BOXES ON HOVER ************************************************************** */
-.darkenbox {
-	overflow: hidden;
-}
-.darkening img {
-	filter: brightness(1.0);
-	transition: 1s ease;
-}
-.darkening img:hover {
-	filter: brightness(0.5);
-	overflow: hidden;
-}
-.darkenbox-text {
-	position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-    font-family: $font-prime;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    font-size: 1.5rem;
-    width: 100%;
-    color: white;
-    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
-    text-align: center;
-}
-
-/* JUMPING ICONS ****************************************************************************** */
-#jumping-icons {
-	transition: all .1s linear;
-	&:hover {
-		transform: translateY(-10px);
-	}
-}
-
-/* RIGHT-SIDE BORDER UNTIL MOBILE VIEW ******************************************************** */
-#totheright {
-	border-right: 2px solid white;
-	@media screen and (max-width: $breakmed) {
-		border-right: 0px;
-		border-bottom: 2px solid white;
 	}
 }
 

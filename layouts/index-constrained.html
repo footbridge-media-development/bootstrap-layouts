@@ -2,7 +2,9 @@
 <html lang="en" itemscope itemtype="https://schema.org/<?= $companyInfo->getSchema(); ?>">
 
 <head>
+
 	<title>PROOF</title>
+
 	<meta name="description" property="og:description" content="" />
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
@@ -11,30 +13,35 @@
 	<meta content="<?= $tools->getOGTitle(); ?>" property="og:title">
 	<meta property="og:image" itemprop="image" content="<?= $tools->getOGImage(); ?>" >
 	<meta name="format-detection" content="telephone=no">
+
+	<!-- DEVELOPER NOTES - Remove NoIndex/NoFollow on Build -->
+	<meta name="robots" content="noindex, nofollow">
+
+	<!-- DEVELOPER NOTES - Remove Pop-Up Script on Build -->
+	<script defer src="js/proof-preview.js"></script>
+
+	<!-- Favicon Reference -->
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="favicon.ico" rel="icon" type="image/x-icon">
+
 	<link href="css/site-theme/master-theme.css" rel="stylesheet" type="text/css">
 	<link href="css/fa.css" rel="stylesheet" type="text/css">
 	<link href="fontello/css/fontello.css" rel="stylesheet" type="text/css">
 	<link href="js/lightbox/css/lightbox.min.css" rel="stylesheet" type="text/css">
-	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
-	<link href="favicon.ico" rel="icon" type="image/x-icon">
+
 	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script defer src="css/Bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
 	<script defer src="js/navigation-manager-app.min.js" type="text/javascript"></script>
 	<script defer src="js/start-hero-carousel.js" type="text/javascript"></script>
 	<script defer src="/js/paginate.js"></script>
 	<script defer src="/js/accordion.js"></script>
-
-	<!--kill this js to kill fixed nav vvvvvvv -->
-	<script defer src="js/fixy.js"></script>
-
 	<script defer src="js/lightbox/js/lightbox.min.js"></script>
 	<script defer src="js/anime.min.js"></script>
 	<script defer src="js/inView.jquery.min.js"></script>
 	<script defer src="js/animation-engine.min.js"></script>
 
-	<!-- START REMOVABLE POPUP -->
-	<script defer src="js/proof-preview.js"></script>
-	<!-- END REMOVABLE POPUP -->
+	<!-- Remove This to Remove Fixy Navigation -->
+	<script defer src="js/fixy.js"></script>
 
 </head>
 
@@ -75,7 +82,9 @@
 				<img src="images/logo.png" alt="logo" width="150">
 			</div>
 			<div class="col-6 p-1 text-right">
-				<a href="tel:+1-xxx-xxx-xxxx" class="f-prime med call-num"><i class="icon-phone"></i> xxx-xxx-xxxx</a>
+				<a href="tel:+1-xxx-xxx-xxxx" class="f-prime med call-num">
+					<i class="fas fa-phone"></i> XXX-XXX-XXXX
+				</a>
 			</div>
 			<div class="col-2 p-1 pr-3 text-right">
 				<a id="small-navigation-menu-opener-1">
@@ -93,7 +102,7 @@
 						<a href="#link">Home</a>
 					</div>
 					<div>
-						<a href="#link">About Us</a>
+						<a href="#link">About</a>
 						<div class="tap-dropdown">
 							<div>
 								<a href="#link">Latest Projects</a>
@@ -107,22 +116,22 @@
 						</div>
 					</div>
 					<div>
-						<a href="#link">Our Services</a>
+						<a href="#link">Services</a>
 						<div class="tap-dropdown">
 							<div>
-								<a href="#link">Related-Service-1</a>
+								<a href="#link">Service 1</a>
 							</div>
 							<div>
-								<a href="#link">Related-Service-2</a>
+								<a href="#link">Service 2</a>
 							</div>
 							<div>
-								<a href="#link">Related-Service-3 +</a>
+								<a href="#link">Service 3 +</a>
 								<div class="tap-dropdown">
 									<div>
-										<a href="#link">Related-Service-3a</a>
+										<a href="#link">Service 3a</a>
 									</div>
 									<div>
-										<a href="#link">Related-Service-3b</a>
+										<a href="#link">Service 3b</a>
 									</div>
 								</div>
 							</div>
@@ -154,10 +163,12 @@
 			</div>
 			<div class="col p-1 pr-3 text-right">
 				<div>
-					<a href="tel:+1-xxx-xxx-xxxx" class="f-prime med call-num icon-mobile">xxx-xxx-xxxx</a>
+					<a href="tel:+1-xxx-xxx-xxxx" class="f-prime med call-num">
+						<i class="fas fa-phone"></i> XXX-XXX-XXXX
+					</a>
 				</div>
 				<div>
-					<a href="#link" class="btn btn-info">Request Service</a>
+					<a href="#link" class="btn btn-more">Request Service</a>
 				</div>
 			</div>
 		</div>
@@ -168,7 +179,7 @@
 						<a href="#link">Home</a>
 					</div>
 					<div class="col">
-						<a href="#link">About Us</a>
+						<a href="#link">About</a>
 						<div class="dropdown">
 							<div>
 								<a href="#link">Latest Projects</a>
@@ -182,22 +193,22 @@
 						</div>
 					</div>
 					<div class="col">
-						<a href="#link">Our Services</a>
+						<a href="#link">Services</a>
 						<div class="dropdown">
 							<div>
-								<a href="#link">Related-Service-1</a>
+								<a href="#link">Service 1</a>
 							</div>
 							<div>
-								<a href="#link">Related-Service-2</a>
+								<a href="#link">Service 2</a>
 							</div>
 							<div>
-								<a href="#link">Related-Service-3 +</a>
+								<a href="#link">Service 3 +</a>
 								<div class="dropdown">
 									<div>
-										<a href="#link">Related-Service-3a</a>
+										<a href="#link">Service 3a</a>
 									</div>
 									<div>
-										<a href="#link">Related-Service-3b</a>
+										<a href="#link">Service 3b</a>
 									</div>
 								</div>
 							</div>
@@ -222,7 +233,7 @@
 	<!-- END LARGE NAVIGATION -->
 
 	<!-- START BANNER -->
-	<div id="banner">
+	<div id="banner" class="boxy-shadows bigger-wrap mx-auto">
 		<div class="carousel slide" data-ride="carousel" id="heroCarousel">
 			<ol class="carousel-indicators">
 				<li class="active" data-slide-to="0" data-target="#heroCarousel"></li>
@@ -283,18 +294,18 @@
 	<!-- END BANNER -->
 
 	<!-- START CONTENT -->
-	<div class="container-fluid big-wrap mx-auto">
+	<div class="container-fluid boxy-shadows bigger-wrap mx-auto">
 
 		<!-- START CTA -->
 		<div class="row prime-bg-color p-0">
-			<div class="col-12 mx-auto p-4 text-center">
-				<div class="f-prime med white">
+			<div class="col-12 text-center mx-auto p-4">
+				<div class="f-prime med text-light">
 					Emergency Service Contact
 				</div>
 				<div class="f-second sml">
-					<a href="tel:+1-xxx-xxx-xxxx" class="white">Call Us Today at xxx-xxx-xxxx</a>
+					<a href="tel:+1-xxx-xxx-xxxx" class="text-light">CALL US TODAY AT XXX-XXX-XXXX</a>
 				</div>
-				<div class="sml">
+				<div class="mt-3 mb-0">
 					<a href="#link" class="btn btn-cta">
 						Request Service Now
 					</a>
@@ -303,14 +314,14 @@
 		</div>
 		<!-- END CTA -->
 
-		<!-- START 4 SERVICE BOXES -->
+		<!-- START 4 OVERLAY BOXES -->
 		<div class="row secondary-bg-color p-0">
-			<div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0 services-box">
-				<h2 class="p-2 f-prime sml mb-0 text-center ">
-					<i class="user"></i> Service-1
+			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mx-auto p-0">
+				<h2 class="overlay-title sml p-2">
+					<i class="user-icon"></i> Service Name
 				</h2>
 				<div class="overlay-container">
-					<img class="overlay-bg-image" alt="service-1" src="images/services/service-1.jpg">
+					<img class="overlay-bg-image" alt="service name" src="images/services/service-1.jpg">
 					<div class="overlay from-left">
 						<div class="overlay-text">
 							<span>Learn More</span>
@@ -319,13 +330,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0 services-box">
-				<h2 class="p-2 f-prime sml mb-0 text-center">
-					<i class="twitter"></i> Service-2
+			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mx-auto p-0">
+				<h2 class="overlay-title sml p-2">
+					<i class="search-icon"></i> Service Name
 				</h2>
 				<div class="overlay-container">
-					
-					<img class="overlay-bg-image" alt="service-2" src="images/services/service-2.jpg">
+					<img class="overlay-bg-image" alt="service name" src="images/services/service-2.jpg">
 					<div class="overlay from-top">
 						<div class="overlay-text">
 							<span>Learn More</span>
@@ -334,12 +344,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0 services-box">
-				<h2 class="p-2 f-prime sml mb-0 text-center">
-					Service-3
+			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mx-auto p-0">
+				<h2 class="overlay-title sml p-2">
+					<i class="envelope-icon"></i> Service Name
 				</h2>
 				<div class="overlay-container">
-					<img class="overlay-bg-image" alt="service-3" src="images/services/service-3.jpg">
+					<img class="overlay-bg-image" alt="service name" src="images/services/service-3.jpg">
 					<div class="overlay from-bottom">
 						<div class="overlay-text">
 							<span>Learn More</span>
@@ -348,12 +358,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0 services-box">
-				<h2 class="p-2 f-prime sml mb-0 text-center">
-					Service-4
+			<div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 mx-auto p-0">
+				<h2 class="overlay-title sml p-2">
+					<i class="twitter-icon"></i> Service Name
 				</h2>
 				<div class="overlay-container">
-					<img class="overlay-bg-image" alt="service-4" src="images/services/service-4.jpg">
+					<img class="overlay-bg-image" alt="service name" src="images/services/service-4.jpg">
 					<div class="overlay from-right">
 						<div class="overlay-text">
 							<span>Learn More</span>
@@ -363,214 +373,161 @@
 				</div>
 			</div>
 		</div>
-		<!-- END 4 SERVICE BOXES -->
+		<!-- END 4 OVERLAY BOXES -->
 
-		<!-- START MAIN / CONTACT -->
-		<div class="row p-0">
-			<div class="col-lg-8 col-md-7 col-sm-12 mx-auto p-5 text-left justify-content-center align-items-center align-self-center">
-
-				<div class="row p-0">
-					<div class="col-12 mx-auto p-5">
-
-						<!-- START BREADCRUMBS -->
-						<nav aria-label="breadcrumb" class="w-100">
-							<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
-								<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
-								<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Library</span></a><meta itemprop="position" content="2"></li>
-								<li class="breadcrumb-item active" aria-current="page"><a href="#" itemprop="item"><span itemprop="name">Data</span></a><meta itemprop="position" content="3"></li>
-							</ol>
-						</nav>
-						<!-- END BREADCRUMBS -->
-
-						<!-- START ABOUT -->
-						<h1 class="f-prime med primes">
-							H1 goes here
-						</h1>
-						<p>
-							<strong>Your Company</strong>'s new web site will look like this. At this stage of the web site creation and build
-							process, we are only concerned with the visual aesthetics of your page - the look and feel of your new website.
-						</p>
-						<p>
-							Our graphic designers have prepared this unique layout - based on any previous marketing materials you may have
-							provided and the style of site you indicated. This written content will be replaced once you approve the look and feel of your design.
-						</p>
-						<!-- END ABOUT -->
-
-					</div>
+		<!-- START ABOUT US / CONTACT FORM -->
+		<div class="row bg-white p-0">
+			<div class="order-2 order-lg-1 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12 mx-auto p-5" id="sidebar">
+				<div class="f-prime med primes">
+					CONTACT US
 				</div>
-
-				<!-- START BULLET LISTS -->
-				<div class="row mx-auto p-0 bg-light">
-					<div class="col-lg-4 col-md-4 col-sm-12 mx-auto p-5">
-						<ul class="f-second checked text-dark">
-							<li>List Item 1</li>
-							<li>List Item 2</li>
-							<li>List Item 3</li>
-							<li>List Item 4</li>
-							<li>List Item 5</li>
-						</ul>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 mx-auto p-5">
-						<ul class="f-second dashed text-dark">
-							<li>List Item 1</li>
-							<li>List Item 2</li>
-							<li>List Item 3</li>
-							<li>List Item 4</li>
-							<li>List Item 5</li>
-						</ul>
-					</div>
-					<div class="col-lg-4 col-md-4 col-sm-12 mx-auto p-5">
-						<ul class="f-second icon text-dark">
-							<li>List Item 1</li>
-							<li>List Item 2</li>
-							<li>List Item 3</li>
-							<li>List Item 4</li>
-							<li>List Item 5</li>
-						</ul>
-					</div>
+				<div id="wufoo-mywt4d81dxoh3v">
+					Fill out my <a href="https://aarono.wufoo.com/forms/mywt4d81dxoh3v">online form</a>.
 				</div>
-				<!-- END BULLET LISTS -->
-
-				<!-- START REVIEWS -->
-				<div class="row p-0">
-					<div class="col-12 mx-auto p-5">
-						<h2 class="f-second sml primes">
-							What Our Clients Are Saying
-						</h2>
-						<div class="carousel slide" data-ride="carousel" id="testimonials">
-							<div class="carousel-inner" role="listbox">
-								<div class="carousel-item active">
-									<p class="testimonial p-3">
-										<i class="icon-quote-left"></i>
-										Our graphic designers have prepared this unique layout - based on any previous marketing
-										materials you may have provided and the style of site you indicated. This written
-										content will be replaced once you approve the look and feel of your design. [...]
-										<i class="icon-quote-right"></i>
-									</p>
-									<a class="btn btn-reviews" href="#link">Read More Reviews</a>
-								</div>
-								<div class="carousel-item">
-									<p class="testimonial p-3">
-										<i class="icon-quote-left"></i>
-										Our graphic designers have prepared this unique layout - based on any previous marketing
-										materials you may have provided and the style of site you indicated. This written
-										content will be replaced once you approve the look and feel of your design. [...]
-										<i class="icon-quote-right"></i>
-									</p>
-									<a class="btn btn-reviews" href="#link">Read More Reviews</a>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- END REVIEWS -->
-
-				<!-- START WHY CHOOSE US -->
-				<div class="row mx-auto p-0 bg-light">
-					<div class="col-12 mx-auto p-5">
-						<h2 class="f-prime sml seconds">
-							Why Choose Us?
-						</h2>
-						<p>
-							In this final section, we'll review the reasons why site visitors should use your
-							services. Our skilled writing staff will hit main key points about your unique
-							services and what sets you apart from the competition.
-						</p>
-						<a data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-							<span class="f-second sml primes">CLICK HERE <i class="icon-angle-circled-down"></i></span>
-						</a>
-						<div class="collapse" id="collapseExample">
-							<div class="card">
-								<div class="card-body">
-									<p>
-										Our graphic designers have prepared this unique layout - based on any previous marketing
-										materials you may have provided and the style of site you indicated. This written
-										content will be replaced once you approve the look and feel of your design.
-									</p>
-									<p>
-										Our graphic designers have prepared this unique layout - based on any previous marketing
-										materials you may have provided and the style of site you indicated. This written
-										content will be replaced once you approve the look and feel of your design.
-									</p>
-									<p>
-										Our graphic designers have prepared this unique layout - based on any previous marketing
-										materials you may have provided and the style of site you indicated. This written
-										content will be replaced once you approve the look and feel of your design.
-									</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- END WHY CHOOSE US -->
-
+				<script type="text/javascript">
+					var mywt4d81dxoh3v;(function(d, t) {
+					var s = d.createElement(t), options = {
+					'userName':'aarono',
+					'formHash':'mywt4d81dxoh3v',
+					'autoResize':true,
+					'height':'580',
+					'async':true,
+					'host':'wufoo.com',
+					'header':'hide',
+					'ssl':true};
+					s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
+					s.onload = s.onreadystatechange = function() {
+					var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
+					try { mywt4d81dxoh3v = new WufooForm();mywt4d81dxoh3v.initialize(options);mywt4d81dxoh3v.display(); } catch (e) {}};
+					var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
+					})(document, 'script');
+				</script>
 			</div>
-
-			<div class="col-lg-4 col-md-5 col-sm-12 mx-auto p-5">
-				<div class="row p-0">
-					<div class="col-12 mx-auto p-5" id="wufoo-hold">
-						<div class="f-prime sml primes">
-							Contact Us Today!
+			<div class="order-1 order-lg-2 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 justify-content-center align-items-center align-self-center text-left mx-auto p-5">
+				<div class="p-0 p-lg-5">
+					<nav aria-label="breadcrumb" class="w-100">
+						<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+							<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Home</span></a><meta itemprop="position" content="1"></li>
+							<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="#" itemprop="item"><span itemprop="name">Library</span></a><meta itemprop="position" content="2"></li>
+							<li class="breadcrumb-item active" aria-current="page"><a href="#" itemprop="item"><span itemprop="name">Data</span></a><meta itemprop="position" content="3"></li>
+						</ol>
+					</nav>
+					<h1 class="f-prime med primes">
+						Your Company Name
+						<div class="f-third sml text-secondary">
+							Any Corresponding Text Will Go Here
 						</div>
-						<div id="wufoo-mywt4d81dxoh3v">
-							Fill out my <a href="https://aarono.wufoo.com/forms/mywt4d81dxoh3v">online form</a>.
+					</h1>
+					<p class="mx-0 my-3">
+						<strong>Your Company</strong>'s new web site will look like this. At this stage of the web site creation and build
+						process, we are only concerned with the visual aesthetics of your page - the look and feel of your new website.
+					</p>
+					<p class="mx-0 my-3">
+						Our graphic designers have prepared this unique layout - based on any previous marketing materials you may have
+						provided and the style of site you indicated. This written content will be replaced once you approve the look and feel of your design.
+					</p>
+					<div class="f-third sml text-secondary">
+						Our Services Include:
+					</div>
+					<div class="row bg-light mx-auto p-0">
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mx-auto p-4">
+							<ul class="f-second icon-li primes">
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+							</ul>
 						</div>
-						<script type="text/javascript">
-							var mywt4d81dxoh3v;(function(d, t) {
-							var s = d.createElement(t), options = {
-							'userName':'aarono',
-							'formHash':'mywt4d81dxoh3v',
-							'autoResize':true,
-							'height':'580',
-							'async':true,
-							'host':'wufoo.com',
-							'header':'hide',
-							'ssl':true};
-							s.src = ('https:' == d.location.protocol ? 'https://' : 'http://') + 'www.wufoo.com/scripts/embed/form.js';
-							s.onload = s.onreadystatechange = function() {
-							var rs = this.readyState; if (rs) if (rs != 'complete') if (rs != 'loaded') return;
-							try { mywt4d81dxoh3v = new WufooForm();mywt4d81dxoh3v.initialize(options);mywt4d81dxoh3v.display(); } catch (e) {}};
-							var scr = d.getElementsByTagName(t)[0], par = scr.parentNode; par.insertBefore(s, scr);
-							})(document, 'script');
-						</script>
-						<div class="w-100"></div>
-						<div class="row p-0">
-							<div class="col-12 mx-auto p-5 justify-content-center align-items-center align-self-start text-center">
-								<div class="m-1">
-									<a href="#link" class="btn btn-block btn-info">Submit Feedback</a>
-								</div>
-								<div class="m-1">
-									<a href="#link" class="btn btn-block btn-info">Submit Feedback</a>
-								</div>
-								<div class="m-1">
-									<a href="#link" class="btn btn-block btn-info">Submit Feedback</a>
-								</div>
-							</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mx-auto p-4">
+							<ul class="f-second checkmark-li primes">
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+							</ul>
 						</div>
-						<div class="row p-0">
-							<div class="col-12 mx-auto p-5 text-center justify-content-center align-items-center align-self-center d-flex w-100">
-								<div>
-									<a href="#link"><i class="icon-facebook sml seconds"></i></a>
-								</div>
-								<div>
-									<a href="#link"><i class="icon-twitter sml seconds"></i></a>
-								</div>
-								<div>
-									<a href="#link"><i class="icon-instagram sml seconds"></i></a>
-								</div>
-							</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 mx-auto p-4">
+							<ul class="f-second dashed-li primes">
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">List Item</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-		<!-- END MAIN / CONTACT -->
+		<!-- END ABOUT US / CONTACT FORM -->
 
-		<!-- START ACCORDION / H3 -->
-		<div class="row secondary-bg-color p-0">
-			<div class="prime-bg-color col-lg-7 col-md-6 col-sm-12 mx-auto p-5">
-				<h2 class="f-prime med thirds">
-					More Information Here.
+		<!-- START CLIENT REVIEWS -->
+		<div class="row p-0" id="background-what-clients-are-saying">
+			<div class="col-xl-8 col-lg-8 col-md-10 col-sm-12 col-12 justify-content-center align-items-center align-self-center text-center mx-auto p-5">
+				<div class="f-prime med white">
+					WHAT OUR CLIENTS ARE SAYING
+				</div>
+				<div class="carousel slide" data-ride="carousel" id="testimonials">
+					<div class="carousel-inner" role="listbox">
+						<div class="carousel-item active">
+							<p class="testimonial text-light p-0">
+								<i class="fas fa-quote-left"></i>
+								Reviews coming soon! [...]
+								<i class="fas fa-quote-right"></i>
+							</p>
+							<a class="btn btn-reviews" href="#link">Read More Reviews</a>
+						</div>
+						<div class="carousel-item">
+							<p class="testimonial text-light p-0">
+								<i class="fas fa-quote-left"></i>
+								Reviews coming soon! [...]
+								<i class="fas fa-quote-right"></i>
+							</p>
+							<a class="btn btn-reviews" href="#link">Read More Reviews</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END CLIENT REVIEWS -->
+
+		<!-- START ACCORDION -->
+		<div class="row prime-bg-color p-0">
+			<div class="col-xl-7 col-lg-7 col-md-10 col-sm-12 col-12 text-left mx-auto p-5">
+				<h2 class="f-prime med white">
+					OUR LATEST ARTICLES
 				</h2>
 				<div id="accordion">
 					<div class="card">
@@ -607,89 +564,43 @@
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-5 col-md-6 col-sm-12 mx-auto p-5 justify-content-center align-items-center align-self-center text-left">
-				<div class="p-0 p-md-5">
-					<h3 class="f-third sml white">
-						If you are looking for a company-type in the service-area area, please call us today at
-						<a href="tel:+1-xxx-xxx-xxxx">xxx-xxx-xxxx</a>, or complete our <a href="#link" class="req-form">online request form</a>.
-					</h3>
-				</div>
-			</div>
 		</div>
-		<!-- END ACCORDION / H3 -->
+		<!-- END ACCORDION -->
 
-		<!-- START LIGHTBOX GALLERY -->
-		<div class="row p-0">
-			<div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0">
-				<div class="thumbnail">
-					<img alt="" data-target="#myModal1" data-toggle="modal" src="images/gallery/rails.jpg">
+		<!-- START H3 -->
+		<div class="row secondary-bg-color p-0">
+			<div class="col-xl-7 col-lg-7 col-md-10 col-sm-12 col-12 text-left mx-auto p-5">
+				<div class="f-prime med white">
+					CONTACT US
 				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0">
-				<div class="thumbnail">
-					<img alt="" data-target="#myModal2" data-toggle="modal" src="images/gallery/bridge.jpg">
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0">
-				<div class="thumbnail">
-					<img alt="" data-target="#myModal3" data-toggle="modal" src="images/gallery/park.jpg">
-				</div>
-			</div>
-			<div class="col-lg-3 col-md-6 col-sm-6 col-6 p-0">
-				<div class="thumbnail">
-					<img alt="" data-target="#myModal4" data-toggle="modal" src="images/gallery/coast.jpg">
-				</div>
-			</div>
-			<div class="modal fade" id="myModal1" role="img">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<img alt="" src="images/gallery/rails.jpg" style="width: 100%;">
-					</div>
-				</div>
-			</div>
-			<div class="modal fade" id="myModal2" role="img">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<img alt="" src="images/gallery/bridge.jpg" style="width: 100%;">
-					</div>
-				</div>
-			</div>
-			<div class="modal fade" id="myModal3" role="img">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<img alt="" src="images/gallery/park.jpg" style="width: 100%;">
-					</div>
-				</div>
-			</div>
-			<div class="modal fade" id="myModal4" role="img">
-				<div class="modal-dialog modal-lg">
-					<div class="modal-content">
-						<img alt="" src="images/gallery/coast.jpg" style="width: 100%;">
-					</div>
-				</div>
+				<h3 class="f-third sml white">
+					If you are looking for a company-type in the service-area area, please call us today at
+					<a href="tel:+1-xxx-xxx-xxxx" class="text-light">xxx-xxx-xxxx</a>, or complete our
+					<a href="#link" class="req-form">online request form</a>.
+				</h3>
 			</div>
 		</div>
-		<!-- END LIGHTBOX GALLERY -->
+		<!-- END H3 -->
 
 	</div>
 	<!-- END CONTENT -->
 
 	<!-- START FOOTER -->
 	<footer class="fb-ftr-1">
-		<div class="container-fluid big-wrap mx-auto">
-			<div class="row p-4 mx-auto">
-				<div class="col-md-3 col-sm-6 pb-3 text-center text-md-left justify-content-center align-items-center align-self-center">
+		<div class="container-fluid mx-auto">
+			<div class="row big-wrap mx-auto pl-5 pr-5 pt-5 pb-2">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 justify-content-center align-items-center align-self-center text-center mx-auto p-3">
 					<img src="images/logo.png" alt="logo">
 				</div>
-				<div class="col-md-3 col-sm-6 pb-3 text-center text-md-left">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 text-center text-md-left mx-auto p-3">
 					<h4>Contact</h4>
-					<div class="contact pb-3">
+					<div class="contact">
 						<p itemprop="legalName">
-							Company-Name
+							Company Name
 						</p>
 						<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
 							<p itemprop="streetAddress">
-								Street-Address
+								Street Address
 							</p>
 							<p>
 								<span itemprop="addressLocality">City</span>,
@@ -697,14 +608,14 @@
 								<span itemprop="postalCode">ZIP</span>
 							</p>
 						</div>
-						<p>
+						<p class="mt-3 mb-0">
 							Phone: <span itemprop="telephone">xxx-xxx-xxxx</span>
 						</p>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 pb-3 text-center text-md-left">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 text-center text-md-left mx-auto p-3">
 					<h4>Quick Links</h4>
-					<div class="quick-links pb-3">
+					<div class="quick-links">
 						<a href="#link/">Google Places</a>
 						<a href="#link/">Articles</a>
 						<a href="#link/">Privacy Policy</a>
@@ -712,9 +623,9 @@
 						<a href="#link/">Sitemap</a>
 					</div>
 				</div>
-				<div class="col-md-3 col-sm-6 pb-3 text-center text-md-left">
+				<div class="col-xl-3 col-lg-3 col-md-3 col-sm-6 col-12 text-center text-md-left mx-auto p-3">
 					<h4>Service Areas</h4>
-					<div class="service-areas pb-3">
+					<div class="service-areas">
 						<a href="#link">City, ST</a>
 						<a href="#link">City, ST</a>
 						<a href="#link">City, ST</a>
@@ -731,8 +642,8 @@
 					</div>
 				</div>
 			</div>
-			<div class="row p-4 mx-auto">
-				<div class="col-12 mx-auto p-0 text-center text-md-left">
+			<div class="row big-wrap mx-auto pl-5 pr-5 pt-2 pb-5">
+				<div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12 text-center text-md-left mx-auto p-3" style="border-top:1px solid rgba(255, 255, 255, 0.15);">
 					<p class="mb-0">
 						&copy;
 						<script>
@@ -740,7 +651,35 @@
 						</script>
 						<!-- Uncomment the PHP code in builds and remove the above document.write code -->
 						<!-- <?= date("Y"); ?> -->
-						<span itemprop="name"><a itemprop="url" href="#">Company-Name</a></span>, Rights Reserved
+						<span itemprop="name"><a itemprop="url" href="#">Company Name</a></span>, Rights Reserved
+					</p>
+				</div>
+				<div class="col-xl-1 col-lg-1 col-md-1 col-sm-3 col-3 text-center mx-auto p-3" style="border-top:1px solid rgba(255, 255, 255, 0.15);">
+					<p class="mb-0">
+						<a href="#link">
+							<i class="fab fa-facebook-f"></i>
+						</a>
+					</p>
+				</div>
+				<div class="col-xl-1 col-lg-1 col-md-1 col-sm-3 col-3 text-center mx-auto p-3" style="border-top:1px solid rgba(255, 255, 255, 0.15);">
+					<p class="mb-0">
+						<a href="#link">
+							<i class="fab fa-twitter"></i>
+						</a>
+					</p>
+				</div>
+				<div class="col-xl-1 col-lg-1 col-md-1 col-sm-3 col-3 text-center mx-auto p-3" style="border-top:1px solid rgba(255, 255, 255, 0.15);">
+					<p class="mb-0">
+						<a href="#link">
+							<i class="fab fa-yelp"></i>
+						</a>
+					</p>
+				</div>
+				<div class="col-xl-1 col-lg-1 col-md-1 col-sm-3 col-3 text-center mx-auto p-3" style="border-top:1px solid rgba(255, 255, 255, 0.15);">
+					<p class="mb-0">
+						<a href="#link">
+							<i class="fab fa-linkedin-in"></i>
+						</a>
 					</p>
 				</div>
 			</div>

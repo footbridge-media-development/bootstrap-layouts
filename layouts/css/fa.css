@@ -21,20 +21,27 @@
 /* ******************************************************************************************** */
 /* SASS VARIABLES SETUP *********************************************************************** */
 @font-face {
-  font-family: 'FiraSans-ExtraBold';
-  src: url(../fonts/FiraSans-ExtraBold.otf); }
+  font-family: 'Montserrat-Bold';
+  src: url(../fonts/Montserrat-Bold.otf); }
 @font-face {
-  font-family: 'Montserrat-Light';
-  src: url(../fonts/Montserrat-Light.otf); }
+  font-family: 'Montserrat-Medium';
+  src: url(../fonts/Montserrat-Medium.otf); }
 @font-face {
-  font-family: 'Raleway-Regular';
-  src: url(../fonts/Raleway-Regular.ttf); }
+  font-family: 'Roboto-Regular';
+  src: url(../fonts/Roboto-Regular.ttf); }
+/* All FontAwesome Families ******************************************************************* */
+@font-face {
+  font-family: 'FontAwesome-Brands';
+  src: url(../webfonts/fa-brands-400.ttf); }
+@font-face {
+  font-family: 'FontAwesome-Regular';
+  src: url(../webfonts/fa-regular-400.ttf); }
+@font-face {
+  font-family: 'FontAwesome-Solids';
+  src: url(../webfonts/fa-solid-900.ttf); }
 /* ******************************************************************************************** */
 /* ******************************************************************************************** */
 /* ******************************************************************************************** */
-/* ******************************************************************************************** */
-/* ******************************************************************************************** */
-/* LARGE NAV 3 COLOR SETUP [CREAMY] *********************************************************** */
 /* ******************************************************************************************** */
 /* ******************************************************************************************** */
 /* ******************************************************************************************** */
@@ -42,10 +49,10 @@ h1, h2, h3, h4, h5, h6, p {
   word-wrap: break-word; }
 
 p {
-  font-family: Montserrat-Light, sans-serif; }
+  font-family: Montserrat-Medium, sans-serif; }
 
 h1, h2, h4 {
-  font-family: FiraSans-ExtraBold, sans-serif; }
+  font-family: Montserrat-Bold, sans-serif; }
 
 /* ******************************************************************************************** */
 .large {
@@ -82,6 +89,37 @@ h1, h2, h4 {
   @media screen and (max-width: 768px) and (max-width: 576px) {
     .sml {
       font-size: .8rem; } }
+
+/* List Styling ******************************************************************************* */
+ol.listbad li {
+  padding: 1%; }
+
+ul.listpad li {
+  padding: 1%; }
+
+/* Breadcrumbs ******************************************************************************** */
+.breadcrumb {
+  background-color: transparent;
+  border-left: 6px solid #afc08c;
+  border-bottom: 1px solid #afc08c;
+  background: none;
+  padding: 0.33rem 1rem;
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 0.88rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #91AA9D !important; }
+  .breadcrumb a {
+    color: #91AA9D !important; }
+
+.breadcrumb-item {
+  font-family: Roboto-Regular, sans-serif;
+  font-size: 0.88rem;
+  font-weight: normal; }
+  .breadcrumb-item::before {
+    color: #afc08c !important; }
+  .breadcrumb-item + .active {
+    color: #afc08c !important; }
 
 /* ******************************************************************************************** */
 /* ******************************************************************************************** */
@@ -174,11 +212,13 @@ a.skip-main {
  */
 .fa,
 .fas,
-.user,
+.user-icon,
+.envelope-icon,
+.search-icon,
 .far,
 .fal,
 .fab,
-.twitter {
+.twitter-icon {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -187,7 +227,7 @@ a.skip-main {
   text-rendering: auto;
   line-height: 1; }
 
-.user, .twitter {
+.user-icon, .envelope-icon, .twitter-icon, .search-icon {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   display: inline-block;
@@ -268,19 +308,23 @@ a.skip-main {
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
-.fa-pull-left.user,
+.fa-pull-left.user-icon,
+.fa-pull-left.envelope-icon,
+.fa-pull-left.search-icon,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left,
-.fa-pull-left.twitter {
+.fa-pull-left.twitter-icon {
   margin-right: .3em; }
 .fa.fa-pull-right,
 .fas.fa-pull-right,
-.fa-pull-right.user,
+.fa-pull-right.user-icon,
+.fa-pull-right.envelope-icon,
+.fa-pull-right.search-icon,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right,
-.fa-pull-right.twitter {
+.fa-pull-right.twitter-icon {
   margin-left: .3em; }
 
 .fa-spin {
@@ -4478,7 +4522,9 @@ readers do not read off random characters that represent icons */
   src: url("../webfonts/fa-solid-900.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.woff") format("woff"), url("../webfonts/fa-solid-900.ttf") format("truetype"), url("../webfonts/fa-solid-900.svg#fontawesome") format("svg"); }
 .fa,
 .fas,
-.user {
+.user-icon,
+.envelope-icon,
+.search-icon {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -4493,7 +4539,7 @@ readers do not read off random characters that represent icons */
   font-display: auto;
   src: url("../webfonts/fa-brands-400.eot");
   src: url("../webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("../webfonts/fa-brands-400.woff2") format("woff2"), url("../webfonts/fa-brands-400.woff") format("woff"), url("../webfonts/fa-brands-400.ttf") format("truetype"), url("../webfonts/fa-brands-400.svg#fontawesome") format("svg"); }
-.fab, .twitter {
+.fab, .twitter-icon {
   font-family: 'Font Awesome 5 Brands'; }
 
 /* ******************************************************************************************** */
@@ -4530,7 +4576,7 @@ readers do not read off random characters that represent icons */
   /* We will animate this to 0 when they open the menu */ }
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .menu-heading {
-  font-family: FiraSans-ExtraBold, sans-serif;
+  font-family: Montserrat-Bold, sans-serif;
   font-weight: normal;
   font-size: 2.25rem;
   text-decoration: none;
@@ -4541,7 +4587,7 @@ readers do not read off random characters that represent icons */
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > a {
   display: block;
-  font-family: Montserrat-Light, sans-serif;
+  font-family: Montserrat-Medium, sans-serif;
   font-weight: normal;
   font-size: 1rem;
   padding: 0.5rem;
@@ -4553,7 +4599,7 @@ readers do not read off random characters that represent icons */
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > div a {
   display: block;
-  font-family: Montserrat-Light, sans-serif;
+  font-family: Montserrat-Medium, sans-serif;
   font-weight: normal;
   font-size: 0.88rem;
   padding: 0.5rem;
@@ -4673,7 +4719,7 @@ readers do not read off random characters that represent icons */
   padding-right: unset; }
 
 #large-navigation-container-2 {
-  background-color: #FFFFFF;
+  background-color: #FEFEFE;
   box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.25);
   position: relative;
   z-index: 200 !important; }
@@ -4686,7 +4732,7 @@ readers do not read off random characters that represent icons */
 
 #large-navigation-container-2 .navigation-links > div > div > a {
   display: block;
-  font-family: Montserrat-Light, sans-serif;
+  font-family: Montserrat-Medium, sans-serif;
   font-weight: normal;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -4732,7 +4778,7 @@ readers do not read off random characters that represent icons */
 
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div a {
   display: block;
-  font-family: Montserrat-Light, sans-serif;
+  font-family: Montserrat-Medium, sans-serif;
   font-weight: normal;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -4803,7 +4849,7 @@ readers do not read off random characters that represent icons */
 
 #large-navigation-container-3 .navigation-links > div > div > a {
   display: block;
-  font-family: Montserrat-Light, sans-serif;
+  font-family: Montserrat-Medium, sans-serif;
   font-weight: normal;
   font-size: 1rem;
   text-transform: uppercase;
@@ -4854,7 +4900,7 @@ readers do not read off random characters that represent icons */
 
 #large-navigation-container-3 .navigation-links > div > div .dropdown > div a {
   display: block;
-  font-family: Montserrat-Light, sans-serif;
+  font-family: Montserrat-Medium, sans-serif;
   font-weight: normal;
   font-size: 0.9rem;
   text-transform: uppercase;
@@ -4873,30 +4919,27 @@ readers do not read off random characters that represent icons */
   text-decoration: none; }
 
 /* ******************************************************************************************** */
-/* Only XL */
-@media screen and (min-width: 1200px) {
-  /*.navigation-links a {
-  	font-size:1rem !important;
-  }*/ }
 /* ******************************************************************************************** */
 /* FOOTER STYLING ***************************************************************************** */
 /* ******************************************************************************************** */
 footer.fb-ftr-1 {
   background-color: #35525f;
-  font-family: Montserrat-Light, sans-serif;
+  font-family: Montserrat-Medium, sans-serif;
   font-weight: normal;
-  color: white; }
+  font-size: 0.9rem;
+  color: #FFFFFF; }
 
 footer.fb-ftr-1 h4 {
-  font-family: FiraSans-ExtraBold, sans-serif;
+  font-family: Montserrat-Bold, sans-serif;
   font-weight: normal;
   color: #D1DBBD; }
 
 footer.fb-ftr-1 a {
-  font-family: Montserrat-Light, sans-serif;
+  font-family: Montserrat-Medium, sans-serif;
   font-weight: normal;
-  color: white;
-  transition: .5s ease; }
+  font-size: 0.9rem;
+  color: #FFFFFF;
+  transition: all 0.5s ease; }
   footer.fb-ftr-1 a:hover {
     color: #91AA9D; }
 
@@ -4904,7 +4947,7 @@ footer.fb-ftr-1 a {
   display: block; }
 
 .fb-ftr-1 .service-areas a {
-  border-right: 2px solid #D1DBBD;
+  border-right: 1px solid #D1DBBD;
   padding-right: 6px; }
 
 .fb-ftr-1 .service-areas a:last-child {
@@ -4951,230 +4994,148 @@ footer.fb-ftr-1 a {
 /* ******************************************************************************************** */
 /* BUTTONS STYLING **************************************************************************** */
 /* ******************************************************************************************** */
-.btn-banner, .btn-cta, .btn-info, .btn-about, .btn-more, .btn-reviews, .btn-sidebar {
+/* Setting Up All Button Transitions and Font Styling */
+.btn-banner, .btn-cta, .btn-more, .btn-reviews {
+  font-family: Montserrat-Medium, sans-serif;
   font-weight: normal;
-  border: 0px;
-  transition: .5s ease; }
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.5s ease;
+  padding: 0.5rem 1.5rem;
+  color: #FFFFFF !important;
+  border: 0px !important; }
 
+/* Top Banner Button Styling */
 .btn-banner {
   background-color: #3E606F;
-  color: white !important;
-  width: 40%; }
+  width: 35%; }
   @media screen and (max-width: 992px) {
     .btn-banner {
-      width: 60%; } }
+      width: 50%; } }
   @media screen and (max-width: 768px) {
     .btn-banner {
-      width: 80%; } }
+      width: 70%; } }
   .btn-banner:hover {
     background-color: #91AA9D; }
 
+/* CTA Button Styling */
 .btn-cta {
-  background-color: #91AA9D;
-  font-family: Montserrat-Light, sans-serif;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: white; }
+  background-color: #91AA9D; }
   .btn-cta:hover {
-    background-color: #bccbc3;
-    color: white; }
+    background-color: #cbd6d0; }
 
-.btn-info, .btn-about, .btn-more, .btn-reviews {
-  background-color: #3E606F;
-  font-family: Montserrat-Light, sans-serif;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: white; }
-  .btn-info:hover, .btn-about:hover, .btn-more:hover, .btn-reviews:hover {
-    background-color: #598aa0;
-    color: white; }
+/* More Button - Typical Replacement for the Info Button Override */
+.btn-more {
+  background-color: #3E606F; }
+  .btn-more:hover {
+    background-color: #6896ab; }
 
-/* ******************************************************************************************** */
-/* ******************************************************************************************** */
-.btn-tri-arrow {
-  background-color: #3E606F;
-  font-family: FiraSans-ExtraBold, sans-serif;
-  color: #91AA9D; }
-  .btn-tri-arrow::before {
-    display: inline-block;
-    content: "\25B2";
-    -webkit-transform: rotate(90deg) scale(1.5);
-    -moz-transform: rotate(90deg) scale(1.5);
-    -o-transform: rotate(90deg) scale(1.5);
-    -ms-transform: rotate(90deg) scale(1.5);
-    padding: 2%; }
-  .btn-tri-arrow:hover {
-    color: #749483 !important; }
-
-/* ******************************************************************************************** */
-div.btn-tri-up {
-  position: relative; }
-  div.btn-tri-up div {
-    box-sizing: content-box;
-    padding-bottom: 25%;
-    padding-left: 25%;
-    margin: 0 auto;
-    overflow: hidden;
-    width: 25%;
-    height: 0; }
-    div.btn-tri-up div a {
-      background-color: #3E606F;
-      font-family: FiraSans-ExtraBold, sans-serif;
-      color: #D1DBBD;
-      position: absolute;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      width: 100%;
-      bottom: 0;
-      left: 0; }
-    div.btn-tri-up div::before {
-      border-bottom: 500px solid #3E606F;
-      border-right: 500px solid transparent;
-      border-left: 500px solid transparent;
-      margin-left: -500px;
-      display: block;
-      content: "";
-      width: 0;
-      height: 0; }
+/* Client Reviews Button Styling */
+.btn-reviews {
+  background-color: #91AA9D; }
+  .btn-reviews:hover {
+    background-color: #D1DBBD; }
 
 /* ******************************************************************************************** */
 /* ******************************************************************************************** */
-/* ACCORDION STYLING ************************************************************************** */
+/* Overlay Image Box Styling ****************************************************************** */
 /* ******************************************************************************************** */
-#accordion .card-header button, .accordion .card-header button {
-  white-space: normal;
-  text-align: left; }
-
-#accordion .card {
-  border: 0px;
-  margin: 0.25rem; }
-  #accordion .card .card-header {
-    background-color: #79a2b4;
-    border: 0px;
-    padding: 0.5rem; }
-    #accordion .card .card-header h5 button {
-      font-family: FiraSans-ExtraBold, sans-serif;
-      font-weight: normal;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      text-align: left;
-      color: white !important;
-      text-decoration: none; }
-      #accordion .card .card-header h5 button:hover {
-        text-decoration: none; }
-  #accordion .card .card-body {
-    font-family: Montserrat-Light, sans-serif;
-    font-weight: normal;
-    font-size: 0.9rem !important;
-    color: #555555 !important; }
-    #accordion .card .card-body p {
-      font-family: Montserrat-Light, sans-serif;
-      font-weight: normal;
-      font-size: 0.9rem !important;
-      color: #555555 !important; }
-
-/* ******************************************************************************************** */
-/******* OVERLAY BOX *************/
 .overlay-container {
-  position: relative; }
-
-.overlay-bg-image {
-  display: block;
-  width: 100%;
-  height: auto; }
-
-.overlay {
-  background-color: rgba(145, 170, 157, 0.5);
-  position: absolute;
-  transition: .35s ease; }
-  .overlay.from-left {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 100%; }
-  .overlay.from-right {
-    left: 100%;
-    right: 0;
-    bottom: 0;
-    width: 0;
-    height: 100%; }
-  .overlay.overlay.from-top {
-    left: 0;
-    right: 0;
-    bottom: 100%;
-    width: 100%;
-    height: 0; }
-  .overlay.overlay.from-bottom {
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: 0; }
-
-.overlay-container:hover > .from-left {
-  width: 100%; }
-
-.overlay-container:hover > .from-right {
-  width: 100%;
-  left: 0; }
-
-.overlay-container:hover > .from-top {
-  height: 100%;
-  bottom: 0; }
-
-.overlay-container:hover > .from-bottom {
-  height: 100%; }
-
-.overlay-text {
-  display: block; }
-
-.overlay-text > span {
-  display: none;
-  white-space: nowrap;
+  position: relative;
   overflow: hidden; }
+  .overlay-container .overlay-bg-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+  .overlay-container .overlay {
+    background-color: rgba(145, 170, 157, 0.5);
+    transition: all 0.5s ease;
+    position: absolute; }
+    .overlay-container .overlay.from-left {
+      width: 0;
+      height: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    .overlay-container .overlay.from-right {
+      width: 0;
+      height: 100%;
+      left: 100%;
+      right: 0;
+      bottom: 0; }
+    .overlay-container .overlay.from-top {
+      left: 0;
+      right: 0;
+      bottom: 100%;
+      width: 100%;
+      height: 0; }
+    .overlay-container .overlay.from-bottom {
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0; }
+    .overlay-container .overlay .overlay-text {
+      display: block; }
+      .overlay-container .overlay .overlay-text span {
+        font-family: Montserrat-Medium, sans-serif;
+        font-weight: normal;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+        color: #FFFFFF !important; }
+      .overlay-container .overlay .overlay-text span, .overlay-container .overlay .overlay-text a {
+        display: none;
+        white-space: nowrap;
+        overflow: hidden; }
+  .overlay-container:hover .overlay.from-left {
+    width: 100%; }
+  .overlay-container:hover .overlay.from-right {
+    width: 100%;
+    left: 0; }
+  .overlay-container:hover .overlay.from-top {
+    height: 100%;
+    bottom: 0; }
+  .overlay-container:hover .overlay.from-bottom {
+    height: 100%; }
+  .overlay-container:hover .overlay .overlay-text span {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%); }
+  .overlay-container:hover .overlay .overlay-text a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%; }
 
-.overlay-text > a {
-  display: none;
-  white-space: nowrap;
-  overflow: hidden; }
-
-.overlay-container:hover .overlay-text > a {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: absolute; }
-
-.overlay-container:hover .overlay-text > span {
-  display: block;
-  color: white;
-  font-size: 1.5em;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%); }
-
+/* ******************************************************************************************** */
 /* ******************************************************************************************** */
 /* GOLDYLOX STYLING *************************************************************************** */
 /* ******************************************************************************************** */
 @font-face {
   font-family: 'fontello';
   src: url(../fontello/font/fontello.ttf); }
-/* ******************************************************************************************** */
-/* DEFINING FONT FAMILIES ********************************************************************* */
+/* Defining Font Families ********************************************************************* */
 .f-prime {
-  font-family: FiraSans-ExtraBold, sans-serif !important; }
+  font-family: Montserrat-Bold, sans-serif !important; }
 
 .f-second {
-  font-family: Montserrat-Light, sans-serif !important; }
+  font-family: Montserrat-Medium, sans-serif !important; }
 
 .f-third {
-  font-family: Raleway-Regular, sans-serif !important; }
+  font-family: Roboto-Regular, sans-serif !important; }
 
-/* ******************************************************************************************** */
-/* DEFINING FONT COLORS *********************************************************************** */
+/* Defining Font Colors *********************************************************************** */
 .primes {
   color: #3E606F !important; }
 
@@ -5193,8 +5154,7 @@ div.btn-tri-up {
 .shadows {
   text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33); }
 
-/* ******************************************************************************************** */
-/* DEFINING BACKGROUND COLORS ***************************************************************** */
+/* Defining Background Colors ***************************************************************** */
 .prime-bg-color {
   background-color: #3E606F !important; }
 
@@ -5204,77 +5164,38 @@ div.btn-tri-up {
 .third-bg-color {
   background-color: #D1DBBD !important; }
 
-/* ******************************************************************************************** */
-/* DEFINING PARAGRAPH COLOR BASED ON BACKGROUND COLOR ***************************************** */
+/* Defining Paragraph Colors Based on Background Color **************************************** */
 .prime-bg-color, .secondary-bg-color, .third-bg-color {
   color: #FFFFFF; }
   .prime-bg-color p, .secondary-bg-color p, .third-bg-color p {
     color: #FFFFFF !important; }
 
-/* ******************************************************************************************** */
-/* LISTS STYLING ****************************************************************************** */
-ol.listbad li {
-  padding: 1%; }
-
-ul.listpad li {
-  padding: 1%; }
-
-/* ******************************************************************************************** */
-/* LIST LI STYLING **************************************************************************** */
-.checked, .dashed, .icon {
-  list-style-type: none;
-  padding: 0; }
-  .checked::before, .dashed::before, .icon::before {
-    display: inline-block; }
-
-.checked li::before {
-  font-family: "fontello";
-  text-decoration: none;
-  content: "\e80f \00a0";
-  speak: none; }
-
-.dashed li::before {
-  content: "-\00a0"; }
-
-.icon li::before {
-  font-family: "fontello";
-  text-decoration: none;
-  content: "\e819 \00a0";
-  speak: none; }
-
-/* ******************************************************************************************** */
-/* SIDEBAR ADJUSTMENTS ************************************************************************ */
+/* Sidebar Background Styling ***************************************************************** */
 #sidebar {
-  background-color: rgba(209, 219, 189, 0.1);
+  background-color: rgba(209, 219, 189, 0.5);
   box-sizing: border-box; }
 
-#wufoo-hold {
-  background-color: rgba(0, 0, 0, 0.15); }
-
+/* Border Right Styling *********************************************************************** */
 #totheright {
-  border-right: 2px solid white; }
+  border-right: 2px solid #FFFFFF; }
   @media screen and (max-width: 768px) {
     #totheright {
-      border-right: 0px;
-      border-bottom: 2px solid white; } }
+      border-bottom: 2px solid #FFFFFF;
+      border-right: 0px; } }
 
-/* ******************************************************************************************** */
-/* CARD STYLING ADJUSTMENTS ******************************************************************* */
-.card h2 {
-  font-family: FiraSans-ExtraBold, sans-serif;
-  font-weight: bold; }
-
-/* ******************************************************************************************** */
-/* SERVICE OVERLAY BOX HEADERS **************************************************************** */
-.services-box {
-  background-color: #91AA9D;
-  box-sizing: border-box;
+/* Overlay Service Boxes Headers ************************************************************** */
+.overlay-title {
+  font-family: Montserrat-Bold, sans-serif;
+  font-weight: normal;
+  font-size: inherit;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  box-sizing: border-box;
   color: white;
   margin-bottom: 0px; }
 
-/* ******************************************************************************************** */
-/* GRADIENT BG COVER ************************************************************************** */
+/* Gradient BG Cover ************************************************************************** */
 #gradient-background {
   background-image: url(../images/banner/banner-1.jpg);
   background-position: center center;
@@ -5287,10 +5208,10 @@ ul.listpad li {
       min-height: 300px; } }
 
 .bgcover {
-  background-size: cover !important;
-  background-attachment: fixed !important; }
+  background-attachment: fixed !important;
+  background-size: cover !important; }
   .bgcover p {
-    color: #fff !important; }
+    color: #FFFFFF !important; }
   @media screen and (max-width: 992px) {
     .bgcover {
       background-attachment: scroll !important; } }
@@ -5304,62 +5225,136 @@ ul.listpad li {
   background: -ms-linear-gradient(left, #131313 0%, #1c1c1c 15%, rgba(38, 38, 38, 0.75) 34%, rgba(76, 76, 76, 0) 100%);
   background: linear-gradient(to right, #131313 0%, #1c1c1c 15%, rgba(38, 38, 38, 0.75) 34%, rgba(76, 76, 76, 0) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#131313', endColorstr='#4c4c4c', GradientType=1 ); }
-  .gradcover h2 {
-    color: #3E606F; }
 
+/* Top Navigation Phone Number **************************************************************** */
 .call-num {
-  color: #91AA9D !important; }
+  color: #91AA9D !important;
+  transition: all 0.5s ease; }
   .call-num:hover {
     color: #3E606F !important; }
 
+/* FontAwesome List Icon Styling ************************************************************** */
+.icon-li, .checkmark-li, .dashed-li {
+  list-style-type: none;
+  padding: 0px; }
+  .icon-li::before, .checkmark-li::before, .dashed-li::before {
+    display: inline-block; }
+  .icon-li li::before, .checkmark-li li::before, .dashed-li li::before {
+    text-decoration: none;
+    padding-right: 0.5rem;
+    speak: none; }
+
+.icon-li li::before {
+  font-family: "FontAwesome-Brands";
+  content: "\f099"; }
+
+.checkmark-li li::before {
+  font-family: "FontAwesome-Solids";
+  content: "\f00c"; }
+
+.dashed-li li::before {
+  font-family: "FontAwesome-Solids";
+  content: "\f7a4"; }
+
+/* Overlay Service Boxes Icons Styling */
+.user-icon:before {
+  content: "\f007"; }
+
+.envelope-icon:before {
+  content: "\f0e0"; }
+
+.twitter-icon:before {
+  content: "\f099"; }
+
+.search-icon:before {
+  content: "\f002"; }
+
+/* H3 Request Form Link *********************************************************************** */
 .req-form {
-  color: white !important; }
+  color: #D1DBBD !important;
+  transition: all 0.5s ease; }
   .req-form:hover {
-    color: #91AA9D !important; }
+    color: #3E606F !important; }
 
-.breadcrumb {
-  background-color: transparent;
-  border-left: 6px solid #afc08c;
-  border-bottom: 1px solid #afc08c;
-  background: none;
-  padding: 0.33rem 1rem;
-  font-family: Raleway-Regular, sans-serif;
-  font-size: 0.88rem;
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #91AA9D !important; }
-  .breadcrumb a {
-    color: #91AA9D !important; }
+/* Accordion Styling ************************************************************************** */
+#accordion .card-header button, .accordion .card-header button {
+  white-space: normal;
+  text-align: left; }
 
-.breadcrumb-item {
-  font-family: Raleway-Regular, sans-serif;
-  font-size: 0.88rem;
-  font-weight: normal; }
-  .breadcrumb-item::before {
-    color: #afc08c !important; }
-  .breadcrumb-item + .active {
-    color: #afc08c !important; }
+#accordion .card {
+  border: 0px;
+  margin: 0.25rem; }
+  #accordion .card .card-header {
+    background-color: #79a2b4;
+    border: 0px;
+    padding: 0.5rem; }
+    #accordion .card .card-header h5 button {
+      font-family: Montserrat-Bold, sans-serif;
+      font-weight: normal;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      text-align: left;
+      color: white !important;
+      text-decoration: none; }
+      #accordion .card .card-header h5 button:hover {
+        text-decoration: none; }
+  #accordion .card .card-body {
+    font-family: Montserrat-Medium, sans-serif;
+    font-weight: normal;
+    font-size: 0.9rem !important;
+    color: #555555 !important; }
+    #accordion .card .card-body p {
+      font-family: Montserrat-Medium, sans-serif;
+      font-weight: normal;
+      font-size: 0.9rem !important;
+      color: #555555 !important; }
 
+/* ******************************************************************************************** */
 /* ******************************************************************************************** */
 /* CUSTOM SCSS FOR THIS PARTICULAR LAYOUT ***************************************************** */
 /* ******************************************************************************************** */
-.user:before {
-  content: "\f007"; }
+/* Custom Styling for the Constrained Layout Template ***************************************** */
+body {
+  background-image: url(../images/patterns/classic-fabric-pattern.jpg);
+  background-position: center center;
+  background-attachment: scroll;
+  background-repeat: repeat; }
 
-.twitter:before {
-  content: "\f099"; }
+.boxy-shadows {
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+  position: relative;
+  z-index: 1; }
 
+#background-what-clients-are-saying {
+  background-image: url(../images/banner/background-what-clients-are-saying.jpg);
+  background-position: center center;
+  background-attachment: scroll;
+  background-size: cover;
+  min-height: 400px; }
+
+/* Jumping Icons Styling ********************************************************************** */
+#jumping-icons {
+  transition: all .1s linear; }
+  #jumping-icons:hover {
+    transform: translateY(-10px); }
+
+/* Change to Uppercase ************************************************************************ */
 .upper {
   text-transform: uppercase !important; }
 
+/* Background ID References ******************************************************************* */
+#bg1 {
+  /* add styling here */
+  background: url(../images/banner/banner-1.jpg) center; }
+
 #bg2 {
-  background: #292929; }
+  background-color: #292929; }
 
 #bg3 {
-  background: url(../images/banner/banner-3.jpg) center; }
+  background: url(../images/banner/banner-2.jpg) center; }
 
 #bg4 {
-  background: url(../images/banner/banner-4.jpg) center; }
+  background: url(../images/banner/banner-3.jpg) center; }
 
 .next-btn {
   text-align: right; }
@@ -5372,6 +5367,7 @@ ul.listpad li {
   .fullwindow .row .col-12 {
     z-index: 2; }
 
+/* Banner Video Styling *********************************************************************** */
 .overlay-vid {
   position: absolute;
   z-index: 1;
@@ -5395,14 +5391,14 @@ ul.listpad li {
   object-fit: cover; }
 
 /* KILL THIS IMPORT TO KILL THE FIXED NAV ***************************************************** */
-/* custom scss for this particular layout */
+/* FixyNav Layout Styling ********************************************************************* */
 @keyframes loload {
   from {
-    opacity: 0;
-    margin-top: -100px; }
+    margin-top: -100px;
+    opacity: 0; }
   to {
-    opacity: 1;
-    margin-top: 0; } }
+    margin-top: 0px;
+    opacity: 1; } }
 @keyframes logoload {
   from {
     width: 60%; }
@@ -5420,113 +5416,636 @@ ul.listpad li {
     width: 45%;
     animation: logoload 1s ease; }
 
+/* ******************************************************************************************** */
 /* COLLAPSE CARDS STYLING ********************************************************************* */
 #collapseExample .card .card-body p {
-  font-family: Montserrat-Light, sans-serif;
+  font-family: Montserrat-Medium, sans-serif;
   font-weight: normal;
   font-size: 0.9rem !important;
   color: #555555 !important; }
 
-/* ZOOMING BOXES FOR SERVICES ***************************************************************** */
-.zoombox {
+/* ******************************************************************************************** */
+/* ******************************************************************************************** */
+/* This is a gigantic file referencing all service box / image hover effects                    */
+/* Please delete all unused references in this file to decrease the file size upon approval     */
+/* Created by Sarah Wallick, July 05, 2019                                                      */
+/* ******************************************************************************************** */
+/* DEMO 1 - Fade in on Hover with Links */
+.service-fadein-hover {
+  position: relative;
   overflow: hidden; }
-  .zoombox .zooming {
-    height: 100%;
-    position: relative; }
+  .service-fadein-hover img {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+  .service-fadein-hover .service-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    transition: all 0.5s ease; }
+    .service-fadein-hover .service-content .service-title {
+      position: absolute;
+      top: 35%;
+      left: 0%;
+      width: 100%;
+      height: auto;
+      font-family: Montserrat-Bold, sans-serif;
+      font-weight: normal;
+      font-size: 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      transform: scale(0);
+      transition: all 0.5s ease;
+      color: #FFFFFF; }
+    .service-fadein-hover .service-content .service-links {
+      position: absolute;
+      bottom: 35%;
+      left: 0%;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      transition: all 0.5s ease;
+      transform: scale(0); }
+      .service-fadein-hover .service-content .service-links a {
+        display: inline-block;
+        padding: 0px;
+        margin-right: 5px;
+        width: 35px;
+        height: 35px;
+        line-height: 33px;
+        font-size: 16px;
+        border: 1px solid white;
+        color: white !important;
+        border-radius: 50%;
+        transform: rotate(0deg);
+        transition: all 0.75s ease 0s; }
+        .service-fadein-hover .service-content .service-links a:hover {
+          transform: rotate(360deg); }
+  .service-fadein-hover:hover .service-content {
+    opacity: 1; }
+    .service-fadein-hover:hover .service-content .service-title, .service-fadein-hover:hover .service-content .service-links {
+      transform: scale(1); }
+  @media screen and (max-width: 1024px) {
+    .service-fadein-hover {
+      /* adjusting hover effects for ipad pro screen sizes and smaller */ }
+      .service-fadein-hover .service-content {
+        opacity: 1; }
+        .service-fadein-hover .service-content .service-title {
+          transform: scale(1);
+          top: 30%; }
+        .service-fadein-hover .service-content .service-links {
+          transform: scale(1);
+          bottom: 30%; } }
 
-.zooming img {
-  transition: 1s ease; }
-
-.zooming img:hover {
-  transform: scale(1.5);
+/* DEMO 2 - Border Zoom on Hover */
+.service-bordered-zoom {
+  position: relative;
   overflow: hidden; }
+  .service-bordered-zoom img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    filter: brightness(1);
+    transform: scale(1.25);
+    transition: all 0.5s ease; }
+  .service-bordered-zoom .service-content {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #FFFFFF;
+    transition: all 0.5s ease;
+    opacity: 0; }
+    .service-bordered-zoom .service-content .service-title {
+      position: absolute;
+      top: 35%;
+      left: 0%;
+      width: 100%;
+      height: auto;
+      font-family: Montserrat-Bold, sans-serif;
+      font-weight: normal;
+      font-size: 25px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: center;
+      color: #FFFFFF; }
+    .service-bordered-zoom .service-content .service-button {
+      position: absolute;
+      bottom: 35%;
+      left: 0%;
+      width: 100%;
+      height: auto;
+      text-align: center; }
+      .service-bordered-zoom .service-content .service-button .btn-service {
+        background-color: #3E606F;
+        font-family: Montserrat-Medium, sans-serif;
+        font-weight: normal;
+        font-size: 0.9rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #FFFFFF;
+        transition: all 0.5s ease; }
+        .service-bordered-zoom .service-content .service-button .btn-service:hover {
+          background-color: #91AA9D;
+          color: #FFFFFF !important; }
+  .service-bordered-zoom:hover img {
+    transform: scale(1);
+    filter: brightness(0.5); }
+  .service-bordered-zoom:hover .service-content {
+    opacity: 1; }
+  @media screen and (max-width: 1024px) {
+    .service-bordered-zoom {
+      /* adjusting hover effects for ipad pro screen sizes and smaller */ }
+      .service-bordered-zoom img {
+        transform: scale(1);
+        filter: brightness(0.5); }
+      .service-bordered-zoom .service-content {
+        opacity: 1; } }
 
-.zoomtext {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-family: Montserrat-Light, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1.5rem;
-  font-weight: 800;
-  width: 100%;
-  color: white;
-  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
-  text-align: center; }
-
-/* HIGHLIGHTED SERVICE BOXES ON HOVER ********************************************************* */
-.highlightbox {
-  overflow: hidden; }
-
-.highlighting img {
-  filter: brightness(0.7);
-  transition: 1s ease; }
-
-.highlighting img:hover {
+/* DEMO 3 - Closing Door Effect on Hover */
+.service-closing-door {
+  position: relative;
   overflow: hidden;
-  filter: brightness(1); }
-
-.highlightbox-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-family: FiraSans-ExtraBold, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1.5rem;
-  width: 100%;
-  color: white;
-  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
   text-align: center; }
+  .service-closing-door img {
+    width: 100%;
+    height: auto;
+    overflow: hidden; }
+  .service-closing-door .service-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transform: perspective(400px) rotateX(-90deg);
+    transform-origin: center top 0;
+    transition: all 0.5s ease;
+    opacity: 0; }
+    .service-closing-door .service-content .service-links {
+      position: absolute;
+      top: 42%;
+      left: 0%;
+      right: 0%;
+      list-style: none;
+      margin: 0px;
+      padding: 0px; }
+      .service-closing-door .service-content .service-links li {
+        display: inline-block; }
+        .service-closing-door .service-content .service-links li a {
+          display: block;
+          background-color: #91AA9D;
+          color: #FFFFFF;
+          transition: all 0.35s ease 0s;
+          margin-right: 7px;
+          line-height: 40px;
+          width: 40px;
+          height: 40px;
+          text-align: center;
+          border-radius: 50%;
+          font-size: 20px; }
+          .service-closing-door .service-content .service-links li a:hover {
+            background-color: #FFFFFF;
+            color: #000000; }
+  .service-closing-door .service-title {
+    font-family: Montserrat-Bold, sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0px;
+    padding: 0.5rem 1.5rem;
+    background-color: #91AA9D;
+    transition: all 0.9s ease 0s;
+    display: inline-block;
+    color: #FFFFFF; }
+  .service-closing-door:hover .service-content {
+    transform: perspective(400px) rotateX(0);
+    opacity: 1; }
+  .service-closing-door:hover .service-title {
+    bottom: -60px; }
+  @media screen and (max-width: 1024px) {
+    .service-closing-door {
+      /* adjusting hover effects for ipad pro screen sizes and smaller */ }
+      .service-closing-door .service-content {
+        transform: perspective(400px) rotateX(0);
+        opacity: 1; }
+      .service-closing-door .service-title {
+        bottom: -60px; } }
 
-/* DARKEN SERVICE BOXES ON HOVER ************************************************************** */
-.darkenbox {
+/* DEMO 4 - Image Zoom on Hover */
+.service-image-zoom {
+  position: relative;
+  text-align: center;
   overflow: hidden; }
+  .service-image-zoom img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    filter: brightness(0.8);
+    transition: all 0.5s ease;
+    transform: scale(1); }
+  .service-image-zoom .service-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+    .service-image-zoom .service-content .service-title {
+      position: absolute;
+      top: 45%;
+      left: 0%;
+      width: 100%;
+      height: auto; }
+      .service-image-zoom .service-content .service-title a {
+        font-family: Montserrat-Bold, sans-serif;
+        font-weight: normal;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+        color: #FFFFFF !important; }
+  .service-image-zoom:hover img {
+    transform: scale(1.25); }
+  @media screen and (max-width: 1024px) {
+    .service-image-zoom {
+      /* adjusting hover effects for ipad pro screen sizes and smaller */ }
+      .service-image-zoom img {
+        transform: scale(1.25); } }
 
-.darkening img {
-  filter: brightness(1);
-  transition: 1s ease; }
-
-.darkening img:hover {
-  filter: brightness(0.5);
+/* DEMO 5 - Image Darken on Hover */
+.service-image-darken {
+  position: relative;
+  text-align: center;
   overflow: hidden; }
+  .service-image-darken img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    filter: brightness(1);
+    transition: all 0.5s ease;
+    transform: scale(1); }
+  .service-image-darken .service-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+    .service-image-darken .service-content .service-title {
+      position: absolute;
+      top: 45%;
+      left: 0%;
+      width: 100%;
+      height: auto; }
+      .service-image-darken .service-content .service-title a {
+        font-family: Montserrat-Bold, sans-serif;
+        font-weight: normal;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+        color: #FFFFFF !important; }
+  .service-image-darken:hover img {
+    filter: brightness(0.6); }
+  @media screen and (max-width: 1024px) {
+    .service-image-darken {
+      /* adjusting hover effects for ipad pro screen sizes and smaller */ }
+      .service-image-darken img {
+        filter: brightness(0.6); } }
 
-.darkenbox-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  font-family: FiraSans-ExtraBold, sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1.5rem;
-  width: 100%;
-  color: white;
-  text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.33);
-  text-align: center; }
+/* DEMO 6 - Image Brighten on Hover */
+.service-image-brighten {
+  position: relative;
+  text-align: center;
+  overflow: hidden; }
+  .service-image-brighten img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    filter: brightness(0.5);
+    transition: all 0.5s ease;
+    transform: scale(1); }
+  .service-image-brighten .service-content {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%; }
+    .service-image-brighten .service-content .service-title {
+      position: absolute;
+      top: 45%;
+      left: 0%;
+      width: 100%;
+      height: auto; }
+      .service-image-brighten .service-content .service-title a {
+        font-family: Montserrat-Bold, sans-serif;
+        font-weight: normal;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
+        color: #FFFFFF !important; }
+  .service-image-brighten:hover img {
+    filter: brightness(1); }
+  @media screen and (max-width: 1024px) {
+    .service-image-brighten {
+      /* adjusting hover effects for ipad pro screen sizes and smaller */ }
+      .service-image-brighten img {
+        filter: brightness(1); } }
 
-/* JUMPING ICONS ****************************************************************************** */
-#jumping-icons {
-  transition: all .1s linear; }
-  #jumping-icons:hover {
-    transform: translateY(-10px); }
-
-/* RIGHT-SIDE BORDER UNTIL MOBILE VIEW ******************************************************** */
-#totheright {
-  border-right: 2px solid white; }
+/* DEMO 7 - Zoom Slide Info on Hover */
+.service-sliding-zoombox {
+  position: relative;
+  overflow: hidden; }
+  .service-sliding-zoombox img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    filter: brightness(0.8);
+    transition: all 0.5s ease; }
+  .service-sliding-zoombox .service-content {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%; }
+    .service-sliding-zoombox .service-content .service-title {
+      font-family: Montserrat-Bold, sans-serif;
+      font-weight: normal;
+      font-size: 40px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: left;
+      width: 100%;
+      height: auto;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      transform: translateX(-200%);
+      transition: all 0.5s ease; }
+    .service-sliding-zoombox .service-content .service-info {
+      font-family: Montserrat-Medium, sans-serif;
+      font-weight: normal;
+      font-size: 0.9rem;
+      text-transform: none;
+      text-decoration: none;
+      text-align: right;
+      width: 60%;
+      height: auto;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      bottom: 0px;
+      right: 0px;
+      transform: translateX(200%);
+      transition: all 0.5s ease; }
+    .service-sliding-zoombox .service-content .service-links {
+      font-family: Montserrat-Bold, sans-serif;
+      font-weight: normal;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: left;
+      width: 100%;
+      height: auto;
+      color: #FFFFFF;
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
+      position: absolute;
+      top: 60px;
+      left: 0px;
+      transform: translateX(-200%);
+      transition: all 0.5s ease; }
+  .service-sliding-zoombox:hover img {
+    filter: brightness(0.6); }
+  .service-sliding-zoombox:hover .service-content .service-title, .service-sliding-zoombox:hover .service-content .service-info, .service-sliding-zoombox:hover .service-content .service-links {
+    transform: translateX(0); }
+  @media screen and (max-width: 1024px) {
+    .service-sliding-zoombox {
+      /* adjusting hover effects for ipad pro screen sizes and smaller */ }
+      .service-sliding-zoombox img, .service-sliding-zoombox img:hover {
+        filter: brightness(0.6); }
+      .service-sliding-zoombox .service-content .service-title, .service-sliding-zoombox .service-content .service-info, .service-sliding-zoombox .service-content .service-links, .service-sliding-zoombox .service-content:hover .service-title, .service-sliding-zoombox .service-content:hover .service-info, .service-sliding-zoombox .service-content:hover .service-links {
+        transform: translateX(0); }
+      .service-sliding-zoombox .service-content .service-title, .service-sliding-zoombox .service-content:hover .service-title {
+        font-size: 32px !important; }
+      .service-sliding-zoombox .service-content .service-info, .service-sliding-zoombox .service-content:hover .service-info {
+        width: 100% !important; }
+      .service-sliding-zoombox .service-content .service-links, .service-sliding-zoombox .service-content:hover .service-links {
+        top: 40px !important; } }
   @media screen and (max-width: 768px) {
-    #totheright {
-      border-right: 0px;
-      border-bottom: 2px solid white; } }
+    .service-sliding-zoombox {
+      /* adjusting hover effects for standard ipad screen sizes and smaller */ }
+      .service-sliding-zoombox img, .service-sliding-zoombox img:hover {
+        filter: brightness(0.6); }
+      .service-sliding-zoombox .service-content .service-title, .service-sliding-zoombox .service-content .service-info, .service-sliding-zoombox .service-content .service-links, .service-sliding-zoombox .service-content:hover .service-title, .service-sliding-zoombox .service-content:hover .service-info, .service-sliding-zoombox .service-content:hover .service-links {
+        transform: translateX(0); }
+      .service-sliding-zoombox .service-content .service-title, .service-sliding-zoombox .service-content:hover .service-title {
+        font-size: 24px !important; }
+      .service-sliding-zoombox .service-content .service-info, .service-sliding-zoombox .service-content:hover .service-info {
+        width: 100% !important;
+        opacity: 0; }
+      .service-sliding-zoombox .service-content .service-links, .service-sliding-zoombox .service-content:hover .service-links {
+        top: 40px !important; } }
+
+/* DEMO 8 - Pop Up Info on Hover */
+.popup-service-box {
+  position: relative;
+  overflow: hidden; }
+  .popup-service-box img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: all 0.35s ease;
+    filter: brightness(1); }
+  .popup-service-box .popup-content {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%; }
+    .popup-service-box .popup-content .popup-title {
+      position: absolute;
+      top: 10%;
+      left: 0px;
+      width: 100%;
+      height: auto;
+      font-family: Montserrat-Bold, sans-serif;
+      font-weight: normal;
+      font-size: 30px;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: right;
+      color: #FFFFFF;
+      transition: all 0.35s ease; }
+    .popup-service-box .popup-content .popup-line {
+      position: absolute;
+      top: 30%;
+      left: 0%;
+      width: 100%;
+      height: 4px;
+      background-color: rgba(255, 255, 255, 0.75);
+      opacity: 0;
+      transition: all 0.35s ease; }
+    .popup-service-box .popup-content .popup-desc {
+      position: absolute;
+      bottom: 0%;
+      left: 0%;
+      width: 100%;
+      height: auto;
+      font-family: Montserrat-Medium, sans-serif;
+      font-weight: normal;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      text-decoration: none;
+      text-align: right;
+      transition: all 0.35s ease;
+      color: #FFFFFF;
+      opacity: 0; }
+      .popup-service-box .popup-content .popup-desc a {
+        color: #FFFFFF !important; }
+  .popup-service-box:hover img {
+    filter: brightness(0.8); }
+  .popup-service-box:hover .popup-content .popup-title {
+    top: 5%; }
+  .popup-service-box:hover .popup-content .popup-line {
+    top: 20%;
+    opacity: 1; }
+  .popup-service-box:hover .popup-content .popup-desc {
+    bottom: 12%;
+    opacity: 1; }
 
 /* ******************************************************************************************** */
-/* @import 'him'; */
+/* ******************************************************************************************** */
+/* Custom Styling for the index-menu-in-header Template File ********************************** */
+/* Created by: Sarah Wallick, July 03, 2019 *************************************************** */
+/* ******************************************************************************************** */
+/* Client Reviews Section Background Image **************************************************** */
+#background-client-reviews {
+  background-image: url(../images/banner/banner-client-reviews.jpg);
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 500px; }
+  @media screen and (max-width: 768px) {
+    #background-client-reviews {
+      background-attachment: scroll;
+      min-height: 400px; } }
+
+/* Latest Articles Timeline Example *********************************************************** */
+ul.timeline {
+  list-style-type: none;
+  position: relative; }
+  ul.timeline::before {
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    position: absolute;
+    content: ' ';
+    height: 100%;
+    width: 2px;
+    left: 29px;
+    z-index: 10; }
+  ul.timeline li {
+    padding-left: 20px;
+    margin: 20px 0; }
+    ul.timeline li::before {
+      background-color: #FFFFFF;
+      border: 2px solid #D1DBBD;
+      border-radius: 50%;
+      display: inline-block;
+      position: absolute;
+      content: ' ';
+      height: 20px;
+      width: 20px;
+      left: 20px;
+      z-index: 10; }
+
+.timeline-title {
+  font-family: Roboto-Regular, sans-serif;
+  font-weight: normal;
+  font-size: 1.25rem;
+  text-transform: none;
+  text-decoration: none;
+  text-align: left;
+  color: #91AA9D;
+  transition: all 0.5s ease; }
+  .timeline-title:hover {
+    color: #D1DBBD; }
+
+/* Hover Images on index-menu-in-header.html Template ***************************************** */
+.bordered-gallery-boxes {
+  position: relative;
+  overflow: hidden; }
+  .bordered-gallery-boxes img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    filter: brightness(1);
+    transform: scale(1.05);
+    transition: all 0.5s ease; }
+  .bordered-gallery-boxes .gallery-box-border {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: 10px;
+    overflow: hidden;
+    background-color: #D1DBBD;
+    transition: all 0.5s ease;
+    transform: translateY(10px); }
+  .bordered-gallery-boxes .gallery-box-link {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s ease;
+    transform: translateY(-40px); }
+    .bordered-gallery-boxes .gallery-box-link a {
+      font-family: Montserrat-Medium, sans-serif;
+      font-weight: normal;
+      font-size: 20px;
+      line-height: 40px;
+      width: auto;
+      height: 50px;
+      color: #FFFFFF !important;
+      position: absolute;
+      top: 5px;
+      right: 20px;
+      text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2); }
+  .bordered-gallery-boxes:hover img {
+    transform: scale(1.1);
+    filter: brightness(0.5); }
+  .bordered-gallery-boxes:hover .gallery-box-border, .bordered-gallery-boxes:hover .gallery-box-link {
+    transform: translateY(0px); }
+  @media screen and (max-width: 1024px) {
+    .bordered-gallery-boxes {
+      /* Adjusting Image Hover Effects for iPad Pro Tablet Screen Sizes and Below */ }
+      .bordered-gallery-boxes img {
+        transform: scale(1.1);
+        filter: brightness(0.5); }
+      .bordered-gallery-boxes .gallery-box-border, .bordered-gallery-boxes .gallery-box-link {
+        transform: translateY(0px); } }
+
+/* ******************************************************************************************** */
 /* @import 'shrink-nav'; */
 
 /*# sourceMappingURL=fa.css.map */

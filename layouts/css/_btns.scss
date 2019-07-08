@@ -2,109 +2,56 @@
 /* BUTTONS STYLING **************************************************************************** */
 /* ******************************************************************************************** */
 
-.btn-banner, .btn-cta, .btn-info, .btn-about, .btn-more, .btn-reviews, .btn-sidebar {
+/* Setting Up All Button Transitions and Font Styling */
+.btn-banner, .btn-cta, .btn-more, .btn-reviews {
+    font-family: $font-second;
     font-weight: normal;
-    border: 0px;
-    transition: .5s ease;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.5s ease;
+    padding: 0.5rem 1.5rem;
+    color: #FFFFFF !important;
+    border: 0px !important;
 }
 
+/* Top Banner Button Styling */
 .btn-banner {
     background-color: $color-prime;
-    color: white !important;
-    width: 40%;
+    width: 35%;
     @media screen and (max-width: $breaklrg) {
-        width: 60%;
+        width: 50%;
     }
     @media screen and (max-width: $breakmed) {
-        width: 80%;
+        width: 70%;
     }
     &:hover {
         background-color: $color-second;
     }
 }
+
+/* CTA Button Styling */
 .btn-cta {
     background-color: $color-second;
-    font-family: $font-second;
-    font-weight: normal;
-    text-transform: uppercase;
-    color: white;
     &:hover {
-        background-color: lighten($color-second, 15%);
-        color: white;
+        background-color: lighten($color-second, 20%);
     }
 }
-.btn-info, .btn-about, .btn-more, .btn-reviews {
+
+/* More Button - Typical Replacement for the Info Button Override */
+.btn-more {
     background-color: $color-prime;
-    font-family: $font-second;
-    font-weight: normal;
-    text-transform: uppercase;
-    color: white;
     &:hover {
-        background-color: lighten($color-prime, 15%);
-        color: white;
+        background-color: lighten($color-prime, 20%);
     }
 }
 
-/* ******************************************************************************************** */
-
-.btn-sidebar {
-
-}
-
-/* ******************************************************************************************** */
-
-.btn-tri-arrow {
-    background-color: $color-prime;
-    font-family: $font-prime;
-    color: $color-second;
-    &::before {
-        display: inline-block;
-        content: "\25B2";
-        -webkit-transform: rotate(90deg) scale(1.5);
-        -moz-transform: rotate(90deg) scale(1.5);
-        -o-transform: rotate(90deg) scale(1.5);
-        -ms-transform: rotate(90deg) scale(1.5);
-        padding: 2%;
-    }
+/* Client Reviews Button Styling */
+.btn-reviews {
+    background-color: $color-second;
     &:hover {
-        color: darken($color-second, 10%) !important;
-    }
-}
-
-/* ******************************************************************************************** */
-
-div.btn-tri-up {
-    position: relative;
-    div {
-        box-sizing: content-box;
-        padding-bottom: 25%;
-        padding-left: 25%;
-        margin: 0 auto;
-        overflow: hidden;
-        width: 25%;
-        height: 0;
-        a {
-            background-color: $color-prime;
-            font-family: $font-prime;
-            color: $color-third;
-            position: absolute;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-            width: 100%;
-            bottom: 0;
-            left: 0;
-        }
-        &::before {
-            border-bottom: 500px solid $color-prime;
-            border-right: 500px solid transparent;
-            border-left: 500px solid transparent;
-            margin-left: -500px;
-            display: block;
-            content: "";
-            width: 0;
-            height: 0;
-        }
+        background-color: $color-third;
     }
 }
 

@@ -170,9 +170,16 @@
 
 			smallNavMenu.setAttribute("data-original-margin-right", menuMarginRight);
 			smallNavMenu.style.marginRight = "0px";
+
+			anime({
+				targets:smallNavMenu,
+				marginRight:[menuMarginRight, 0],
+				easing:"easeInOutSine",
+				duration:100
+			});
 		}
 
-		// Connect the opener click
+		// Connect the opener (hamburger menu) click
 		smallNavOpener.onclick = function(){
 			openSmallNavMenu1();
 		}

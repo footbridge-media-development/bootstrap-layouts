@@ -1,8 +1,8 @@
 Markdown editor: https://dillinger.io/
 
-# Bootstrap v4.2.0 Layouts
+# Bootstrap v4.3.1 Layouts
 
-Current version: v1.1.0
+Current version: v1.2.0
 
 This is the home of Footbridge Media's Bootstrap layouts. In the layouts folder you will find multiple HTML files which serve as different layout templates. 
 
@@ -40,3 +40,9 @@ To use it, here is a code sample:
 ## Using the isInView jQuery Plugin
 
 Please read the readme at this repository (it's short): https://github.com/nox7/jQuery-inView-Plugin
+
+## Change Log
+```
+- 1.2.0
+-- jQuery removed from navigation
+-- Redundant Font-Awesome webfont folders removed and some font families using old FA directives fixed in _goldylox

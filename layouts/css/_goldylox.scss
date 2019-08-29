@@ -145,7 +145,7 @@
 .icon-li {
     li {
         &::before {
-            font-family: "FontAwesome-Brands";
+            font-family: "Font Awesome 5 Free";
             content: fa-content($fa-var-twitter);
         }
     }
@@ -153,7 +153,7 @@
 .checkmark-li {
     li {
         &::before {
-            font-family: "FontAwesome-Solids";
+            font-family: "Font Awesome 5 Free";
             content: fa-content($fa-var-check);
         }
     }
@@ -161,7 +161,7 @@
 .dashed-li {
     li {
         &::before {
-            font-family: "FontAwesome-Solids";
+            font-family: "Font Awesome 5 Free";
             content: fa-content($fa-var-grip-lines);
         }
     }

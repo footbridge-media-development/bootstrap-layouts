@@ -46,3 +46,4 @@ Please read the readme at this repository (it's short): https://github.com/nox7/
 - 1.2.0
 -- jQuery removed from navigation
 -- Redundant Font-Awesome webfont folders removed and some font families using old FA directives fixed in _goldylox
+```

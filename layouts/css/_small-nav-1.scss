@@ -26,7 +26,6 @@
 	z-index: 11;
 	width: 50%;
 	max-width: 240px;
-	transition:margin-right 150ms; /* If you change this timeframe, go to the JS file that handles the menu and also change the setTimeout interval for when it closes. */
 	margin-right:-250px; /* We will animate this to 0 when they open the menu */
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .menu-heading {

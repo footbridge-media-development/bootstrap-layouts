@@ -129,7 +129,9 @@
 		let dropdownContainer = tapDropdown.parentNode;
 		let dropdownLinkActivator = dropdownContainer.getElementsByTagName("a")[0];
 
-		dropdownLinkActivator.onclick = function(){
+		dropdownLinkActivator.onclick = function(event){
+			event.preventDefault();
+			event.stopPropagation();
 			let computedDisplayStyle = window.getComputedStyle(tapDropdown).getPropertyValue("display");
 			if (computedDisplayStyle === "none"){
 				openTapDropdown(tapDropdown);

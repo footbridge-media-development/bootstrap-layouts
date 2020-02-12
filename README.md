@@ -1,8 +1,8 @@
 Markdown editor: https://dillinger.io/
 
-# 🎭 Bootstrap v4.3.1 Layouts
+# 🎭 Bootstrap v4.4.1 Layouts
 
-Current version: v1.2.0
+Current version: v1.3.0
 
 This is the home of Footbridge Media's Bootstrap layouts. In the layouts folder you will find multiple HTML files which serve as different layout templates. 
 
@@ -43,6 +43,9 @@ Please read the readme at this repository (it's short): https://github.com/nox7/
 
 ## Change Log
 ```
+- 1.3.0
+-- Removed Bootstrap bundle JS map
+-- Upgraded Bootstrap from 4.3.1 to 4.4.1
 - 1.2.0
 -- jQuery removed from navigation
 -- Redundant Font-Awesome webfont folders removed and some font families using old FA directives fixed in _goldylox

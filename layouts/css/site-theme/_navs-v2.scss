@@ -1,5 +1,15 @@
-@keyframes fade-in-dropdown-menu{
+$animations-duration: 190ms;
 
+@keyframes fade-in-dropdown-menu{
+	from{
+		opacity:0;
+		transform:translateY(90px);
+	}
+
+	to{
+		opacity:1;
+		transform:translateY(0);
+	}
 }
 
 #lg-nav-v2-1{
@@ -19,7 +29,7 @@
 		margin-right:auto;
 
 		#nav-v2-logo-container{
-			padding:1rem;
+			padding:0.6rem 1.5rem;
 		}
 
 		#nav-v2-contents{
@@ -34,11 +44,37 @@
 				display:flex;
 				align-items:center;
 
+				& > .nav-v2-link:not(:last-child){
+					margin-right:1rem;
+				}
+
 				& > .nav-v2-link{
-					&.is-hovered{
-						& > a > .nav-v2-spin-chevron > i{
-							transform:rotate(90deg);
+
+					// First dropdown, the vertical one
+					& > .nav-v2-1-dropdown{
+						position:absolute;
+						display:none;
+						width:225px;
+						box-shadow:0 0 0.25rem 0.15rem rgba(0,0,0,0.2);
+						background-color:white;
+
+						& > .nav-v2-1-dropdown-1-link:not(:last-child){
+							border-bottom:1px solid silver;
 						}
+
+						& > .nav-v2-1-dropdown-1-link{
+							& > a{
+								display:block;
+								padding:0.75rem 1rem;
+							}
+						}
+					}
+
+					& > .nav-v2-1-load-line{
+						height:2px;
+						background-color:map-get($theme-colors, primary);
+						width:0%;
+						transition:width $animations-duration;
 					}
 
 					& > a{
@@ -49,9 +85,28 @@
 						& > .nav-v2-spin-chevron{
 							margin-left:6px;
 							& > i{
-								transition:transform 190ms;
+								transition:transform $animations-duration;
 								font-size:0.75rem;
 							}
+						}
+					}
+
+					// When the nav link gets the hovered class from javascript
+					&.is-hovered{
+
+						& > .nav-v2-1-dropdown{
+							display:block;
+							animation:fade-in-dropdown-menu;
+							animation-duration:$animations-duration;
+							animation-fill-mode:forwards;
+						}
+
+						& > .nav-v2-1-load-line{
+							width:100%;
+						}
+
+						& > a > .nav-v2-spin-chevron > i{
+							transform:rotate(90deg);
 						}
 					}
 				}

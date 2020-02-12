@@ -1,0 +1,61 @@
+@keyframes fade-in-dropdown-menu{
+
+}
+
+#lg-nav-v2-1{
+
+	box-shadow:0 0 0.25rem 0.1rem rgba(0,0,0,0.2);
+
+	#nav-v2-trim{
+		background-color:map-get($theme-colors, primary);
+		height:4px;
+	}
+
+	#nav-v2-flexer{
+		display:flex;
+		background-color:white;
+		max-width:1420px;
+		margin-left:auto;
+		margin-right:auto;
+
+		#nav-v2-logo-container{
+			padding:1rem;
+		}
+
+		#nav-v2-contents{
+			display:flex;
+			flex-grow:1;
+			flex-direction:column;
+			align-items:flex-end;
+			justify-content:center;
+			padding:1.25rem 3.33rem;
+
+			#nav-v2-links{
+				display:flex;
+				align-items:center;
+
+				& > .nav-v2-link{
+					&.is-hovered{
+						& > a > .nav-v2-spin-chevron > i{
+							transform:rotate(90deg);
+						}
+					}
+
+					& > a{
+						display:inline-flex;
+						padding:0.75rem 1.5rem;
+						align-items:center;
+
+						& > .nav-v2-spin-chevron{
+							margin-left:6px;
+							& > i{
+								transition:transform 190ms;
+								font-size:0.75rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

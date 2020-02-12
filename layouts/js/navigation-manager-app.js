@@ -200,7 +200,7 @@
 	// Added 2/12/2020
 	// Garet C. Green
 	( () => {
-		const desktopNavLinks = document.getElementsByClassName("nav-v2-link");
+		const desktopNavLinks = document.getElementsByClassName("nav-v2-1-link");
 		const desktopDropdown1NavLinks = document.getElementsByClassName("nav-v2-1-dropdown-1-link");
 
 		for (let link of desktopNavLinks){

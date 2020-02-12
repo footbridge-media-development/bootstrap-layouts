@@ -195,4 +195,26 @@
 			}
 		}
 	}
+
+	// Handle nav menu v2 #1
+	// Added 2/12/2020
+	// Garet C. Green
+	( () => {
+		const desktopNavLinks = document.getElementsByClassName("nav-v2-link");
+		for (let link of desktopNavLinks){
+			console.log("Got link");
+			link.addEventListener("mouseenter", () => {
+				console.log("it's in");
+				if (!link.classList.contains("is-hovered")){
+					link.classList.add("is-hovered");
+				}
+			});
+
+			link.addEventListener("mouseleave", () => {
+				if (link.classList.contains("is-hovered")){
+					link.classList.remove("is-hovered");
+				}
+			});
+		}
+	})();
 })();

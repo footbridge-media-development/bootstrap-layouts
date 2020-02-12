@@ -202,9 +202,7 @@
 	( () => {
 		const desktopNavLinks = document.getElementsByClassName("nav-v2-link");
 		for (let link of desktopNavLinks){
-			console.log("Got link");
 			link.addEventListener("mouseenter", () => {
-				console.log("it's in");
 				if (!link.classList.contains("is-hovered")){
 					link.classList.add("is-hovered");
 				}

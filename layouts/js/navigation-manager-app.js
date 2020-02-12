@@ -201,7 +201,23 @@
 	// Garet C. Green
 	( () => {
 		const desktopNavLinks = document.getElementsByClassName("nav-v2-link");
+		const desktopDropdown1NavLinks = document.getElementsByClassName("nav-v2-1-dropdown-1-link");
+
 		for (let link of desktopNavLinks){
+			link.addEventListener("mouseenter", () => {
+				if (!link.classList.contains("is-hovered")){
+					link.classList.add("is-hovered");
+				}
+			});
+
+			link.addEventListener("mouseleave", () => {
+				if (link.classList.contains("is-hovered")){
+					link.classList.remove("is-hovered");
+				}
+			});
+		}
+
+		for (let link of desktopDropdown1NavLinks){
 			link.addEventListener("mouseenter", () => {
 				if (!link.classList.contains("is-hovered")){
 					link.classList.add("is-hovered");

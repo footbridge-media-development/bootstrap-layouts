@@ -115,6 +115,10 @@ $animations-duration: 190ms;
 									right:100%;
 								}
 
+								& > .nav-v2-1-dropdown-2-link:not(:last-child){
+									border-bottom:1px solid rgba(0,0,0,0.08);
+								}
+
 								& > .nav-v2-1-dropdown-2-link{
 									position:relative;
 									z-index:104;

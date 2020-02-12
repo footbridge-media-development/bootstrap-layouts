@@ -66,13 +66,37 @@ $animations-duration: 190ms;
 						overflow:hidden;
 
 						& > .nav-v2-1-dropdown-1-link:not(:last-child){
-							border-bottom:1px solid silver;
+							border-bottom:1px solid rgba(0,0,0,0.08);
 						}
 
 						& > .nav-v2-1-dropdown-1-link{
+							position:relative;
+							z-index:101;
+
+							& > .nav-v2-1-border-animator{
+								position:absolute;
+								z-index:102;
+								left:0;
+								top:0;
+								height:100%;
+								width:0;
+								background-color:map-get($theme-colors, primary);
+								transition:width $animations-duration;
+							}
+
 							& > a{
 								display:block;
 								padding:0.75rem 1rem;
+							}
+
+							&:hover{
+								& > .nav-v2-1-border-animator{
+									width:4px;
+								}
+
+								& > a{
+
+								}
 							}
 						}
 					}
@@ -119,5 +143,11 @@ $animations-duration: 190ms;
 				}
 			}
 		}
+	}
+}
+
+@media screen and (max-width:map-get($grid-breakpoints, xl)){
+	#lg-nav-v2-1{
+		display:none;
 	}
 }

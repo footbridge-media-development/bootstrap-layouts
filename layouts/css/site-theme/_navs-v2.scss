@@ -49,14 +49,21 @@ $animations-duration: 190ms;
 				}
 
 				& > .nav-v2-link{
+					position:relative;
+					z-index:99;
 
 					// First dropdown, the vertical one
 					& > .nav-v2-1-dropdown{
+						z-index:100;
 						position:absolute;
+						top:100%;
+						left:0;
 						display:none;
 						width:225px;
-						box-shadow:0 0 0.25rem 0.15rem rgba(0,0,0,0.2);
+						box-shadow:0 0 0.3rem 0.05rem rgba(0,0,0,.19);
 						background-color:white;
+						border-radius:0.15rem;
+						overflow:hidden;
 
 						& > .nav-v2-1-dropdown-1-link:not(:last-child){
 							border-bottom:1px solid silver;

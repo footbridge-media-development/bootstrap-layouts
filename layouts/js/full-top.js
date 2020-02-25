@@ -1,9 +1,23 @@
 $(function()
-{
-        $('.fullwindow') .css({'min-height': (($(window).height()))+'px'});
+{		
+		
+		if ($(window).width() > 992)
+		{
+			 $('.fullwindow') .css({'min-height': (($(window).height()))+'px'});
+		}
+		else {
+			$('.fullwindow') .css({'min-height': '400px'});
+		}
+       
     
         $(window).bind('resize', function(){
-            $('.fullwindow') .css({'min-height': (($(window).height()))+'px'});
+			if ($(window).width() > 992)
+		{
+			 $('.fullwindow') .css({'min-height': (($(window).height()))+'px'});
+		}
+		else {
+			$('.fullwindow') .css({'min-height': '400px'});
+		}
             
         });
 });
@@ -12,7 +26,6 @@ $(".scroll-next").click(function() {
 		$("html, body").animate({scrollTop: cls}, "slow");
 
 	});
-
 
 document.addEventListener("DOMContentLoaded", function() {
   var lazyVideos = [].slice.call(document.querySelectorAll("video.lazy"));

@@ -7,7 +7,7 @@ $(document.createElement("style")).html(`
 
 $('.accordion').find('.accordion-toggle').click(function () {
 
-	var thisContent = $(this).parent().find(".accordion-content");
+	let thisContent = $(this).parent().find(".accordion-content");
 
 	//Hide the other panels
 	$(".accordion-content").not(thisContent).slideUp('fast').parent().find(".collapser").toggleClass("icon-cancel", false).toggleClass("icon-plus", true);

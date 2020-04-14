@@ -1,7 +1,7 @@
-(function($){
-	var watchedElements = [];
-	var doc = document.documentElement;
-	var currentYScroll = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
+(($) => {
+	let watchedElements = [];
+	let doc = document.documentElement;
+	let currentYScroll = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 
 	$(".in-view-watcher").each(function(i,v){
 		watchedElements.push($(v));
@@ -19,10 +19,10 @@
 		// Get the current offset scrolled from the top
 		currentYScroll = (window.pageYOffset || doc.scrollTop)  - (doc.clientTop || 0);
 		// Get the window's height
-		var clientHeight = $(window).height();
+		let clientHeight = $(window).height();
 
 		// Loop through each of the elements gathered by the selector above this scroll event
-		var newWatchedElementsList = [];
+		let newWatchedElementsList = [];
 		$.each(watchedElements, function(_, obj){
 
 			if (typeof(obj) === "undefined"){
@@ -30,9 +30,9 @@
 			}
 
 			// Get the distance from the top of the document to the top of this element
-			var topOfElement = obj.offset().top;
+			let topOfElement = obj.offset().top;
 			// Get the distance from the top of the document to the bottom of this element
-			var bottomOfElement = obj.offset().top + obj.height();
+			let bottomOfElement = obj.offset().top + obj.height();
 
 
 			if (

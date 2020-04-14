@@ -14,9 +14,9 @@
 	//		</div>
 	//	</div>
 
-	(function(){
+	(() => {
 
-		var paginationControls = `
+		let paginationControls = `
 			<div paginator class="d-inline-flex align-items-center p-2 pb-4">
 				<div>
 					<a title="Back a page" class="paginate-back pr-2"><i class="icon-angle-circled-left h4"></i></a>
@@ -31,7 +31,7 @@
 		`;
 
 		function createPageContainer(pageNumber, container){
-			var elem = $(document.createElement("div"));
+			let elem = $(document.createElement("div"));
 			elem.addClass("paginated-page row");
 			elem.attr('page', pageNumber);
 			if (pageNumber > 1){
@@ -45,37 +45,37 @@
 		}
 
 		$("[enable-pagination=\"true\"]").each(function(){
-			var paginationControlsHTML = $(paginationControls);
-			var mainContainer = $(this);
+			let paginationControlsHTML = $(paginationControls);
+			let mainContainer = $(this);
 			$(this).addClass('container').before(paginationControlsHTML);
-			var columns = 12 / parseInt($(this).attr('columns'), 10);
+			let columns = 12 / parseInt($(this).attr('columns'), 10);
 			if (columns%1 > 0) {
 				columns = 12;
 			}
-			var currentPage = 1;
-			var paginateAfter = parseInt($(this).attr('paginate-after'), 10);
-			var elementCount = $(this).children().length;
+			let currentPage = 1;
+			let paginateAfter = parseInt($(this).attr('paginate-after'), 10);
+			let elementCount = $(this).children().length;
 
 			if (isNaN(paginateAfter)){
 				console.log("Invalid attribute value for 'paginate-after'. Defaulting to 10");
 				paginateAfter = 10;
 			}
 
-			var numPages = Math.ceil(elementCount / paginateAfter);
-			var pageContainers = [];
+			let numPages = Math.ceil(elementCount / paginateAfter);
+			let pageContainers = [];
 			paginationControlsHTML.find('.total-pages').html(numPages);
 
-			for (var i = 1; i <= numPages; ++i){
+			for (let i = 1; i <= numPages; ++i){
 				pageContainers.push(createPageContainer(i, mainContainer));
 			}
 
 			$(this).children().each(function(i, elem){
 				elem = $(elem);
 				elem.addClass('col-12 col-lg-' + columns);
-				var page = Math.ceil((i+1) / paginateAfter);
-				var findIndex = page - 1;
-				var container = pageContainers[findIndex];
-				
+				let page = Math.ceil((i+1) / paginateAfter);
+				let findIndex = page - 1;
+				let container = pageContainers[findIndex];
+
 				elem.appendTo(container);
 			});
 
@@ -85,22 +85,22 @@
 
 			paginationControlsHTML.find(".paginate-back").click(function(){
 				if (currentPage > 1){
-					var currentContainer = pageContainers[currentPage - 1];
+					let currentContainer = pageContainers[currentPage - 1];
 					currentContainer.hide("fast");
 					--currentPage;
 					paginationControlsHTML.find("[page-number]").html(currentPage);
-					var container = pageContainers[currentPage - 1];
+					let container = pageContainers[currentPage - 1];
 					container.show("fast");
 				}
 			});
 
 			paginationControlsHTML.find(".paginate-forward").click(function(){
 				if (currentPage < numPages){
-					var currentContainer = pageContainers[currentPage - 1];
+					let currentContainer = pageContainers[currentPage - 1];
 					currentContainer.hide("fast");
 					++currentPage;
 					paginationControlsHTML.find("[page-number]").html(currentPage);
-					var container = pageContainers[currentPage - 1];
+					let container = pageContainers[currentPage - 1];
 					container.show("fast");
 				}
 			});

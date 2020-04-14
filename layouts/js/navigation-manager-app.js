@@ -1,4 +1,4 @@
-(function(){
+(() => {
 
 	let dropdownSpeed = 175;
 	let allDropdowns = document.getElementsByClassName("dropdown");

@@ -1,7 +1,9 @@
-/* ******************************************************************************************** */
-/* Shrinking the Navigation as You Scroll Down the Page *************************************** */
-/* Added by: Sarah W., 03/26/2019 ************************************************************* */
-/* ******************************************************************************************** */
+/**
+* Shrinking the Navigation as You Scroll Down the Page
+*
+* @author Sarah W.
+* @date March 26, 2019
+*/
 
 $(document).ready(function() {
 
@@ -17,25 +19,14 @@ $(document).ready(function() {
 	if ($("#large-navigation-container-2").length !== 0) {
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > 250) {
-
 				$('#navigation-logo').css('width', '170px');
-
 				$('#large-navigation-container-2').css('background-color', 'rgba(0, 0, 0, 1)');
-
 				$('#small-navigation-container-1').css('background-color', 'rgba(0, 0, 0, 1)');
-
-			}
-			else {
-
+			}else{
 				$('#large-navigation-container-2').css('background', 'rgba(0, 0, 0, 0.5)');
-
 				$('#small-navigation-container-1').css('background', 'rgba(0, 0, 0, 0.5)');
-
 				$('#navigation-logo').css('width', '200px');
-
 			}
 		});
 	}
 });
-
-/* ******************************************************************************************** */

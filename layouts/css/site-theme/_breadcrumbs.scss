@@ -31,24 +31,26 @@
 }
 
 // Minimal breadcrumbs
-.minimal-breadcrumb > .trail{
-	display:inline-block;
-}
 
 .minimal-breadcrumb > div:not(:first-of-type)::before{
 	display:inline-block;
 	content:"/";
 }
 
-// Color here covers the pseudo element
 .minimal-breadcrumb > .trail{
 	color:$gray-600;
 	font-size:0.9rem;
+	display:inline-block;
+	max-width:200px;
+	text-overflow:ellipsis;
+	overflow:hidden;
+	white-space:no-wrap;
 }
 
 // For anchors
 .minimal-breadcrumb > .trail a{
 	color:$gray-600;
+	white-space:nowrap;
 }
 
 

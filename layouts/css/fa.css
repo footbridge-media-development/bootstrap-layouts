@@ -4618,97 +4618,6 @@ readers do not read off random characters that represent icons */
   /* Indent deeper sub-menus */ }
 
 /* ******************************************************************************************** */
-/******* ******** ********/
-/****** Large-screen Navigation Setup 1 *******/
-/******* ******** ********/
-#large-navigation-container-1 {
-  background-color: white;
-  box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.33);
-  position: relative;
-  /* Box shadow doesn't show without a z-index */
-  z-index: 1; }
-
-#large-navigation-container-1 > .d-flex {
-  height: 100%; }
-
-#large-navigation-container-1 .navigation-links > div > div {
-  transition: all 450ms;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem; }
-
-#large-navigation-container-1 .navigation-links > div > div > a {
-  display: inline-block;
-  text-align: center;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem; }
-
-#large-navigation-container-1 .navigation-links > div > div:hover {
-  background-color: #3E606F;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
-
-#large-navigation-container-1 .navigation-links > div > div:hover > a {
-  transition: color 150ms;
-  text-decoration: none;
-  color: white; }
-
-#large-navigation-container-1 .navigation-links > div > div > .dropdown,
-#large-navigation-container-1 .navigation-links > div > div > .dropdown > div > .dropdown {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  min-width: 100%;
-  display: none;
-  z-index: 2; }
-
-#large-navigation-container-1 .navigation-links > div > div > .dropdown > div > .dropdown {
-  left: 100%;
-  top: 0;
-  z-index: 3; }
-
-/* Affects all divs in any dropdown */
-#large-navigation-container-1 .dropdown > div {
-  position: relative; }
-
-#large-navigation-container-1 .navigation-links > div > div .dropdown > div {
-  background-color: #3E606F;
-  text-align: left; }
-
-#large-navigation-container-1 .navigation-links > div > div .dropdown > div a {
-  display: block;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem; }
-
-#large-navigation-container-1 .navigation-links > div > div .dropdown > div > a {
-  color: white; }
-
-#large-navigation-container-1 .navigation-links > div > div .dropdown > div:hover {
-  transition: background-color 150ms;
-  background-color: #2c444e; }
-
-#large-navigation-container-1 .navigation-links > div > div .dropdown > div > a:hover {
-  text-decoration: none; }
-
-#large-navigation-container-1 .navigation-links > div > div .dropdown > div:not(:last-child) {
-  border-bottom: 1px dashed gray; }
-
-/* LG and below */
-@media screen and (max-width: 1200px) {
-  #large-navigation-container-1 .navigation-links > div > div > a {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem; } }
-/* MD and below */
-@media screen and (max-width: 991px) {
-  #large-navigation-container-1 .navigation-links > div > div {
-    padding-left: 1rem;
-    padding-right: 1rem; } }
 /* ******************************************************************************************** */
 /* LARGE NAVIGATION 2 SETUP ******************************************************************* */
 /* ******************************************************************************************** */
@@ -4983,12 +4892,62 @@ footer.fb-ftr-1 a {
       height: 600px; } }
   @media screen and (max-width: 768px) {
     .carousel-item > div {
-      height: 500px; } }
+      height: 300px; } }
 
 .carousel-item {
   padding: 10px; }
 
 /* ******************************************************************************************** */
+/* secondary fly in text uncomment this and comment/delete above 
+
+@keyframes bannjump {
+	from {
+		transform:translateX(-100%);
+	}
+	to {
+		transform:translateX(0);
+	}
+}
+
+.carousel-item > div {
+	background-attachment: scroll;
+	background-position: center;
+	background-size: cover;
+	height: 700px;
+	@media screen and (max-width: $breaklrg) {
+		height: 600px;
+	}
+	@media screen and (max-width: $breakmed) {
+		height: 500px;
+	}
+}
+.carousel-item {
+	padding: 10px;
+}
+.carousel-caption {
+	left:0 !important;
+	right:0 !important;
+	width:100% !important;
+	bottom:0 !important;
+}
+.carousel-item {
+	overflow-x:hidden !important;
+	.carousel-caption{
+		transform: translateX(-100%);
+		.darken {
+			background:rgba(0,0,0,.5);
+		}
+	}
+	&.active {
+		.carousel-caption {
+			animation:bannjump;
+			animation-timing-function: ease;
+			animation-duration:1s;
+			animation-fill-mode:forwards;
+		}
+	}
+}
+******************************************/
 /* ******************************************************************************************** */
 /* BUTTONS STYLING **************************************************************************** */
 /* ******************************************************************************************** */
@@ -5003,18 +4962,12 @@ footer.fb-ftr-1 a {
   transition: all 0.5s ease;
   padding: 0.5rem 1.5rem;
   color: #FFFFFF !important;
-  border: 0px !important; }
+  border: 0px !important;
+  display: inline-block; }
 
 /* Top Banner Button Styling */
 .btn-banner {
-  background-color: #3E606F;
-  width: 35%; }
-  @media screen and (max-width: 992px) {
-    .btn-banner {
-      width: 50%; } }
-  @media screen and (max-width: 768px) {
-    .btn-banner {
-      width: 70%; } }
+  background-color: #3E606F; }
   .btn-banner:hover {
     background-color: #91AA9D; }
 
@@ -5308,6 +5261,50 @@ footer.fb-ftr-1 a {
       color: #555555 !important; }
 
 /* ******************************************************************************************** */
+.ctasection {
+  position: relative;
+  z-index: 2; }
+  .ctasection div {
+    position: absolute;
+    background: #91AA9D;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%); }
+    @media screen and (max-width: 992px) {
+      .ctasection div {
+        width: 100%;
+        position: relative;
+        transform: translateY(0); } }
+
+.ctasectionr {
+  position: relative;
+  z-index: 2; }
+  .ctasectionr div {
+    position: absolute;
+    background: #91AA9D;
+    right: 0;
+    top: 0;
+    transform: translateY(-50%); }
+    @media screen and (max-width: 992px) {
+      .ctasectionr div {
+        width: 100%;
+        position: relative;
+        transform: translateY(0); } }
+
+.boxers {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 0;
+  transform: translateY(55%); }
+  @media screen and (max-width: 992px) {
+    .boxers {
+      position: relative;
+      transform: translateY(0); }
+      .boxers .box {
+        margin-top: 5px;
+        margin-bottom: 5px; } }
+
 /* ******************************************************************************************** */
 /* CUSTOM SCSS FOR THIS PARTICULAR LAYOUT ***************************************************** */
 /* ******************************************************************************************** */
@@ -5404,8 +5401,7 @@ footer.fb-ftr-1 a {
   top: 0;
   animation: loload 1s ease; }
   .turnME .logoh {
-    width: 45%;
-    animation: logoload 1s ease; }
+    animation: logoload 1s ease forwards; }
 
 /* ******************************************************************************************** */
 /* COLLAPSE CARDS STYLING ********************************************************************* */
@@ -6037,6 +6033,11 @@ ul.timeline {
         transform: translateY(0px); } }
 
 /* ******************************************************************************************** */
+.fullwindow {
+  min-height: 100vh; }
+
+@media (max-width: 992px) {
+  min-height: 400px; }
 /* @import 'shrink-nav'; */
 
 /*# sourceMappingURL=fa.css.map */

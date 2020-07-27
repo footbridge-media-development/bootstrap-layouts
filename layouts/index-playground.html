@@ -1,143 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Styles & Animations Playground</title>
-    <meta name="description" property="og:description" content="" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
-    <meta name="format-detection" content="telephone=no">
-    <link href="css/site-theme/master-theme.css" rel="stylesheet" type="text/css">
-    <link href="css/fa.css" rel="stylesheet" type="text/css">
-    <link href="fontello/css/fontello.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Scada" rel="stylesheet">
-    <link href="playground.css" rel="stylesheet">
-    <link href="playground-files/prism.css" rel="stylesheet">
-    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script defer src="css/Bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
-    <script defer src="js/anime.min.js"></script>
-    <script defer src="js/inView.jquery.min.js"></script>
-    <script defer src="js/animation-engine.min.js"></script>
-    <script defer src="playground-files/prism.js"></script>
+	<title>Styles & Animations Playground</title>
+	<meta name="description" property="og:description" content="" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<link href="css/site-theme/master-theme.css" rel="stylesheet" type="text/css">
+	<link href="css/fa.css" rel="stylesheet" type="text/css">
+	<link href="fontello/css/fontello.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Viga" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Scada" rel="stylesheet">
+	<link href="playground.css" rel="stylesheet">
+	<link href="playground-files/prism.css" rel="stylesheet">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script defer src="css/Bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+	<script defer src="js/anime.min.js"></script>
+	<script defer src="js/inView.jquery.min.js"></script>
+	<script defer src="js/animation-engine.min.js"></script>
+	<script defer src="playground-files/prism.js"></script>
 </head>
 <body>
-    <main>
-        <div class="container-fluid bg-white">
-            <div class="pt-5">
-                <div class="row justify-content-center">
-                    <div class="col-10">
-                        <h1>Animations & Complex Styles Playground</h1>
-                        <div class="p-4 items-container">
-                        <!-- Section -->
-                            <section>
-                                <h2 class="h3 mb-3">Expanding button when in view</h2>
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <div class="animated-expand-container">
-                                            <div class="cover bg-white"></div>
-                                            <a href="#" class="btn btn-primary px-5">
-                                                <span><i class="icon-bar"></i> Read More</span>
-                                            </a>
-                                        </div>
-                                        <div class="mt-3">
-                                            <p>
-                                                The button will expand to be shown when it is in the viewport.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <pre><code class="language-html">&lt;div class=&quot;animated-expand-container&quot;&gt;
-                                        &lt;div class=&quot;cover bg-white&quot;&gt;&lt;/div&gt;
-                                        &lt;a href=&quot;#&quot; class=&quot;btn btn-primary px-5&quot;&gt;
-                                        &lt;span&gt;&lt;i class=&quot;icon-bar&quot;&gt;&lt;/i&gt; Read More&lt;/span&gt;
-                                        &lt;/a&gt;
-                                        &lt;/div&gt;</code></pre>
-                                    </div>
-                                </div>
-                            </section>
-                            <!-- End section -->
+	<main>
+		<div class="container-fluid bg-white">
+			<div class="pt-5">
+				<div class="row justify-content-center">
+					<div class="col-10">
+						<h1>Animations & Complex Styles Playground</h1>
+						<div class="p-4 items-container">
+						<!-- Section -->
+							<section>
+								<h2 class="h3 mb-3">Expanding button when in view</h2>
+								<div class="row">
+									<div class="col-xl-6">
+										<div class="animated-expand-container">
+											<div class="cover bg-white"></div>
+											<a href="#" class="btn btn-primary px-5">
+												<span><i class="icon-bar"></i> Read More</span>
+											</a>
+										</div>
+										<div class="mt-3">
+											<p>
+												The button will expand to be shown when it is in the viewport.
+											</p>
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<pre><code class="language-html">&lt;div class=&quot;animated-expand-container&quot;&gt;
+										&lt;div class=&quot;cover bg-white&quot;&gt;&lt;/div&gt;
+										&lt;a href=&quot;#&quot; class=&quot;btn btn-primary px-5&quot;&gt;
+										&lt;span&gt;&lt;i class=&quot;icon-bar&quot;&gt;&lt;/i&gt; Read More&lt;/span&gt;
+										&lt;/a&gt;
+										&lt;/div&gt;</code></pre>
+									</div>
+								</div>
+							</section>
+							<!-- End section -->
 
-                            <!-- Section -->
-                            <section>
-                                <h2 class="h3 mb-3">Pop-in image</h2>
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <img src="https://i.imgur.com/woLN2aG.png" alt="Naofumi from the Rising of the Shield Hero" width="300" class="animated-pop-in">
-                                        <div class="mt-3">
-                                            <p>
-                                                The image will pop-in via scaling when it comes into the viewport.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <pre><code class="language-html">&lt;img src=&quot;SOURCE&quot; alt=&quot;ALT&quot; width=&quot;300&quot; class=&quot;animated-pop-in&quot;&gt;</code></pre>
-                                    </div>
-                                </div>
-                            </section>
-                            <!-- End section -->
+							<!-- Section -->
+							<section>
+								<h2 class="h3 mb-3">Pop-in image</h2>
+								<div class="row">
+									<div class="col-xl-6">
+										<img src="https://i.imgur.com/woLN2aG.png" alt="Naofumi from the Rising of the Shield Hero" width="300" class="animated-pop-in">
+										<div class="mt-3">
+											<p>
+												The image will pop-in via scaling when it comes into the viewport.
+											</p>
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<pre><code class="language-html">&lt;img src=&quot;SOURCE&quot; alt=&quot;ALT&quot; width=&quot;300&quot; class=&quot;animated-pop-in&quot;&gt;</code></pre>
+									</div>
+								</div>
+							</section>
+							<!-- End section -->
 
-                            <!-- Section -->
-                            <section>
-                                <h2 class="h3 mb-3">Fade-in image (left)</h2>
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <img src="https://i.imgur.com/woLN2aG.png" alt="Naofumi from the Rising of the Shield Hero" width="300" class="animated-fade-in-left">
-                                        <div class="mt-3">
-                                            <p>
-                                                The image will fade-in via translate and opacity when it comes into the viewport.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <pre><code class="language-html">&lt;img src=&quot;SOURCE&quot; alt=&quot;ALT&quot; width=&quot;300&quot; class=&quot;animated-fade-in-left&quot;&gt;</code></pre>
-                                    </div>
-                                </div>
-                            </section>
-                            <!-- End section -->
+							<!-- Section -->
+							<section>
+								<h2 class="h3 mb-3">Fade-in image (left)</h2>
+								<div class="row">
+									<div class="col-xl-6">
+										<img src="https://i.imgur.com/woLN2aG.png" alt="Naofumi from the Rising of the Shield Hero" width="300" class="animated-fade-in-left">
+										<div class="mt-3">
+											<p>
+												The image will fade-in via translate and opacity when it comes into the viewport.
+											</p>
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<pre><code class="language-html">&lt;img src=&quot;SOURCE&quot; alt=&quot;ALT&quot; width=&quot;300&quot; class=&quot;animated-fade-in-left&quot;&gt;</code></pre>
+									</div>
+								</div>
+							</section>
+							<!-- End section -->
 
-                            <!-- Section -->
-                            <section>
-                                <h2 class="h3 mb-3">Fade-in image (right)</h2>
-                                <div class="row">
-                                    <div class="col-xl-6">
-                                        <img src="https://i.imgur.com/woLN2aG.png" alt="Naofumi from the Rising of the Shield Hero" width="300" class="animated-fade-in-right">
-                                        <div class="mt-3">
-                                            <p>
-                                                The image will fade-in via translate and opacity when it comes into the viewport.
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="col-xl-6">
-                                        <pre><code class="language-html">&lt;img src=&quot;SOURCE&quot; alt=&quot;ALT&quot; width=&quot;300&quot; class=&quot;animated-fade-in-right&quot;&gt;</code></pre>
-                                    </div>
-                                </div>
-                            </section>
-                            <!-- End section -->
+							<!-- Section -->
+							<section>
+								<h2 class="h3 mb-3">Fade-in image (right)</h2>
+								<div class="row">
+									<div class="col-xl-6">
+										<img src="https://i.imgur.com/woLN2aG.png" alt="Naofumi from the Rising of the Shield Hero" width="300" class="animated-fade-in-right">
+										<div class="mt-3">
+											<p>
+												The image will fade-in via translate and opacity when it comes into the viewport.
+											</p>
+										</div>
+									</div>
+									<div class="col-xl-6">
+										<pre><code class="language-html">&lt;img src=&quot;SOURCE&quot; alt=&quot;ALT&quot; width=&quot;300&quot; class=&quot;animated-fade-in-right&quot;&gt;</code></pre>
+									</div>
+								</div>
+							</section>
+							<!-- End section -->
 
-                            <!-- Section -->
-                            <section>
-                                <h2 class="h3 mb-3">Banner with SVG clipping mask</h2>
-                                <div class="bg-image mb-3" style="height:500px; background-image:url(https://i.imgur.com/dv71Jyr.jpg);">
-                                    <div class="red-filter"></div>
-                                    <div class="banner-overlay-test d-flex align-items-center justify-content-center">
-                                        <h2 class="text-white">Shield Hero</h2>
-                                    </div>
-                                    <svg class="wave-overlay" viewBox="0 0 1980 200">
-                                        <path d="M 0 100 C 800 200 900 50 1980 100 L 1980 200 L 0 200"></path>
-                                    </svg>
-                                </div>
-                                <pre><code class="language-html">&lt;div class=&quot;bg-image&quot; style=&quot;height:500px; background-image:url(https://i.imgur.com/dv71Jyr.jpg);&quot;&gt;
-                                &lt;svg class=&quot;wave-overlay&quot; viewBox=&quot;0 0 1980 200&quot;&gt;
-                                &lt;path d=&quot;M 0 100 C 800 200 900 50 1980 100 L 1980 200 L 0 200&quot;&gt;&lt;/path&gt;
-                                &lt;/svg&gt;
-                                &lt;/div&gt;</code></pre>
-                            </section>
-                            <!-- End section -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+							<!-- Section -->
+							<section>
+								<h2 class="h3 mb-3">Banner with SVG clipping mask</h2>
+								<div class="bg-image mb-3" style="height:500px; background-image:url(https://i.imgur.com/dv71Jyr.jpg);">
+									<div class="red-filter"></div>
+									<div class="banner-overlay-test d-flex align-items-center justify-content-center">
+										<h2 class="text-white">Shield Hero</h2>
+									</div>
+									<svg class="wave-overlay" viewBox="0 0 1980 200">
+										<path d="M 0 100 C 800 200 900 50 1980 100 L 1980 200 L 0 200"></path>
+									</svg>
+								</div>
+								<pre><code class="language-html">&lt;div class=&quot;bg-image&quot; style=&quot;height:500px; background-image:url(https://i.imgur.com/dv71Jyr.jpg);&quot;&gt;
+								&lt;svg class=&quot;wave-overlay&quot; viewBox=&quot;0 0 1980 200&quot;&gt;
+								&lt;path d=&quot;M 0 100 C 800 200 900 50 1980 100 L 1980 200 L 0 200&quot;&gt;&lt;/path&gt;
+								&lt;/svg&gt;
+								&lt;/div&gt;</code></pre>
+							</section>
+							<!-- End section -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
 </body>
 </html>

@@ -1,4 +1,45 @@
 /* ******************************************************************************************** */
+/* SASS VARIABLES SETUP *********************************************************************** */
+
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url(../../fonts/Montserrat-Bold.otf);
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: url(../../fonts/Montserrat-Medium.otf);
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url(../../fonts/Roboto-Regular.ttf);
+	font-display: swap;
+}
+
+/******************************************************************************************** */
+
+$breaksmall: 576px;
+$breakmed:   768px;
+$breaklrg:   992px;
+$breakxl:    1200px;
+
+/* ******************************************************************************************** */
+
+$color-prime:  #3E606F;
+$color-second: #91AA9D;
+$color-third:  #D1DBBD;
+$color-alpha:  rgba($color-second, 0.50);
+
+/* ******************************************************************************************** */
+
+$font-prime:  Montserrat-Bold, sans-serif;
+$font-second: Montserrat-Medium, sans-serif;
+$font-third:  Roboto-Regular, sans-serif;
+
+/* ******************************************************************************************** */
+
+/* ******************************************************************************************** */
 /* CUSTOM SCSS FOR THIS PARTICULAR LAYOUT ***************************************************** */
 /* ******************************************************************************************** */
 
@@ -8,11 +49,12 @@
     z-index: 1;
 }
 #background-what-clients-are-saying {
-    background-image: url(../images/banner/background-what-clients-are-saying.jpg);
-    background-position: center center;
-    background-attachment: scroll;
-    background-size: cover;
-    min-height: 400px;
+	.bg-picture-container {
+		background-attachment: scroll;
+		background-position: center;
+		background-size: cover;
+		min-height:400px;
+	}
 }
 
 /* Jumping Icons Styling ********************************************************************** */

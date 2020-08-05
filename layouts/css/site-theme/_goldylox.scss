@@ -4,7 +4,8 @@
 
 @font-face {
     font-family: 'fontello';
-    src: url(../fontello/font/fontello.ttf);
+    src: url(../css/site-theme/fontello/font/fontello.ttf);
+	font-display: swap;
 }
 
 /* Defining Font Families ********************************************************************* */
@@ -56,6 +57,27 @@
         color: #FFFFFF !important;
     }
 }
+/***************** new webp image handeling in banner ****/
+// Define positions for object-position class
+$positions: "top","center","bottom","left","right";
+.bg-picture{
+	object-fit:cover;
+	height:100%;
+	width:100%;
+	position:absolute;
+}
+
+@each $position in $positions{
+	.bg-picture-#{$position} {
+		@extend .bg-picture;
+		object-position:#{$position};
+	}
+}
+
+.bg-picture-container{
+	position:relative;
+}
+
 
 /* Sidebar Background Styling ***************************************************************** */
 #sidebar {
@@ -145,55 +167,58 @@
 .icon-li {
     li {
         &::before {
-            font-family: "Font Awesome 5 Free";
-            content: fa-content($fa-var-twitter);
+            font-family: "fontello";
+            content: '\e813' ;
         }
     }
 }
 .checkmark-li {
     li {
         &::before {
-            font-family: "Font Awesome 5 Free";
-            content: fa-content($fa-var-check);
+             font-family: "fontello";
+            content: '\e819' ;
         }
     }
 }
 .dashed-li {
     li {
         &::before {
-            font-family: "Font Awesome 5 Free";
-            content: fa-content($fa-var-grip-lines);
+            font-family: "fontello";
+            content: '\e819' ;
         }
     }
 }
 
 /* Overlay Service Boxes Icons Styling */
 .user-icon, .envelope-icon, .twitter-icon, .search-icon {
-    @extend %fa-icon;
+ 
 }
 .user-icon {
-  @extend .fas;
+ 
   &:before {
-    content: fa-content($fa-var-user);
+	  font-family: "fontello";
+      content: '\e819' ;
   }
 }
 .envelope-icon {
-    @extend .fas;
+    
     &:before {
-        content: fa-content($fa-var-envelope);
+        font-family: "fontello";
+        content: '\e819' ;
     }
 }
 .twitter-icon {
-    @extend .fab;
-    &:before {
-        content: fa-content($fa-var-twitter);
-    }
+     &:before {
+	  font-family: "fontello";
+      content: '\e819' ;
+  }
 }
 .search-icon {
-    @extend .fas;
-    &:before {
-        content: fa-content($fa-var-search);
-    }
+  
+     &:before {
+	  font-family: "fontello";
+      content: '\e819' ;
+  }
 }
 
 /* H3 Request Form Link *********************************************************************** */

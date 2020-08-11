@@ -11,7 +11,7 @@ $enable-responsive-font-sizes: true;
 
 // Border classes width
 $theme-borders-width: 2px;
-
+@import "variables";
 @import "spacers-extended";
 @import "../Bootstrap/scss/bootstrap.scss";
 @import "breadcrumbs";
@@ -27,18 +27,17 @@ $theme-borders-width: 2px;
 @import "new-menu";
 @import "light-box";
 @import "fontello";
-@import 'variables';
-@import 'typography';
-@import 'defaults';
-@import 'navigation';
-@import 'footer';
-@import 'legacy';
-@import 'carousel';
-@import 'btns';
-@import 'overlay-box';
-@import 'goldylox';
-@import 'custom';
-@import 'endless-service-boxes';
+@import "typography";
+@import "defaults";
+@import "navigation";
+@import "footer";
+@import "legacy";
+@import "carousel";
+@import "btns";
+@import "overlay-box";
+@import "goldylox";
+@import "custom";
+@import "endless-service-boxes";
 
 
 

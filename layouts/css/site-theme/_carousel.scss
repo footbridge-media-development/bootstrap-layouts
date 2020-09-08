@@ -11,7 +11,10 @@
 		height: 600px;
 	}
 	@media screen and (max-width: $breakmed) {
-		height: 300px;
+		height: 500px;
+	}
+	@media screen and (max-width: $breaksmall) {
+		height: 400px;
 	}
 }
 .carousel-item {
@@ -20,7 +23,7 @@
 
 /* ******************************************************************************************** */
 
-/* secondary fly in text uncomment this and comment/delete above 
+/* secondary fly in text uncomment this and comment/delete above
 
 @keyframes bannjump {
 	from {

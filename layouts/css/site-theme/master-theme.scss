@@ -14,9 +14,8 @@ $enable-responsive-font-sizes: true;
 
 // Border classes width
 $theme-borders-width: 2px;
-
-@import 'custom';
-
+//@import 'custom';
+@import 'vars';
 @import 'spacers-extended';
 @import '../Bootstrap/scss/bootstrap.scss';
 @import 'fontello';

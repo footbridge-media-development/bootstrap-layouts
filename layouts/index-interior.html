@@ -1,0 +1,790 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="https://schema.org/<?= $companyInfo->getSchema(); ?>">
+
+<head>
+	<title>PROOF</title>
+	<meta name="description" property="og:description" content="" />
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta property="og:type" content="website" />
+	<meta itemprop="logo" content="<?= $baseUrl ?>/images/logo.png">
+	<meta content="<?= $tools->getOGTitle(); ?>" property="og:title">
+	<meta property="og:image" itemprop="image" content="<?= $tools->getOGImage(); ?>" >
+	<meta name="format-detection" content="telephone=no">
+	<!-- DEVELOPER NOTES - Remove NoIndex/NoFollow on Build -->
+	<meta name="robots" content="noindex, nofollow">
+	<link href="favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<link href="favicon.ico" rel="icon" type="image/x-icon">
+	<link rel="stylesheet" href="css/site-theme/master-theme.css"  type="text/css">
+	<link href="css/site-theme/custom.css" rel="stylesheet" type="text/css">
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script defer src="css/Bootstrap/js/bootstrap.bundle.min.js" type="text/javascript"></script>
+	<script defer src="js/navigation-manager-app.min.js" type="text/javascript"></script>
+	<script defer src="js/anime.min.js"></script>
+	<script defer src="js/inView.jquery.min.js"></script>
+	<script defer src="js/animation-engine.min.js"></script>
+	<!-- DEVELOPER NOTES - Remove Pop-Up Script on Build -->
+	<!-- <script defer src="js/proof-preview.js"></script> -->
+</head>
+
+<body>
+
+	<!-- START POPUP 
+	<div id="preview-only-notice" class="modal fade" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header bg-secondary">
+					<h5 class="modal-title f-prime upper text-white">
+						This is Only a Preview!
+					</h5>
+					<button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+						<span aria-hidden="true">
+							&times;
+						</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="mt-0 mb-0">
+						You are currently viewing a proof (design preview) of your website. Once
+						you have approved the layout and design, the rest of your website will be
+						built out following a similar theme.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+ END POPUP -->
+
+	<a class="skip-main" href="#content">Skip to main content</a>
+
+	<!-- START SMALL NAVIGATION -->
+	<div class="d-block d-xl-none container-fluid" id="small-navigation-container-1">
+		<div class="row align-items-center">
+			<div class="col text-left mx-auto pl-3 py-2">
+				<a href="#link">
+					<picture>
+						<!--<source type="image/webp" media="(min-width:600px)" srcset="images/logo.webp">
+						<source type="image/webp" media="(max-width:599px)"  srcset="images/logo-m.webp">-->
+						<img src="images/logo-m.png" alt="" width="150">
+					</picture>
+				</a>
+			</div>
+			<div class="col-7 text-right mx-auto pr-3 py-2">
+				<div>
+					<span class="f-prime text-dark upper mb-0 pb-0">
+						Call Us:<br><a href="tel:+1-xxx-xxx-xxxx" class="call-num">xxx-xxx-xxxx</a>
+					</span>
+				</div>
+				<a id="small-navigation-menu-opener-1">
+					<img alt="Hamburger Menu" src="images/menu_hamburger_dark.svg" width="36">
+				</a>
+			</div>
+		</div>
+		<div class="pullout-menu-backdrop position-fixed d-none flex-direction-column justify-content-end">
+			<div>
+				<div class="menu-heading">
+					<span>Menu</span>
+				</div>
+				<div class="navigation-links">
+					<div>
+						<a href="#link">Home</a>
+					</div>
+					<div>
+						<a href="#link">
+							About <span class="float-right"><i class="icon-plus"></i></span>
+						</a>
+						<div class="tap-dropdown">
+							<div>
+								<a href="#link">About</a>
+							</div>
+							<div>
+								<a href="#link">FAQ</a>
+							</div>
+							<div>
+								<a href="#link">Latest Articles</a>
+							</div>
+							<div>
+								<a href="#link">Service Area</a>
+							</div>
+						</div>
+					</div>
+					<div>
+						<a href="#link">
+							Services <span class="float-right"><i class="icon-plus"></i></span>
+						</a>
+						<div class="tap-dropdown">
+							<div>
+								<a href="#link">Services</a>
+							</div>
+							<div>
+								<a href="#link">Service 1</a>
+							</div>
+							<div>
+								<a href="#link">Service 2</a>
+							</div>
+							<div>
+								<a href="#link">Service 3</a>
+							</div>
+							<div>
+								<a href="#link">
+									Service 4 <span class="float-right"><i class="icon-plus"></i></span>
+								</a>
+								<div class="tap-dropdown">
+									<div>
+										<a href="#link">Service 4A</a>
+									</div>
+									<div>
+										<a href="#link">Service 4B</a>
+									</div>
+								</div>
+							</div>
+							<div>
+								<a href="#link">
+									Service 5 <span class="float-right"><i class="icon-plus"></i></span>
+								</a>
+								<div class="tap-dropdown">
+									<div>
+										<a href="#link">Service 5</a>
+									</div>
+									<div>
+										<a href="#link">Service 5A</a>
+									</div>
+									<div>
+										<a href="#link">Service 5B</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div>
+						<a href="#link">Reviews</a>
+					</div>
+					<div>
+						<a href="#link">Projects</a>
+					</div>
+					<div>
+						<a href="#link">Resources</a>
+					</div>
+					<div>
+						<a href="#link">Contact</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- END SMALL NAVIGATION -->
+
+	<!-- START LARGE NAVIGATION V2-M1 -->
+	<nav class="container-fluid" id="lg-nav-v2-1">
+		<section class="row bigger-wrap align-items-center mx-auto nav-lg">
+			<div class="col" id="nav-v2-1-logo-container">
+				<a href="#link">
+					<picture>
+						<!--<source type="image/webp" media="(min-width:600px)" srcset="images/logo.webp">
+						<source type="image/webp" media="(max-width:599px)"  srcset="images/logo-m.webp">-->
+						<img src="images/logo.png" alt="" width="150">
+					</picture>
+				</a>
+			</div>
+			<div class="col-8" id="nav-v2-1-contents">
+				<div class="row">
+					<div class="col-12 d-flex justify-content-end align-items-center mx-auto pr-4 py-2">
+						<div class="mr-3">
+							<span class="f-prime sml text-dark upper mb-0 pb-0">
+								Call Us Today at
+								<a href="tel:+1-xxx-xxx-xxxx" class="call-num">
+									xxx-xxx-xxxx
+								</a>
+							</span>
+						</div>
+						<div class="mr-0">
+							<a href="#link" class="btn btn-req-serv">
+								Request a Free Estimate
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="row" id="nav-v2-1-links">
+					<div class="col nav-v2-1-link">
+						<div class="nav-v2-1-load-line" role="presentation"></div>
+						<a href="#link">
+							<span>Home</span>
+						</a>
+					</div>
+					<div class="col nav-v2-1-link">
+						<div class="nav-v2-1-load-line" role="presentation"></div>
+						<a href="#link">
+							<span>About</span>
+							<span class="nav-v2-1-spin-chevron">
+								<i class="icon-plus-squared-alt"></i>
+							</span>
+						</a>
+						<div class="nav-v2-1-dropdown">
+							<div class="nav-v2-1-dropdown-1-link">
+								<div class="nav-v2-1-border-animator" role="presentation"></div>
+								<a href="#link">FAQ</a>
+							</div>
+							<div class="nav-v2-1-dropdown-1-link">
+								<div class="nav-v2-1-border-animator" role="presentation"></div>
+								<a href="#link">Latest Articles</a>
+							</div>
+							<div class="nav-v2-1-dropdown-1-link">
+								<div class="nav-v2-1-border-animator" role="presentation"></div>
+								<a href="#link">Service Area</a>
+							</div>
+						</div>
+					</div>
+					<div class="col nav-v2-1-link">
+						<div class="nav-v2-1-load-line" role="presentation"></div>
+						<a href="#link">
+							<span>Services</span>
+							<span class="nav-v2-1-spin-chevron">
+								<i class="icon-plus-squared-alt"></i>
+							</span>
+						</a>
+						<div class="nav-v2-1-dropdown">
+							<div class="nav-v2-1-dropdown-1-link">
+								<div class="nav-v2-1-border-animator" role="presentation"></div>
+								<a href="#link">Service 1</a>
+							</div>
+							<div class="nav-v2-1-dropdown-1-link">
+								<div class="nav-v2-1-border-animator" role="presentation"></div>
+								<a href="#link">Service 2</a>
+							</div>
+							<div class="nav-v2-1-dropdown-1-link">
+								<div class="nav-v2-1-border-animator" role="presentation"></div>
+								<a href="#link">Service 3</a>
+							</div>
+							<div class="nav-v2-1-dropdown-1-link">
+								<div class="nav-v2-1-border-animator" role="presentation"></div>
+								<a href="#link">Service 4 <span><i class="icon-plus-squared-alt"></i></span></a>
+								<div class="nav-v2-1-dropdown-2 left">
+									<div class="nav-v2-1-dropdown-2-link">
+										<div class="nav-v2-1-border-animator" role="presentation"></div>
+										<a href="#link">Service 4A</a>
+									</div>
+									<div class="nav-v2-1-dropdown-2-link">
+										<div class="nav-v2-1-border-animator" role="presentation"></div>
+										<a href="#link">Service 4B</a>
+									</div>
+								</div>
+							</div>
+							<div class="nav-v2-1-dropdown-1-link">
+								<div class="nav-v2-1-border-animator" role="presentation"></div>
+								<a href="#link">Service 5 <span><i class="icon-plus-squared-alt"></i></span></a>
+								<div class="nav-v2-1-dropdown-2 right">
+									<div class="nav-v2-1-dropdown-2-link">
+										<div class="nav-v2-1-border-animator" role="presentation"></div>
+										<a href="#link">Service 5A</a>
+									</div>
+									<div class="nav-v2-1-dropdown-2-link">
+										<div class="nav-v2-1-border-animator" role="presentation"></div>
+										<a href="#link">Service 5B</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col nav-v2-1-link">
+						<div class="nav-v2-1-load-line" role="presentation"></div>
+						<a href="#link">
+							<span>Reviews</span>
+						</a>
+					</div>
+					<div class="col nav-v2-1-link">
+						<div class="nav-v2-1-load-line" role="presentation"></div>
+						<a href="#link">
+							<span>Projects</span>
+						</a>
+					</div>
+					<div class="col nav-v2-1-link">
+						<div class="nav-v2-1-load-line" role="presentation"></div>
+						<a href="#link">
+							<span>Resources</span>
+						</a>
+					</div>
+					<div class="col nav-v2-1-link">
+						<div class="nav-v2-1-load-line" role="presentation"></div>
+						<a href="#link">
+							<span>Contact</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</nav>
+	<!-- END LARGE NAVIGATION V2-M1 -->
+	<!-- START CONTENT -->
+	<div class="container-fluid">
+		<!-- START ABOUT US -->
+		<div class="row bg-white">
+			<div class="col-xl-4 col-lg-3 col-12 mx-auto p-5" id="bg-sidebar">
+				<h2>
+					Request Estimate
+				</h2>
+			</div>
+			<div class="col-xl-8 col-lg-9 col-12 align-self-center mx-auto p-5">
+				<div class="p-0 p-lg-5">
+					<nav aria-label="breadcrumb" class="w-100">
+						<ol class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
+							<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<a href="#" itemprop="item"><span itemprop="name">Home</span></a>
+								<meta itemprop="position" content="1">
+							</li>
+							<li class="breadcrumb-item" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+								<a href="#" itemprop="item"><span itemprop="name">Library</span></a>
+								<meta itemprop="position" content="2">
+							</li>
+							<li class="breadcrumb-item active" aria-current="page">
+								<a href="#" itemprop="item"><span itemprop="name">Data</span></a>
+								<meta itemprop="position" content="3">
+							</li>
+						</ol>
+					</nav>
+					<h1>
+						Primary Header Here
+					</h1>
+					<p class="mx-0 my-3">
+						<strong>Your Company</strong>'s new web site will look like this. At this stage
+						of the web site creation and build process, we are only concerned with the visual
+						aesthetics of your page - the look and feel of your new website.
+					</p>
+					<p class="mx-0 my-3">
+						Our graphic designers have prepared this unique layout - based on any previous
+						marketing materials you may have provided and the style of site you indicated. This
+						written content will be replaced once you approve the look and feel of your design.
+					</p>
+					<div class="row mx-auto px-2 py-0">
+						<div class="col-lg-3 col-sm-6 col-12 mx-auto p-0">
+							<ul class="checkmark-li thirds mb-0 pb-0">
+								<li>
+									<a href="#link" class="text-dark">Service Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">Service Item</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12 mx-auto p-0">
+							<ul class="dashed-li thirds mb-0 pb-0">
+								<li>
+									<a href="#link" class="text-dark">Service Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">Service Item</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12 mx-auto p-0">
+							<ul class="squared-li thirds mb-0 pb-0">
+								<li>
+									<a href="#link" class="text-dark">Service Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">Service Item</a>
+								</li>
+							</ul>
+						</div>
+						<div class="col-lg-3 col-sm-6 col-12 mx-auto p-0">
+							<ul class="icon-li thirds mb-0 pb-0">
+								<li>
+									<a href="#link" class="text-dark">Service Item</a>
+								</li>
+								<li>
+									<a href="#link" class="text-dark">Service Item</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mt-3 mb-0">
+						<a href="#link" class="btn btn-more">
+							Learn More About Us
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END ABOUT US -->
+		<!---mobile cta --->
+		<div class="row secondary-bg-color py-5 d-flex d-md-none">
+			<div class="col-12 col-md-10 col-lg-8 text-center mx-auto py-4">
+				<p class="h2 f-prime">Need Help?<br>Give Us A Call</p>
+				<p>
+					<a href="#" class="btn btn-cta h2 f-prime">
+						<i class="icon-phone h2"></i> xxx-xxx-xxxx
+					</a>
+				</p>
+			</div>
+		</div>
+		<!---end mobile cta--->
+		<!-- START 4 OVERLAY BOXES -->
+		<div class="row secondary-bg-color">
+			<div class="col-lg-3 col-sm-6 col-12 mx-auto p-0">
+				<h2 class="overlay-title sml p-2">
+					<span class="checkmark-icon"></span> Service Name
+				</h2>
+				<div class="overlay-container">
+					<picture class="overlay-bg-image">
+						<!--<source type="image/webp" media="(min-width:600px)" srcset="images/services/service-1.webp">
+						<source type="image/webp" media="(max-width:599px)"  srcset="images/services/service-1-m.webp">-->
+						<img src="images/services/service-1.jpg" alt="">
+					</picture>
+					<div class="overlay from-left">
+						<div class="overlay-text">
+							<span>Learn More</span>
+							<a href="#link"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12 mx-auto p-0">
+				<h2 class="overlay-title sml p-2">
+					<span class="checkmark-icon"></span> Service Name
+				</h2>
+				<div class="overlay-container">
+					<picture class="overlay-bg-image">
+						<!--<source type="image/webp" media="(min-width:600px)" srcset="images/services/service-1.webp">
+						<source type="image/webp" media="(max-width:599px)"  srcset="images/services/service-1-m.webp">-->
+						<img src="images/services/service-1.jpg" alt="">
+					</picture>
+					<div class="overlay from-top">
+						<div class="overlay-text">
+							<span>Learn More</span>
+							<a href="#link"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12 mx-auto p-0">
+				<h2 class="overlay-title sml p-2">
+					<span class="checkmark-icon"></span> Service Name
+				</h2>
+				<div class="overlay-container">
+					<picture class="overlay-bg-image">
+						<!--<source type="image/webp" media="(min-width:600px)" srcset="images/services/service-1.webp">
+						<source type="image/webp" media="(max-width:599px)"  srcset="images/services/service-1-m.webp">-->
+						<img src="images/services/service-1.jpg" alt="">
+					</picture>
+					<div class="overlay from-bottom">
+						<div class="overlay-text">
+							<span>Learn More</span>
+							<a href="#link"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-lg-3 col-sm-6 col-12 mx-auto p-0">
+				<h2 class="overlay-title sml p-2">
+					<span class="checkmark-icon"></span> Service Name
+				</h2>
+				<div class="overlay-container">
+					<picture class="overlay-bg-image">
+						<!--<source type="image/webp" media="(min-width:600px)" srcset="images/services/service-1.webp">
+						<source type="image/webp" media="(max-width:599px)"  srcset="images/services/service-1-m.webp">-->
+						<img src="images/services/service-1.jpg" alt="">
+					</picture>
+					<div class="overlay from-right">
+						<div class="overlay-text">
+							<span>Learn More</span>
+							<a href="#link"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END 4 OVERLAY BOXES -->
+
+		<!-- START ACCORDION -->
+		<div class="row bg-white">
+			<div class="col-xl-8 col-lg-10 col-12 mx-auto p-5">
+				<div class="p-0 p-lg-5">
+					<h2>
+						Our Latest Articles
+					</h2>
+					<div id="accordion">
+						<div class="card">
+							<div class="card-header" id="headingOne">
+								<h5 class="mb-0">
+									<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+										Collapsible-Group-Item-1
+									</button>
+								</h5>
+							</div>
+							<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="card-body text-dark">
+									Our graphic designers have prepared this unique layout - based on any previous marketing
+									materials you may have provided and the style of site you indicated. This written
+									content will be replaced once you approve the look and feel of your design.
+								</div>
+							</div>
+						</div>
+						<div class="card">
+							<div class="card-header" id="headingTwo">
+								<h5 class="mb-0">
+									<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										Collapsible-Group-Item-2
+									</button>
+								</h5>
+							</div>
+							<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="card-body text-dark">
+									Our graphic designers have prepared this unique layout - based on any previous marketing
+									materials you may have provided and the style of site you indicated. This written
+									content will be replaced once you approve the look and feel of your design.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- END ACCORDION -->
+		<!-- START LATEST ARTICLES -->
+		<div class="row bg-light p-0">
+			<div class="col-xl-7 col-lg-8 col-md-10 col-sm-12 col-12 animated-fade-in-left mx-auto p-5">
+				<div class="p-0 p-lg-5">
+					<h2 class="f-prime med seconds">
+						OUR LATEST ARTICLES
+					</h2>
+					<ul class="mb-0 pb-0 timeline">
+						<li>
+							<a href="#link" class="timeline-title">
+								Article Name
+							</a>
+							<p class="mx-0 my-2">
+								In this final section, we'll review the reasons why site visitors should use your services. Our
+								skilled writing staff will hit main key points about your unique services and what sets you
+								apart from the competition.
+							</p>
+						</li>
+						<li>
+							<a href="#link" class="timeline-title">
+								Article Name
+							</a>
+							<p class="mx-0 my-2">
+								In this final section, we'll review the reasons why site visitors should use your services. Our
+								skilled writing staff will hit main key points about your unique services and what sets you
+								apart from the competition.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- END LATEST ARTICLES -->
+
+		<!-- START GALLERY IMAGE LINKS -->
+		<div class="row prime-bg-color p-0">
+			<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 bordered-gallery-boxes mx-auto p-0">
+				<picture>
+					<!--<source type="image/webp" media="(min-width:600px)" srcset="images/gallery/gallery-1.webp">
+					<source type="image/webp" media="(max-width:599px)"  srcset="images/gallery/gallery-1-m.webp">-->
+					<img src="images/gallery/gallery-1.jpg" alt="">
+				</picture>
+				<div class="gallery-box-border"></div>
+				<div class="gallery-box-link text-right">
+					<a href="#link"><i class="icon-search"></i></a>
+				</div>
+			</div>
+			<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 bordered-gallery-boxes mx-auto p-0">
+				<picture>
+					<!--<source type="image/webp" media="(min-width:600px)" srcset="images/gallery/gallery-2.webp">
+					<source type="image/webp" media="(max-width:599px)"  srcset="images/gallery/gallery-2-m.webp">-->
+					<img src="images/gallery/gallery-2.jpg" alt="">
+				</picture>
+				<div class="gallery-box-border"></div>
+				<div class="gallery-box-link text-right">
+					<a href="#link"><i class="icon-search"></i></a>
+				</div>
+			</div>
+			<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 bordered-gallery-boxes mx-auto p-0">
+				<picture>
+					<!--<source type="image/webp" media="(min-width:600px)" srcset="images/gallery/gallery-3.webp">
+					<source type="image/webp" media="(max-width:599px)"  srcset="images/gallery/gallery-3-m.webp">-->
+					<img src="images/gallery/gallery-3.jpg" alt="">
+				</picture>
+				<div class="gallery-box-border"></div>
+				<div class="gallery-box-link text-right">
+					<a href="#link"><i class="icon-search"></i></a>
+				</div>
+			</div>
+			<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 bordered-gallery-boxes mx-auto p-0">
+				<picture>
+					<!--<source type="image/webp" media="(min-width:600px)" srcset="images/gallery/gallery-4.webp">
+					<source type="image/webp" media="(max-width:599px)"  srcset="images/gallery/gallery-4-m.webp">-->
+					<img src="images/gallery/gallery-4.jpg" alt="">
+				</picture>
+				<div class="gallery-box-border"></div>
+				<div class="gallery-box-link text-right">
+					<a href="#link"><i class="icon-search"></i></a>
+				</div>
+			</div>
+			<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 bordered-gallery-boxes mx-auto p-0">
+				<picture>
+					<!--<source type="image/webp" media="(min-width:600px)" srcset="images/gallery/gallery-5.webp">
+					<source type="image/webp" media="(max-width:599px)"  srcset="images/gallery/gallery-5-m.webp">-->
+					<img src="images/gallery/gallery-5.jpg" alt="">
+				</picture>
+				<div class="gallery-box-border"></div>
+				<div class="gallery-box-link text-right">
+					<a href="#link"><i class="icon-search"></i></a>
+				</div>
+			</div>
+			<div class="col-xl-2 col-lg-4 col-md-4 col-sm-6 col-6 bordered-gallery-boxes mx-auto p-0">
+				<picture>
+					<!--<source type="image/webp" media="(min-width:600px)" srcset="images/gallery/gallery-6.webp">
+					<source type="image/webp" media="(max-width:599px)"  srcset="images/gallery/gallery-6-m.webp">-->
+					<img src="images/gallery/gallery-6.jpg" alt="">
+				</picture>
+				<div class="gallery-box-border"></div>
+				<div class="gallery-box-link text-right">
+					<a href="#link"><i class="icon-search"></i></a>
+				</div>
+			</div>
+		</div>
+		<!-- END GALLERY IMAGE LINKS -->
+
+		<!-- START CLIENT REVIEWS -->
+		<div class="row" id="bg-reviews">
+			<div class="bg-picture-container col-12 p-0">
+				<picture>
+					<!--<source type="image/webp" media="(min-width:600px)" srcset="images/banner/bg-texture.webp" class="bg-picture">
+					<source type="image/webp" media="(max-width:599px)" srcset="images/banner/bg-texture-m.webp" class="bg-picture">-->
+					<img src="images/banner/bg-texture.jpg" alt="" class="bg-picture">
+				</picture>
+				<div class="row h-100 align-items-center mx-auto">
+					<div class="col-xl-8 col-lg-10 col-12 align-self-center text-center mx-auto p-5">
+						<div class="p-0 p-lg-5">
+							<h2 class="white upper mb-3 pb-0">
+								What Our Clients Are Saying
+							</h2>
+							<div class="carousel slide" data-ride="carousel" id="testimonials">
+								<div class="carousel-inner" role="listbox">
+									<div class="carousel-item active">
+										<p class="testimonial text-light mb-0 p-0">
+											<i class="fas fa-quote-left"></i>
+												Reviews coming soon! [...]
+											<i class="fas fa-quote-right"></i>
+										</p>
+									</div>
+									<div class="carousel-item">
+										<p class="testimonial text-light mb-0 p-0">
+											<i class="fas fa-quote-left"></i>
+												Reviews coming soon! [...]
+											<i class="fas fa-quote-right"></i>
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="mt-3 mb-0">
+								<a href="#link" class="btn btn-reviews">Read More Reviews</a>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+		</div>
+		<!-- END CLIENT REVIEWS -->
+
+		<!-- START H3 -->
+		<div class="row bg-light">
+			<div class="col-xl-8 col-lg-10 col-12 mx-auto p-5">
+				<div class="p-0 p-lg-5">
+					<h2>
+						Contact Us Today
+					</h2>
+					<h3 class="f-third sml text-secondary mb-0 pb-0">
+						If you are looking for a company-type in the service-area area, please call us today at
+						<a href="tel:+1-xxx-xxx-xxxx" class="req-num">xxx-xxx-xxxx</a>,
+						or complete our <a href="#link" class="req-form">online request form</a>.
+					</h3>
+				</div>
+			</div>
+		</div>
+		<!-- END H3 -->
+
+	</div>
+	<!-- END CONTENT -->
+
+	<!-- START FOOTER -->
+	<footer class="fb-ftr-1">
+		<div class="container-fluid mx-auto">
+			<div class="row big-wrap mx-auto p-3 p-md-5">
+				<div class="col-lg-3 col-sm-6 col-12 align-self-center text-center mx-auto p-3">
+					<a href="#link">
+						<picture>
+							<!--<source type="image/webp" media="(min-width:600px)" srcset="images/logo.webp">
+							<source type="image/webp" media="(max-width:599px)"  srcset="images/logo-m.webp">-->
+							<img src="images/logo.png" alt="" width="150">
+						</picture>
+					</a>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-12 text-center text-md-left mx-auto p-3">
+					<h4>Contact</h4>
+					<div class="contact">
+						<p itemprop="legalName">
+							Company Name
+						</p>
+						<div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+							<p itemprop="streetAddress">
+								Street Address
+							</p>
+							<p>
+								<span itemprop="addressLocality">City</span>,
+								<span itemprop="addressRegion">ST</span>
+								<span itemprop="postalCode">ZIP</span>
+							</p>
+						</div>
+						<p class="mt-3 mb-0">
+							Phone: <a href="tel:xxx-xxx-xxxx" itemprop="telephone" content="xxx-xxx-xxxx">xxx-xxx-xxxx</a>
+						</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-12 text-center text-md-left mx-auto p-3">
+					<h4>Quick Links</h4>
+					<div class="quick-links">
+						<a href="#link/">Google Places</a>
+						<a href="#link/">Articles</a>
+						<a href="#link/">Privacy Policy</a>
+						<a href="#link/">Terms of Use</a>
+						<a href="#link/">Sitemap</a>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-6 col-12 text-center text-md-left mx-auto p-3">
+					<h4>Service Areas</h4>
+					<div class="service-areas">
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+						<a href="#link">City, ST</a>
+					</div>
+					<div class="mt-3 text-right">
+						<a href="#link">View All</a>
+					</div>
+				</div>
+			</div>
+			<div class="row p-0" style="background-color: rgba(0, 0, 0, 0.1);">
+				<div class="col-12 big-wrap text-center text-md-left mx-auto p-3">
+					<p class="mb-0">
+						&copy;
+						<script>
+							document.write(new Date().getFullYear());
+						</script>
+						<!-- Uncomment the PHP code in builds and remove the above document.write code -->
+						<!-- <?= date("Y"); ?> -->
+						<span itemprop="name"><a itemprop="url" href="#">Company Name</a></span>, Rights Reserved
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<!-- END FOOTER -->
+
+</body>
+</html>

@@ -1,6 +1,9 @@
-// Define theme colors
+/* Defining Theme Colors - these must match the custom.scss colors during design phase ********* */
+
 $theme-colors: (
-	"primary":#3d88c8,
+	"primary":   #161925,
+	"secondary": #23395B,
+	"tertiary":  #406E8E
 );
 
 // Enable rounded?
@@ -11,17 +14,33 @@ $enable-responsive-font-sizes: true;
 
 // Border classes width
 $theme-borders-width: 2px;
+//@import 'custom';
+@import 'vars';
+@import 'spacers-extended';
+@import '../Bootstrap/scss/bootstrap.scss';
+@import 'fontello';
+@import "./font-aw/scss/fontawesome.scss";
+@import "./font-aw/scss/solid.scss";
+@import "./font-aw/scss/brands.scss";
+@import 'breadcrumbs';
+@import 'lists';
+@import 'borders';
+@import 'images';
+@import 'gallery';
+@import 'animation-engine-views';
+@import 'grid';
+@import 'width';
+@import 'text';
 
-@import "spacers-extended";
-@import "../Bootstrap/scss/bootstrap.scss";
-@import "breadcrumbs";
-@import "lists";
-@import "borders";
-@import "images";
-@import "gallery";
-@import "animation-engine-views";
-@import "grid";
-@import "width";
-@import "text";
-@import "navs-v2-m1";
-@import "exploding-button";
+@import 'defaults';
+@import 'light-box';
+@import 'legacy';
+
+@import 'navigation-large';
+@import 'navigation-small';
+
+@import 'btns';
+@import 'carousel';
+@import 'services';
+
+@import 'footer';

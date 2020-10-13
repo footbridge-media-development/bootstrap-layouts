@@ -1,0 +1,111 @@
+/* ********************************************************************************************* */
+/* SASS VARIABLES SETUP ************************************************************************ */
+
+@font-face {
+	font-family: 'Futura-Bold';
+	src: url(../../fonts/Futura-Bold.otf);
+	font-display: swap;
+}
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url(../../fonts/OpenSans-Regular.ttf);
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url(../../fonts/Roboto-Regular.ttf);
+	font-display: swap;
+}
+
+/*********************************************************************************************** */
+
+$breaksmall: 576px;
+$breakmed:   768px;
+$breaklrg:   992px;
+$breakxl:    1200px;
+
+/* ********************************************************************************************* */
+
+/* Always Make Sure to Repeat These in the Top of Master-Theme.scss file *********************** */
+$color-prime:  #161925;
+$color-second: #23395B;
+$color-third:  #406E8E;
+$color-alpha:  rgba($color-second, 0.50);
+
+/* ******************************************************************************************** */
+
+$font-prime:  Futura-Bold, sans-serif;
+$font-second: OpenSans-Regular, sans-serif;
+$font-third:  Roboto-Regular, sans-serif;
+
+/* ********************************************************************************************* */
+
+/* ********************************************************************************************* */
+/* CUSTOM SCSS FOR THIS PARTICULAR LAYOUT ****************************************************** */
+/* ********************************************************************************************* */
+
+/* Top Navigation Phone Number ***************************************************************** */
+.call-num, .req-serv {
+	color: $color-second !important;
+    transition: all 0.5s ease;
+	&:hover {
+		color: $color-third !important;
+	}
+}
+
+/* H3 Request Form Link ************************************************************************ */
+.req-num, .req-form {
+	color: $color-third !important;
+    transition: all 0.5s ease;
+	&:hover {
+		color: $color-second !important;
+	}
+}
+
+/* Background Color for Contact Form Sidebar *************************************************** */
+#bg-sidebar {
+	background-color: rgba($color-second, 0.65);
+	box-sizing: border-box;
+}
+
+/* Background Image Initial Set Up ************************************************************* */
+#bg-reviews {
+	.bg-picture-container {
+		background-attachment: scroll;
+		background-position: center;
+		background-size: cover;
+		min-height: 500px;
+		@media screen and (max-width: $breaklrg) {
+			min-height: 400px;
+		}
+		@media screen and (max-width: $breakmed) {
+			min-height: 300px;
+		}
+	}
+}
+
+/* Overlay Service Boxes Headers *************************************************************** */
+.overlay-title {
+	font-family: $font-prime;
+	font-weight: normal;
+	font-size: inherit;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	box-sizing: border-box;
+	margin-bottom: 0;
+	color: #FFFFFF;
+}
+
+.bgcover {
+    background-attachment: fixed !important;
+    background-size: cover !important;
+    p {
+        color: #FFFFFF !important;
+    }
+    @media screen and (max-width: $breaklrg) {
+        background-attachment: scroll !important;
+    }
+}
+
+/* ********************************************************************************************* */

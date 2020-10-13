@@ -5121,6 +5121,31 @@ footer.fb-ftr-1 a {
   .prime-bg-color p, .secondary-bg-color p, .third-bg-color p {
     color: #FFFFFF !important; }
 
+/***************** new webp image handeling in banner ****/
+.bg-picture, .bg-picture-top, .bg-picture-center, .bg-picture-bottom, .bg-picture-left, .bg-picture-right {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute; }
+
+.bg-picture-top {
+  object-position: top; }
+
+.bg-picture-center {
+  object-position: center; }
+
+.bg-picture-bottom {
+  object-position: bottom; }
+
+.bg-picture-left {
+  object-position: left; }
+
+.bg-picture-right {
+  object-position: right; }
+
+.bg-picture-container {
+  position: relative; }
+
 /* Sidebar Background Styling ***************************************************************** */
 #sidebar {
   background-color: rgba(209, 219, 189, 0.5);
@@ -5313,10 +5338,9 @@ footer.fb-ftr-1 a {
   position: relative;
   z-index: 1; }
 
-#background-what-clients-are-saying {
-  background-image: url(../images/banner/background-what-clients-are-saying.jpg);
-  background-position: center center;
+#background-what-clients-are-saying .bg-picture-container {
   background-attachment: scroll;
+  background-position: center;
   background-size: cover;
   min-height: 400px; }
 

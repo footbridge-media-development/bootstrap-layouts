@@ -4,7 +4,7 @@
 	list-style:none;
 	& li::before{
 		display:inline-block;
-		font-family:"fontello";
+		font-family:"Font Awesome 5 Free";
 		color:white;
 		font-size:90%;
 		padding:map-get($spacers, 1);
@@ -27,7 +27,7 @@
 	list-style: none;
 	padding-inline-start: .5rem;
 	& li::before{
-		font-family: "fontello";
+		font-family: "Font Awesome 5 Free";
 		color: $themeColor;
 		font-size: 100%;
 		padding: 0.2rem;

@@ -110,11 +110,6 @@ $positions: "top", "center", "bottom", "left", "right";
 /* ********************************************************************************************* */
 
 @font-face {
-    font-family: 'fontello';
-    src: url(../css/site-theme/fontello/font/fontello.ttf);
-	font-display: swap;
-}
-@font-face {
     font-family: 'FontAwesome-Brands';
     src: url(../css/site-theme/font-aw/webfonts/fa-brands-400.ttf);
 	font-display: swap;
@@ -192,7 +187,7 @@ $positions: "top", "center", "bottom", "left", "right";
     }
 }
 
-/* Fontello Icon List Styling ****************************************************************** */
+/* Font Awesome Icon List Styling ****************************************************************** */
 
 .checkmark-li, .dashed-li, .squared-li, .icon-li, .icon-no, .test-li {
     font-family: $font-third;
@@ -214,32 +209,32 @@ $positions: "top", "center", "bottom", "left", "right";
 .checkmark-li {
     li {
         &::before {
-            font-family: "fontello";
-            content: '\e80f';
+            font-family: "Font Awesome 5 Free";
+            content: '\f00c';
         }
     }
 }
 .dashed-li {
     li {
         &::before {
-            font-family: "fontello";
-            content: '\e830';
+            font-family: "Font Awesome 5 Free";
+            content: '\f773';
         }
     }
 }
 .squared-li {
     li {
         &::before {
-            font-family: "fontello";
-            content: '\f196';
+            font-family: "Font Awesome 5 Free";
+            content: '\f0fe';
         }
     }
 }
 .icon-li {
     li {
         &::before {
-            font-family: "fontello";
-            content: '\e80a';
+            font-family: "Font Awesome 5 Free";
+            content: '\f005';
         }
     }
 }
@@ -254,8 +249,8 @@ $positions: "top", "center", "bottom", "left", "right";
 
 /* Icons for Overlay Title ********************************************************************* */
 .checkmark-icon {
-    font-family: "fontello";
-    content: '\e80f';
+    font-family: "Font Awesome 5 Free";
+    content: '\f00c';
 }
 
 /* Right Border on Columns ********************************************************************* */

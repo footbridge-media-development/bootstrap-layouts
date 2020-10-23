@@ -1,0 +1,14 @@
+#bg-reviews {
+	.bg-picture-container {
+		background-attachment: scroll;
+		background-position: center;
+		background-size: cover;
+		min-height: 500px;
+		@media screen and (max-width: $breaklrg) {
+			min-height: 400px;
+		}
+		@media screen and (max-width: $breakmed) {
+			min-height: 300px;
+		}
+	}
+}

@@ -17,7 +17,7 @@ ul.timeline {
         margin: 20px 0;
         &::before {
             background-color: #FFFFFF;
-            border: 2px solid $color-third;
+            border: 2px solid map-get($theme-colors, "tertiary");
             border-radius: 50%;
             display: inline-block;
             position: absolute;
@@ -36,9 +36,9 @@ ul.timeline {
     text-transform: none;
     text-decoration: none;
     text-align: left;
-    color: $color-second;
+    color: map-get($theme-colors, "secondary");
     transition: all 0.5s ease;
     &:hover {
-        color: $color-third;
+        color: map-get($theme-colors, "tertiary");
     }
 }

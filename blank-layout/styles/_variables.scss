@@ -13,6 +13,10 @@ $enable-responsive-font-sizes: true;
 // Border classes width
 $theme-borders-width: 2px;
 
+//Path to FontAwesome
+$fa-font-path: "../styles/dependencies/font-aw/webfonts";
+$fa-font-display: swap;
+
 @font-face {
 	font-family: 'Futura-Bold';
 	src: url(../fonts/Futura-Bold.otf);

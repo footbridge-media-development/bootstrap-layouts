@@ -17,7 +17,7 @@
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-	background-color: darken($color-prime, 5%);
+	background-color: darken(map-get($theme-colors, "primary"), 5%);
 	overflow: auto;
 	z-index: 11;
 	width: 50%;
@@ -32,7 +32,7 @@
 	text-decoration: none;
 	text-align: left;
 	padding: 0.75rem 1.25rem;
-	color: $color-third;
+	color: map-get($theme-colors, "tertiary");
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > a {
 	display: block;
@@ -46,8 +46,8 @@
 	color: #FFFFFF;
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div a:hover {
-	// background-color: $color-prime;
-	color: $color-second;
+	// background-color: map-get($theme-colors, "primary");
+	color: map-get($theme-colors, "secondary");
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > div a {
 	display: block;

@@ -41,7 +41,7 @@
             height: auto;
             text-align: center;
             .btn-service {
-                background-color: $color-prime;
+                background-color: map-get($theme-colors, "primary");
                 font-family: $font-second;
                 font-weight: normal;
                 font-size: 0.9rem;
@@ -50,7 +50,7 @@
                 color: #FFFFFF;
                 transition: all 0.5s ease;
                 &:hover {
-                    background-color: $color-second;
+                    background-color: map-get($theme-colors, "secondary");
                     color: #FFFFFF !important;
                 }
             }

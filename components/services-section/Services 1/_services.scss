@@ -21,7 +21,7 @@
         overflow: hidden;
     }
     .overlay {
-        background-color: $color-alpha;
+        background-color: rgba(map-get($theme-colors, "secondary"), 0.50);;
         transition: all 0.5s ease;
         position: absolute;
         &.from-left {

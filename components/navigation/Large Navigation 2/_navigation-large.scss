@@ -12,7 +12,7 @@
 #large-navigation-container-2 > div:first-child {
 }
 #large-navigation-container-2 > div:last-child {
-    // background-color: $color-third;
+    // background-color: map-get($theme-colors, "tertiary");
 }
 #large-navigation-container-2 .navigation-links > div > div {
     display: inline-block;
@@ -27,14 +27,14 @@
     font-size: 0.9rem;
     text-transform: uppercase;
     text-align: center;
-    color: $color-second;
+    color: map-get($theme-colors, "secondary");
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
 }
 #large-navigation-container-2 .navigation-links > div > div:hover {
-    background-color: rgba($color-prime, 0.5);
+    background-color: rgba(map-get($theme-colors, "primary"), 0.5);
 }
 #large-navigation-container-2 .navigation-links > div > div:hover > a {
     transition: color 150ms;
@@ -63,7 +63,7 @@
 	position: relative;
 }
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div {
-	background-color: $color-prime;
+	background-color: map-get($theme-colors, "primary");
 	text-align: left;
 }
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div a {
@@ -80,7 +80,7 @@
 	color: #FFFFFF;
 }
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div:hover {
-    background-color: darken($color-second, 15%);
+    background-color: darken(map-get($theme-colors, "secondary"), 15%);
     transition: background-color 150ms;
 }
 #large-navigation-container-2 .navigation-links > div > div .dropdown > div > a:hover {

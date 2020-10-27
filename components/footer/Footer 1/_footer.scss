@@ -3,7 +3,7 @@
 /* ******************************************************************************************** */
 
 footer.fb-ftr-1 {
-    background-color: darken($color-prime, 3%);
+    background-color: darken(map-get($theme-colors, "primary"), 3%);
     font-family: $font-third;
     font-weight: normal;
     font-size: 0.9rem;
@@ -12,7 +12,7 @@ footer.fb-ftr-1 {
 footer.fb-ftr-1 h4 {
     font-family: $font-prime;
     font-weight: normal;
-    color: $color-third;
+    color: map-get($theme-colors, "tertiary");
 }
 footer.fb-ftr-1 a {
     font-family: $font-third;
@@ -21,7 +21,7 @@ footer.fb-ftr-1 a {
     color: #FFFFFF;
     transition: all 0.5s ease;
     &:hover {
-        color: $color-second;
+        color: map-get($theme-colors, "secondary");
     }
 }
 .fb-ftr-1 .quick-links a {

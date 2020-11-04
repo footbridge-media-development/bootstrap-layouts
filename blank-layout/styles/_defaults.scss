@@ -40,16 +40,6 @@ a.skip-main {
 img, iframe, video {
     max-width: 100%;
 }
-// Start - We should replace this with an extension of bootstrap's container
-.wrap {
-    max-width: 1200px;
-}
-.big-wrap {
-    max-width: 1400px;
-}
-.bigger-wrap {
-    max-width: 1600px;
-}
 // End - We should replace this with an extension of bootstrap's container
 h1, h2, h4, h5 {
 	font-family: $font-prime;
@@ -57,36 +47,6 @@ h1, h2, h4, h5 {
 p, ul, ul li, ul li a, ol, ol li, ol li a {
 	font-family: $font-third;
 	font-size: 0.9rem;
-}
-.large {
-    font-size: 3rem !important;
-    @include media-breakpoint-down(lg) {
-        font-size: 2.75rem !important; /* originally 2.5rem */
-    }
-	@include media-breakpoint-down(md) {
-        font-size: 1.75rem !important;
-    }
-	@include media-breakpoint-down(sm) {
-        font-size: 1.5rem !important; /* originally 1.3rem */
-    }
-}
-.med {
-    font-size: 2.5rem !important; /* originally 3rem */
-	@include media-breakpoint-down(md) {
-        font-size: 1.4rem !important; /* originally 1.35rem */
-    }
-	@include media-breakpoint-down(sm) {
-        font-size: 1.25rem !important; /* originally 1.1rem */
-    }
-}
-.sml {
-	font-size: 1.5rem !important;
-	@include media-breakpoint-down(md) {
-		font-size: 1.25rem !important; /* originally 1rem */
-	}
-	@include media-breakpoint-down(sm) {
-		font-size: 1.0rem !important; /* originally 0.8rem */
-	}
 }
 .f-prime {
     font-family: $font-prime !important;

@@ -1,0 +1,24 @@
+// Styles needed to import before Bootstrap
+@import "variables";
+@import "utilities/spacers-extended";
+
+// Dependencies
+@import "dependencies/bootstrap/scss/bootstrap";
+@import "dependencies/font-aw/scss/fontawesome";
+@import "dependencies/font-aw/scss/solid";
+@import "dependencies/font-aw/scss/brands";
+
+// Utilities
+@import "utilities/animation-engine-views";
+@import "utilities/backgrounds";
+@import "utilities/borders";
+@import "utilities/carousel";
+@import "utilities/gallery";
+@import "utilities/grid";
+@import "utilities/images";
+@import "utilities/lists";
+@import "utilities/text";
+@import "utilities/width";
+
+// Custom Styles
+@import "defaults";

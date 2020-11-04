@@ -1,0 +1,38 @@
+$theme-colors: (
+	"primary":   #161925,
+	"secondary": #23395B,
+	"tertiary":  #406E8E
+);
+
+// Enable rounded?
+$enable-rounded: false;
+
+// Enable Bootstrap 4.3's responsive font sizes
+$enable-responsive-font-sizes: true;
+
+// Border classes width
+$theme-borders-width: 2px;
+
+//Path to FontAwesome
+$fa-font-path: "../styles/dependencies/font-aw/webfonts";
+$fa-font-display: swap;
+
+@font-face {
+	font-family: 'Futura-Bold';
+	src: url(../fonts/Futura-Bold.otf);
+	font-display: swap;
+}
+@font-face {
+	font-family: 'OpenSans-Regular';
+	src: url(../fonts/OpenSans-Regular.ttf);
+	font-display: swap;
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url(../fonts/Roboto-Regular.ttf);
+	font-display: swap;
+}
+
+$font-prime:  Futura-Bold, sans-serif;
+$font-second: OpenSans-Regular, sans-serif;
+$font-third:  Roboto-Regular, sans-serif;

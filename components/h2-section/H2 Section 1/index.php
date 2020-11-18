@@ -1,0 +1,22 @@
+<div class="row bg-white align-items-stretch">
+	<div class="col-xl-8 col-md-7 col-12 pb-1 pt-2 order-2 order-md-1">
+		<div class="p-0 p-lg-5">
+			<h1>
+				Secondary Heading
+			</h1>
+			<p class="mx-0 my-3">
+				Our graphic designers have prepared this unique layout - based on any previous
+				marketing materials you may have provided and the style of site you indicated. This
+				written content will be replaced once you approve the look and feel of your design.
+			</p>
+			<a href="#link" class="btn btn-primary">Read More</a>
+		</div>
+	</div>
+	<div class="col-12 col-md-5 col-lg-4 p-0 order-1 order-md-2">
+		<picture>
+			<!--source media="(max-width:568px)" type="image/webp" srcset="https://via.placeholder.com/640x300-mobile.webp"-->
+			<!--source type="image/webp" srcset="https://via.placeholder.com/640x300.webp"-->
+			<img src="https://via.placeholder.com/640x300" alt="First Banner Image" class="bg-picture-center">
+		</picture>
+	</div>
+</div>

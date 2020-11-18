@@ -1,0 +1,7 @@
+.service-icon {
+    transition: transform 0.5s ease;
+    transform: scale(0.85);
+	&:hover {
+		transform: scale(0.75);
+	}
+}

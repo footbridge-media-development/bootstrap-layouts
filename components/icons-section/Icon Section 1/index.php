@@ -1,4 +1,4 @@
-<div class="row bg-primary">
+<section class="row bg-primary">
 	<div class="col-xl-3 col-md-6 col-12 py-5 d-flex justify-content-around">
 		<a href="#link" class="service-icon">
 			<picture>
@@ -43,4 +43,4 @@
 			</p>
 		</a>
 	</div>
-</div>
+</section>

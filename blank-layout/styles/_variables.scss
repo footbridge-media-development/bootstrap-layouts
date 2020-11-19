@@ -36,3 +36,6 @@ $fa-font-display: swap;
 $font-prime:  Futura-Bold, sans-serif;
 $font-second: OpenSans-Regular, sans-serif;
 $font-third:  Roboto-Regular, sans-serif;
+$color-prime: map-get($theme-colors, "primary");
+$color-second: map-get($theme-colors, "secondary");
+$color-third: map-get($theme-colors, "tertiary");

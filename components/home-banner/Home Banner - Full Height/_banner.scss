@@ -1,9 +1,5 @@
-/* ******************************************************************************************** */
-/* CAROUSEL STYLING *************************************************************************** */
-/* ******************************************************************************************** */
-/* NOTE RUNNING FIXED HEADER HEAD MAKES THE MOST SINCE FOR THIS BANNER ****/
-.carousel-item 
-{
+/* NOTE: RUNNING FIXED HEADER HEAD MAKES THE MOST SENSE FOR THIS BANNER */
+.carousel-item {
 	.bg-picture-container {
 		&.interior {
 			height:200px !important;
@@ -59,7 +55,7 @@
 		clip-path: polygon(100% 0, 0% 100%, 100% 100%);
 		
 	}
-	.formhold {
+	.form-container {
 		filter:drop-shadow(0px 0px 4px rgba(0,0,0,.6));
 		border:3px solid map-get($theme-colors, "secondary");
 	}
@@ -68,4 +64,3 @@
 .carousel-item {
 	padding: 10px;
 }
-/****************************************************** */

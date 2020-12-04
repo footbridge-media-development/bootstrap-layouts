@@ -1,7 +1,4 @@
-/* ******************************************************************************************** */
-/* CAROUSEL STYLING *************************************************************************** */
-/* ******************************************************************************************** */
-@keyframes bannjump {
+@keyframes banner-jump {
 	from {
 		transform:translateX(-100%);
 	}
@@ -41,11 +38,10 @@
 	}
 	&.active {
 		.carousel-caption {
-			animation:bannjump;
+			animation:banner-jump;
 			animation-timing-function: ease;
 			animation-duration:1s;
 			animation-fill-mode:forwards;
 		}
 	}
 }
-/****************************************************** */

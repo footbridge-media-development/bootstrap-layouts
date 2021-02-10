@@ -1,8 +1,8 @@
-.servme {
+.service-overlay {
 	min-height:400px;
 	position:relative;
 	overflow:hidden;
-	border:solid $color-prime 5px;
+	border:solid map-get($theme-colors, "primary") 5px;
 	.text-overlay {
 		background:rgba(map-get($theme-colors, "primary"), .7);
 		height:100%;
@@ -12,14 +12,14 @@
 		z-index:5;
 		transition:all ease .4s;
 		h2, p {
-			color:white;
+			color:map-get($theme-colors, "light");
 		}
-		&.left {
+		&.left-overlay {
 			left:-100%;
 			-webkit-border-radius: 0 20px 20px 0;
 			border-radius: 0 20px 20px 0;
 		}
-		&.right {
+		&.right-overlay {
 			right:-100%;
 			-webkit-border-radius: 20px 0 0 20px;
 			border-radius: 20px 0 0 20px;
@@ -28,33 +28,31 @@
 	}
 	&:hover {
 		.text-overlay {
-			&.left {
+			&.left-overlay {
 				left:0;
-				
 			}
-			&.right {
+			&.right-overlay {
 				right:0;
-				
 			}
 		}
 	}
 	@include media-breakpoint-down(md) {
 		.text-overlay {
-			&.left {
-				-webkit-border-radius: 20px 0 0 20px;
-				border-radius: 20px 0 0 20px;
-				text-align:right;
-				width:75%;
-				right:0;
-				left:auto;
-			}
-			&.right {
+			&.left-overlay {
 				left:0;
 				right:auto;
 				text-align:left;
 				width:75%;
 				-webkit-border-radius: 0 20px 20px 0;
 				border-radius: 0 20px 20px 0;
+			}
+			&.right-overlay {
+				right:0;
+				left:auto;
+				text-align:right;
+				width:75%;
+				-webkit-border-radius: 20px 0 0 20px;
+				border-radius: 20px 0 0 20px;
 			}
 		}
 	}

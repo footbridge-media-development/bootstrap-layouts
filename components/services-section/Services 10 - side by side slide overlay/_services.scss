@@ -1,0 +1,61 @@
+.servme {
+	min-height:400px;
+	position:relative;
+	overflow:hidden;
+	border:solid $color-prime 5px;
+	.text-overlay {
+		background:rgba(map-get($theme-colors, "primary"), .7);
+		height:100%;
+		width:75%;
+		position:absolute;
+		top:0;
+		z-index:5;
+		transition:all ease .4s;
+		h2, p {
+			color:white;
+		}
+		&.left {
+			left:-100%;
+			-webkit-border-radius: 0 20px 20px 0;
+			border-radius: 0 20px 20px 0;
+		}
+		&.right {
+			right:-100%;
+			-webkit-border-radius: 20px 0 0 20px;
+			border-radius: 20px 0 0 20px;
+			text-align:right;
+		}
+	}
+	&:hover {
+		.text-overlay {
+			&.left {
+				left:0;
+				
+			}
+			&.right {
+				right:0;
+				
+			}
+		}
+	}
+	@include media-breakpoint-down(md) {
+		.text-overlay {
+			&.left {
+				-webkit-border-radius: 20px 0 0 20px;
+				border-radius: 20px 0 0 20px;
+				text-align:right;
+				width:75%;
+				right:0;
+				left:auto;
+			}
+			&.right {
+				left:0;
+				right:auto;
+				text-align:left;
+				width:75%;
+				-webkit-border-radius: 0 20px 20px 0;
+				border-radius: 0 20px 20px 0;
+			}
+		}
+	}
+}

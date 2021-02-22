@@ -236,7 +236,7 @@ $animations-duration: 190ms;
 
 /* Set to Display None after Break-XL Sizing *************************************************** */
 
-@media screen and (max-width: map-get($grid-breakpoints, xl)) {
+@media screen and (max-width: map-get($grid-breakpoints, xl) - 1) {
 	#lg-nav-v2-1 {
 		display: none;
 	}

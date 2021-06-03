@@ -20,7 +20,7 @@
 	background-color: darken(map-get($theme-colors, "primary"), 5%);
 	overflow: auto;
 	z-index: 11;
-	width: 50%;
+	width: 70%;
 	max-width: 240px;
 	margin-right:-250px; /* We will animate this to 0 when they open the menu */
 }

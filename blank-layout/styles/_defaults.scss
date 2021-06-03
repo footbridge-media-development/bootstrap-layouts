@@ -7,7 +7,7 @@ a[href^=tel] {
 }
 a {
     cursor: pointer;
-    color: map-get($theme-colors, "primary");
+    color: map-get($theme-colors, "secondary");
     &:hover {
         text-decoration: none;
     }
@@ -42,6 +42,9 @@ img, iframe, video {
 }
 h1, h2, h4, h5 {
 	font-family: $font-prime;
+}
+p {
+	margin: 1rem 0;
 }
 p, ul, ul li, ul li a, ol, ol li, ol li a {
 	font-family: $font-third;

@@ -7,7 +7,7 @@ a[href^=tel] {
 }
 a {
     cursor: pointer;
-    color: map-get($theme-colors, "primary");
+    color: map-get($theme-colors, "secondary");
     &:hover {
         text-decoration: none;
     }

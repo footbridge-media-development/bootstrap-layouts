@@ -1,5 +1,10 @@
 <!-- START ABOUT US -->
 <section class="row">
+	<div class="col-xl-3 col-lg-3 d-none d-lg-block mx-auto p-3 p-lg-5" id="bg-sidebar">
+		<h2>
+			Request Estimate
+		</h2>
+	</div>
 	<div class="col-xl-9 col-lg-9 col-md-10 col-sm-12 col-12 mx-auto p-3 p-lg-5">
 		<h1 class="">
 			Primary Header Here

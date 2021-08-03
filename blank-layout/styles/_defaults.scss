@@ -63,53 +63,45 @@ p, ul, ul li, ul li a, ol, ol li, ol li a {
     text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
 }
 .checkmark-li, .dashed-li, .squared-li, .icon-li, .icon-no, .test-li {
-    font-family: $font-third;
-    font-weight: normal;
-    font-size: 0.9rem;
-    list-style-type: none;
-    padding: 0;
-    &::before {
-        display: inline-block;
-    }
-    li {
-        &::before {
-            text-decoration: none;
-            padding-right: 0.5rem;
-            speak: none;
-        }
-    }
+	font-family: $font-third;
+	font-weight: normal;
+	font-size: 0.9rem;
 }
 .checkmark-li {
-    li {
-        &::before {
-            font-family: "Font Awesome 5 Free";
-            content: '\f00c';
-        }
-    }
+	li {
+		padding-left: 0.5rem;
+		&::marker {
+			font-family: "Font Awesome 5 Free";
+			content: '\f00c';
+		}
+	}
 }
 .dashed-li {
-    li {
-        &::before {
-            font-family: "Font Awesome 5 Free";
-            content: '\f773';
-        }
-    }
+	li {
+		padding-left: 0.5rem;
+		&::marker {
+			font-family: "Font Awesome 5 Free";
+			content: '\f773';
+		}
+	}
 }
 .squared-li {
-    li {
-        &::before {
-            font-family: "Font Awesome 5 Free";
-            content: '\f0fe';
-        }
-    }
+	li {
+		padding-left: 0.5rem;
+		&::marker {
+			font-family: "Font Awesome 5 Free";
+			content: '\f0fe';
+		}
+	}
 }
 .icon-li {
-    li {
-        &::before {
-            font-family: "Font Awesome 5 Free";
-            content: '\f005';
-        }
-    }
+	li {
+		padding-left: 0.5rem;
+		&::marker {
+			font-family: "Font Awesome 5 Free";
+			content: '\f005';
+		}
+	}
 }
 .req-num, .req-form {
 	color: map-get($theme-colors, "tertiary") !important;

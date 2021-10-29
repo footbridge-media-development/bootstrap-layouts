@@ -1,61 +1,86 @@
-/*
-	This file relies on jQuery, animeJS, and inView.jquery.js
-*/
+const classes = [
+	"animated-pop-in",
+	"animated-fade-in-start",
+	"animated-fade-in-end",
+	"animated-fade-in-top",
+	"animated-fade-in-bottom"
+];
 
-if ($(".animated-expand-container").length > 0){
-	$(".animated-expand-container").each(function(index, element){
-		$(element).on("in-view", function(){
-			anime({
-				targets:$(this).children(".cover").get(0),
-				width:["100%", "0%"],
-				duration:450,
-				easing:"easeInOutSine",
-				autoplay:true
-			});
-		}).inViewWatcher();
+const observer = new IntersectionObserver((entries, observer) => { 
+	entries.forEach(entry => {
+		const target = entry.target;
+		const targetClassArray = target.classList;
+		const classStringMatched = () => {
+			for (const classString of targetClassArray){
+				if (classes.indexOf(classString) > -1){
+					return classString;
+				}
+			}
+			return null;
+		};
+		if (entry.isIntersecting) {
+			// animated-pop-in class animation
+			if (classStringMatched() == "animated-pop-in") {
+				anime({
+					targets:target,
+					scale:[0, 1],
+					duration:600,
+					easing:"easeInOutSine",
+					autoplay:true
+				});
+			}
+			// animated-fade-in-start class animation
+			if (classStringMatched() == "animated-fade-in-start") {
+				anime({
+					targets:target,
+					translateX:[-100, 0],
+					opacity:[0,1],
+					duration:600,
+					easing:"easeInOutSine",
+					autoplay:true
+				});
+			}
+			// animated-fade-in-end class animation
+			if (classStringMatched() == "animated-fade-in-end") {
+				anime({
+					targets:target,
+					translateX:[100, 0],
+					opacity:[0,1],
+					duration:600,
+					easing:"easeInOutSine",
+					autoplay:true
+				});
+			}
+			// animated-fade-in-top class animation
+			if (classStringMatched() == "animated-fade-in-top") {
+				anime({
+					targets:target,
+					translateY:[-100, 0],
+					opacity:[0,1],
+					duration:600,
+					easing:"easeInOutSine",
+					autoplay:true
+				});
+			}
+			// animated-fade-in-bottom class animation
+			if (classStringMatched() == "animated-fade-in-bottom") {
+				anime({
+					targets:target,
+					translateY:[100, 0],
+					opacity:[0,1],
+					duration:600,
+					easing:"easeInOutSine",
+					autoplay:true
+				});
+			}
+			observer.unobserve(entry.target);
+		}
 	});
-}
+}, {rootMargin: "150px", threshold: 0.5});
 
-if ($(".animated-pop-in").length > 0){
-	$(".animated-pop-in").each(function(index, element){
-		$(element).on("in-view", function(){
-			anime({
-				targets:$(this).get(0),
-				scale:[0, 1],
-				duration:600,
-				easing:"easeInOutSine",
-				autoplay:true
-			});
-		}).inViewWatcher();
-	});
-}
-
-if ($(".animated-fade-in-left").length > 0){
-	$(".animated-fade-in-left").each(function(index, element){
-		$(element).on("in-view", function(){
-			anime({
-				targets:$(this).get(0),
-				translateX:[-100, 0],
-				opacity:[0,1],
-				duration:600,
-				easing:"easeInOutSine",
-				autoplay:true
-			});
-		}).inViewWatcher();
-	});
-}
-
-if ($(".animated-fade-in-right").length > 0){
-	$(".animated-fade-in-right").each(function(index, element){
-		$(element).on("in-view", function(){
-			anime({
-				targets:$(this).get(0),
-				translateX:[100, 0],
-				opacity:[0,1],
-				duration:600,
-				easing:"easeInOutSine",
-				autoplay:true
-			});
-		}).inViewWatcher();
-	});
+for (const classString of classes) {
+	const collection = document.querySelectorAll(`.${classString}`);
+	for (const element of collection) {
+		observer.observe(element)
+	}
 }

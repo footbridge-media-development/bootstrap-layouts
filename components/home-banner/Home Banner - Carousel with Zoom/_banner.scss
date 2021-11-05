@@ -10,7 +10,9 @@
 		min-height: 400px;
 	}
 }
-
+.carousel-caption { 
+	z-index:10;	
+}
 .banner-animation {
 	animation-name: zoom-anim;
 	animation-duration: 10s;

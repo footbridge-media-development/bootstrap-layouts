@@ -6,15 +6,15 @@
 }
 
 .img-r-dynamic{
-	@extend .float-lg-right;
+	@extend .float-lg-end;
 	@extend .img-dynamic;
-	@extend .pl-lg-3;
+	@extend .ps-lg-3;
 }
 
 .img-l-dynamic{
-	@extend .float-lg-left;
+	@extend .float-lg-start;
 	@extend .img-dynamic;
-	@extend .pr-lg-3;
+	@extend .pe-lg-3;
 }
 
 .bg-image{

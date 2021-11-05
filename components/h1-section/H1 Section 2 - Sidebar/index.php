@@ -19,7 +19,7 @@
 			marketing materials you may have provided and the style of site you indicated. This
 			written content will be replaced once you approve the look and feel of your design.
 		</p>
-		<ul class="checkmark-li grid grid-lg-4 grid-gap-1">
+		<ul class="checkmark-list grid grid-lg-4 grid-gap-1">
 			<li>
 				<a href="#link">Service Item</a>
 			</li>

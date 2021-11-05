@@ -1,16 +1,3 @@
-/* Overlay Service Boxes Headers *************************************************************** */
-.overlay-title {
-	font-family: $font-prime;
-	font-weight: normal;
-	font-size: inherit;
-	text-transform: uppercase;
-	text-decoration: none;
-	text-align: center;
-	box-sizing: border-box;
-	margin-bottom: 0;
-	color: #FFFFFF;
-}
-
 .overlay-container {
     position: relative;
     overflow: hidden;
@@ -24,14 +11,14 @@
         background-color: rgba(map-get($theme-colors, "secondary"), 0.50);;
         transition: all 0.5s ease;
         position: absolute;
-        &.from-left {
+        &.from-start {
             width: 0;
             height: 100%;
             left: 0;
             right: 0;
             bottom: 0;
         }
-        &.from-right {
+        &.from-end {
             width: 0;
             height: 100%;
             left: 100%;
@@ -64,7 +51,7 @@
                 text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.25);
                 color: #FFFFFF !important;
             }
-            span, a {
+            span{
                 display: none;
                 white-space: nowrap;
                 overflow: hidden;
@@ -73,10 +60,10 @@
     }
     &:hover {
         .overlay {
-            &.from-left {
+            &.from-start {
                 width: 100%;
             }
-            &.from-right {
+            &.from-end {
                 width: 100%;
                 left: 0;
             }
@@ -97,22 +84,16 @@
                     -ms-transform: translate(-50%, -50%);
                     -moz-transform: translate(-50%, -50%);
                     -o-transform: translate(-50%, -50%);
-                }
-                a {
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
                 }
             }
         }
     }
     @media screen and (max-width: 1024px) {
         .overlay, .overlay:hover {
-            &.from-left {
+            &.from-start {
                 width: 100%;
             }
-            &.from-right {
+            &.from-end {
                 width: 100%;
                 left: 0;
             }
@@ -133,12 +114,6 @@
                     -ms-transform: translate(-50%, -50%);
                     -moz-transform: translate(-50%, -50%);
                     -o-transform: translate(-50%, -50%);
-                }
-                a {
-                    display: block;
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
                 }
             }
         }

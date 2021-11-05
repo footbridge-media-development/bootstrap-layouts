@@ -17,7 +17,7 @@
         .service-title {
             font-family: $font-prime;
             font-weight: normal;
-            font-size: 40px;
+            font-size: 2rem;
             text-transform: uppercase;
             text-decoration: none;
             text-align: left;
@@ -32,10 +32,10 @@
             transition: all 0.5s ease;
         }
         .service-info {
-            font-family: $font-second;
+			font-family: $font-prime;
             font-weight: normal;
             font-size: 0.9rem;
-            text-transform: none;
+            text-transform: uppercase;
             text-decoration: none;
             text-align: right;
             width: 60%;
@@ -48,30 +48,13 @@
             transform: translateX(200%);
             transition: all 0.5s ease;
         }
-        .service-links {
-            font-family: $font-prime;
-            font-weight: normal;
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            text-decoration: none;
-            text-align: left;
-            width: 100%;
-            height: auto;
-            color: #FFFFFF;
-            text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.5);
-            position: absolute;
-            top: 60px;
-            left: 0px;
-            transform: translateX(-200%);
-            transition: all 0.5s ease;
-        }
     }
     &:hover {
         img {
             filter: brightness(0.6);
         }
         .service-content {
-            .service-title, .service-info, .service-links {
+            .service-title, .service-info {
                 transform: translateX(0);
             }
         }
@@ -82,7 +65,7 @@
             filter: brightness(0.6);
         }
         .service-content, .service-content:hover {
-            .service-title, .service-info, .service-links {
+            .service-title, .service-info {
                 transform: translateX(0);
             }
             .service-title {
@@ -90,9 +73,6 @@
             }
             .service-info {
                 width: 100% !important;
-            }
-            .service-links {
-                top: 40px !important;
             }
         }
     }
@@ -102,7 +82,7 @@
             filter: brightness(0.6);
         }
         .service-content, .service-content:hover {
-            .service-title, .service-info, .service-links {
+            .service-title, .service-info {
                 transform: translateX(0);
             }
             .service-title {
@@ -111,9 +91,6 @@
             .service-info {
                 width: 100% !important;
                 opacity: 0;
-            }
-            .service-links {
-                top: 40px !important;
             }
         }
     }

@@ -11,15 +11,15 @@
 		top:0;
 		z-index:5;
 		transition:all ease .4s;
-		h2, p {
-			color:map-get($theme-colors, "light");
+		h2 {
+			color: #FFF;
 		}
-		&.left-overlay {
+		&.start-overlay {
 			left:-100%;
 			-webkit-border-radius: 0 20px 20px 0;
 			border-radius: 0 20px 20px 0;
 		}
-		&.right-overlay {
+		&.end-overlay {
 			right:-100%;
 			-webkit-border-radius: 20px 0 0 20px;
 			border-radius: 20px 0 0 20px;
@@ -28,17 +28,17 @@
 	}
 	&:hover {
 		.text-overlay {
-			&.left-overlay {
+			&.start-overlay {
 				left:0;
 			}
-			&.right-overlay {
+			&.end-overlay {
 				right:0;
 			}
 		}
 	}
 	@include media-breakpoint-down(md) {
 		.text-overlay {
-			&.left-overlay {
+			&.start-overlay {
 				left:0;
 				right:auto;
 				text-align:left;
@@ -46,7 +46,7 @@
 				-webkit-border-radius: 0 20px 20px 0;
 				border-radius: 0 20px 20px 0;
 			}
-			&.right-overlay {
+			&.end-overlay {
 				right:0;
 				left:auto;
 				text-align:right;

@@ -49,9 +49,21 @@
   --bs-primary: #161925;
   --bs-secondary: #23395B;
   --bs-tertiary: #406E8E;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
   --bs-primary-rgb: 22, 25, 37;
   --bs-secondary-rgb: 35, 57, 91;
   --bs-tertiary-rgb: 64, 110, 142;
+  --bs-success-rgb: 25, 135, 84;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 255, 193, 7;
+  --bs-danger-rgb: 220, 53, 69;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
   --bs-white-rgb: 255, 255, 255;
   --bs-black-rgb: 0, 0, 0;
   --bs-body-color-rgb: 33, 37, 41;
@@ -3182,6 +3194,240 @@ fieldset:disabled .btn {
   border-color: #406E8E;
 }
 
+.btn-success {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-success:hover {
+  color: #fff;
+  background-color: #157347;
+  border-color: #146c43;
+}
+
+.btn-check:focus + .btn-success, .btn-success:focus {
+  color: #fff;
+  background-color: #157347;
+  border-color: #146c43;
+  box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+}
+
+.btn-check:checked + .btn-success,
+.btn-check:active + .btn-success, .btn-success:active, .btn-success.active,
+.show > .btn-success.dropdown-toggle {
+  color: #fff;
+  background-color: #146c43;
+  border-color: #13653f;
+}
+
+.btn-check:checked + .btn-success:focus,
+.btn-check:active + .btn-success:focus, .btn-success:active:focus, .btn-success.active:focus,
+.show > .btn-success.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(60, 153, 110, 0.5);
+}
+
+.btn-success:disabled, .btn-success.disabled {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-info {
+  color: #000;
+  background-color: #0dcaf0;
+  border-color: #0dcaf0;
+}
+
+.btn-info:hover {
+  color: #000;
+  background-color: #31d2f2;
+  border-color: #25cff2;
+}
+
+.btn-check:focus + .btn-info, .btn-info:focus {
+  color: #000;
+  background-color: #31d2f2;
+  border-color: #25cff2;
+  box-shadow: 0 0 0 0.25rem rgba(11, 172, 204, 0.5);
+}
+
+.btn-check:checked + .btn-info,
+.btn-check:active + .btn-info, .btn-info:active, .btn-info.active,
+.show > .btn-info.dropdown-toggle {
+  color: #000;
+  background-color: #3dd5f3;
+  border-color: #25cff2;
+}
+
+.btn-check:checked + .btn-info:focus,
+.btn-check:active + .btn-info:focus, .btn-info:active:focus, .btn-info.active:focus,
+.show > .btn-info.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(11, 172, 204, 0.5);
+}
+
+.btn-info:disabled, .btn-info.disabled {
+  color: #000;
+  background-color: #0dcaf0;
+  border-color: #0dcaf0;
+}
+
+.btn-warning {
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-warning:hover {
+  color: #000;
+  background-color: #ffca2c;
+  border-color: #ffc720;
+}
+
+.btn-check:focus + .btn-warning, .btn-warning:focus {
+  color: #000;
+  background-color: #ffca2c;
+  border-color: #ffc720;
+  box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5);
+}
+
+.btn-check:checked + .btn-warning,
+.btn-check:active + .btn-warning, .btn-warning:active, .btn-warning.active,
+.show > .btn-warning.dropdown-toggle {
+  color: #000;
+  background-color: #ffcd39;
+  border-color: #ffc720;
+}
+
+.btn-check:checked + .btn-warning:focus,
+.btn-check:active + .btn-warning:focus, .btn-warning:active:focus, .btn-warning.active:focus,
+.show > .btn-warning.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(217, 164, 6, 0.5);
+}
+
+.btn-warning:disabled, .btn-warning.disabled {
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-danger {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-danger:hover {
+  color: #fff;
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+}
+
+.btn-check:focus + .btn-danger, .btn-danger:focus {
+  color: #fff;
+  background-color: #bb2d3b;
+  border-color: #b02a37;
+  box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.5);
+}
+
+.btn-check:checked + .btn-danger,
+.btn-check:active + .btn-danger, .btn-danger:active, .btn-danger.active,
+.show > .btn-danger.dropdown-toggle {
+  color: #fff;
+  background-color: #b02a37;
+  border-color: #a52834;
+}
+
+.btn-check:checked + .btn-danger:focus,
+.btn-check:active + .btn-danger:focus, .btn-danger:active:focus, .btn-danger.active:focus,
+.show > .btn-danger.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(225, 83, 97, 0.5);
+}
+
+.btn-danger:disabled, .btn-danger.disabled {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-light {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-light:hover {
+  color: #000;
+  background-color: #f9fafb;
+  border-color: #f9fafb;
+}
+
+.btn-check:focus + .btn-light, .btn-light:focus {
+  color: #000;
+  background-color: #f9fafb;
+  border-color: #f9fafb;
+  box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
+}
+
+.btn-check:checked + .btn-light,
+.btn-check:active + .btn-light, .btn-light:active, .btn-light.active,
+.show > .btn-light.dropdown-toggle {
+  color: #000;
+  background-color: #f9fafb;
+  border-color: #f9fafb;
+}
+
+.btn-check:checked + .btn-light:focus,
+.btn-check:active + .btn-light:focus, .btn-light:active:focus, .btn-light.active:focus,
+.show > .btn-light.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(211, 212, 213, 0.5);
+}
+
+.btn-light:disabled, .btn-light.disabled {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-dark {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+
+.btn-dark:hover {
+  color: #fff;
+  background-color: #1c1f23;
+  border-color: #1a1e21;
+}
+
+.btn-check:focus + .btn-dark, .btn-dark:focus {
+  color: #fff;
+  background-color: #1c1f23;
+  border-color: #1a1e21;
+  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+}
+
+.btn-check:checked + .btn-dark,
+.btn-check:active + .btn-dark, .btn-dark:active, .btn-dark.active,
+.show > .btn-dark.dropdown-toggle {
+  color: #fff;
+  background-color: #1a1e21;
+  border-color: #191c1f;
+}
+
+.btn-check:checked + .btn-dark:focus,
+.btn-check:active + .btn-dark:focus, .btn-dark:active:focus, .btn-dark.active:focus,
+.show > .btn-dark.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(66, 70, 73, 0.5);
+}
+
+.btn-dark:disabled, .btn-dark.disabled {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+
 .btn-outline-primary {
   color: #161925;
   border-color: #161925;
@@ -3275,6 +3521,198 @@ fieldset:disabled .btn {
 
 .btn-outline-tertiary:disabled, .btn-outline-tertiary.disabled {
   color: #406E8E;
+  background-color: transparent;
+}
+
+.btn-outline-success {
+  color: #198754;
+  border-color: #198754;
+}
+
+.btn-outline-success:hover {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-check:focus + .btn-outline-success, .btn-outline-success:focus {
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.5);
+}
+
+.btn-check:checked + .btn-outline-success,
+.btn-check:active + .btn-outline-success, .btn-outline-success:active, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show {
+  color: #fff;
+  background-color: #198754;
+  border-color: #198754;
+}
+
+.btn-check:checked + .btn-outline-success:focus,
+.btn-check:active + .btn-outline-success:focus, .btn-outline-success:active:focus, .btn-outline-success.active:focus, .btn-outline-success.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(25, 135, 84, 0.5);
+}
+
+.btn-outline-success:disabled, .btn-outline-success.disabled {
+  color: #198754;
+  background-color: transparent;
+}
+
+.btn-outline-info {
+  color: #0dcaf0;
+  border-color: #0dcaf0;
+}
+
+.btn-outline-info:hover {
+  color: #000;
+  background-color: #0dcaf0;
+  border-color: #0dcaf0;
+}
+
+.btn-check:focus + .btn-outline-info, .btn-outline-info:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.5);
+}
+
+.btn-check:checked + .btn-outline-info,
+.btn-check:active + .btn-outline-info, .btn-outline-info:active, .btn-outline-info.active, .btn-outline-info.dropdown-toggle.show {
+  color: #000;
+  background-color: #0dcaf0;
+  border-color: #0dcaf0;
+}
+
+.btn-check:checked + .btn-outline-info:focus,
+.btn-check:active + .btn-outline-info:focus, .btn-outline-info:active:focus, .btn-outline-info.active:focus, .btn-outline-info.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 202, 240, 0.5);
+}
+
+.btn-outline-info:disabled, .btn-outline-info.disabled {
+  color: #0dcaf0;
+  background-color: transparent;
+}
+
+.btn-outline-warning {
+  color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-outline-warning:hover {
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-check:focus + .btn-outline-warning, .btn-outline-warning:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5);
+}
+
+.btn-check:checked + .btn-outline-warning,
+.btn-check:active + .btn-outline-warning, .btn-outline-warning:active, .btn-outline-warning.active, .btn-outline-warning.dropdown-toggle.show {
+  color: #000;
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+.btn-check:checked + .btn-outline-warning:focus,
+.btn-check:active + .btn-outline-warning:focus, .btn-outline-warning:active:focus, .btn-outline-warning.active:focus, .btn-outline-warning.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(255, 193, 7, 0.5);
+}
+
+.btn-outline-warning:disabled, .btn-outline-warning.disabled {
+  color: #ffc107;
+  background-color: transparent;
+}
+
+.btn-outline-danger {
+  color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-outline-danger:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-check:focus + .btn-outline-danger, .btn-outline-danger:focus {
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
+}
+
+.btn-check:checked + .btn-outline-danger,
+.btn-check:active + .btn-outline-danger, .btn-outline-danger:active, .btn-outline-danger.active, .btn-outline-danger.dropdown-toggle.show {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+}
+
+.btn-check:checked + .btn-outline-danger:focus,
+.btn-check:active + .btn-outline-danger:focus, .btn-outline-danger:active:focus, .btn-outline-danger.active:focus, .btn-outline-danger.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(220, 53, 69, 0.5);
+}
+
+.btn-outline-danger:disabled, .btn-outline-danger.disabled {
+  color: #dc3545;
+  background-color: transparent;
+}
+
+.btn-outline-light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-outline-light:hover {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-check:focus + .btn-outline-light, .btn-outline-light:focus {
+  box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
+}
+
+.btn-check:checked + .btn-outline-light,
+.btn-check:active + .btn-outline-light, .btn-outline-light:active, .btn-outline-light.active, .btn-outline-light.dropdown-toggle.show {
+  color: #000;
+  background-color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-check:checked + .btn-outline-light:focus,
+.btn-check:active + .btn-outline-light:focus, .btn-outline-light:active:focus, .btn-outline-light.active:focus, .btn-outline-light.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(248, 249, 250, 0.5);
+}
+
+.btn-outline-light:disabled, .btn-outline-light.disabled {
+  color: #f8f9fa;
+  background-color: transparent;
+}
+
+.btn-outline-dark {
+  color: #212529;
+  border-color: #212529;
+}
+
+.btn-outline-dark:hover {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+
+.btn-check:focus + .btn-outline-dark, .btn-outline-dark:focus {
+  box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5);
+}
+
+.btn-check:checked + .btn-outline-dark,
+.btn-check:active + .btn-outline-dark, .btn-outline-dark:active, .btn-outline-dark.active, .btn-outline-dark.dropdown-toggle.show {
+  color: #fff;
+  background-color: #212529;
+  border-color: #212529;
+}
+
+.btn-check:checked + .btn-outline-dark:focus,
+.btn-check:active + .btn-outline-dark:focus, .btn-outline-dark:active:focus, .btn-outline-dark.active:focus, .btn-outline-dark.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(33, 37, 41, 0.5);
+}
+
+.btn-outline-dark:disabled, .btn-outline-dark.disabled {
+  color: #212529;
   background-color: transparent;
 }
 
@@ -4392,24 +4830,30 @@ fieldset:disabled .btn {
   margin-left: 0;
 }
 
-.card > .list-group, .card > .checks-primary, .card > .checks-secondary, .card > .checks-tertiary {
+.card > .list-group, .card > .checks-primary, .card > .checks-secondary, .card > .checks-tertiary, .card > .checks-success, .card > .checks-info, .card > .checks-warning, .card > .checks-danger, .card > .checks-light, .card > .checks-dark {
   border-top: inherit;
   border-bottom: inherit;
 }
 
-.card > .list-group:first-child, .card > .checks-primary:first-child, .card > .checks-secondary:first-child, .card > .checks-tertiary:first-child {
+.card > .list-group:first-child, .card > .checks-primary:first-child, .card > .checks-secondary:first-child, .card > .checks-tertiary:first-child, .card > .checks-success:first-child, .card > .checks-info:first-child, .card > .checks-warning:first-child, .card > .checks-danger:first-child, .card > .checks-light:first-child, .card > .checks-dark:first-child {
   border-top-width: 0;
 }
 
-.card > .list-group:last-child, .card > .checks-primary:last-child, .card > .checks-secondary:last-child, .card > .checks-tertiary:last-child {
+.card > .list-group:last-child, .card > .checks-primary:last-child, .card > .checks-secondary:last-child, .card > .checks-tertiary:last-child, .card > .checks-success:last-child, .card > .checks-info:last-child, .card > .checks-warning:last-child, .card > .checks-danger:last-child, .card > .checks-light:last-child, .card > .checks-dark:last-child {
   border-bottom-width: 0;
 }
 
-.card > .card-header + .list-group, .card > .card-header + .checks-primary, .card > .card-header + .checks-secondary, .card > .card-header + .checks-tertiary,
+.card > .card-header + .list-group, .card > .card-header + .checks-primary, .card > .card-header + .checks-secondary, .card > .card-header + .checks-tertiary, .card > .card-header + .checks-success, .card > .card-header + .checks-info, .card > .card-header + .checks-warning, .card > .card-header + .checks-danger, .card > .card-header + .checks-light, .card > .card-header + .checks-dark,
 .card > .list-group + .card-footer,
 .card > .checks-primary + .card-footer,
 .card > .checks-secondary + .card-footer,
-.card > .checks-tertiary + .card-footer {
+.card > .checks-tertiary + .card-footer,
+.card > .checks-success + .card-footer,
+.card > .checks-info + .card-footer,
+.card > .checks-warning + .card-footer,
+.card > .checks-danger + .card-footer,
+.card > .checks-light + .card-footer,
+.card > .checks-dark + .card-footer {
   border-top: 0;
 }
 
@@ -4759,6 +5203,66 @@ fieldset:disabled .btn {
   color: #1e3544;
 }
 
+.alert-success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+  border-color: #badbcc;
+}
+
+.alert-success .alert-link {
+  color: #0c4128;
+}
+
+.alert-info {
+  color: #055160;
+  background-color: #cff4fc;
+  border-color: #b6effb;
+}
+
+.alert-info .alert-link {
+  color: #04414d;
+}
+
+.alert-warning {
+  color: #664d03;
+  background-color: #fff3cd;
+  border-color: #ffecb5;
+}
+
+.alert-warning .alert-link {
+  color: #523e02;
+}
+
+.alert-danger {
+  color: #842029;
+  background-color: #f8d7da;
+  border-color: #f5c2c7;
+}
+
+.alert-danger .alert-link {
+  color: #6a1a21;
+}
+
+.alert-light {
+  color: #636464;
+  background-color: #fefefe;
+  border-color: #fdfdfe;
+}
+
+.alert-light .alert-link {
+  color: #4f5050;
+}
+
+.alert-dark {
+  color: #141619;
+  background-color: #d3d3d4;
+  border-color: #bcbebf;
+}
+
+.alert-dark .alert-link {
+  color: #101214;
+}
+
 @keyframes progress-bar-stripes {
   0% {
     background-position-x: 1rem;
@@ -4806,7 +5310,7 @@ fieldset:disabled .btn {
   }
 }
 
-.list-group, .checks-primary, .checks-secondary, .checks-tertiary {
+.list-group, .checks-primary, .checks-secondary, .checks-tertiary, .checks-success, .checks-info, .checks-warning, .checks-danger, .checks-light, .checks-dark {
   display: flex;
   flex-direction: column;
   padding-left: 0;
@@ -4841,7 +5345,7 @@ fieldset:disabled .btn {
   background-color: #e9ecef;
 }
 
-.list-group-item, .checks-primary li, .checks-secondary li, .checks-tertiary li {
+.list-group-item, .checks-primary li, .checks-secondary li, .checks-tertiary li, .checks-success li, .checks-info li, .checks-warning li, .checks-danger li, .checks-light li, .checks-dark li {
   position: relative;
   display: block;
   padding: 0.5rem 1rem;
@@ -4851,24 +5355,24 @@ fieldset:disabled .btn {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 
-.list-group-item.disabled, .checks-primary li.disabled, .checks-secondary li.disabled, .checks-tertiary li.disabled, .list-group-item:disabled, .checks-primary li:disabled, .checks-secondary li:disabled, .checks-tertiary li:disabled {
+.list-group-item.disabled, .checks-primary li.disabled, .checks-secondary li.disabled, .checks-tertiary li.disabled, .checks-success li.disabled, .checks-info li.disabled, .checks-warning li.disabled, .checks-danger li.disabled, .checks-light li.disabled, .checks-dark li.disabled, .list-group-item:disabled, .checks-primary li:disabled, .checks-secondary li:disabled, .checks-tertiary li:disabled, .checks-success li:disabled, .checks-info li:disabled, .checks-warning li:disabled, .checks-danger li:disabled, .checks-light li:disabled, .checks-dark li:disabled {
   color: #6c757d;
   pointer-events: none;
   background-color: #fff;
 }
 
-.list-group-item.active, .checks-primary li.active, .checks-secondary li.active, .checks-tertiary li.active {
+.list-group-item.active, .checks-primary li.active, .checks-secondary li.active, .checks-tertiary li.active, .checks-success li.active, .checks-info li.active, .checks-warning li.active, .checks-danger li.active, .checks-light li.active, .checks-dark li.active {
   z-index: 2;
   color: #fff;
   background-color: #0d6efd;
   border-color: #0d6efd;
 }
 
-.list-group-item + .list-group-item, .checks-primary li + .list-group-item, .checks-secondary li + .list-group-item, .checks-tertiary li + .list-group-item, .checks-primary .list-group-item + li, .checks-primary li + li, .checks-secondary .list-group-item + li, .checks-secondary li + li, .checks-tertiary .list-group-item + li, .checks-tertiary li + li {
+.list-group-item + .list-group-item, .checks-primary li + .list-group-item, .checks-secondary li + .list-group-item, .checks-tertiary li + .list-group-item, .checks-success li + .list-group-item, .checks-info li + .list-group-item, .checks-warning li + .list-group-item, .checks-danger li + .list-group-item, .checks-light li + .list-group-item, .checks-dark li + .list-group-item, .checks-primary .list-group-item + li, .checks-primary li + li, .checks-secondary .list-group-item + li, .checks-secondary li + li, .checks-tertiary .list-group-item + li, .checks-tertiary li + li, .checks-success .list-group-item + li, .checks-success li + li, .checks-info .list-group-item + li, .checks-info li + li, .checks-warning .list-group-item + li, .checks-warning li + li, .checks-danger .list-group-item + li, .checks-danger li + li, .checks-light .list-group-item + li, .checks-light li + li, .checks-dark .list-group-item + li, .checks-dark li + li {
   border-top-width: 0;
 }
 
-.list-group-item + .list-group-item.active, .checks-primary li + .list-group-item.active, .checks-secondary li + .list-group-item.active, .checks-tertiary li + .list-group-item.active, .checks-primary .list-group-item + li.active, .checks-primary li + li.active, .checks-secondary .list-group-item + li.active, .checks-secondary li + li.active, .checks-tertiary .list-group-item + li.active, .checks-tertiary li + li.active {
+.list-group-item + .list-group-item.active, .checks-primary li + .list-group-item.active, .checks-secondary li + .list-group-item.active, .checks-tertiary li + .list-group-item.active, .checks-success li + .list-group-item.active, .checks-info li + .list-group-item.active, .checks-warning li + .list-group-item.active, .checks-danger li + .list-group-item.active, .checks-light li + .list-group-item.active, .checks-dark li + .list-group-item.active, .checks-primary .list-group-item + li.active, .checks-primary li + li.active, .checks-secondary .list-group-item + li.active, .checks-secondary li + li.active, .checks-tertiary .list-group-item + li.active, .checks-tertiary li + li.active, .checks-success .list-group-item + li.active, .checks-success li + li.active, .checks-info .list-group-item + li.active, .checks-info li + li.active, .checks-warning .list-group-item + li.active, .checks-warning li + li.active, .checks-danger .list-group-item + li.active, .checks-danger li + li.active, .checks-light .list-group-item + li.active, .checks-light li + li.active, .checks-dark .list-group-item + li.active, .checks-dark li + li.active {
   margin-top: -1px;
   border-top-width: 1px;
 }
@@ -4877,16 +5381,16 @@ fieldset:disabled .btn {
   flex-direction: row;
 }
 
-.list-group-horizontal > .list-group-item.active, .checks-primary .list-group-horizontal > li.active, .checks-secondary .list-group-horizontal > li.active, .checks-tertiary .list-group-horizontal > li.active {
+.list-group-horizontal > .list-group-item.active, .checks-primary .list-group-horizontal > li.active, .checks-secondary .list-group-horizontal > li.active, .checks-tertiary .list-group-horizontal > li.active, .checks-success .list-group-horizontal > li.active, .checks-info .list-group-horizontal > li.active, .checks-warning .list-group-horizontal > li.active, .checks-danger .list-group-horizontal > li.active, .checks-light .list-group-horizontal > li.active, .checks-dark .list-group-horizontal > li.active {
   margin-top: 0;
 }
 
-.list-group-horizontal > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal > li + .list-group-item, .checks-secondary .list-group-horizontal > li + .list-group-item, .checks-tertiary .list-group-horizontal > li + .list-group-item, .checks-primary .list-group-horizontal > .list-group-item + li, .checks-primary .list-group-horizontal > li + li, .checks-secondary .list-group-horizontal > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal > li + li, .checks-secondary .checks-primary .list-group-horizontal > li + li, .checks-secondary .list-group-horizontal > li + li, .checks-tertiary .list-group-horizontal > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal > li + li, .checks-tertiary .checks-primary .list-group-horizontal > li + li, .checks-secondary .checks-tertiary .list-group-horizontal > li + li, .checks-tertiary .checks-secondary .list-group-horizontal > li + li, .checks-tertiary .list-group-horizontal > li + li {
+.list-group-horizontal > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal > li + .list-group-item, .checks-secondary .list-group-horizontal > li + .list-group-item, .checks-tertiary .list-group-horizontal > li + .list-group-item, .checks-success .list-group-horizontal > li + .list-group-item, .checks-info .list-group-horizontal > li + .list-group-item, .checks-warning .list-group-horizontal > li + .list-group-item, .checks-danger .list-group-horizontal > li + .list-group-item, .checks-light .list-group-horizontal > li + .list-group-item, .checks-dark .list-group-horizontal > li + .list-group-item, .checks-primary .list-group-horizontal > .list-group-item + li, .checks-primary .list-group-horizontal > li + li, .checks-secondary .list-group-horizontal > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal > li + li, .checks-secondary .checks-primary .list-group-horizontal > li + li, .checks-secondary .list-group-horizontal > li + li, .checks-tertiary .list-group-horizontal > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal > li + li, .checks-tertiary .checks-primary .list-group-horizontal > li + li, .checks-secondary .checks-tertiary .list-group-horizontal > li + li, .checks-tertiary .checks-secondary .list-group-horizontal > li + li, .checks-tertiary .list-group-horizontal > li + li, .checks-success .list-group-horizontal > .list-group-item + li, .checks-primary .checks-success .list-group-horizontal > li + li, .checks-success .checks-primary .list-group-horizontal > li + li, .checks-secondary .checks-success .list-group-horizontal > li + li, .checks-success .checks-secondary .list-group-horizontal > li + li, .checks-tertiary .checks-success .list-group-horizontal > li + li, .checks-success .checks-tertiary .list-group-horizontal > li + li, .checks-success .list-group-horizontal > li + li, .checks-info .list-group-horizontal > .list-group-item + li, .checks-primary .checks-info .list-group-horizontal > li + li, .checks-info .checks-primary .list-group-horizontal > li + li, .checks-secondary .checks-info .list-group-horizontal > li + li, .checks-info .checks-secondary .list-group-horizontal > li + li, .checks-tertiary .checks-info .list-group-horizontal > li + li, .checks-info .checks-tertiary .list-group-horizontal > li + li, .checks-success .checks-info .list-group-horizontal > li + li, .checks-info .checks-success .list-group-horizontal > li + li, .checks-info .list-group-horizontal > li + li, .checks-warning .list-group-horizontal > .list-group-item + li, .checks-primary .checks-warning .list-group-horizontal > li + li, .checks-warning .checks-primary .list-group-horizontal > li + li, .checks-secondary .checks-warning .list-group-horizontal > li + li, .checks-warning .checks-secondary .list-group-horizontal > li + li, .checks-tertiary .checks-warning .list-group-horizontal > li + li, .checks-warning .checks-tertiary .list-group-horizontal > li + li, .checks-success .checks-warning .list-group-horizontal > li + li, .checks-warning .checks-success .list-group-horizontal > li + li, .checks-info .checks-warning .list-group-horizontal > li + li, .checks-warning .checks-info .list-group-horizontal > li + li, .checks-warning .list-group-horizontal > li + li, .checks-danger .list-group-horizontal > .list-group-item + li, .checks-primary .checks-danger .list-group-horizontal > li + li, .checks-danger .checks-primary .list-group-horizontal > li + li, .checks-secondary .checks-danger .list-group-horizontal > li + li, .checks-danger .checks-secondary .list-group-horizontal > li + li, .checks-tertiary .checks-danger .list-group-horizontal > li + li, .checks-danger .checks-tertiary .list-group-horizontal > li + li, .checks-success .checks-danger .list-group-horizontal > li + li, .checks-danger .checks-success .list-group-horizontal > li + li, .checks-info .checks-danger .list-group-horizontal > li + li, .checks-danger .checks-info .list-group-horizontal > li + li, .checks-warning .checks-danger .list-group-horizontal > li + li, .checks-danger .checks-warning .list-group-horizontal > li + li, .checks-danger .list-group-horizontal > li + li, .checks-light .list-group-horizontal > .list-group-item + li, .checks-primary .checks-light .list-group-horizontal > li + li, .checks-light .checks-primary .list-group-horizontal > li + li, .checks-secondary .checks-light .list-group-horizontal > li + li, .checks-light .checks-secondary .list-group-horizontal > li + li, .checks-tertiary .checks-light .list-group-horizontal > li + li, .checks-light .checks-tertiary .list-group-horizontal > li + li, .checks-success .checks-light .list-group-horizontal > li + li, .checks-light .checks-success .list-group-horizontal > li + li, .checks-info .checks-light .list-group-horizontal > li + li, .checks-light .checks-info .list-group-horizontal > li + li, .checks-warning .checks-light .list-group-horizontal > li + li, .checks-light .checks-warning .list-group-horizontal > li + li, .checks-danger .checks-light .list-group-horizontal > li + li, .checks-light .checks-danger .list-group-horizontal > li + li, .checks-light .list-group-horizontal > li + li, .checks-dark .list-group-horizontal > .list-group-item + li, .checks-primary .checks-dark .list-group-horizontal > li + li, .checks-dark .checks-primary .list-group-horizontal > li + li, .checks-secondary .checks-dark .list-group-horizontal > li + li, .checks-dark .checks-secondary .list-group-horizontal > li + li, .checks-tertiary .checks-dark .list-group-horizontal > li + li, .checks-dark .checks-tertiary .list-group-horizontal > li + li, .checks-success .checks-dark .list-group-horizontal > li + li, .checks-dark .checks-success .list-group-horizontal > li + li, .checks-info .checks-dark .list-group-horizontal > li + li, .checks-dark .checks-info .list-group-horizontal > li + li, .checks-warning .checks-dark .list-group-horizontal > li + li, .checks-dark .checks-warning .list-group-horizontal > li + li, .checks-danger .checks-dark .list-group-horizontal > li + li, .checks-dark .checks-danger .list-group-horizontal > li + li, .checks-light .checks-dark .list-group-horizontal > li + li, .checks-dark .checks-light .list-group-horizontal > li + li, .checks-dark .list-group-horizontal > li + li {
   border-top-width: 1px;
   border-left-width: 0;
 }
 
-.list-group-horizontal > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal > li + .list-group-item.active, .checks-secondary .list-group-horizontal > li + .list-group-item.active, .checks-tertiary .list-group-horizontal > li + .list-group-item.active, .checks-primary .list-group-horizontal > .list-group-item + li.active, .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .list-group-horizontal > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal > li + li.active, .checks-secondary .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .list-group-horizontal > li + li.active, .checks-tertiary .list-group-horizontal > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal > li + li.active, .checks-tertiary .list-group-horizontal > li + li.active {
+.list-group-horizontal > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal > li + .list-group-item.active, .checks-secondary .list-group-horizontal > li + .list-group-item.active, .checks-tertiary .list-group-horizontal > li + .list-group-item.active, .checks-success .list-group-horizontal > li + .list-group-item.active, .checks-info .list-group-horizontal > li + .list-group-item.active, .checks-warning .list-group-horizontal > li + .list-group-item.active, .checks-danger .list-group-horizontal > li + .list-group-item.active, .checks-light .list-group-horizontal > li + .list-group-item.active, .checks-dark .list-group-horizontal > li + .list-group-item.active, .checks-primary .list-group-horizontal > .list-group-item + li.active, .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .list-group-horizontal > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal > li + li.active, .checks-secondary .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .list-group-horizontal > li + li.active, .checks-tertiary .list-group-horizontal > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal > li + li.active, .checks-tertiary .list-group-horizontal > li + li.active, .checks-success .list-group-horizontal > .list-group-item + li.active, .checks-primary .checks-success .list-group-horizontal > li + li.active, .checks-success .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .checks-success .list-group-horizontal > li + li.active, .checks-success .checks-secondary .list-group-horizontal > li + li.active, .checks-tertiary .checks-success .list-group-horizontal > li + li.active, .checks-success .checks-tertiary .list-group-horizontal > li + li.active, .checks-success .list-group-horizontal > li + li.active, .checks-info .list-group-horizontal > .list-group-item + li.active, .checks-primary .checks-info .list-group-horizontal > li + li.active, .checks-info .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .checks-info .list-group-horizontal > li + li.active, .checks-info .checks-secondary .list-group-horizontal > li + li.active, .checks-tertiary .checks-info .list-group-horizontal > li + li.active, .checks-info .checks-tertiary .list-group-horizontal > li + li.active, .checks-success .checks-info .list-group-horizontal > li + li.active, .checks-info .checks-success .list-group-horizontal > li + li.active, .checks-info .list-group-horizontal > li + li.active, .checks-warning .list-group-horizontal > .list-group-item + li.active, .checks-primary .checks-warning .list-group-horizontal > li + li.active, .checks-warning .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .checks-warning .list-group-horizontal > li + li.active, .checks-warning .checks-secondary .list-group-horizontal > li + li.active, .checks-tertiary .checks-warning .list-group-horizontal > li + li.active, .checks-warning .checks-tertiary .list-group-horizontal > li + li.active, .checks-success .checks-warning .list-group-horizontal > li + li.active, .checks-warning .checks-success .list-group-horizontal > li + li.active, .checks-info .checks-warning .list-group-horizontal > li + li.active, .checks-warning .checks-info .list-group-horizontal > li + li.active, .checks-warning .list-group-horizontal > li + li.active, .checks-danger .list-group-horizontal > .list-group-item + li.active, .checks-primary .checks-danger .list-group-horizontal > li + li.active, .checks-danger .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .checks-danger .list-group-horizontal > li + li.active, .checks-danger .checks-secondary .list-group-horizontal > li + li.active, .checks-tertiary .checks-danger .list-group-horizontal > li + li.active, .checks-danger .checks-tertiary .list-group-horizontal > li + li.active, .checks-success .checks-danger .list-group-horizontal > li + li.active, .checks-danger .checks-success .list-group-horizontal > li + li.active, .checks-info .checks-danger .list-group-horizontal > li + li.active, .checks-danger .checks-info .list-group-horizontal > li + li.active, .checks-warning .checks-danger .list-group-horizontal > li + li.active, .checks-danger .checks-warning .list-group-horizontal > li + li.active, .checks-danger .list-group-horizontal > li + li.active, .checks-light .list-group-horizontal > .list-group-item + li.active, .checks-primary .checks-light .list-group-horizontal > li + li.active, .checks-light .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .checks-light .list-group-horizontal > li + li.active, .checks-light .checks-secondary .list-group-horizontal > li + li.active, .checks-tertiary .checks-light .list-group-horizontal > li + li.active, .checks-light .checks-tertiary .list-group-horizontal > li + li.active, .checks-success .checks-light .list-group-horizontal > li + li.active, .checks-light .checks-success .list-group-horizontal > li + li.active, .checks-info .checks-light .list-group-horizontal > li + li.active, .checks-light .checks-info .list-group-horizontal > li + li.active, .checks-warning .checks-light .list-group-horizontal > li + li.active, .checks-light .checks-warning .list-group-horizontal > li + li.active, .checks-danger .checks-light .list-group-horizontal > li + li.active, .checks-light .checks-danger .list-group-horizontal > li + li.active, .checks-light .list-group-horizontal > li + li.active, .checks-dark .list-group-horizontal > .list-group-item + li.active, .checks-primary .checks-dark .list-group-horizontal > li + li.active, .checks-dark .checks-primary .list-group-horizontal > li + li.active, .checks-secondary .checks-dark .list-group-horizontal > li + li.active, .checks-dark .checks-secondary .list-group-horizontal > li + li.active, .checks-tertiary .checks-dark .list-group-horizontal > li + li.active, .checks-dark .checks-tertiary .list-group-horizontal > li + li.active, .checks-success .checks-dark .list-group-horizontal > li + li.active, .checks-dark .checks-success .list-group-horizontal > li + li.active, .checks-info .checks-dark .list-group-horizontal > li + li.active, .checks-dark .checks-info .list-group-horizontal > li + li.active, .checks-warning .checks-dark .list-group-horizontal > li + li.active, .checks-dark .checks-warning .list-group-horizontal > li + li.active, .checks-danger .checks-dark .list-group-horizontal > li + li.active, .checks-dark .checks-danger .list-group-horizontal > li + li.active, .checks-light .checks-dark .list-group-horizontal > li + li.active, .checks-dark .checks-light .list-group-horizontal > li + li.active, .checks-dark .list-group-horizontal > li + li.active {
   margin-left: -1px;
   border-left-width: 1px;
 }
@@ -4895,14 +5399,14 @@ fieldset:disabled .btn {
   .list-group-horizontal-sm {
     flex-direction: row;
   }
-  .list-group-horizontal-sm > .list-group-item.active, .checks-primary .list-group-horizontal-sm > li.active, .checks-secondary .list-group-horizontal-sm > li.active, .checks-tertiary .list-group-horizontal-sm > li.active {
+  .list-group-horizontal-sm > .list-group-item.active, .checks-primary .list-group-horizontal-sm > li.active, .checks-secondary .list-group-horizontal-sm > li.active, .checks-tertiary .list-group-horizontal-sm > li.active, .checks-success .list-group-horizontal-sm > li.active, .checks-info .list-group-horizontal-sm > li.active, .checks-warning .list-group-horizontal-sm > li.active, .checks-danger .list-group-horizontal-sm > li.active, .checks-light .list-group-horizontal-sm > li.active, .checks-dark .list-group-horizontal-sm > li.active {
     margin-top: 0;
   }
-  .list-group-horizontal-sm > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal-sm > li + .list-group-item, .checks-secondary .list-group-horizontal-sm > li + .list-group-item, .checks-tertiary .list-group-horizontal-sm > li + .list-group-item, .checks-primary .list-group-horizontal-sm > .list-group-item + li, .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .list-group-horizontal-sm > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal-sm > li + li, .checks-secondary .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .list-group-horizontal-sm > li + li, .checks-tertiary .list-group-horizontal-sm > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal-sm > li + li, .checks-tertiary .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .checks-tertiary .list-group-horizontal-sm > li + li, .checks-tertiary .checks-secondary .list-group-horizontal-sm > li + li, .checks-tertiary .list-group-horizontal-sm > li + li {
+  .list-group-horizontal-sm > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal-sm > li + .list-group-item, .checks-secondary .list-group-horizontal-sm > li + .list-group-item, .checks-tertiary .list-group-horizontal-sm > li + .list-group-item, .checks-success .list-group-horizontal-sm > li + .list-group-item, .checks-info .list-group-horizontal-sm > li + .list-group-item, .checks-warning .list-group-horizontal-sm > li + .list-group-item, .checks-danger .list-group-horizontal-sm > li + .list-group-item, .checks-light .list-group-horizontal-sm > li + .list-group-item, .checks-dark .list-group-horizontal-sm > li + .list-group-item, .checks-primary .list-group-horizontal-sm > .list-group-item + li, .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .list-group-horizontal-sm > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal-sm > li + li, .checks-secondary .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .list-group-horizontal-sm > li + li, .checks-tertiary .list-group-horizontal-sm > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal-sm > li + li, .checks-tertiary .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .checks-tertiary .list-group-horizontal-sm > li + li, .checks-tertiary .checks-secondary .list-group-horizontal-sm > li + li, .checks-tertiary .list-group-horizontal-sm > li + li, .checks-success .list-group-horizontal-sm > .list-group-item + li, .checks-primary .checks-success .list-group-horizontal-sm > li + li, .checks-success .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .checks-success .list-group-horizontal-sm > li + li, .checks-success .checks-secondary .list-group-horizontal-sm > li + li, .checks-tertiary .checks-success .list-group-horizontal-sm > li + li, .checks-success .checks-tertiary .list-group-horizontal-sm > li + li, .checks-success .list-group-horizontal-sm > li + li, .checks-info .list-group-horizontal-sm > .list-group-item + li, .checks-primary .checks-info .list-group-horizontal-sm > li + li, .checks-info .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .checks-info .list-group-horizontal-sm > li + li, .checks-info .checks-secondary .list-group-horizontal-sm > li + li, .checks-tertiary .checks-info .list-group-horizontal-sm > li + li, .checks-info .checks-tertiary .list-group-horizontal-sm > li + li, .checks-success .checks-info .list-group-horizontal-sm > li + li, .checks-info .checks-success .list-group-horizontal-sm > li + li, .checks-info .list-group-horizontal-sm > li + li, .checks-warning .list-group-horizontal-sm > .list-group-item + li, .checks-primary .checks-warning .list-group-horizontal-sm > li + li, .checks-warning .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .checks-warning .list-group-horizontal-sm > li + li, .checks-warning .checks-secondary .list-group-horizontal-sm > li + li, .checks-tertiary .checks-warning .list-group-horizontal-sm > li + li, .checks-warning .checks-tertiary .list-group-horizontal-sm > li + li, .checks-success .checks-warning .list-group-horizontal-sm > li + li, .checks-warning .checks-success .list-group-horizontal-sm > li + li, .checks-info .checks-warning .list-group-horizontal-sm > li + li, .checks-warning .checks-info .list-group-horizontal-sm > li + li, .checks-warning .list-group-horizontal-sm > li + li, .checks-danger .list-group-horizontal-sm > .list-group-item + li, .checks-primary .checks-danger .list-group-horizontal-sm > li + li, .checks-danger .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .checks-danger .list-group-horizontal-sm > li + li, .checks-danger .checks-secondary .list-group-horizontal-sm > li + li, .checks-tertiary .checks-danger .list-group-horizontal-sm > li + li, .checks-danger .checks-tertiary .list-group-horizontal-sm > li + li, .checks-success .checks-danger .list-group-horizontal-sm > li + li, .checks-danger .checks-success .list-group-horizontal-sm > li + li, .checks-info .checks-danger .list-group-horizontal-sm > li + li, .checks-danger .checks-info .list-group-horizontal-sm > li + li, .checks-warning .checks-danger .list-group-horizontal-sm > li + li, .checks-danger .checks-warning .list-group-horizontal-sm > li + li, .checks-danger .list-group-horizontal-sm > li + li, .checks-light .list-group-horizontal-sm > .list-group-item + li, .checks-primary .checks-light .list-group-horizontal-sm > li + li, .checks-light .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .checks-light .list-group-horizontal-sm > li + li, .checks-light .checks-secondary .list-group-horizontal-sm > li + li, .checks-tertiary .checks-light .list-group-horizontal-sm > li + li, .checks-light .checks-tertiary .list-group-horizontal-sm > li + li, .checks-success .checks-light .list-group-horizontal-sm > li + li, .checks-light .checks-success .list-group-horizontal-sm > li + li, .checks-info .checks-light .list-group-horizontal-sm > li + li, .checks-light .checks-info .list-group-horizontal-sm > li + li, .checks-warning .checks-light .list-group-horizontal-sm > li + li, .checks-light .checks-warning .list-group-horizontal-sm > li + li, .checks-danger .checks-light .list-group-horizontal-sm > li + li, .checks-light .checks-danger .list-group-horizontal-sm > li + li, .checks-light .list-group-horizontal-sm > li + li, .checks-dark .list-group-horizontal-sm > .list-group-item + li, .checks-primary .checks-dark .list-group-horizontal-sm > li + li, .checks-dark .checks-primary .list-group-horizontal-sm > li + li, .checks-secondary .checks-dark .list-group-horizontal-sm > li + li, .checks-dark .checks-secondary .list-group-horizontal-sm > li + li, .checks-tertiary .checks-dark .list-group-horizontal-sm > li + li, .checks-dark .checks-tertiary .list-group-horizontal-sm > li + li, .checks-success .checks-dark .list-group-horizontal-sm > li + li, .checks-dark .checks-success .list-group-horizontal-sm > li + li, .checks-info .checks-dark .list-group-horizontal-sm > li + li, .checks-dark .checks-info .list-group-horizontal-sm > li + li, .checks-warning .checks-dark .list-group-horizontal-sm > li + li, .checks-dark .checks-warning .list-group-horizontal-sm > li + li, .checks-danger .checks-dark .list-group-horizontal-sm > li + li, .checks-dark .checks-danger .list-group-horizontal-sm > li + li, .checks-light .checks-dark .list-group-horizontal-sm > li + li, .checks-dark .checks-light .list-group-horizontal-sm > li + li, .checks-dark .list-group-horizontal-sm > li + li {
     border-top-width: 1px;
     border-left-width: 0;
   }
-  .list-group-horizontal-sm > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal-sm > li + .list-group-item.active, .checks-secondary .list-group-horizontal-sm > li + .list-group-item.active, .checks-tertiary .list-group-horizontal-sm > li + .list-group-item.active, .checks-primary .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-secondary .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-tertiary .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal-sm > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal-sm > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-tertiary .list-group-horizontal-sm > li + li.active {
+  .list-group-horizontal-sm > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal-sm > li + .list-group-item.active, .checks-secondary .list-group-horizontal-sm > li + .list-group-item.active, .checks-tertiary .list-group-horizontal-sm > li + .list-group-item.active, .checks-success .list-group-horizontal-sm > li + .list-group-item.active, .checks-info .list-group-horizontal-sm > li + .list-group-item.active, .checks-warning .list-group-horizontal-sm > li + .list-group-item.active, .checks-danger .list-group-horizontal-sm > li + .list-group-item.active, .checks-light .list-group-horizontal-sm > li + .list-group-item.active, .checks-dark .list-group-horizontal-sm > li + .list-group-item.active, .checks-primary .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-secondary .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-tertiary .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal-sm > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal-sm > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-tertiary .list-group-horizontal-sm > li + li.active, .checks-success .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .checks-success .list-group-horizontal-sm > li + li.active, .checks-success .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .checks-success .list-group-horizontal-sm > li + li.active, .checks-success .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-tertiary .checks-success .list-group-horizontal-sm > li + li.active, .checks-success .checks-tertiary .list-group-horizontal-sm > li + li.active, .checks-success .list-group-horizontal-sm > li + li.active, .checks-info .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .checks-info .list-group-horizontal-sm > li + li.active, .checks-info .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .checks-info .list-group-horizontal-sm > li + li.active, .checks-info .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-tertiary .checks-info .list-group-horizontal-sm > li + li.active, .checks-info .checks-tertiary .list-group-horizontal-sm > li + li.active, .checks-success .checks-info .list-group-horizontal-sm > li + li.active, .checks-info .checks-success .list-group-horizontal-sm > li + li.active, .checks-info .list-group-horizontal-sm > li + li.active, .checks-warning .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .checks-warning .list-group-horizontal-sm > li + li.active, .checks-warning .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .checks-warning .list-group-horizontal-sm > li + li.active, .checks-warning .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-tertiary .checks-warning .list-group-horizontal-sm > li + li.active, .checks-warning .checks-tertiary .list-group-horizontal-sm > li + li.active, .checks-success .checks-warning .list-group-horizontal-sm > li + li.active, .checks-warning .checks-success .list-group-horizontal-sm > li + li.active, .checks-info .checks-warning .list-group-horizontal-sm > li + li.active, .checks-warning .checks-info .list-group-horizontal-sm > li + li.active, .checks-warning .list-group-horizontal-sm > li + li.active, .checks-danger .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .checks-danger .list-group-horizontal-sm > li + li.active, .checks-danger .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .checks-danger .list-group-horizontal-sm > li + li.active, .checks-danger .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-tertiary .checks-danger .list-group-horizontal-sm > li + li.active, .checks-danger .checks-tertiary .list-group-horizontal-sm > li + li.active, .checks-success .checks-danger .list-group-horizontal-sm > li + li.active, .checks-danger .checks-success .list-group-horizontal-sm > li + li.active, .checks-info .checks-danger .list-group-horizontal-sm > li + li.active, .checks-danger .checks-info .list-group-horizontal-sm > li + li.active, .checks-warning .checks-danger .list-group-horizontal-sm > li + li.active, .checks-danger .checks-warning .list-group-horizontal-sm > li + li.active, .checks-danger .list-group-horizontal-sm > li + li.active, .checks-light .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .checks-light .list-group-horizontal-sm > li + li.active, .checks-light .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .checks-light .list-group-horizontal-sm > li + li.active, .checks-light .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-tertiary .checks-light .list-group-horizontal-sm > li + li.active, .checks-light .checks-tertiary .list-group-horizontal-sm > li + li.active, .checks-success .checks-light .list-group-horizontal-sm > li + li.active, .checks-light .checks-success .list-group-horizontal-sm > li + li.active, .checks-info .checks-light .list-group-horizontal-sm > li + li.active, .checks-light .checks-info .list-group-horizontal-sm > li + li.active, .checks-warning .checks-light .list-group-horizontal-sm > li + li.active, .checks-light .checks-warning .list-group-horizontal-sm > li + li.active, .checks-danger .checks-light .list-group-horizontal-sm > li + li.active, .checks-light .checks-danger .list-group-horizontal-sm > li + li.active, .checks-light .list-group-horizontal-sm > li + li.active, .checks-dark .list-group-horizontal-sm > .list-group-item + li.active, .checks-primary .checks-dark .list-group-horizontal-sm > li + li.active, .checks-dark .checks-primary .list-group-horizontal-sm > li + li.active, .checks-secondary .checks-dark .list-group-horizontal-sm > li + li.active, .checks-dark .checks-secondary .list-group-horizontal-sm > li + li.active, .checks-tertiary .checks-dark .list-group-horizontal-sm > li + li.active, .checks-dark .checks-tertiary .list-group-horizontal-sm > li + li.active, .checks-success .checks-dark .list-group-horizontal-sm > li + li.active, .checks-dark .checks-success .list-group-horizontal-sm > li + li.active, .checks-info .checks-dark .list-group-horizontal-sm > li + li.active, .checks-dark .checks-info .list-group-horizontal-sm > li + li.active, .checks-warning .checks-dark .list-group-horizontal-sm > li + li.active, .checks-dark .checks-warning .list-group-horizontal-sm > li + li.active, .checks-danger .checks-dark .list-group-horizontal-sm > li + li.active, .checks-dark .checks-danger .list-group-horizontal-sm > li + li.active, .checks-light .checks-dark .list-group-horizontal-sm > li + li.active, .checks-dark .checks-light .list-group-horizontal-sm > li + li.active, .checks-dark .list-group-horizontal-sm > li + li.active {
     margin-left: -1px;
     border-left-width: 1px;
   }
@@ -4912,14 +5416,14 @@ fieldset:disabled .btn {
   .list-group-horizontal-md {
     flex-direction: row;
   }
-  .list-group-horizontal-md > .list-group-item.active, .checks-primary .list-group-horizontal-md > li.active, .checks-secondary .list-group-horizontal-md > li.active, .checks-tertiary .list-group-horizontal-md > li.active {
+  .list-group-horizontal-md > .list-group-item.active, .checks-primary .list-group-horizontal-md > li.active, .checks-secondary .list-group-horizontal-md > li.active, .checks-tertiary .list-group-horizontal-md > li.active, .checks-success .list-group-horizontal-md > li.active, .checks-info .list-group-horizontal-md > li.active, .checks-warning .list-group-horizontal-md > li.active, .checks-danger .list-group-horizontal-md > li.active, .checks-light .list-group-horizontal-md > li.active, .checks-dark .list-group-horizontal-md > li.active {
     margin-top: 0;
   }
-  .list-group-horizontal-md > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal-md > li + .list-group-item, .checks-secondary .list-group-horizontal-md > li + .list-group-item, .checks-tertiary .list-group-horizontal-md > li + .list-group-item, .checks-primary .list-group-horizontal-md > .list-group-item + li, .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .list-group-horizontal-md > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal-md > li + li, .checks-secondary .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .list-group-horizontal-md > li + li, .checks-tertiary .list-group-horizontal-md > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal-md > li + li, .checks-tertiary .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .checks-tertiary .list-group-horizontal-md > li + li, .checks-tertiary .checks-secondary .list-group-horizontal-md > li + li, .checks-tertiary .list-group-horizontal-md > li + li {
+  .list-group-horizontal-md > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal-md > li + .list-group-item, .checks-secondary .list-group-horizontal-md > li + .list-group-item, .checks-tertiary .list-group-horizontal-md > li + .list-group-item, .checks-success .list-group-horizontal-md > li + .list-group-item, .checks-info .list-group-horizontal-md > li + .list-group-item, .checks-warning .list-group-horizontal-md > li + .list-group-item, .checks-danger .list-group-horizontal-md > li + .list-group-item, .checks-light .list-group-horizontal-md > li + .list-group-item, .checks-dark .list-group-horizontal-md > li + .list-group-item, .checks-primary .list-group-horizontal-md > .list-group-item + li, .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .list-group-horizontal-md > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal-md > li + li, .checks-secondary .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .list-group-horizontal-md > li + li, .checks-tertiary .list-group-horizontal-md > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal-md > li + li, .checks-tertiary .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .checks-tertiary .list-group-horizontal-md > li + li, .checks-tertiary .checks-secondary .list-group-horizontal-md > li + li, .checks-tertiary .list-group-horizontal-md > li + li, .checks-success .list-group-horizontal-md > .list-group-item + li, .checks-primary .checks-success .list-group-horizontal-md > li + li, .checks-success .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .checks-success .list-group-horizontal-md > li + li, .checks-success .checks-secondary .list-group-horizontal-md > li + li, .checks-tertiary .checks-success .list-group-horizontal-md > li + li, .checks-success .checks-tertiary .list-group-horizontal-md > li + li, .checks-success .list-group-horizontal-md > li + li, .checks-info .list-group-horizontal-md > .list-group-item + li, .checks-primary .checks-info .list-group-horizontal-md > li + li, .checks-info .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .checks-info .list-group-horizontal-md > li + li, .checks-info .checks-secondary .list-group-horizontal-md > li + li, .checks-tertiary .checks-info .list-group-horizontal-md > li + li, .checks-info .checks-tertiary .list-group-horizontal-md > li + li, .checks-success .checks-info .list-group-horizontal-md > li + li, .checks-info .checks-success .list-group-horizontal-md > li + li, .checks-info .list-group-horizontal-md > li + li, .checks-warning .list-group-horizontal-md > .list-group-item + li, .checks-primary .checks-warning .list-group-horizontal-md > li + li, .checks-warning .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .checks-warning .list-group-horizontal-md > li + li, .checks-warning .checks-secondary .list-group-horizontal-md > li + li, .checks-tertiary .checks-warning .list-group-horizontal-md > li + li, .checks-warning .checks-tertiary .list-group-horizontal-md > li + li, .checks-success .checks-warning .list-group-horizontal-md > li + li, .checks-warning .checks-success .list-group-horizontal-md > li + li, .checks-info .checks-warning .list-group-horizontal-md > li + li, .checks-warning .checks-info .list-group-horizontal-md > li + li, .checks-warning .list-group-horizontal-md > li + li, .checks-danger .list-group-horizontal-md > .list-group-item + li, .checks-primary .checks-danger .list-group-horizontal-md > li + li, .checks-danger .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .checks-danger .list-group-horizontal-md > li + li, .checks-danger .checks-secondary .list-group-horizontal-md > li + li, .checks-tertiary .checks-danger .list-group-horizontal-md > li + li, .checks-danger .checks-tertiary .list-group-horizontal-md > li + li, .checks-success .checks-danger .list-group-horizontal-md > li + li, .checks-danger .checks-success .list-group-horizontal-md > li + li, .checks-info .checks-danger .list-group-horizontal-md > li + li, .checks-danger .checks-info .list-group-horizontal-md > li + li, .checks-warning .checks-danger .list-group-horizontal-md > li + li, .checks-danger .checks-warning .list-group-horizontal-md > li + li, .checks-danger .list-group-horizontal-md > li + li, .checks-light .list-group-horizontal-md > .list-group-item + li, .checks-primary .checks-light .list-group-horizontal-md > li + li, .checks-light .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .checks-light .list-group-horizontal-md > li + li, .checks-light .checks-secondary .list-group-horizontal-md > li + li, .checks-tertiary .checks-light .list-group-horizontal-md > li + li, .checks-light .checks-tertiary .list-group-horizontal-md > li + li, .checks-success .checks-light .list-group-horizontal-md > li + li, .checks-light .checks-success .list-group-horizontal-md > li + li, .checks-info .checks-light .list-group-horizontal-md > li + li, .checks-light .checks-info .list-group-horizontal-md > li + li, .checks-warning .checks-light .list-group-horizontal-md > li + li, .checks-light .checks-warning .list-group-horizontal-md > li + li, .checks-danger .checks-light .list-group-horizontal-md > li + li, .checks-light .checks-danger .list-group-horizontal-md > li + li, .checks-light .list-group-horizontal-md > li + li, .checks-dark .list-group-horizontal-md > .list-group-item + li, .checks-primary .checks-dark .list-group-horizontal-md > li + li, .checks-dark .checks-primary .list-group-horizontal-md > li + li, .checks-secondary .checks-dark .list-group-horizontal-md > li + li, .checks-dark .checks-secondary .list-group-horizontal-md > li + li, .checks-tertiary .checks-dark .list-group-horizontal-md > li + li, .checks-dark .checks-tertiary .list-group-horizontal-md > li + li, .checks-success .checks-dark .list-group-horizontal-md > li + li, .checks-dark .checks-success .list-group-horizontal-md > li + li, .checks-info .checks-dark .list-group-horizontal-md > li + li, .checks-dark .checks-info .list-group-horizontal-md > li + li, .checks-warning .checks-dark .list-group-horizontal-md > li + li, .checks-dark .checks-warning .list-group-horizontal-md > li + li, .checks-danger .checks-dark .list-group-horizontal-md > li + li, .checks-dark .checks-danger .list-group-horizontal-md > li + li, .checks-light .checks-dark .list-group-horizontal-md > li + li, .checks-dark .checks-light .list-group-horizontal-md > li + li, .checks-dark .list-group-horizontal-md > li + li {
     border-top-width: 1px;
     border-left-width: 0;
   }
-  .list-group-horizontal-md > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal-md > li + .list-group-item.active, .checks-secondary .list-group-horizontal-md > li + .list-group-item.active, .checks-tertiary .list-group-horizontal-md > li + .list-group-item.active, .checks-primary .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal-md > li + li.active, .checks-secondary .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .list-group-horizontal-md > li + li.active, .checks-tertiary .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal-md > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal-md > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal-md > li + li.active, .checks-tertiary .list-group-horizontal-md > li + li.active {
+  .list-group-horizontal-md > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal-md > li + .list-group-item.active, .checks-secondary .list-group-horizontal-md > li + .list-group-item.active, .checks-tertiary .list-group-horizontal-md > li + .list-group-item.active, .checks-success .list-group-horizontal-md > li + .list-group-item.active, .checks-info .list-group-horizontal-md > li + .list-group-item.active, .checks-warning .list-group-horizontal-md > li + .list-group-item.active, .checks-danger .list-group-horizontal-md > li + .list-group-item.active, .checks-light .list-group-horizontal-md > li + .list-group-item.active, .checks-dark .list-group-horizontal-md > li + .list-group-item.active, .checks-primary .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal-md > li + li.active, .checks-secondary .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .list-group-horizontal-md > li + li.active, .checks-tertiary .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal-md > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal-md > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal-md > li + li.active, .checks-tertiary .list-group-horizontal-md > li + li.active, .checks-success .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .checks-success .list-group-horizontal-md > li + li.active, .checks-success .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .checks-success .list-group-horizontal-md > li + li.active, .checks-success .checks-secondary .list-group-horizontal-md > li + li.active, .checks-tertiary .checks-success .list-group-horizontal-md > li + li.active, .checks-success .checks-tertiary .list-group-horizontal-md > li + li.active, .checks-success .list-group-horizontal-md > li + li.active, .checks-info .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .checks-info .list-group-horizontal-md > li + li.active, .checks-info .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .checks-info .list-group-horizontal-md > li + li.active, .checks-info .checks-secondary .list-group-horizontal-md > li + li.active, .checks-tertiary .checks-info .list-group-horizontal-md > li + li.active, .checks-info .checks-tertiary .list-group-horizontal-md > li + li.active, .checks-success .checks-info .list-group-horizontal-md > li + li.active, .checks-info .checks-success .list-group-horizontal-md > li + li.active, .checks-info .list-group-horizontal-md > li + li.active, .checks-warning .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .checks-warning .list-group-horizontal-md > li + li.active, .checks-warning .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .checks-warning .list-group-horizontal-md > li + li.active, .checks-warning .checks-secondary .list-group-horizontal-md > li + li.active, .checks-tertiary .checks-warning .list-group-horizontal-md > li + li.active, .checks-warning .checks-tertiary .list-group-horizontal-md > li + li.active, .checks-success .checks-warning .list-group-horizontal-md > li + li.active, .checks-warning .checks-success .list-group-horizontal-md > li + li.active, .checks-info .checks-warning .list-group-horizontal-md > li + li.active, .checks-warning .checks-info .list-group-horizontal-md > li + li.active, .checks-warning .list-group-horizontal-md > li + li.active, .checks-danger .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .checks-danger .list-group-horizontal-md > li + li.active, .checks-danger .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .checks-danger .list-group-horizontal-md > li + li.active, .checks-danger .checks-secondary .list-group-horizontal-md > li + li.active, .checks-tertiary .checks-danger .list-group-horizontal-md > li + li.active, .checks-danger .checks-tertiary .list-group-horizontal-md > li + li.active, .checks-success .checks-danger .list-group-horizontal-md > li + li.active, .checks-danger .checks-success .list-group-horizontal-md > li + li.active, .checks-info .checks-danger .list-group-horizontal-md > li + li.active, .checks-danger .checks-info .list-group-horizontal-md > li + li.active, .checks-warning .checks-danger .list-group-horizontal-md > li + li.active, .checks-danger .checks-warning .list-group-horizontal-md > li + li.active, .checks-danger .list-group-horizontal-md > li + li.active, .checks-light .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .checks-light .list-group-horizontal-md > li + li.active, .checks-light .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .checks-light .list-group-horizontal-md > li + li.active, .checks-light .checks-secondary .list-group-horizontal-md > li + li.active, .checks-tertiary .checks-light .list-group-horizontal-md > li + li.active, .checks-light .checks-tertiary .list-group-horizontal-md > li + li.active, .checks-success .checks-light .list-group-horizontal-md > li + li.active, .checks-light .checks-success .list-group-horizontal-md > li + li.active, .checks-info .checks-light .list-group-horizontal-md > li + li.active, .checks-light .checks-info .list-group-horizontal-md > li + li.active, .checks-warning .checks-light .list-group-horizontal-md > li + li.active, .checks-light .checks-warning .list-group-horizontal-md > li + li.active, .checks-danger .checks-light .list-group-horizontal-md > li + li.active, .checks-light .checks-danger .list-group-horizontal-md > li + li.active, .checks-light .list-group-horizontal-md > li + li.active, .checks-dark .list-group-horizontal-md > .list-group-item + li.active, .checks-primary .checks-dark .list-group-horizontal-md > li + li.active, .checks-dark .checks-primary .list-group-horizontal-md > li + li.active, .checks-secondary .checks-dark .list-group-horizontal-md > li + li.active, .checks-dark .checks-secondary .list-group-horizontal-md > li + li.active, .checks-tertiary .checks-dark .list-group-horizontal-md > li + li.active, .checks-dark .checks-tertiary .list-group-horizontal-md > li + li.active, .checks-success .checks-dark .list-group-horizontal-md > li + li.active, .checks-dark .checks-success .list-group-horizontal-md > li + li.active, .checks-info .checks-dark .list-group-horizontal-md > li + li.active, .checks-dark .checks-info .list-group-horizontal-md > li + li.active, .checks-warning .checks-dark .list-group-horizontal-md > li + li.active, .checks-dark .checks-warning .list-group-horizontal-md > li + li.active, .checks-danger .checks-dark .list-group-horizontal-md > li + li.active, .checks-dark .checks-danger .list-group-horizontal-md > li + li.active, .checks-light .checks-dark .list-group-horizontal-md > li + li.active, .checks-dark .checks-light .list-group-horizontal-md > li + li.active, .checks-dark .list-group-horizontal-md > li + li.active {
     margin-left: -1px;
     border-left-width: 1px;
   }
@@ -4929,14 +5433,14 @@ fieldset:disabled .btn {
   .list-group-horizontal-lg {
     flex-direction: row;
   }
-  .list-group-horizontal-lg > .list-group-item.active, .checks-primary .list-group-horizontal-lg > li.active, .checks-secondary .list-group-horizontal-lg > li.active, .checks-tertiary .list-group-horizontal-lg > li.active {
+  .list-group-horizontal-lg > .list-group-item.active, .checks-primary .list-group-horizontal-lg > li.active, .checks-secondary .list-group-horizontal-lg > li.active, .checks-tertiary .list-group-horizontal-lg > li.active, .checks-success .list-group-horizontal-lg > li.active, .checks-info .list-group-horizontal-lg > li.active, .checks-warning .list-group-horizontal-lg > li.active, .checks-danger .list-group-horizontal-lg > li.active, .checks-light .list-group-horizontal-lg > li.active, .checks-dark .list-group-horizontal-lg > li.active {
     margin-top: 0;
   }
-  .list-group-horizontal-lg > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal-lg > li + .list-group-item, .checks-secondary .list-group-horizontal-lg > li + .list-group-item, .checks-tertiary .list-group-horizontal-lg > li + .list-group-item, .checks-primary .list-group-horizontal-lg > .list-group-item + li, .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .list-group-horizontal-lg > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal-lg > li + li, .checks-secondary .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .list-group-horizontal-lg > li + li, .checks-tertiary .list-group-horizontal-lg > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal-lg > li + li, .checks-tertiary .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .checks-tertiary .list-group-horizontal-lg > li + li, .checks-tertiary .checks-secondary .list-group-horizontal-lg > li + li, .checks-tertiary .list-group-horizontal-lg > li + li {
+  .list-group-horizontal-lg > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal-lg > li + .list-group-item, .checks-secondary .list-group-horizontal-lg > li + .list-group-item, .checks-tertiary .list-group-horizontal-lg > li + .list-group-item, .checks-success .list-group-horizontal-lg > li + .list-group-item, .checks-info .list-group-horizontal-lg > li + .list-group-item, .checks-warning .list-group-horizontal-lg > li + .list-group-item, .checks-danger .list-group-horizontal-lg > li + .list-group-item, .checks-light .list-group-horizontal-lg > li + .list-group-item, .checks-dark .list-group-horizontal-lg > li + .list-group-item, .checks-primary .list-group-horizontal-lg > .list-group-item + li, .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .list-group-horizontal-lg > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal-lg > li + li, .checks-secondary .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .list-group-horizontal-lg > li + li, .checks-tertiary .list-group-horizontal-lg > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal-lg > li + li, .checks-tertiary .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .checks-tertiary .list-group-horizontal-lg > li + li, .checks-tertiary .checks-secondary .list-group-horizontal-lg > li + li, .checks-tertiary .list-group-horizontal-lg > li + li, .checks-success .list-group-horizontal-lg > .list-group-item + li, .checks-primary .checks-success .list-group-horizontal-lg > li + li, .checks-success .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .checks-success .list-group-horizontal-lg > li + li, .checks-success .checks-secondary .list-group-horizontal-lg > li + li, .checks-tertiary .checks-success .list-group-horizontal-lg > li + li, .checks-success .checks-tertiary .list-group-horizontal-lg > li + li, .checks-success .list-group-horizontal-lg > li + li, .checks-info .list-group-horizontal-lg > .list-group-item + li, .checks-primary .checks-info .list-group-horizontal-lg > li + li, .checks-info .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .checks-info .list-group-horizontal-lg > li + li, .checks-info .checks-secondary .list-group-horizontal-lg > li + li, .checks-tertiary .checks-info .list-group-horizontal-lg > li + li, .checks-info .checks-tertiary .list-group-horizontal-lg > li + li, .checks-success .checks-info .list-group-horizontal-lg > li + li, .checks-info .checks-success .list-group-horizontal-lg > li + li, .checks-info .list-group-horizontal-lg > li + li, .checks-warning .list-group-horizontal-lg > .list-group-item + li, .checks-primary .checks-warning .list-group-horizontal-lg > li + li, .checks-warning .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .checks-warning .list-group-horizontal-lg > li + li, .checks-warning .checks-secondary .list-group-horizontal-lg > li + li, .checks-tertiary .checks-warning .list-group-horizontal-lg > li + li, .checks-warning .checks-tertiary .list-group-horizontal-lg > li + li, .checks-success .checks-warning .list-group-horizontal-lg > li + li, .checks-warning .checks-success .list-group-horizontal-lg > li + li, .checks-info .checks-warning .list-group-horizontal-lg > li + li, .checks-warning .checks-info .list-group-horizontal-lg > li + li, .checks-warning .list-group-horizontal-lg > li + li, .checks-danger .list-group-horizontal-lg > .list-group-item + li, .checks-primary .checks-danger .list-group-horizontal-lg > li + li, .checks-danger .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .checks-danger .list-group-horizontal-lg > li + li, .checks-danger .checks-secondary .list-group-horizontal-lg > li + li, .checks-tertiary .checks-danger .list-group-horizontal-lg > li + li, .checks-danger .checks-tertiary .list-group-horizontal-lg > li + li, .checks-success .checks-danger .list-group-horizontal-lg > li + li, .checks-danger .checks-success .list-group-horizontal-lg > li + li, .checks-info .checks-danger .list-group-horizontal-lg > li + li, .checks-danger .checks-info .list-group-horizontal-lg > li + li, .checks-warning .checks-danger .list-group-horizontal-lg > li + li, .checks-danger .checks-warning .list-group-horizontal-lg > li + li, .checks-danger .list-group-horizontal-lg > li + li, .checks-light .list-group-horizontal-lg > .list-group-item + li, .checks-primary .checks-light .list-group-horizontal-lg > li + li, .checks-light .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .checks-light .list-group-horizontal-lg > li + li, .checks-light .checks-secondary .list-group-horizontal-lg > li + li, .checks-tertiary .checks-light .list-group-horizontal-lg > li + li, .checks-light .checks-tertiary .list-group-horizontal-lg > li + li, .checks-success .checks-light .list-group-horizontal-lg > li + li, .checks-light .checks-success .list-group-horizontal-lg > li + li, .checks-info .checks-light .list-group-horizontal-lg > li + li, .checks-light .checks-info .list-group-horizontal-lg > li + li, .checks-warning .checks-light .list-group-horizontal-lg > li + li, .checks-light .checks-warning .list-group-horizontal-lg > li + li, .checks-danger .checks-light .list-group-horizontal-lg > li + li, .checks-light .checks-danger .list-group-horizontal-lg > li + li, .checks-light .list-group-horizontal-lg > li + li, .checks-dark .list-group-horizontal-lg > .list-group-item + li, .checks-primary .checks-dark .list-group-horizontal-lg > li + li, .checks-dark .checks-primary .list-group-horizontal-lg > li + li, .checks-secondary .checks-dark .list-group-horizontal-lg > li + li, .checks-dark .checks-secondary .list-group-horizontal-lg > li + li, .checks-tertiary .checks-dark .list-group-horizontal-lg > li + li, .checks-dark .checks-tertiary .list-group-horizontal-lg > li + li, .checks-success .checks-dark .list-group-horizontal-lg > li + li, .checks-dark .checks-success .list-group-horizontal-lg > li + li, .checks-info .checks-dark .list-group-horizontal-lg > li + li, .checks-dark .checks-info .list-group-horizontal-lg > li + li, .checks-warning .checks-dark .list-group-horizontal-lg > li + li, .checks-dark .checks-warning .list-group-horizontal-lg > li + li, .checks-danger .checks-dark .list-group-horizontal-lg > li + li, .checks-dark .checks-danger .list-group-horizontal-lg > li + li, .checks-light .checks-dark .list-group-horizontal-lg > li + li, .checks-dark .checks-light .list-group-horizontal-lg > li + li, .checks-dark .list-group-horizontal-lg > li + li {
     border-top-width: 1px;
     border-left-width: 0;
   }
-  .list-group-horizontal-lg > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal-lg > li + .list-group-item.active, .checks-secondary .list-group-horizontal-lg > li + .list-group-item.active, .checks-tertiary .list-group-horizontal-lg > li + .list-group-item.active, .checks-primary .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-secondary .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-tertiary .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal-lg > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal-lg > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-tertiary .list-group-horizontal-lg > li + li.active {
+  .list-group-horizontal-lg > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal-lg > li + .list-group-item.active, .checks-secondary .list-group-horizontal-lg > li + .list-group-item.active, .checks-tertiary .list-group-horizontal-lg > li + .list-group-item.active, .checks-success .list-group-horizontal-lg > li + .list-group-item.active, .checks-info .list-group-horizontal-lg > li + .list-group-item.active, .checks-warning .list-group-horizontal-lg > li + .list-group-item.active, .checks-danger .list-group-horizontal-lg > li + .list-group-item.active, .checks-light .list-group-horizontal-lg > li + .list-group-item.active, .checks-dark .list-group-horizontal-lg > li + .list-group-item.active, .checks-primary .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-secondary .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-tertiary .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal-lg > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal-lg > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-tertiary .list-group-horizontal-lg > li + li.active, .checks-success .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .checks-success .list-group-horizontal-lg > li + li.active, .checks-success .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .checks-success .list-group-horizontal-lg > li + li.active, .checks-success .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-tertiary .checks-success .list-group-horizontal-lg > li + li.active, .checks-success .checks-tertiary .list-group-horizontal-lg > li + li.active, .checks-success .list-group-horizontal-lg > li + li.active, .checks-info .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .checks-info .list-group-horizontal-lg > li + li.active, .checks-info .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .checks-info .list-group-horizontal-lg > li + li.active, .checks-info .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-tertiary .checks-info .list-group-horizontal-lg > li + li.active, .checks-info .checks-tertiary .list-group-horizontal-lg > li + li.active, .checks-success .checks-info .list-group-horizontal-lg > li + li.active, .checks-info .checks-success .list-group-horizontal-lg > li + li.active, .checks-info .list-group-horizontal-lg > li + li.active, .checks-warning .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .checks-warning .list-group-horizontal-lg > li + li.active, .checks-warning .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .checks-warning .list-group-horizontal-lg > li + li.active, .checks-warning .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-tertiary .checks-warning .list-group-horizontal-lg > li + li.active, .checks-warning .checks-tertiary .list-group-horizontal-lg > li + li.active, .checks-success .checks-warning .list-group-horizontal-lg > li + li.active, .checks-warning .checks-success .list-group-horizontal-lg > li + li.active, .checks-info .checks-warning .list-group-horizontal-lg > li + li.active, .checks-warning .checks-info .list-group-horizontal-lg > li + li.active, .checks-warning .list-group-horizontal-lg > li + li.active, .checks-danger .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .checks-danger .list-group-horizontal-lg > li + li.active, .checks-danger .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .checks-danger .list-group-horizontal-lg > li + li.active, .checks-danger .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-tertiary .checks-danger .list-group-horizontal-lg > li + li.active, .checks-danger .checks-tertiary .list-group-horizontal-lg > li + li.active, .checks-success .checks-danger .list-group-horizontal-lg > li + li.active, .checks-danger .checks-success .list-group-horizontal-lg > li + li.active, .checks-info .checks-danger .list-group-horizontal-lg > li + li.active, .checks-danger .checks-info .list-group-horizontal-lg > li + li.active, .checks-warning .checks-danger .list-group-horizontal-lg > li + li.active, .checks-danger .checks-warning .list-group-horizontal-lg > li + li.active, .checks-danger .list-group-horizontal-lg > li + li.active, .checks-light .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .checks-light .list-group-horizontal-lg > li + li.active, .checks-light .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .checks-light .list-group-horizontal-lg > li + li.active, .checks-light .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-tertiary .checks-light .list-group-horizontal-lg > li + li.active, .checks-light .checks-tertiary .list-group-horizontal-lg > li + li.active, .checks-success .checks-light .list-group-horizontal-lg > li + li.active, .checks-light .checks-success .list-group-horizontal-lg > li + li.active, .checks-info .checks-light .list-group-horizontal-lg > li + li.active, .checks-light .checks-info .list-group-horizontal-lg > li + li.active, .checks-warning .checks-light .list-group-horizontal-lg > li + li.active, .checks-light .checks-warning .list-group-horizontal-lg > li + li.active, .checks-danger .checks-light .list-group-horizontal-lg > li + li.active, .checks-light .checks-danger .list-group-horizontal-lg > li + li.active, .checks-light .list-group-horizontal-lg > li + li.active, .checks-dark .list-group-horizontal-lg > .list-group-item + li.active, .checks-primary .checks-dark .list-group-horizontal-lg > li + li.active, .checks-dark .checks-primary .list-group-horizontal-lg > li + li.active, .checks-secondary .checks-dark .list-group-horizontal-lg > li + li.active, .checks-dark .checks-secondary .list-group-horizontal-lg > li + li.active, .checks-tertiary .checks-dark .list-group-horizontal-lg > li + li.active, .checks-dark .checks-tertiary .list-group-horizontal-lg > li + li.active, .checks-success .checks-dark .list-group-horizontal-lg > li + li.active, .checks-dark .checks-success .list-group-horizontal-lg > li + li.active, .checks-info .checks-dark .list-group-horizontal-lg > li + li.active, .checks-dark .checks-info .list-group-horizontal-lg > li + li.active, .checks-warning .checks-dark .list-group-horizontal-lg > li + li.active, .checks-dark .checks-warning .list-group-horizontal-lg > li + li.active, .checks-danger .checks-dark .list-group-horizontal-lg > li + li.active, .checks-dark .checks-danger .list-group-horizontal-lg > li + li.active, .checks-light .checks-dark .list-group-horizontal-lg > li + li.active, .checks-dark .checks-light .list-group-horizontal-lg > li + li.active, .checks-dark .list-group-horizontal-lg > li + li.active {
     margin-left: -1px;
     border-left-width: 1px;
   }
@@ -4946,14 +5450,14 @@ fieldset:disabled .btn {
   .list-group-horizontal-xl {
     flex-direction: row;
   }
-  .list-group-horizontal-xl > .list-group-item.active, .checks-primary .list-group-horizontal-xl > li.active, .checks-secondary .list-group-horizontal-xl > li.active, .checks-tertiary .list-group-horizontal-xl > li.active {
+  .list-group-horizontal-xl > .list-group-item.active, .checks-primary .list-group-horizontal-xl > li.active, .checks-secondary .list-group-horizontal-xl > li.active, .checks-tertiary .list-group-horizontal-xl > li.active, .checks-success .list-group-horizontal-xl > li.active, .checks-info .list-group-horizontal-xl > li.active, .checks-warning .list-group-horizontal-xl > li.active, .checks-danger .list-group-horizontal-xl > li.active, .checks-light .list-group-horizontal-xl > li.active, .checks-dark .list-group-horizontal-xl > li.active {
     margin-top: 0;
   }
-  .list-group-horizontal-xl > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal-xl > li + .list-group-item, .checks-secondary .list-group-horizontal-xl > li + .list-group-item, .checks-tertiary .list-group-horizontal-xl > li + .list-group-item, .checks-primary .list-group-horizontal-xl > .list-group-item + li, .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .list-group-horizontal-xl > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal-xl > li + li, .checks-secondary .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .list-group-horizontal-xl > li + li, .checks-tertiary .list-group-horizontal-xl > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal-xl > li + li, .checks-tertiary .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .checks-tertiary .list-group-horizontal-xl > li + li, .checks-tertiary .checks-secondary .list-group-horizontal-xl > li + li, .checks-tertiary .list-group-horizontal-xl > li + li {
+  .list-group-horizontal-xl > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal-xl > li + .list-group-item, .checks-secondary .list-group-horizontal-xl > li + .list-group-item, .checks-tertiary .list-group-horizontal-xl > li + .list-group-item, .checks-success .list-group-horizontal-xl > li + .list-group-item, .checks-info .list-group-horizontal-xl > li + .list-group-item, .checks-warning .list-group-horizontal-xl > li + .list-group-item, .checks-danger .list-group-horizontal-xl > li + .list-group-item, .checks-light .list-group-horizontal-xl > li + .list-group-item, .checks-dark .list-group-horizontal-xl > li + .list-group-item, .checks-primary .list-group-horizontal-xl > .list-group-item + li, .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .list-group-horizontal-xl > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal-xl > li + li, .checks-secondary .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .list-group-horizontal-xl > li + li, .checks-tertiary .list-group-horizontal-xl > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal-xl > li + li, .checks-tertiary .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .checks-tertiary .list-group-horizontal-xl > li + li, .checks-tertiary .checks-secondary .list-group-horizontal-xl > li + li, .checks-tertiary .list-group-horizontal-xl > li + li, .checks-success .list-group-horizontal-xl > .list-group-item + li, .checks-primary .checks-success .list-group-horizontal-xl > li + li, .checks-success .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .checks-success .list-group-horizontal-xl > li + li, .checks-success .checks-secondary .list-group-horizontal-xl > li + li, .checks-tertiary .checks-success .list-group-horizontal-xl > li + li, .checks-success .checks-tertiary .list-group-horizontal-xl > li + li, .checks-success .list-group-horizontal-xl > li + li, .checks-info .list-group-horizontal-xl > .list-group-item + li, .checks-primary .checks-info .list-group-horizontal-xl > li + li, .checks-info .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .checks-info .list-group-horizontal-xl > li + li, .checks-info .checks-secondary .list-group-horizontal-xl > li + li, .checks-tertiary .checks-info .list-group-horizontal-xl > li + li, .checks-info .checks-tertiary .list-group-horizontal-xl > li + li, .checks-success .checks-info .list-group-horizontal-xl > li + li, .checks-info .checks-success .list-group-horizontal-xl > li + li, .checks-info .list-group-horizontal-xl > li + li, .checks-warning .list-group-horizontal-xl > .list-group-item + li, .checks-primary .checks-warning .list-group-horizontal-xl > li + li, .checks-warning .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .checks-warning .list-group-horizontal-xl > li + li, .checks-warning .checks-secondary .list-group-horizontal-xl > li + li, .checks-tertiary .checks-warning .list-group-horizontal-xl > li + li, .checks-warning .checks-tertiary .list-group-horizontal-xl > li + li, .checks-success .checks-warning .list-group-horizontal-xl > li + li, .checks-warning .checks-success .list-group-horizontal-xl > li + li, .checks-info .checks-warning .list-group-horizontal-xl > li + li, .checks-warning .checks-info .list-group-horizontal-xl > li + li, .checks-warning .list-group-horizontal-xl > li + li, .checks-danger .list-group-horizontal-xl > .list-group-item + li, .checks-primary .checks-danger .list-group-horizontal-xl > li + li, .checks-danger .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .checks-danger .list-group-horizontal-xl > li + li, .checks-danger .checks-secondary .list-group-horizontal-xl > li + li, .checks-tertiary .checks-danger .list-group-horizontal-xl > li + li, .checks-danger .checks-tertiary .list-group-horizontal-xl > li + li, .checks-success .checks-danger .list-group-horizontal-xl > li + li, .checks-danger .checks-success .list-group-horizontal-xl > li + li, .checks-info .checks-danger .list-group-horizontal-xl > li + li, .checks-danger .checks-info .list-group-horizontal-xl > li + li, .checks-warning .checks-danger .list-group-horizontal-xl > li + li, .checks-danger .checks-warning .list-group-horizontal-xl > li + li, .checks-danger .list-group-horizontal-xl > li + li, .checks-light .list-group-horizontal-xl > .list-group-item + li, .checks-primary .checks-light .list-group-horizontal-xl > li + li, .checks-light .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .checks-light .list-group-horizontal-xl > li + li, .checks-light .checks-secondary .list-group-horizontal-xl > li + li, .checks-tertiary .checks-light .list-group-horizontal-xl > li + li, .checks-light .checks-tertiary .list-group-horizontal-xl > li + li, .checks-success .checks-light .list-group-horizontal-xl > li + li, .checks-light .checks-success .list-group-horizontal-xl > li + li, .checks-info .checks-light .list-group-horizontal-xl > li + li, .checks-light .checks-info .list-group-horizontal-xl > li + li, .checks-warning .checks-light .list-group-horizontal-xl > li + li, .checks-light .checks-warning .list-group-horizontal-xl > li + li, .checks-danger .checks-light .list-group-horizontal-xl > li + li, .checks-light .checks-danger .list-group-horizontal-xl > li + li, .checks-light .list-group-horizontal-xl > li + li, .checks-dark .list-group-horizontal-xl > .list-group-item + li, .checks-primary .checks-dark .list-group-horizontal-xl > li + li, .checks-dark .checks-primary .list-group-horizontal-xl > li + li, .checks-secondary .checks-dark .list-group-horizontal-xl > li + li, .checks-dark .checks-secondary .list-group-horizontal-xl > li + li, .checks-tertiary .checks-dark .list-group-horizontal-xl > li + li, .checks-dark .checks-tertiary .list-group-horizontal-xl > li + li, .checks-success .checks-dark .list-group-horizontal-xl > li + li, .checks-dark .checks-success .list-group-horizontal-xl > li + li, .checks-info .checks-dark .list-group-horizontal-xl > li + li, .checks-dark .checks-info .list-group-horizontal-xl > li + li, .checks-warning .checks-dark .list-group-horizontal-xl > li + li, .checks-dark .checks-warning .list-group-horizontal-xl > li + li, .checks-danger .checks-dark .list-group-horizontal-xl > li + li, .checks-dark .checks-danger .list-group-horizontal-xl > li + li, .checks-light .checks-dark .list-group-horizontal-xl > li + li, .checks-dark .checks-light .list-group-horizontal-xl > li + li, .checks-dark .list-group-horizontal-xl > li + li {
     border-top-width: 1px;
     border-left-width: 0;
   }
-  .list-group-horizontal-xl > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal-xl > li + .list-group-item.active, .checks-secondary .list-group-horizontal-xl > li + .list-group-item.active, .checks-tertiary .list-group-horizontal-xl > li + .list-group-item.active, .checks-primary .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-secondary .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-tertiary .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal-xl > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal-xl > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-tertiary .list-group-horizontal-xl > li + li.active {
+  .list-group-horizontal-xl > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal-xl > li + .list-group-item.active, .checks-secondary .list-group-horizontal-xl > li + .list-group-item.active, .checks-tertiary .list-group-horizontal-xl > li + .list-group-item.active, .checks-success .list-group-horizontal-xl > li + .list-group-item.active, .checks-info .list-group-horizontal-xl > li + .list-group-item.active, .checks-warning .list-group-horizontal-xl > li + .list-group-item.active, .checks-danger .list-group-horizontal-xl > li + .list-group-item.active, .checks-light .list-group-horizontal-xl > li + .list-group-item.active, .checks-dark .list-group-horizontal-xl > li + .list-group-item.active, .checks-primary .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-secondary .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-tertiary .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal-xl > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal-xl > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-tertiary .list-group-horizontal-xl > li + li.active, .checks-success .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .checks-success .list-group-horizontal-xl > li + li.active, .checks-success .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .checks-success .list-group-horizontal-xl > li + li.active, .checks-success .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-tertiary .checks-success .list-group-horizontal-xl > li + li.active, .checks-success .checks-tertiary .list-group-horizontal-xl > li + li.active, .checks-success .list-group-horizontal-xl > li + li.active, .checks-info .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .checks-info .list-group-horizontal-xl > li + li.active, .checks-info .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .checks-info .list-group-horizontal-xl > li + li.active, .checks-info .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-tertiary .checks-info .list-group-horizontal-xl > li + li.active, .checks-info .checks-tertiary .list-group-horizontal-xl > li + li.active, .checks-success .checks-info .list-group-horizontal-xl > li + li.active, .checks-info .checks-success .list-group-horizontal-xl > li + li.active, .checks-info .list-group-horizontal-xl > li + li.active, .checks-warning .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .checks-warning .list-group-horizontal-xl > li + li.active, .checks-warning .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .checks-warning .list-group-horizontal-xl > li + li.active, .checks-warning .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-tertiary .checks-warning .list-group-horizontal-xl > li + li.active, .checks-warning .checks-tertiary .list-group-horizontal-xl > li + li.active, .checks-success .checks-warning .list-group-horizontal-xl > li + li.active, .checks-warning .checks-success .list-group-horizontal-xl > li + li.active, .checks-info .checks-warning .list-group-horizontal-xl > li + li.active, .checks-warning .checks-info .list-group-horizontal-xl > li + li.active, .checks-warning .list-group-horizontal-xl > li + li.active, .checks-danger .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .checks-danger .list-group-horizontal-xl > li + li.active, .checks-danger .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .checks-danger .list-group-horizontal-xl > li + li.active, .checks-danger .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-tertiary .checks-danger .list-group-horizontal-xl > li + li.active, .checks-danger .checks-tertiary .list-group-horizontal-xl > li + li.active, .checks-success .checks-danger .list-group-horizontal-xl > li + li.active, .checks-danger .checks-success .list-group-horizontal-xl > li + li.active, .checks-info .checks-danger .list-group-horizontal-xl > li + li.active, .checks-danger .checks-info .list-group-horizontal-xl > li + li.active, .checks-warning .checks-danger .list-group-horizontal-xl > li + li.active, .checks-danger .checks-warning .list-group-horizontal-xl > li + li.active, .checks-danger .list-group-horizontal-xl > li + li.active, .checks-light .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .checks-light .list-group-horizontal-xl > li + li.active, .checks-light .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .checks-light .list-group-horizontal-xl > li + li.active, .checks-light .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-tertiary .checks-light .list-group-horizontal-xl > li + li.active, .checks-light .checks-tertiary .list-group-horizontal-xl > li + li.active, .checks-success .checks-light .list-group-horizontal-xl > li + li.active, .checks-light .checks-success .list-group-horizontal-xl > li + li.active, .checks-info .checks-light .list-group-horizontal-xl > li + li.active, .checks-light .checks-info .list-group-horizontal-xl > li + li.active, .checks-warning .checks-light .list-group-horizontal-xl > li + li.active, .checks-light .checks-warning .list-group-horizontal-xl > li + li.active, .checks-danger .checks-light .list-group-horizontal-xl > li + li.active, .checks-light .checks-danger .list-group-horizontal-xl > li + li.active, .checks-light .list-group-horizontal-xl > li + li.active, .checks-dark .list-group-horizontal-xl > .list-group-item + li.active, .checks-primary .checks-dark .list-group-horizontal-xl > li + li.active, .checks-dark .checks-primary .list-group-horizontal-xl > li + li.active, .checks-secondary .checks-dark .list-group-horizontal-xl > li + li.active, .checks-dark .checks-secondary .list-group-horizontal-xl > li + li.active, .checks-tertiary .checks-dark .list-group-horizontal-xl > li + li.active, .checks-dark .checks-tertiary .list-group-horizontal-xl > li + li.active, .checks-success .checks-dark .list-group-horizontal-xl > li + li.active, .checks-dark .checks-success .list-group-horizontal-xl > li + li.active, .checks-info .checks-dark .list-group-horizontal-xl > li + li.active, .checks-dark .checks-info .list-group-horizontal-xl > li + li.active, .checks-warning .checks-dark .list-group-horizontal-xl > li + li.active, .checks-dark .checks-warning .list-group-horizontal-xl > li + li.active, .checks-danger .checks-dark .list-group-horizontal-xl > li + li.active, .checks-dark .checks-danger .list-group-horizontal-xl > li + li.active, .checks-light .checks-dark .list-group-horizontal-xl > li + li.active, .checks-dark .checks-light .list-group-horizontal-xl > li + li.active, .checks-dark .list-group-horizontal-xl > li + li.active {
     margin-left: -1px;
     border-left-width: 1px;
   }
@@ -4963,24 +5467,24 @@ fieldset:disabled .btn {
   .list-group-horizontal-xxl {
     flex-direction: row;
   }
-  .list-group-horizontal-xxl > .list-group-item.active, .checks-primary .list-group-horizontal-xxl > li.active, .checks-secondary .list-group-horizontal-xxl > li.active, .checks-tertiary .list-group-horizontal-xxl > li.active {
+  .list-group-horizontal-xxl > .list-group-item.active, .checks-primary .list-group-horizontal-xxl > li.active, .checks-secondary .list-group-horizontal-xxl > li.active, .checks-tertiary .list-group-horizontal-xxl > li.active, .checks-success .list-group-horizontal-xxl > li.active, .checks-info .list-group-horizontal-xxl > li.active, .checks-warning .list-group-horizontal-xxl > li.active, .checks-danger .list-group-horizontal-xxl > li.active, .checks-light .list-group-horizontal-xxl > li.active, .checks-dark .list-group-horizontal-xxl > li.active {
     margin-top: 0;
   }
-  .list-group-horizontal-xxl > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal-xxl > li + .list-group-item, .checks-secondary .list-group-horizontal-xxl > li + .list-group-item, .checks-tertiary .list-group-horizontal-xxl > li + .list-group-item, .checks-primary .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal-xxl > li + li, .checks-secondary .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .list-group-horizontal-xxl > li + li, .checks-tertiary .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal-xxl > li + li, .checks-tertiary .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .checks-tertiary .list-group-horizontal-xxl > li + li, .checks-tertiary .checks-secondary .list-group-horizontal-xxl > li + li, .checks-tertiary .list-group-horizontal-xxl > li + li {
+  .list-group-horizontal-xxl > .list-group-item + .list-group-item, .checks-primary .list-group-horizontal-xxl > li + .list-group-item, .checks-secondary .list-group-horizontal-xxl > li + .list-group-item, .checks-tertiary .list-group-horizontal-xxl > li + .list-group-item, .checks-success .list-group-horizontal-xxl > li + .list-group-item, .checks-info .list-group-horizontal-xxl > li + .list-group-item, .checks-warning .list-group-horizontal-xxl > li + .list-group-item, .checks-danger .list-group-horizontal-xxl > li + .list-group-item, .checks-light .list-group-horizontal-xxl > li + .list-group-item, .checks-dark .list-group-horizontal-xxl > li + .list-group-item, .checks-primary .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .checks-secondary .list-group-horizontal-xxl > li + li, .checks-secondary .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .list-group-horizontal-xxl > li + li, .checks-tertiary .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .checks-tertiary .list-group-horizontal-xxl > li + li, .checks-tertiary .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .checks-tertiary .list-group-horizontal-xxl > li + li, .checks-tertiary .checks-secondary .list-group-horizontal-xxl > li + li, .checks-tertiary .list-group-horizontal-xxl > li + li, .checks-success .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .checks-success .list-group-horizontal-xxl > li + li, .checks-success .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .checks-success .list-group-horizontal-xxl > li + li, .checks-success .checks-secondary .list-group-horizontal-xxl > li + li, .checks-tertiary .checks-success .list-group-horizontal-xxl > li + li, .checks-success .checks-tertiary .list-group-horizontal-xxl > li + li, .checks-success .list-group-horizontal-xxl > li + li, .checks-info .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .checks-info .list-group-horizontal-xxl > li + li, .checks-info .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .checks-info .list-group-horizontal-xxl > li + li, .checks-info .checks-secondary .list-group-horizontal-xxl > li + li, .checks-tertiary .checks-info .list-group-horizontal-xxl > li + li, .checks-info .checks-tertiary .list-group-horizontal-xxl > li + li, .checks-success .checks-info .list-group-horizontal-xxl > li + li, .checks-info .checks-success .list-group-horizontal-xxl > li + li, .checks-info .list-group-horizontal-xxl > li + li, .checks-warning .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .checks-warning .list-group-horizontal-xxl > li + li, .checks-warning .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .checks-warning .list-group-horizontal-xxl > li + li, .checks-warning .checks-secondary .list-group-horizontal-xxl > li + li, .checks-tertiary .checks-warning .list-group-horizontal-xxl > li + li, .checks-warning .checks-tertiary .list-group-horizontal-xxl > li + li, .checks-success .checks-warning .list-group-horizontal-xxl > li + li, .checks-warning .checks-success .list-group-horizontal-xxl > li + li, .checks-info .checks-warning .list-group-horizontal-xxl > li + li, .checks-warning .checks-info .list-group-horizontal-xxl > li + li, .checks-warning .list-group-horizontal-xxl > li + li, .checks-danger .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .checks-danger .list-group-horizontal-xxl > li + li, .checks-danger .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .checks-danger .list-group-horizontal-xxl > li + li, .checks-danger .checks-secondary .list-group-horizontal-xxl > li + li, .checks-tertiary .checks-danger .list-group-horizontal-xxl > li + li, .checks-danger .checks-tertiary .list-group-horizontal-xxl > li + li, .checks-success .checks-danger .list-group-horizontal-xxl > li + li, .checks-danger .checks-success .list-group-horizontal-xxl > li + li, .checks-info .checks-danger .list-group-horizontal-xxl > li + li, .checks-danger .checks-info .list-group-horizontal-xxl > li + li, .checks-warning .checks-danger .list-group-horizontal-xxl > li + li, .checks-danger .checks-warning .list-group-horizontal-xxl > li + li, .checks-danger .list-group-horizontal-xxl > li + li, .checks-light .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .checks-light .list-group-horizontal-xxl > li + li, .checks-light .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .checks-light .list-group-horizontal-xxl > li + li, .checks-light .checks-secondary .list-group-horizontal-xxl > li + li, .checks-tertiary .checks-light .list-group-horizontal-xxl > li + li, .checks-light .checks-tertiary .list-group-horizontal-xxl > li + li, .checks-success .checks-light .list-group-horizontal-xxl > li + li, .checks-light .checks-success .list-group-horizontal-xxl > li + li, .checks-info .checks-light .list-group-horizontal-xxl > li + li, .checks-light .checks-info .list-group-horizontal-xxl > li + li, .checks-warning .checks-light .list-group-horizontal-xxl > li + li, .checks-light .checks-warning .list-group-horizontal-xxl > li + li, .checks-danger .checks-light .list-group-horizontal-xxl > li + li, .checks-light .checks-danger .list-group-horizontal-xxl > li + li, .checks-light .list-group-horizontal-xxl > li + li, .checks-dark .list-group-horizontal-xxl > .list-group-item + li, .checks-primary .checks-dark .list-group-horizontal-xxl > li + li, .checks-dark .checks-primary .list-group-horizontal-xxl > li + li, .checks-secondary .checks-dark .list-group-horizontal-xxl > li + li, .checks-dark .checks-secondary .list-group-horizontal-xxl > li + li, .checks-tertiary .checks-dark .list-group-horizontal-xxl > li + li, .checks-dark .checks-tertiary .list-group-horizontal-xxl > li + li, .checks-success .checks-dark .list-group-horizontal-xxl > li + li, .checks-dark .checks-success .list-group-horizontal-xxl > li + li, .checks-info .checks-dark .list-group-horizontal-xxl > li + li, .checks-dark .checks-info .list-group-horizontal-xxl > li + li, .checks-warning .checks-dark .list-group-horizontal-xxl > li + li, .checks-dark .checks-warning .list-group-horizontal-xxl > li + li, .checks-danger .checks-dark .list-group-horizontal-xxl > li + li, .checks-dark .checks-danger .list-group-horizontal-xxl > li + li, .checks-light .checks-dark .list-group-horizontal-xxl > li + li, .checks-dark .checks-light .list-group-horizontal-xxl > li + li, .checks-dark .list-group-horizontal-xxl > li + li {
     border-top-width: 1px;
     border-left-width: 0;
   }
-  .list-group-horizontal-xxl > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal-xxl > li + .list-group-item.active, .checks-secondary .list-group-horizontal-xxl > li + .list-group-item.active, .checks-tertiary .list-group-horizontal-xxl > li + .list-group-item.active, .checks-primary .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-secondary .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .list-group-horizontal-xxl > li + li.active {
+  .list-group-horizontal-xxl > .list-group-item + .list-group-item.active, .checks-primary .list-group-horizontal-xxl > li + .list-group-item.active, .checks-secondary .list-group-horizontal-xxl > li + .list-group-item.active, .checks-tertiary .list-group-horizontal-xxl > li + .list-group-item.active, .checks-success .list-group-horizontal-xxl > li + .list-group-item.active, .checks-info .list-group-horizontal-xxl > li + .list-group-item.active, .checks-warning .list-group-horizontal-xxl > li + .list-group-item.active, .checks-danger .list-group-horizontal-xxl > li + .list-group-item.active, .checks-light .list-group-horizontal-xxl > li + .list-group-item.active, .checks-dark .list-group-horizontal-xxl > li + .list-group-item.active, .checks-primary .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-secondary .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .checks-tertiary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .checks-tertiary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .list-group-horizontal-xxl > li + li.active, .checks-success .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .checks-success .list-group-horizontal-xxl > li + li.active, .checks-success .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .checks-success .list-group-horizontal-xxl > li + li.active, .checks-success .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .checks-success .list-group-horizontal-xxl > li + li.active, .checks-success .checks-tertiary .list-group-horizontal-xxl > li + li.active, .checks-success .list-group-horizontal-xxl > li + li.active, .checks-info .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .checks-info .list-group-horizontal-xxl > li + li.active, .checks-info .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .checks-info .list-group-horizontal-xxl > li + li.active, .checks-info .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .checks-info .list-group-horizontal-xxl > li + li.active, .checks-info .checks-tertiary .list-group-horizontal-xxl > li + li.active, .checks-success .checks-info .list-group-horizontal-xxl > li + li.active, .checks-info .checks-success .list-group-horizontal-xxl > li + li.active, .checks-info .list-group-horizontal-xxl > li + li.active, .checks-warning .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .checks-warning .list-group-horizontal-xxl > li + li.active, .checks-warning .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .checks-warning .list-group-horizontal-xxl > li + li.active, .checks-warning .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .checks-warning .list-group-horizontal-xxl > li + li.active, .checks-warning .checks-tertiary .list-group-horizontal-xxl > li + li.active, .checks-success .checks-warning .list-group-horizontal-xxl > li + li.active, .checks-warning .checks-success .list-group-horizontal-xxl > li + li.active, .checks-info .checks-warning .list-group-horizontal-xxl > li + li.active, .checks-warning .checks-info .list-group-horizontal-xxl > li + li.active, .checks-warning .list-group-horizontal-xxl > li + li.active, .checks-danger .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .checks-danger .list-group-horizontal-xxl > li + li.active, .checks-danger .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .checks-danger .list-group-horizontal-xxl > li + li.active, .checks-danger .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .checks-danger .list-group-horizontal-xxl > li + li.active, .checks-danger .checks-tertiary .list-group-horizontal-xxl > li + li.active, .checks-success .checks-danger .list-group-horizontal-xxl > li + li.active, .checks-danger .checks-success .list-group-horizontal-xxl > li + li.active, .checks-info .checks-danger .list-group-horizontal-xxl > li + li.active, .checks-danger .checks-info .list-group-horizontal-xxl > li + li.active, .checks-warning .checks-danger .list-group-horizontal-xxl > li + li.active, .checks-danger .checks-warning .list-group-horizontal-xxl > li + li.active, .checks-danger .list-group-horizontal-xxl > li + li.active, .checks-light .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .checks-light .list-group-horizontal-xxl > li + li.active, .checks-light .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .checks-light .list-group-horizontal-xxl > li + li.active, .checks-light .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .checks-light .list-group-horizontal-xxl > li + li.active, .checks-light .checks-tertiary .list-group-horizontal-xxl > li + li.active, .checks-success .checks-light .list-group-horizontal-xxl > li + li.active, .checks-light .checks-success .list-group-horizontal-xxl > li + li.active, .checks-info .checks-light .list-group-horizontal-xxl > li + li.active, .checks-light .checks-info .list-group-horizontal-xxl > li + li.active, .checks-warning .checks-light .list-group-horizontal-xxl > li + li.active, .checks-light .checks-warning .list-group-horizontal-xxl > li + li.active, .checks-danger .checks-light .list-group-horizontal-xxl > li + li.active, .checks-light .checks-danger .list-group-horizontal-xxl > li + li.active, .checks-light .list-group-horizontal-xxl > li + li.active, .checks-dark .list-group-horizontal-xxl > .list-group-item + li.active, .checks-primary .checks-dark .list-group-horizontal-xxl > li + li.active, .checks-dark .checks-primary .list-group-horizontal-xxl > li + li.active, .checks-secondary .checks-dark .list-group-horizontal-xxl > li + li.active, .checks-dark .checks-secondary .list-group-horizontal-xxl > li + li.active, .checks-tertiary .checks-dark .list-group-horizontal-xxl > li + li.active, .checks-dark .checks-tertiary .list-group-horizontal-xxl > li + li.active, .checks-success .checks-dark .list-group-horizontal-xxl > li + li.active, .checks-dark .checks-success .list-group-horizontal-xxl > li + li.active, .checks-info .checks-dark .list-group-horizontal-xxl > li + li.active, .checks-dark .checks-info .list-group-horizontal-xxl > li + li.active, .checks-warning .checks-dark .list-group-horizontal-xxl > li + li.active, .checks-dark .checks-warning .list-group-horizontal-xxl > li + li.active, .checks-danger .checks-dark .list-group-horizontal-xxl > li + li.active, .checks-dark .checks-danger .list-group-horizontal-xxl > li + li.active, .checks-light .checks-dark .list-group-horizontal-xxl > li + li.active, .checks-dark .checks-light .list-group-horizontal-xxl > li + li.active, .checks-dark .list-group-horizontal-xxl > li + li.active {
     margin-left: -1px;
     border-left-width: 1px;
   }
 }
 
-.list-group-flush > .list-group-item, .checks-primary > .list-group-item, .checks-secondary > .list-group-item, .checks-tertiary > .list-group-item, .checks-primary .list-group-flush > li, .checks-primary > li, .checks-primary .checks-secondary > li, .checks-primary .checks-tertiary > li, .checks-secondary .list-group-flush > li, .checks-secondary .checks-primary > li, .checks-secondary > li, .checks-secondary .checks-tertiary > li, .checks-tertiary .list-group-flush > li, .checks-tertiary .checks-primary > li, .checks-tertiary .checks-secondary > li, .checks-tertiary > li {
+.list-group-flush > .list-group-item, .checks-primary > .list-group-item, .checks-secondary > .list-group-item, .checks-tertiary > .list-group-item, .checks-success > .list-group-item, .checks-info > .list-group-item, .checks-warning > .list-group-item, .checks-danger > .list-group-item, .checks-light > .list-group-item, .checks-dark > .list-group-item, .checks-primary .list-group-flush > li, .checks-primary > li, .checks-primary .checks-secondary > li, .checks-primary .checks-tertiary > li, .checks-primary .checks-success > li, .checks-primary .checks-info > li, .checks-primary .checks-warning > li, .checks-primary .checks-danger > li, .checks-primary .checks-light > li, .checks-primary .checks-dark > li, .checks-secondary .list-group-flush > li, .checks-secondary .checks-primary > li, .checks-secondary > li, .checks-secondary .checks-tertiary > li, .checks-secondary .checks-success > li, .checks-secondary .checks-info > li, .checks-secondary .checks-warning > li, .checks-secondary .checks-danger > li, .checks-secondary .checks-light > li, .checks-secondary .checks-dark > li, .checks-tertiary .list-group-flush > li, .checks-tertiary .checks-primary > li, .checks-tertiary .checks-secondary > li, .checks-tertiary > li, .checks-tertiary .checks-success > li, .checks-tertiary .checks-info > li, .checks-tertiary .checks-warning > li, .checks-tertiary .checks-danger > li, .checks-tertiary .checks-light > li, .checks-tertiary .checks-dark > li, .checks-success .list-group-flush > li, .checks-success .checks-primary > li, .checks-success .checks-secondary > li, .checks-success .checks-tertiary > li, .checks-success > li, .checks-success .checks-info > li, .checks-success .checks-warning > li, .checks-success .checks-danger > li, .checks-success .checks-light > li, .checks-success .checks-dark > li, .checks-info .list-group-flush > li, .checks-info .checks-primary > li, .checks-info .checks-secondary > li, .checks-info .checks-tertiary > li, .checks-info .checks-success > li, .checks-info > li, .checks-info .checks-warning > li, .checks-info .checks-danger > li, .checks-info .checks-light > li, .checks-info .checks-dark > li, .checks-warning .list-group-flush > li, .checks-warning .checks-primary > li, .checks-warning .checks-secondary > li, .checks-warning .checks-tertiary > li, .checks-warning .checks-success > li, .checks-warning .checks-info > li, .checks-warning > li, .checks-warning .checks-danger > li, .checks-warning .checks-light > li, .checks-warning .checks-dark > li, .checks-danger .list-group-flush > li, .checks-danger .checks-primary > li, .checks-danger .checks-secondary > li, .checks-danger .checks-tertiary > li, .checks-danger .checks-success > li, .checks-danger .checks-info > li, .checks-danger .checks-warning > li, .checks-danger > li, .checks-danger .checks-light > li, .checks-danger .checks-dark > li, .checks-light .list-group-flush > li, .checks-light .checks-primary > li, .checks-light .checks-secondary > li, .checks-light .checks-tertiary > li, .checks-light .checks-success > li, .checks-light .checks-info > li, .checks-light .checks-warning > li, .checks-light .checks-danger > li, .checks-light > li, .checks-light .checks-dark > li, .checks-dark .list-group-flush > li, .checks-dark .checks-primary > li, .checks-dark .checks-secondary > li, .checks-dark .checks-tertiary > li, .checks-dark .checks-success > li, .checks-dark .checks-info > li, .checks-dark .checks-warning > li, .checks-dark .checks-danger > li, .checks-dark .checks-light > li, .checks-dark > li {
   border-width: 0 0 1px;
 }
 
-.list-group-flush > .list-group-item:last-child, .checks-primary > .list-group-item:last-child, .checks-secondary > .list-group-item:last-child, .checks-tertiary > .list-group-item:last-child, .checks-primary .list-group-flush > li:last-child, .checks-primary > li:last-child, .checks-primary .checks-secondary > li:last-child, .checks-primary .checks-tertiary > li:last-child, .checks-secondary .list-group-flush > li:last-child, .checks-secondary .checks-primary > li:last-child, .checks-secondary > li:last-child, .checks-secondary .checks-tertiary > li:last-child, .checks-tertiary .list-group-flush > li:last-child, .checks-tertiary .checks-primary > li:last-child, .checks-tertiary .checks-secondary > li:last-child, .checks-tertiary > li:last-child {
+.list-group-flush > .list-group-item:last-child, .checks-primary > .list-group-item:last-child, .checks-secondary > .list-group-item:last-child, .checks-tertiary > .list-group-item:last-child, .checks-success > .list-group-item:last-child, .checks-info > .list-group-item:last-child, .checks-warning > .list-group-item:last-child, .checks-danger > .list-group-item:last-child, .checks-light > .list-group-item:last-child, .checks-dark > .list-group-item:last-child, .checks-primary .list-group-flush > li:last-child, .checks-primary > li:last-child, .checks-primary .checks-secondary > li:last-child, .checks-primary .checks-tertiary > li:last-child, .checks-primary .checks-success > li:last-child, .checks-primary .checks-info > li:last-child, .checks-primary .checks-warning > li:last-child, .checks-primary .checks-danger > li:last-child, .checks-primary .checks-light > li:last-child, .checks-primary .checks-dark > li:last-child, .checks-secondary .list-group-flush > li:last-child, .checks-secondary .checks-primary > li:last-child, .checks-secondary > li:last-child, .checks-secondary .checks-tertiary > li:last-child, .checks-secondary .checks-success > li:last-child, .checks-secondary .checks-info > li:last-child, .checks-secondary .checks-warning > li:last-child, .checks-secondary .checks-danger > li:last-child, .checks-secondary .checks-light > li:last-child, .checks-secondary .checks-dark > li:last-child, .checks-tertiary .list-group-flush > li:last-child, .checks-tertiary .checks-primary > li:last-child, .checks-tertiary .checks-secondary > li:last-child, .checks-tertiary > li:last-child, .checks-tertiary .checks-success > li:last-child, .checks-tertiary .checks-info > li:last-child, .checks-tertiary .checks-warning > li:last-child, .checks-tertiary .checks-danger > li:last-child, .checks-tertiary .checks-light > li:last-child, .checks-tertiary .checks-dark > li:last-child, .checks-success .list-group-flush > li:last-child, .checks-success .checks-primary > li:last-child, .checks-success .checks-secondary > li:last-child, .checks-success .checks-tertiary > li:last-child, .checks-success > li:last-child, .checks-success .checks-info > li:last-child, .checks-success .checks-warning > li:last-child, .checks-success .checks-danger > li:last-child, .checks-success .checks-light > li:last-child, .checks-success .checks-dark > li:last-child, .checks-info .list-group-flush > li:last-child, .checks-info .checks-primary > li:last-child, .checks-info .checks-secondary > li:last-child, .checks-info .checks-tertiary > li:last-child, .checks-info .checks-success > li:last-child, .checks-info > li:last-child, .checks-info .checks-warning > li:last-child, .checks-info .checks-danger > li:last-child, .checks-info .checks-light > li:last-child, .checks-info .checks-dark > li:last-child, .checks-warning .list-group-flush > li:last-child, .checks-warning .checks-primary > li:last-child, .checks-warning .checks-secondary > li:last-child, .checks-warning .checks-tertiary > li:last-child, .checks-warning .checks-success > li:last-child, .checks-warning .checks-info > li:last-child, .checks-warning > li:last-child, .checks-warning .checks-danger > li:last-child, .checks-warning .checks-light > li:last-child, .checks-warning .checks-dark > li:last-child, .checks-danger .list-group-flush > li:last-child, .checks-danger .checks-primary > li:last-child, .checks-danger .checks-secondary > li:last-child, .checks-danger .checks-tertiary > li:last-child, .checks-danger .checks-success > li:last-child, .checks-danger .checks-info > li:last-child, .checks-danger .checks-warning > li:last-child, .checks-danger > li:last-child, .checks-danger .checks-light > li:last-child, .checks-danger .checks-dark > li:last-child, .checks-light .list-group-flush > li:last-child, .checks-light .checks-primary > li:last-child, .checks-light .checks-secondary > li:last-child, .checks-light .checks-tertiary > li:last-child, .checks-light .checks-success > li:last-child, .checks-light .checks-info > li:last-child, .checks-light .checks-warning > li:last-child, .checks-light .checks-danger > li:last-child, .checks-light > li:last-child, .checks-light .checks-dark > li:last-child, .checks-dark .list-group-flush > li:last-child, .checks-dark .checks-primary > li:last-child, .checks-dark .checks-secondary > li:last-child, .checks-dark .checks-tertiary > li:last-child, .checks-dark .checks-success > li:last-child, .checks-dark .checks-info > li:last-child, .checks-dark .checks-warning > li:last-child, .checks-dark .checks-danger > li:last-child, .checks-dark .checks-light > li:last-child, .checks-dark > li:last-child {
   border-bottom-width: 0;
 }
 
@@ -5030,6 +5534,102 @@ fieldset:disabled .btn {
   color: #fff;
   background-color: #264255;
   border-color: #264255;
+}
+
+.list-group-item-success {
+  color: #0f5132;
+  background-color: #d1e7dd;
+}
+
+.list-group-item-success.list-group-item-action:hover, .list-group-item-success.list-group-item-action:focus {
+  color: #0f5132;
+  background-color: #bcd0c7;
+}
+
+.list-group-item-success.list-group-item-action.active {
+  color: #fff;
+  background-color: #0f5132;
+  border-color: #0f5132;
+}
+
+.list-group-item-info {
+  color: #055160;
+  background-color: #cff4fc;
+}
+
+.list-group-item-info.list-group-item-action:hover, .list-group-item-info.list-group-item-action:focus {
+  color: #055160;
+  background-color: #badce3;
+}
+
+.list-group-item-info.list-group-item-action.active {
+  color: #fff;
+  background-color: #055160;
+  border-color: #055160;
+}
+
+.list-group-item-warning {
+  color: #664d03;
+  background-color: #fff3cd;
+}
+
+.list-group-item-warning.list-group-item-action:hover, .list-group-item-warning.list-group-item-action:focus {
+  color: #664d03;
+  background-color: #e6dbb9;
+}
+
+.list-group-item-warning.list-group-item-action.active {
+  color: #fff;
+  background-color: #664d03;
+  border-color: #664d03;
+}
+
+.list-group-item-danger {
+  color: #842029;
+  background-color: #f8d7da;
+}
+
+.list-group-item-danger.list-group-item-action:hover, .list-group-item-danger.list-group-item-action:focus {
+  color: #842029;
+  background-color: #dfc2c4;
+}
+
+.list-group-item-danger.list-group-item-action.active {
+  color: #fff;
+  background-color: #842029;
+  border-color: #842029;
+}
+
+.list-group-item-light {
+  color: #636464;
+  background-color: #fefefe;
+}
+
+.list-group-item-light.list-group-item-action:hover, .list-group-item-light.list-group-item-action:focus {
+  color: #636464;
+  background-color: #e5e5e5;
+}
+
+.list-group-item-light.list-group-item-action.active {
+  color: #fff;
+  background-color: #636464;
+  border-color: #636464;
+}
+
+.list-group-item-dark {
+  color: #141619;
+  background-color: #d3d3d4;
+}
+
+.list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
+  color: #141619;
+  background-color: #bebebf;
+}
+
+.list-group-item-dark.list-group-item-action.active {
+  color: #fff;
+  background-color: #141619;
+  border-color: #141619;
 }
 
 .btn-close {
@@ -6069,6 +6669,54 @@ fieldset:disabled .btn {
   color: #335872;
 }
 
+.link-success {
+  color: #198754;
+}
+
+.link-success:hover, .link-success:focus {
+  color: #146c43;
+}
+
+.link-info {
+  color: #0dcaf0;
+}
+
+.link-info:hover, .link-info:focus {
+  color: #3dd5f3;
+}
+
+.link-warning {
+  color: #ffc107;
+}
+
+.link-warning:hover, .link-warning:focus {
+  color: #ffcd39;
+}
+
+.link-danger {
+  color: #dc3545;
+}
+
+.link-danger:hover, .link-danger:focus {
+  color: #b02a37;
+}
+
+.link-light {
+  color: #f8f9fa;
+}
+
+.link-light:hover, .link-light:focus {
+  color: #f9fafb;
+}
+
+.link-dark {
+  color: #212529;
+}
+
+.link-dark:hover, .link-dark:focus {
+  color: #1a1e21;
+}
+
 .ratio {
   position: relative;
   width: 100%;
@@ -6476,6 +7124,30 @@ fieldset:disabled .btn {
 
 .border-tertiary {
   border-color: #406E8E !important;
+}
+
+.border-success {
+  border-color: #198754 !important;
+}
+
+.border-info {
+  border-color: #0dcaf0 !important;
+}
+
+.border-warning {
+  border-color: #ffc107 !important;
+}
+
+.border-danger {
+  border-color: #dc3545 !important;
+}
+
+.border-light {
+  border-color: #f8f9fa !important;
+}
+
+.border-dark {
+  border-color: #212529 !important;
 }
 
 .border-white {
@@ -7610,6 +8282,36 @@ fieldset:disabled .btn {
   color: rgba(var(--bs-tertiary-rgb), var(--bs-text-opacity)) !important;
 }
 
+.text-success {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-success-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-info {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-info-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-warning {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-warning-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-danger {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-danger-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-light {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-light-rgb), var(--bs-text-opacity)) !important;
+}
+
+.text-dark {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-dark-rgb), var(--bs-text-opacity)) !important;
+}
+
 .text-black {
   --bs-text-opacity: 1;
   color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
@@ -7674,6 +8376,36 @@ fieldset:disabled .btn {
 .bg-tertiary {
   --bs-bg-opacity: 1;
   background-color: rgba(var(--bs-tertiary-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-success {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-info {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-info-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-warning {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-warning-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-danger {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-danger-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-light {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-light-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.bg-dark {
+  --bs-bg-opacity: 1;
+  background-color: rgba(var(--bs-dark-rgb), var(--bs-bg-opacity)) !important;
 }
 
 .bg-black {
@@ -17772,6 +18504,102 @@ readers do not read off random characters that represent icons */
   border-right: 2px solid #406E8E;
 }
 
+.border-bottom-success {
+  border-bottom: 2px solid #198754;
+}
+
+.border-top-success {
+  border-top: 2px solid #198754;
+}
+
+.border-left-success {
+  border-left: 2px solid #198754;
+}
+
+.border-right-success {
+  border-right: 2px solid #198754;
+}
+
+.border-bottom-info {
+  border-bottom: 2px solid #0dcaf0;
+}
+
+.border-top-info {
+  border-top: 2px solid #0dcaf0;
+}
+
+.border-left-info {
+  border-left: 2px solid #0dcaf0;
+}
+
+.border-right-info {
+  border-right: 2px solid #0dcaf0;
+}
+
+.border-bottom-warning {
+  border-bottom: 2px solid #ffc107;
+}
+
+.border-top-warning {
+  border-top: 2px solid #ffc107;
+}
+
+.border-left-warning {
+  border-left: 2px solid #ffc107;
+}
+
+.border-right-warning {
+  border-right: 2px solid #ffc107;
+}
+
+.border-bottom-danger {
+  border-bottom: 2px solid #dc3545;
+}
+
+.border-top-danger {
+  border-top: 2px solid #dc3545;
+}
+
+.border-left-danger {
+  border-left: 2px solid #dc3545;
+}
+
+.border-right-danger {
+  border-right: 2px solid #dc3545;
+}
+
+.border-bottom-light {
+  border-bottom: 2px solid #f8f9fa;
+}
+
+.border-top-light {
+  border-top: 2px solid #f8f9fa;
+}
+
+.border-left-light {
+  border-left: 2px solid #f8f9fa;
+}
+
+.border-right-light {
+  border-right: 2px solid #f8f9fa;
+}
+
+.border-bottom-dark {
+  border-bottom: 2px solid #212529;
+}
+
+.border-top-dark {
+  border-top: 2px solid #212529;
+}
+
+.border-left-dark {
+  border-left: 2px solid #212529;
+}
+
+.border-right-dark {
+  border-right: 2px solid #212529;
+}
+
 /* ******************************************************************************************** */
 /* CAROUSEL STYLING *************************************************************************** */
 /* ******************************************************************************************** */
@@ -19291,6 +20119,234 @@ a[data-lightbox] img {
   margin-right: 0.2rem;
 }
 
+.checks-success {
+  list-style: none;
+}
+
+.checks-success li::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-size: 90%;
+  padding: 0.25rem;
+  content: "";
+  background-color: #198754;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.checks-success li {
+  background-color: unset;
+}
+
+.checks-success li:not(:last-child) {
+  border-bottom: 1px;
+}
+
+.arrow-success {
+  list-style: none;
+  padding-inline-start: .5rem;
+}
+
+.arrow-success li::before {
+  font-family: "Font Awesome 5 Free";
+  color: #198754;
+  font-size: 100%;
+  padding: 0.2rem;
+  content: "";
+  margin-right: 0.2rem;
+}
+
+.checks-info {
+  list-style: none;
+}
+
+.checks-info li::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-size: 90%;
+  padding: 0.25rem;
+  content: "";
+  background-color: #0dcaf0;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.checks-info li {
+  background-color: unset;
+}
+
+.checks-info li:not(:last-child) {
+  border-bottom: 1px;
+}
+
+.arrow-info {
+  list-style: none;
+  padding-inline-start: .5rem;
+}
+
+.arrow-info li::before {
+  font-family: "Font Awesome 5 Free";
+  color: #0dcaf0;
+  font-size: 100%;
+  padding: 0.2rem;
+  content: "";
+  margin-right: 0.2rem;
+}
+
+.checks-warning {
+  list-style: none;
+}
+
+.checks-warning li::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-size: 90%;
+  padding: 0.25rem;
+  content: "";
+  background-color: #ffc107;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.checks-warning li {
+  background-color: unset;
+}
+
+.checks-warning li:not(:last-child) {
+  border-bottom: 1px;
+}
+
+.arrow-warning {
+  list-style: none;
+  padding-inline-start: .5rem;
+}
+
+.arrow-warning li::before {
+  font-family: "Font Awesome 5 Free";
+  color: #ffc107;
+  font-size: 100%;
+  padding: 0.2rem;
+  content: "";
+  margin-right: 0.2rem;
+}
+
+.checks-danger {
+  list-style: none;
+}
+
+.checks-danger li::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-size: 90%;
+  padding: 0.25rem;
+  content: "";
+  background-color: #dc3545;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.checks-danger li {
+  background-color: unset;
+}
+
+.checks-danger li:not(:last-child) {
+  border-bottom: 1px;
+}
+
+.arrow-danger {
+  list-style: none;
+  padding-inline-start: .5rem;
+}
+
+.arrow-danger li::before {
+  font-family: "Font Awesome 5 Free";
+  color: #dc3545;
+  font-size: 100%;
+  padding: 0.2rem;
+  content: "";
+  margin-right: 0.2rem;
+}
+
+.checks-light {
+  list-style: none;
+}
+
+.checks-light li::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-size: 90%;
+  padding: 0.25rem;
+  content: "";
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.checks-light li {
+  background-color: unset;
+}
+
+.checks-light li:not(:last-child) {
+  border-bottom: 1px;
+}
+
+.arrow-light {
+  list-style: none;
+  padding-inline-start: .5rem;
+}
+
+.arrow-light li::before {
+  font-family: "Font Awesome 5 Free";
+  color: #f8f9fa;
+  font-size: 100%;
+  padding: 0.2rem;
+  content: "";
+  margin-right: 0.2rem;
+}
+
+.checks-dark {
+  list-style: none;
+}
+
+.checks-dark li::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free";
+  color: white;
+  font-size: 90%;
+  padding: 0.25rem;
+  content: "";
+  background-color: #212529;
+  border-radius: 5px;
+  margin-right: 0.5rem;
+}
+
+.checks-dark li {
+  background-color: unset;
+}
+
+.checks-dark li:not(:last-child) {
+  border-bottom: 1px;
+}
+
+.arrow-dark {
+  list-style: none;
+  padding-inline-start: .5rem;
+}
+
+.arrow-dark li::before {
+  font-family: "Font Awesome 5 Free";
+  color: #212529;
+  font-size: 100%;
+  padding: 0.2rem;
+  content: "";
+  margin-right: 0.2rem;
+}
+
 @media screen and (min-width: 0) {
   .w-xs-100 {
     width: 100% !important;
@@ -19423,6 +20479,42 @@ p, ul, ul li, ul li a, ol, ol li, ol li a {
   color: #406E8E !important;
 }
 
+.bg-primary {
+  color: #fff;
+}
+
+.bg-secondary {
+  color: #fff;
+}
+
+.bg-tertiary {
+  color: #fff;
+}
+
+.bg-success {
+  color: #fff;
+}
+
+.bg-info {
+  color: #000;
+}
+
+.bg-warning {
+  color: #000;
+}
+
+.bg-danger {
+  color: #fff;
+}
+
+.bg-light {
+  color: #000;
+}
+
+.bg-dark {
+  color: #fff;
+}
+
 .list-style-position-inside {
   list-style-position: inside;
   padding-inline-start: 0px;
@@ -19468,4 +20560,28 @@ p, ul, ul li, ul li a, ol, ol li, ol li a {
 
 .marker-tertiary li::marker {
   color: #406E8E;
+}
+
+.marker-success li::marker {
+  color: #198754;
+}
+
+.marker-info li::marker {
+  color: #0dcaf0;
+}
+
+.marker-warning li::marker {
+  color: #ffc107;
+}
+
+.marker-danger li::marker {
+  color: #dc3545;
+}
+
+.marker-light li::marker {
+  color: #f8f9fa;
+}
+
+.marker-dark li::marker {
+  color: #212529;
 }

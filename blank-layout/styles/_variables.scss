@@ -1,7 +1,13 @@
 $theme-colors: (
-	"primary":   #161925,
+	"primary": #161925,
 	"secondary": #23395B,
-	"tertiary":  #406E8E
+	"tertiary": #406E8E,
+	"success": #198754,
+	"info": #0dcaf0,
+	"warning": #ffc107,
+	"danger": #dc3545,
+	"light": #f8f9fa,
+	"dark": #212529
 );
 
 $color-prime: map-get($theme-colors, "primary");

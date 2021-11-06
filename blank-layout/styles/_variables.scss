@@ -1,18 +1,6 @@
-$theme-colors: (
-	"primary": #161925,
-	"secondary": #23395B,
-	"tertiary": #406E8E,
-	"success": #198754,
-	"info": #0dcaf0,
-	"warning": #ffc107,
-	"danger": #dc3545,
-	"light": #f8f9fa,
-	"dark": #212529
-);
-
-$color-prime: map-get($theme-colors, "primary");
-$color-second: map-get($theme-colors, "secondary");
-$color-third: map-get($theme-colors, "tertiary");
+$primary: #161925;
+$secondary: #23395b;
+$tertiary: #406e8e;
 
 // Enable rounded?
 $enable-rounded: false;
@@ -39,7 +27,3 @@ $fa-font-display: swap;
 	src: url(../fonts/Roboto-Regular.ttf);
 	font-display: swap;
 }
-
-$font-prime:  Futura-Bold, sans-serif;
-$font-second: OpenSans-Regular, sans-serif;
-$font-third:  Roboto-Regular, sans-serif;

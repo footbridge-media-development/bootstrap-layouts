@@ -122,6 +122,54 @@ $animations-duration: 190ms;
 										transition: width $animations-duration;
 										background-color: map-get($theme-colors, tertiary);
 									}
+									& > .nav-v2-1-dropdown-3 {
+										box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+										background-color: #FFFFFF;
+										border-radius: 0.15rem;
+										border: 0;
+										position: absolute;
+										top: 0;
+										width: 225px;
+										display: none;
+										z-index: 20;
+										&.right {
+											left: 100%;
+										}
+										&.left {
+											right: 100%;
+										}
+										& > .nav-v2-1-dropdown-3-link:not(:last-child) {
+											border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+										}
+										& > .nav-v2-1-dropdown-3-link {
+											position: relative;
+											z-index: 104;
+											& > .nav-v2-1-border-animator {
+												position: absolute;
+												z-index: 20;
+												left: 0;
+												top: 0;
+												height: 100%;
+												width: 0;
+												transition: width $animations-duration;
+												background-color: map-get($theme-colors, tertiary);
+											}
+											& > a {
+												display: block;
+												padding: 0.75rem 1.5rem;
+												color: #232323;
+												text-align: left;
+											}
+											&:hover {
+												& > .nav-v2-1-border-animator {
+													width: 4px;
+												}
+												& > a {
+													color: #5C5C5C !important;
+												}
+											}
+										}
+									}
 									& > a {
 										display: block;
 										padding: 0.75rem 1.5rem;
@@ -136,8 +184,25 @@ $animations-duration: 190ms;
 											color: #5C5C5C !important;
 										}
 									}
+									/* Styling for Hovered Class addition via JavaScript */
+									&.is-hovered {
+										& > .nav-v2-1-dropdown-3 {
+											display: block;
+											&.right {
+												animation: fade-in-from-right-dropdown-menu;
+												animation-duration: $animations-duration;
+												animation-fill-mode: forwards;
+											}
+											&.left {
+												animation: fade-in-from-left-dropdown-menu;
+												animation-duration: $animations-duration;
+												animation-fill-mode: forwards;
+											}
+										}
+									}
 								}
-							} /* End of Secondary Nav Dropdown */
+							}
+							/* End of Secondary Nav Dropdown */
 
 							& > .nav-v2-1-border-animator {
 								position: absolute;

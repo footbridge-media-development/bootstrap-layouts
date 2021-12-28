@@ -183,7 +183,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 		// Update container visibility
 		for (const pageContainer of pageContainers) {
 			if (parseInt(pageContainer.getAttribute("page-number")) === parseInt(wantedPageNum)) {
-				pageContainer.style.display = "block";
+				pageContainer.style.display = "flex";
 			} else {
 				pageContainer.style.display = "none";
 			}

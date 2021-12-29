@@ -18,5 +18,5 @@ On all new layouts, this plugin is already initialized. You do not have to load 
 
 ### Installing the jQuery-less SimpleLightbox on Existing Websites
 1. Copy the SCSS source code for the plugin from the styles/dependencies/simple-lightbox/_simple-lightbox.scss file into your build. Then import it into your main SCSS file and compile the SCSS.
-2. Copy the plugin source code from the js/lightbox/lightbox.js file into your current build and load it in your <head>.
+2. Copy the plugin source code from the js/lightbox/lightbox.js file into your current build and load it in your \<head\>.
 3. Copy the js/init-lightbox.js file and load it in your <head> - make sure it is loaded after the lightbox.js source code.

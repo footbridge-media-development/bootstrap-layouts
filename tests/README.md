@@ -1,0 +1,2 @@
+# Bootstrap Layout Rough Unit Tests
+This directory serves as a loose coupling of files with HTML, JavaScript, and styling tests to verify the mechanisms and stability of the technology in this repository.

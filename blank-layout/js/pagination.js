@@ -1,6 +1,14 @@
-window.addEventListener('DOMContentLoaded', (event) => {
+window.addEventListener('DOMContentLoaded', () => {
 
+	/**
+	 * @param {HTMLDivElement} parent
+	 */
 	function paginate(parent) {
+
+		if (parent === null || parent === undefined){
+			console.warn("Cannot initialize a paginator for a null element.");
+			return;
+		}
 
 		// Get the attributes from the pagination parent
 		let maxItemsPerPage = parseInt(parent.getAttribute("elements-per-page"), 10)
@@ -193,5 +201,4 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	// run the damn function
 	let parentEl = document.querySelector("div[paginate]");
 	paginate(parentEl);
-
 });

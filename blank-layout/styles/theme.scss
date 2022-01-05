@@ -9,7 +9,6 @@
 @import "dependencies/bootstrap/scss/variables";
 
 // Simple Lightbox plugin
-// Bootstrap Variables
 @import "dependencies/simple-lightbox/simple-lightbox";
 
 // Map Changes
@@ -74,6 +73,7 @@
 @import "utilities/lists";
 @import "utilities/text";
 @import "utilities/width";
+@import "utilities/zindex";
 
 // Footbridge Styles
 @import "defaults";

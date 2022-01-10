@@ -23,6 +23,12 @@ window.addEventListener('DOMContentLoaded', () => {
 		let items = parent.children; // all the items to paginate
 		let totalItems = parent.children.length;
 		let neededPages = Math.ceil(totalItems / maxItemsPerPage); // get the number of pages required, rounded up
+		
+		// Exit if there are no items to paginate.
+		if (totalItems < 1) {
+			console.warn("No items to paginate.");
+			return;
+		}
 
 		// push the items into a placeholder array
 		const pageItems = [];

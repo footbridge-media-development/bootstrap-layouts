@@ -9,10 +9,6 @@ $font-third:  Roboto-Regular, sans-serif;
 * {
     white-space: normal;
 }
-a[href^=tel] {
-    text-decoration: none;
-    color: inherit;
-}
 a {
     cursor: pointer;
     color: map-get($theme-colors, "secondary");

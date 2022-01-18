@@ -21286,11 +21286,6 @@ a[data-lightbox] img {
   white-space: normal;
 }
 
-a[href^=tel] {
-  text-decoration: none;
-  color: inherit;
-}
-
 a {
   cursor: pointer;
   color: #23395b;

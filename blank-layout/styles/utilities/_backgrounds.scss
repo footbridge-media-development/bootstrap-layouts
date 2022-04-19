@@ -17,3 +17,7 @@ $positions: "top", "center", "bottom", "left", "right";
         object-position: #{$position};
     }
 }
+
+iframe.bg-picture {
+    object-fit: unset;
+}

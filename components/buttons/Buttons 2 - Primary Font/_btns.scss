@@ -1,6 +1,9 @@
+.btn:not(.btn-sm, .btn-lg) {
+	padding: 0.75rem 1.5rem;
+	font-size: 0.9rem;
+}
+
 .btn {
 	font-family: $font-prime;
-	font-size: 0.9rem;
 	text-transform: uppercase;
-	padding: 0.75rem 1.5rem;
 }

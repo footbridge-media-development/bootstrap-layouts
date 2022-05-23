@@ -1,4 +1,7 @@
 #banner {
+	.carousel-item {
+		filter: brightness(.65);
+	}
 	.bg-picture-container {
 		min-height:600px;
 		.banner-content {

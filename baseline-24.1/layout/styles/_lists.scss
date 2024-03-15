@@ -1,0 +1,123 @@
+.list-style-position-inside {
+	list-style-position: inside;
+	padding-inline-start: 0px;
+}
+.checkmark-list, .dashed-list, .squared-list, .icon-list, .icon-no, .underline-list {
+	font-family: $font-third;
+	font-weight: normal;
+	font-size: 0.9rem;
+	li {
+		padding-left: 0;
+		
+		a {
+			text-decoration:none;
+			padding-left:.5rem;
+		}
+	}
+	&.larger {
+		li {
+			font-size:calc(1rem + .275vw);
+			font-family:$font-prime;
+			
+			a {
+				font-size:calc(1rem + .275vw);
+				font-family:$font-prime;
+				
+			}
+		}
+	}
+	&.text-light {
+		li {
+			color:map-get($theme-colors, light);
+			a {
+				color:map-get($theme-colors, light);
+			}
+		}
+	}
+	&.text-dark {
+		li {
+			color:map-get($theme-colors, dark);
+			a {
+				color:map-get($theme-colors, dark);
+			}
+		}
+	}
+	&.inline {
+		li {
+			display:inline-block;
+			&:not(:last-child) {
+				border-right:1px solid map-get($theme-colors, dark);
+			}
+			a {
+				padding-right:.4rem;
+				padding-left:.4rem;
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			li {display:block;
+				&:not(:last-child) {
+					border-right:none;
+				}
+			}
+		}
+	}
+}
+.checkmark-list {
+	li {
+		&::marker {
+			font-family: "Font Awesome 6 Free";
+			content: '\f00c';
+		}
+	}
+}
+.dashed-list {
+	li {
+		&::marker {
+			font-family: "Font Awesome 6 Free";
+			content: '\f773';
+		}
+	}
+}
+.squared-list {
+	li {
+		&::marker {
+			font-family: "Font Awesome 6 Free";
+			content: '\f0fe';
+		}
+	}
+}
+.icon-list {
+	li {
+		padding-left:.5rem;
+		a {
+			padding-left:.5rem;
+		}
+		&::marker {
+			font-family: "Font Awesome 6 Free";
+			content: '\f3c5';
+		}
+	}
+}
+.underline-list {
+	li {
+		list-style:none;
+		padding:.5rem 0rem;
+		border-bottom:1px solid rgba(0, 0, 0, .3);
+	}
+}
+.icon-no {
+	li {
+		list-style:none;
+		padding:0;
+		a {
+			padding:0;
+		}
+	}
+}
+@each $color, $value in $theme-colors {
+	.marker-#{$color} {
+		li::marker {		
+			color: #{$value};
+		}
+	}
+}

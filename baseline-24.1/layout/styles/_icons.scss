@@ -1,0 +1,72 @@
+.icon-hold {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:4;
+	transform:translateY(-50%);
+	@include media-breakpoint-down(md) {
+		position:relative;
+		transform:translateY(0);
+	}
+}
+.icons {
+	text-align:center;
+	transition:all ease .3s;
+	transform:translateY(0);
+	position:relative;
+	.icon {
+		max-width:150px;
+		z-index:3;
+		position:relative;
+	}
+	
+	p {
+		
+		font-size:calc(1rem + .3vw);
+		font-family:$font-prime;
+		text-decoration: none !important;
+		text-transform: uppercase;
+		
+	}
+	&.pictures {
+		overflow:hidden;
+		min-height:300px;
+		position:relative;
+		img {
+			z-index:1;
+			transition:all ease .3s;
+			filter:brightness(.75);
+		}
+		p {
+		
+			font-size:calc(1rem + .3vw);
+			font-family:$font-prime;
+			color:white !important;
+			text-decoration: none !important;
+			text-transform: uppercase;
+			position:absolute;
+			top:50%;
+			left:50%;
+			width:99%;
+			transform:translate(-50%, -50%);
+			z-index:2;
+			text-shadow: 0 0 2px #000000;
+		
+		}
+		&:hover {
+				transform:translateY(0);
+				img {
+					transform:scale(1.2);
+				}
+			}
+	}
+	&.hov {
+		
+		&:hover {
+		transform:translateY(-10px);
+		}
+		
+	}
+	
+	
+}

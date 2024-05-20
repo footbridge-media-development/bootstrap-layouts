@@ -12,6 +12,10 @@
 		a {
 			text-decoration:none;
 			padding-left:.5rem;
+			@include media-breakpoint-down(md) {
+				margin-top:10px;
+				margin-bottom:10px;
+			}
 		}
 	}
 	&.larger {
@@ -57,6 +61,12 @@
 			li {display:block;
 				&:not(:last-child) {
 					border-right:none;
+				}
+					
+					@include media-breakpoint-down(md) {
+						margin-top:10px;
+						margin-bottom:10px; 
+					
 				}
 			}
 		}

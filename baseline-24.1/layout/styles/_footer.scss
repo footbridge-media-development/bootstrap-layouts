@@ -2,21 +2,38 @@
 /* FOOTER STYLING ***************************************************************************** */
 /* ******************************************************************************************** */
 
-footer.fb-ftr-1 {
+footer.fb-ftr-1, footer.fb-ftr-3 {
     background-color:map-get($theme-colors, light);
     font-family: $font-third;
     font-weight: normal;
     font-size: 0.9rem;
     color: #333;
 }
-footer.fb-ftr-1 h4 {
+footer.fb-ftr-2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: $font-third;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #fff;
+	.bg-picture {
+		z-index:0;
+		filter:brightness(.5);
+	}
+}
+.icon-fr {
+	color: #1b9bcb;
+	&:hover {
+        color: lighten($color-second, $amount: 20%);
+	}
+}
+footer.fb-ftr-1 h4, footer.fb-ftr-2 h4, footer.fb-ftr-3 h4  {
     font-family: $font-prime;
     font-weight: normal;
     color: map-get($theme-colors, "secondary");
 }
-footer.fb-ftr-1 a {
+footer.fb-ftr-1 a, footer.fb-ftr-3 a, footer.fb-ftr-2 a {
     font-family: $font-third;
-    font-weight: normal;
+    font-weight: bold;
     font-size: 0.9rem;
     color:$color-prime;
     transition: all 0.5s ease;
@@ -26,18 +43,44 @@ footer.fb-ftr-1 a {
 }
 .fb-ftr-1 .quick-links a {
     display: block;
+	margin-top:5px;
+	margin-bottom:5px;
 }
-.fb-ftr-1 .service-areas a {
-    border-right: 1px solid rgba(255,255,255, .5);
+.fb-ftr-2 .quick-links a, .fb-ftr-3 .quick-links a {
+	display:inline-block;
+	margin-left:3px;
+	margin-right:3px;
+	margin-top:5px;
+	margin-bottom:5px;
+}
+
+.fb-ftr-1 .service-areas a, .fb-ftr-2 .service-areas a, .fb-ftr-3 .service-areas a  {
+	position:relative;
+	display:inline-block;
+	margin-top:5px;
+	margin-bottom:5px;
+	&::after {
+		content:'|';
+		position:relative;
+		margin-left:16px;
+		margin-right:6px;
+		
+	}
     padding-right: 6px;
 }
-.fb-ftr-1 .service-areas a:last-child {
-    border-right: none;
+.fb-ftr-1 .service-areas a:last-child, .fb-ftr-2 .service-areas a:last-child, .fb-ftr-3 .service-areas a:last-child {
+    &::after {
+		content:'';
+		
+	}
     padding-right: 0;
 }
 .fb-ftr-1 .contact p {
     padding: 0;
     margin: 0;
+}
+.section-border {
+    border-top: .5px solid rgba(0, 0, 0, 0.1);
 }
 
 /* ******************************************************************************************** */

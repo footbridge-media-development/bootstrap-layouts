@@ -24058,6 +24058,12 @@ hr.special {
   text-decoration: none;
   padding-left: 0.5rem;
 }
+@media (max-width: 767.98px) {
+  .checkmark-list li a, .dashed-list li a, .squared-list li a, .icon-list li a, .icon-no li a, .underline-list li a {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
 .checkmark-list.larger li, .dashed-list.larger li, .squared-list.larger li, .icon-list.larger li, .icon-no.larger li, .underline-list.larger li {
   font-size: calc(1rem + 0.275vw);
   font-family: mon-v, sans-serif;
@@ -24094,6 +24100,12 @@ hr.special {
   }
   .checkmark-list.inline li:not(:last-child), .dashed-list.inline li:not(:last-child), .squared-list.inline li:not(:last-child), .icon-list.inline li:not(:last-child), .icon-no.inline li:not(:last-child), .underline-list.inline li:not(:last-child) {
     border-right: none;
+  }
+}
+@media (max-width: 575.98px) and (max-width: 767.98px) {
+  .checkmark-list.inline li, .dashed-list.inline li, .squared-list.inline li, .icon-list.inline li, .icon-no.inline li, .underline-list.inline li {
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -24757,7 +24769,7 @@ hr.special {
 /* ******************************************************************************************** */
 /* FOOTER STYLING ***************************************************************************** */
 /* ******************************************************************************************** */
-footer.fb-ftr-1 {
+footer.fb-ftr-1, footer.fb-ftr-3 {
   background-color: #f8f9fa;
   font-family: mon-v, sans-serif;
   font-weight: normal;
@@ -24765,40 +24777,84 @@ footer.fb-ftr-1 {
   color: #333;
 }
 
-footer.fb-ftr-1 h4, footer.fb-ftr-1 .h4 {
+footer.fb-ftr-2 {
+  background-color: rgba(0, 0, 0, 0.5);
+  font-family: mon-v, sans-serif;
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #fff;
+}
+footer.fb-ftr-2 .bg-picture, footer.fb-ftr-2 .bg-picture-top, footer.fb-ftr-2 .bg-picture-center, footer.fb-ftr-2 .bg-picture-bottom, footer.fb-ftr-2 .bg-picture-left, footer.fb-ftr-2 .bg-picture-right {
+  z-index: 0;
+  filter: brightness(0.5);
+}
+
+.icon-fr {
+  color: #1b9bcb;
+}
+.icon-fr:hover {
+  color: #acbe90;
+}
+
+footer.fb-ftr-1 h4, footer.fb-ftr-1 .h4, footer.fb-ftr-2 h4, footer.fb-ftr-2 .h4, footer.fb-ftr-3 h4, footer.fb-ftr-3 .h4 {
   font-family: mon-v, sans-serif;
   font-weight: normal;
   color: #7a9256;
 }
 
-footer.fb-ftr-1 a {
+footer.fb-ftr-1 a, footer.fb-ftr-3 a, footer.fb-ftr-2 a {
   font-family: mon-v, sans-serif;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 0.9rem;
   color: #082b71;
   transition: all 0.5s ease;
 }
-footer.fb-ftr-1 a:hover {
+footer.fb-ftr-1 a:hover, footer.fb-ftr-3 a:hover, footer.fb-ftr-2 a:hover {
   color: #7a9256;
 }
 
 .fb-ftr-1 .quick-links a {
   display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-.fb-ftr-1 .service-areas a {
-  border-right: 1px solid rgba(255, 255, 255, 0.5);
+.fb-ftr-2 .quick-links a, .fb-ftr-3 .quick-links a {
+  display: inline-block;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.fb-ftr-1 .service-areas a, .fb-ftr-2 .service-areas a, .fb-ftr-3 .service-areas a {
+  position: relative;
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
   padding-right: 6px;
 }
+.fb-ftr-1 .service-areas a::after, .fb-ftr-2 .service-areas a::after, .fb-ftr-3 .service-areas a::after {
+  content: "|";
+  position: relative;
+  margin-left: 16px;
+  margin-right: 6px;
+}
 
-.fb-ftr-1 .service-areas a:last-child {
-  border-right: none;
+.fb-ftr-1 .service-areas a:last-child, .fb-ftr-2 .service-areas a:last-child, .fb-ftr-3 .service-areas a:last-child {
   padding-right: 0;
+}
+.fb-ftr-1 .service-areas a:last-child::after, .fb-ftr-2 .service-areas a:last-child::after, .fb-ftr-3 .service-areas a:last-child::after {
+  content: "";
 }
 
 .fb-ftr-1 .contact p {
   padding: 0;
   margin: 0;
+}
+
+.section-border {
+  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
 }
 
 /* ******************************************************************************************** */
@@ -26115,142 +26171,5 @@ ul.timeline li::before {
 .svicon.nextdoor path {
   d: path(var(--ndoor-path));
 }
-
-/* ******************************************************************************************** */
-/* FOOTER STYLING ***************************************************************************** */
-/* ******************************************************************************************** */
-footer.fb-ftr-2 {
-  background-color: rgba(0, 0, 0, 0.5);
-  font-family: mon-v, sans-serif;
-  font-weight: normal;
-  font-size: 0.9rem;
-  color: #fff;
-}
-footer.fb-ftr-2 .bg-picture, footer.fb-ftr-2 .bg-picture-top, footer.fb-ftr-2 .bg-picture-center, footer.fb-ftr-2 .bg-picture-bottom, footer.fb-ftr-2 .bg-picture-left, footer.fb-ftr-2 .bg-picture-right {
-  z-index: 0;
-  filter: brightness(0.5);
-}
-
-footer.fb-ftr-2 h4, footer.fb-ftr-2 .h4 {
-  font-family: mon-v, sans-serif;
-  font-weight: normal;
-  color: #fff;
-}
-
-footer.fb-ftr-2 a {
-  font-family: mon-v, sans-serif;
-  font-weight: normal;
-  font-size: 0.9rem;
-  color: #fff;
-  transition: all 0.5s ease;
-}
-footer.fb-ftr-2 a:hover {
-  color: #acbe90;
-}
-
-.fb-ftr-2 .quick-links a {
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
-  padding-right: 6px;
-}
-
-.fb-ftr-2 .quick-links a:last-child {
-  border-right: none;
-  padding-right: 0;
-}
-
-.fb-ftr-2 .service-areas a {
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
-  padding-right: 6px;
-}
-
-.fb-ftr-2 .service-areas a:last-child {
-  border-right: none;
-  padding-right: 0;
-}
-
-.fb-ftr-2 .contact p {
-  padding: 0;
-  margin: 0;
-}
-
-.section-border {
-  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
-}
-
-/* SOCIAL ICONS IN FOOTER */
-.icon-fr {
-  color: #fff;
-}
-.icon-fr:hover {
-  color: #acbe90;
-}
-
-/* ******************************************************************************************** */
-/* ******************************************************************************************** */
-/* FOOTER STYLING ***************************************************************************** */
-/* ******************************************************************************************** */
-footer.fb-ftr-3 {
-  background-color: #eff1f4;
-  font-family: mon-v, sans-serif;
-  font-weight: normal;
-  font-size: 0.9rem;
-  color: #082b71;
-}
-
-footer.fb-ftr-3 h4, footer.fb-ftr-3 .h4 {
-  font-family: mon-v, sans-serif;
-  font-weight: normal;
-  color: #082b71;
-}
-
-footer.fb-ftr-3 a {
-  font-family: mon-v, sans-serif;
-  font-weight: normal;
-  font-size: 0.9rem;
-  color: #082b71;
-  transition: all 0.5s ease;
-}
-footer.fb-ftr-3 a:hover {
-  color: #445230;
-}
-
-.fb-ftr-3 .quick-links a {
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
-  padding-right: 6px;
-}
-
-.fb-ftr-3 .quick-links a:last-child {
-  border-right: none;
-  padding-right: 0;
-}
-
-.fb-ftr-3 .service-areas a {
-  border-right: 1px solid rgba(0, 0, 0, 0.25);
-  padding-right: 6px;
-}
-
-.fb-ftr-3 .service-areas a:last-child {
-  border-right: none;
-  padding-right: 0;
-}
-
-.fb-ftr-3 .contact p {
-  padding: 0;
-  margin: 0;
-}
-
-.section-border {
-  border-top: 0.5px solid rgba(0, 0, 0, 0.1);
-}
-
-/* SOCIAL ICONS IN FOOTER */
-.icon-fr {
-  color: #082b71;
-}
-.icon-fr:hover {
-  color: #374227;
-}
-
-/* ******************************************************************************************** */
 
 /*# sourceMappingURL=theme.css.map */

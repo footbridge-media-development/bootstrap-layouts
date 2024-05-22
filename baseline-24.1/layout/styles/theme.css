@@ -24086,6 +24086,8 @@ hr.special {
 }
 .checkmark-list.inline li, .dashed-list.inline li, .squared-list.inline li, .icon-list.inline li, .icon-no.inline li, .underline-list.inline li {
   display: inline-block;
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 .checkmark-list.inline li:not(:last-child), .dashed-list.inline li:not(:last-child), .squared-list.inline li:not(:last-child), .icon-list.inline li:not(:last-child), .icon-no.inline li:not(:last-child), .underline-list.inline li:not(:last-child) {
   border-right: 1px solid #212529;
@@ -24827,25 +24829,35 @@ footer.fb-ftr-1 a:hover, footer.fb-ftr-3 a:hover, footer.fb-ftr-2 a:hover {
   margin-bottom: 5px;
 }
 
-.fb-ftr-1 .service-areas a, .fb-ftr-2 .service-areas a, .fb-ftr-3 .service-areas a {
-  position: relative;
-  display: inline-block;
-  margin-top: 5px;
-  margin-bottom: 5px;
-  padding-right: 6px;
+ul.service-areas {
+  padding-left: 0;
 }
-.fb-ftr-1 .service-areas a::after, .fb-ftr-2 .service-areas a::after, .fb-ftr-3 .service-areas a::after {
+ul.service-areas li {
+  display: inline-block;
+  padding: 5px 0 5px 0;
+}
+ul.service-areas li a {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+ul.service-areas li::after {
   content: "|";
   position: relative;
-  margin-left: 16px;
+  margin-left: 6px;
   margin-right: 6px;
 }
-
-.fb-ftr-1 .service-areas a:last-child, .fb-ftr-2 .service-areas a:last-child, .fb-ftr-3 .service-areas a:last-child {
-  padding-right: 0;
-}
-.fb-ftr-1 .service-areas a:last-child::after, .fb-ftr-2 .service-areas a:last-child::after, .fb-ftr-3 .service-areas a:last-child::after {
+ul.service-areas li:last-of-type::after {
   content: "";
+}
+@media (max-width: 1199.98px) {
+  ul.service-areas li {
+    display: block;
+    padding: 5px 0 5px 0;
+  }
+  ul.service-areas li::after {
+    content: "";
+    margin: 0;
+  }
 }
 
 .fb-ftr-1 .contact p {
@@ -25146,7 +25158,7 @@ footer.fb-ftr-1 a:hover, footer.fb-ftr-3 a:hover, footer.fb-ftr-2 a:hover {
   background: none;
 }
 /* Set to Display None after Break-XL Sizing *************************************************** */
-@media screen and (max-width: 1199px) {
+@media (max-width: 1199.98px) {
   #lg-nav-v2-1 {
     display: none;
   }
@@ -25255,7 +25267,7 @@ footer.fb-ftr-1 a:hover, footer.fb-ftr-3 a:hover, footer.fb-ftr-2 a:hover {
   padding-left: 2.85em; /* Indent deeper sub-menus */
 }
 
-@media screen and (min-width: 1199px) {
+@media (min-width: 1200px) {
   #small-navigation-container-1 {
     display: none;
   }

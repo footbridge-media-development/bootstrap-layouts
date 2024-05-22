@@ -49,6 +49,8 @@
 	&.inline {
 		li {
 			display:inline-block;
+			margin-top:10px;
+			margin-bottom:10px; 
 			&:not(:last-child) {
 				border-right:1px solid map-get($theme-colors, dark);
 			}

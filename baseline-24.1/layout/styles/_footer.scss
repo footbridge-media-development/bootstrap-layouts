@@ -54,26 +54,38 @@ footer.fb-ftr-1 a, footer.fb-ftr-3 a, footer.fb-ftr-2 a {
 	margin-bottom:5px;
 }
 
-.fb-ftr-1 .service-areas a, .fb-ftr-2 .service-areas a, .fb-ftr-3 .service-areas a  {
-	position:relative;
-	display:inline-block;
-	margin-top:5px;
-	margin-bottom:5px;
-	&::after {
+ul.service-areas {
+	padding-left:0;
+	li {
+		display:inline-block;
+		padding:5px 0 5px 0;
+		a {
+			padding-top:8px;
+			padding-bottom:8px;
+		}
+		&::after {
 		content:'|';
 		position:relative;
-		margin-left:16px;
+		margin-left:6px;
 		margin-right:6px;
 		
+		}
+		&:last-of-type {
+			&::after {
+				content:'';
+			}
+		}
 	}
-    padding-right: 6px;
-}
-.fb-ftr-1 .service-areas a:last-child, .fb-ftr-2 .service-areas a:last-child, .fb-ftr-3 .service-areas a:last-child {
-    &::after {
-		content:'';
-		
+	@include media-breakpoint-down(xl) {
+		li {
+			display:block;
+			padding:5px 0 5px 0;
+			&::after {
+				content:'';
+				margin:0;
+			}
+		}
 	}
-    padding-right: 0;
 }
 .fb-ftr-1 .contact p {
     padding: 0;

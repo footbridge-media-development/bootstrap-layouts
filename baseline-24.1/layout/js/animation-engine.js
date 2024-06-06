@@ -141,10 +141,20 @@ const observer = new IntersectionObserver((entries, observer) => {
 	});
 }, {rootMargin: "150px", threshold: 0.5});
 
-
 for (const classString of classes) {
 	const collection = document.querySelectorAll(`.${classString}`);
+	const screenWidth = document.documentElement.clientWidth;
 	for (const element of collection) {
-		observer.observe(element)
+		if (screenWidth <= 765){
+			if (animatesOnMobile){
+				observer.observe(element);
+			}else{
+				// Remove opacity and transform applied by the class in CSS
+				element.style.opacity = "unset";	
+				element.style.transform = "unset";
+			}
+		}else{
+			observer.observe(element);
+		}
 	}
 }

@@ -1,3 +1,4 @@
+const animatesOnMobile = false;
 const classes = [
 	"animated-pop-in",
 	"animated-fade-in-start",
@@ -7,6 +8,8 @@ const classes = [
 ];
 
 const observer = new IntersectionObserver((entries, observer) => { 
+	const screenWidth = document.documentElement.clientWidth;
+
 	entries.forEach(entry => {
 		const target = entry.target;
 		const targetClassArray = target.classList;
@@ -18,65 +21,126 @@ const observer = new IntersectionObserver((entries, observer) => {
 			}
 			return null;
 		};
+
 		if (entry.isIntersecting) {
 			// animated-pop-in class animation
 			if (classStringMatched() == "animated-pop-in") {
-				anime({
-					targets:target,
-					scale:[0, 1],
-					duration:600,
-					easing:"easeInOutSine",
-					autoplay:true
-				});
+				if (!animatesOnMobile && screenWidth <= 765){
+					anime({
+						targets:target,
+						scale:[0, 1],
+						duration:0,
+						easing:"easeInOutSine",
+						autoplay:true
+					});
+				}else{
+					anime({
+						targets:target,
+						scale:[0, 1],
+						duration:600,
+						easing:"easeInOutSine",
+						autoplay:true
+					});
+				}
+
 			}
+
 			// animated-fade-in-start class animation
 			if (classStringMatched() == "animated-fade-in-start") {
-				anime({
-					targets:target,
-					translateX:[-100, 0],
-					opacity:[0,1],
-					duration:600,
-					easing:"easeInOutSine",
-					autoplay:true
-				});
+				if (!animatesOnMobile && screenWidth <= 765){
+					anime({
+						targets:target,
+						translateX:[-100, 0],
+						opacity:[0,1],
+						duration:0,
+						easing:"easeInOutSine",
+						autoplay:true
+					});
+				}else{
+					anime({
+						targets:target,
+						translateX:[-100, 0],
+						opacity:[0,1],
+						duration:600,
+						easing:"easeInOutSine",
+						autoplay:true
+					});
+				}
 			}
+
 			// animated-fade-in-end class animation
 			if (classStringMatched() == "animated-fade-in-end") {
-				anime({
-					targets:target,
-					translateX:[100, 0],
-					opacity:[0,1],
-					duration:600,
-					easing:"easeInOutSine",
-					autoplay:true
-				});
+				if (!animatesOnMobile && screenWidth <= 765){
+					anime({
+						targets:target,
+						translateX:[100, 0],
+						opacity:[0,1],
+						duration:0,
+						easing:"easeInOutSine",
+						autoplay:true
+					});
+				}else{
+					anime({
+						targets:target,
+						translateX:[100, 0],
+						opacity:[0,1],
+						duration:600,
+						easing:"easeInOutSine",
+						autoplay:true
+					});
+				}
 			}
+
 			// animated-fade-in-top class animation
 			if (classStringMatched() == "animated-fade-in-top") {
-				anime({
-					targets:target,
-					translateY:[-100, 0],
-					opacity:[0,1],
-					duration:600,
-					easing:"easeInOutSine",
-					autoplay:true
-				});
+				if (!animatesOnMobile && screenWidth <= 765){
+					anime({
+						targets:target,
+						translateY:[-100, 0],
+						opacity:[0,1],
+						duration:0,
+						easing:"easeInOutSine",
+						autoplay:true
+					});
+				}else{
+					anime({
+						targets:target,
+						translateY:[-100, 0],
+						opacity:[0,1],
+						duration:600,
+						easing:"easeInOutSine",
+						autoplay:true
+					});
+				}
 			}
+
 			// animated-fade-in-bottom class animation
 			if (classStringMatched() == "animated-fade-in-bottom") {
-				anime({
-					targets:target,
-					translateY:[100, 0],
-					opacity:[0,1],
-					duration:600,
-					easing:"easeInOutSine",
-					autoplay:true
-				});
+				if (!animatesOnMobile && screenWidth <= 765){
+					anime({
+						targets:target,
+						translateY:[100, 0],
+						opacity:[0,1],
+						duration:0,
+						easing:"easeInOutSine",
+						autoplay:true
+					});
+				}else{
+					anime({
+						targets:target,
+						translateY:[100, 0],
+						opacity:[0,1],
+						duration:600,
+						easing:"easeInOutSine",
+						autoplay:true
+					});
+				}
 			}
 			observer.unobserve(entry.target);
 		}
 	});
 }, {rootMargin: "150px", threshold: 0.5});
+
 
 for (const classString of classes) {
 	const collection = document.querySelectorAll(`.${classString}`);

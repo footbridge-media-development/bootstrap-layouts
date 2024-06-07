@@ -1,25 +1,22 @@
-// Bootstrap Functions
+@import "dependencies/bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
+
+// scss-docs-start import-stack
+// Configuration
 @import "dependencies/bootstrap/scss/functions";
 
 // Custom Overrides
 @import "variables";
 @import "utilities/options";
 
-// Bootstrap Variables
 @import "dependencies/bootstrap/scss/variables";
-
-// Simple Lightbox plugin
-@import "dependencies/simple-lightbox/simple-lightbox";
-
-// Map Changes
-@import "utilities/theme-color-additions";
-@import "utilities/spacers-extended";
-
-// Bootstrap Configuration
+@import "dependencies/bootstrap/scss/variables-dark";
+@import "dependencies/bootstrap/scss/maps";
 @import "dependencies/bootstrap/scss/mixins";
 @import "dependencies/bootstrap/scss/utilities";
 
-// Bootstrap Layout & Components
+// Layout & components
 @import "dependencies/bootstrap/scss/root";
 @import "dependencies/bootstrap/scss/reboot";
 @import "dependencies/bootstrap/scss/type";
@@ -52,18 +49,11 @@
 @import "dependencies/bootstrap/scss/offcanvas";
 @import "dependencies/bootstrap/scss/placeholders";
 
-// Bootstrap Helpers
+// Helpers
 @import "dependencies/bootstrap/scss/helpers";
 
-// Bootstrap Utilities
+// Utilities
 @import "dependencies/bootstrap/scss/utilities/api";
-
-// Font Awesome
-@import "dependencies/font-aw/scss/fontawesome.scss";
-@import "dependencies/font-aw/scss/solid.scss";
-@import "dependencies/font-aw/scss/brands.scss";
-
-// Footbridge Utilities
 @import "utilities/animation-engine-views";
 @import "utilities/backgrounds";
 @import "utilities/borders";
@@ -75,7 +65,7 @@
 @import "utilities/width";
 @import "utilities/zindex";
 
-// Footbridge Styles
+// Theme
 @import "defaults";
 @import "contrast";
 @import "lists";

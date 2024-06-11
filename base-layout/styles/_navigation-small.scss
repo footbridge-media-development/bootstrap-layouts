@@ -91,8 +91,4 @@
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links .tap-dropdown > div > div a {
 	padding-left: 2.85em; /* Indent deeper sub-menus */
 }
-@include media-breakpoint-up(xl) {
-	#small-navigation-container-1 {
-		display: none;
-	}
-}
+

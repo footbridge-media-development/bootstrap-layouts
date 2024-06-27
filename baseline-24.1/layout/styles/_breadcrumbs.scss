@@ -1,0 +1,26 @@
+.breadcrumb {
+    background-color: transparent;
+    border-left: 6px solid darken(map-get($theme-colors, "tertiary"), 15%);
+    border-bottom: 1px solid darken(map-get($theme-colors, "tertiary"), 15%);
+    background: none;
+    padding: 0.33rem 1rem;
+    font-family: $font-third;
+    font-size: 0.88rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: map-get($theme-colors, "secondary") !important;
+    a {
+        color: map-get($theme-colors, "secondary") !important;
+    }
+}
+.breadcrumb-item {
+    font-family: $font-third;
+    font-size: 0.88rem;
+    font-weight: normal;
+    &::before {
+        color: darken(map-get($theme-colors, "tertiary"), 15%) !important;
+    }
+    +.active {
+        color: darken(map-get($theme-colors, "tertiary"), 15%) !important;
+    }
+}

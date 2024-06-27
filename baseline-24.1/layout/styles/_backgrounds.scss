@@ -1,0 +1,346 @@
+.mover {
+	top:0;
+	left:0;
+}
+.watermark {
+	opacity:.3;
+	&.overlight {
+		opacity:.3;
+		mix-blend-mode:multiply;
+		
+	}
+	&.dodged {
+		mix-blend-mode:color-dodge;
+	}
+	&.o15 {
+		opacity:.15;
+	}
+}
+.bgcover {
+	min-height:450px;
+	@include media-breakpoint-down(md) {
+		min-height:300px;
+	}
+	&.shorter {
+		min-height:200px;
+	}
+}
+.overlay {
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:2;
+	width:100%;
+	height:100%;
+	&.tertiary {
+		background:$color-third;
+	}
+	&.secondary {
+		background:$color-second;
+	}
+	&.primary {
+		background:$color-prime;
+	}
+	&.light {
+		background:map-get($theme-colors, light);
+	}
+	&.o60 {
+		opacity:60%;
+	}
+	&.o80 {
+		opacity:80%;
+	}
+	&.gradient {
+		&.dark {
+			&.top {
+				background:linear-gradient(to bottom, rgba(map-get($theme-colors, dark), 1) 0%, rgba(map-get($theme-colors, dark), .75) 35%, rgba(map-get($theme-colors, dark), 0) 75%);
+			}
+			&.bottom {
+				background:linear-gradient(to top, rgba(map-get($theme-colors, dark), 1) 0%, rgba(map-get($theme-colors, dark), .75) 35%, rgba(map-get($theme-colors, dark), 0) 75%);
+			}
+			&.special {
+				background:linear-gradient(45deg, rgba(map-get($theme-colors, dark), 1) 0%, rgba(map-get($theme-colors, dark), .75) 25%, rgba(map-get($theme-colors, dark), .2) 50%, rgba(map-get($theme-colors, dark), .75) 75%, rgba(map-get($theme-colors, dark), 1) 100%);
+			}
+			@include media-breakpoint-down(xl) {
+				&.top {
+					background:rgba($black, 0);
+				}
+			}
+		}
+		&.black {
+			&.left {
+				background:linear-gradient(to right, rgba($black, 1) 0%, rgba($black, .75) 50%, rgba($black, .2) 100%);
+			}
+			&.right {
+				background:linear-gradient(to left, rgba($black, 1) 0%, rgba($black, .75) 50%, rgba($black, .2) 100%);
+			}
+			@include media-breakpoint-down(md) {
+				&.left, &.right {
+					background:rgba($black, .8);
+				}
+			}
+		}
+		&.primary {
+			&.left {
+				background:linear-gradient(to right, rgba($color-prime, 1) 0%, rgba($color-prime, .75) 60%, rgba($color-prime, .2) 100%);
+			}
+			&.right {
+				background:linear-gradient(to left, rgba($color-prime, 1) 0%, rgba($color-prime, .75) 60%, rgba($color-prime, .2) 100%);
+			}
+			@include media-breakpoint-down(md) {
+				&.left, &.right {
+					background:rgba($color-prime, .8);
+				}
+			}
+		}
+		&.secondary {
+			&.left {
+				background:linear-gradient(to right, rgba($color-second, 1) 0%, rgba($color-second, .75) 50%, rgba($color-second, .2) 100%);
+			}
+			&.right {
+				background:linear-gradient(to left, rgba($color-second, 1) 0%, rgba($color-second, .75) 50%, rgba($color-second, .2) 100%);
+			}
+			@include media-breakpoint-down(md) {
+				&.left, &.right {
+					background:rgba($color-second, .8);
+				}
+			}
+		}
+		&.tertiary {
+			&.special {
+				background:linear-gradient(45deg, rgba($color-third, 1) 0%, rgba($color-third, .75) 25%, rgba($color-third, .2) 50%, rgba($color-third, .75) 75%, rgba($color-third, 1) 100%);
+			}
+			&.left {
+				background:linear-gradient(to right, rgba($color-second, 1) 0%, rgba($color-second, .75) 50%, rgba($color-second, .2) 100%);
+			}
+			&.right {
+				background:linear-gradient(to left, rgba($color-second, 1) 0%, rgba($color-second, .75) 50%, rgba($color-second, .2) 100%);
+			}
+			@include media-breakpoint-down(md) {
+				&.left, &.right {
+					background:rgba($color-second, .8);
+				}
+			}
+		}
+	}
+}
+.bg-image {
+	min-height:500px;
+	@include media-breakpoint-down(md) {
+		min-height:300px;
+	}
+}
+.slashed {
+	&.right {
+		clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
+
+	}
+	&.left {
+		clip-path: polygon(10% 0, 100% 0, 100% 100%, 0% 100%);
+	}
+	@include media-breakpoint-down(md) {
+		&.left, &.right {
+			clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+		}
+	}
+    &.double {
+        > div {
+            transform:translateX(-35%);
+            &::after {
+                position:absolute;
+                z-index:0;
+                content:'';
+                background:white;
+                height:110%;
+                width:110%;
+                top:50%;
+                left:50%;
+                transform:translate(-50%, -50%);
+                display:block;
+                clip-path: polygon(15% 0, 95% 0, 85% 100%, 5% 100%);
+            }
+            img {
+                clip-path: polygon(15% 0, 95% 0, 85% 100%, 5% 100%); 
+                z-index:4;
+            }
+        }
+        @include media-breakpoint-down(xl) {
+            > div {
+                transform:translateX(-10%);
+            }
+        }
+        @include media-breakpoint-down(md) {
+            > div {
+                transform:translate(0, 0);
+                &::after {
+                    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                    width:100%;
+                    height:100%;
+                }
+                img {
+                    clip-path: polygon(0 10%, 100% 0%, 100% 90%, 0% 100%);
+                    width:95%;
+                    height:95%;
+                    left:2.5%;
+                    top:2.5%;
+                }
+            }
+        } 
+    }
+}
+.spacer {
+	min-height:200px;
+	@include media-breakpoint-down(md) {
+		min-height:80px;
+	}
+	@include media-breakpoint-down(sm) {
+		min-height:50px;
+	}
+}
+.spec-grad {
+background: linear-gradient(to bottom, $color-second 0%, rgba($color-second, .5) 10%, rgba($color-second, .25) 20%, rgba($color-second, 0) 100%);
+	&.dark {
+		background:linear-gradient(180deg, $color-second 0%, darken($color-second, 10%) 50%, darken($color-second, 15%) 100%);
+		&.inverted {
+			background:linear-gradient(to top, $color-second 0%, darken($color-second, 10%) 50%, darken($color-second, 15%) 100%);
+		}
+	}
+}
+.grad-fade {
+	background:linear-gradient(to bottom, map-get($theme-colors, light) 15%, rgba(map-get($theme-colors, primary), .5) 35%, rgba(map-get($theme-colors, primary), 1) );
+}
+.cliped {
+	clip-path: url(#svgClip);
+	z-index:4;
+}
+.bg-primary {
+	&.o80 {
+		background:rgba($color-prime, .8) !important;
+	}
+}
+.bg-tertiary {
+	&.grad {
+		background:linear-gradient(45deg, $color-third, lighten($color-third, 20%));
+	}
+}
+.map {
+    height:450px;
+    width:100%;
+}
+.rap-bg {
+	position:absolute;
+	z-index:1;
+	top:50%;
+	left:0%;
+	transform:translate(-27%, -50%);
+	height:110%;
+	@include media-breakpoint-down(xl){
+		transform:translate(-16%, -50%);
+	}
+	@include media-breakpoint-down(lg) {
+		display:none;
+	}
+}
+.bgfullheight {
+	height:100vh;
+	min-height:700px;
+        img {
+			
+        }
+		@include media-breakpoint-down(xxl) {
+			height:auto;
+			min-height:600px;
+		} 
+		@include media-breakpoint-down(lg) {
+			height:auto;
+			min-height:600px;
+		} 
+		@include media-breakpoint-down(sm) {
+			height:auto;
+			min-height:500px;
+		} 
+}
+.greyscale {
+	filter:grayscale(1);
+}
+.bover {
+	position:absolute;
+	z-index:2;
+	width:100%;
+	height:100%;
+	&.light {
+		border:2px solid map-get($theme-colors, light);
+	}
+	&.dark {
+		border:2px solid map-get($theme-colors, dark);
+	}
+	&.primary {
+		border:2px solid map-get($theme-colors, $color-prime);
+	}
+	&.secondary {
+		border:2px solid map-get($theme-colors, $color-second);
+	}
+	&.tertiary {
+		border:2px solid map-get($theme-colors, $color-third);
+	}
+	
+	&.left {
+		top:0;
+		right:0;
+		left:0;
+		bottom:0;
+		transform: translate(3%, 5%);
+		-webkit-transform: translate(3%, 5%);
+		
+	}
+	&.right {
+		top:0;
+		left:0;
+		right:0;
+		bottom:0;
+		transform: translate(-5%, 5%);
+	}
+	&.full {
+		top:5%;
+		left:4%;
+		width:92%;
+		height:90%
+		
+	}
+	@include media-breakpoint-down(md) {
+		&.left, &.right {
+			top:5%;
+			left:5%;
+			right:auto;
+			width:90%;
+			height:100%;
+			transform:translate(0,0);
+			-webkit-transform:translate(0,0);
+			
+		}
+	}
+}
+.bg-text {
+	font-family:$font-prime;
+	font-size:calc(1rem + 10vw);
+	position:absolute;
+	-webkit-text-fill-color: white; /* Will override color (regardless of order) */
+  	-webkit-text-stroke-width: 1px;
+  	-webkit-text-stroke-color: black;
+	opacity:.2;
+	top:30%;
+	left:0;
+	z-index:1;
+	transform:translateY(-50%);
+	&.right {
+		left:auto;
+		right:0;
+		text-align:end;
+	}
+	@include media-breakpoint-down(md) {
+		display:none;
+	}
+}
+.service-img {
+	height:300px;
+}

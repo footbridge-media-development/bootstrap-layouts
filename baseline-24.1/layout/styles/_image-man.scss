@@ -1,0 +1,40 @@
+@keyframes tleft {
+	from {
+		transform:rotate(0deg);
+		width:70%;
+		
+	}
+	to {
+		transform:rotate(-5deg);
+		width:80%;
+	}
+}
+@keyframes tright {
+	from {
+		transform:rotate(0deg);
+		width:70%;
+		
+	}
+	to {
+		transform:rotate(5deg);
+		width:80%;
+	}
+}
+.tilted {
+	&.left {
+		
+		@include media-breakpoint-up(lg) {
+			transform:rotate(0deg);
+			width:70%;
+			animation: tleft .5s linear .3s forwards;
+			
+		}
+	}
+	&.right {
+		@include media-breakpoint-up(lg) {
+			transform:rotate(0deg);
+			width:70%;
+			animation: tright .5s linear .3s forwards;
+		}
+	}
+}

@@ -1,0 +1,24 @@
+#banner {
+	.carousel-item {
+		filter: brightness(.65);
+	}
+	.bg-picture-container {
+		min-height:600px;
+		.banner-content {
+			position:absolute;
+			z-index:1;
+			top:50%;
+			left:50%;
+			transform:translate(-50%,-50%);
+		}
+		@include media-breakpoint-down(lg) {
+			min-height: 600px !important;
+		}
+		@include media-breakpoint-down(md) {
+			min-height: 500px !important;
+		}
+		@include media-breakpoint-down(sm) {
+			min-height: 400px !important;
+		}
+	}
+}

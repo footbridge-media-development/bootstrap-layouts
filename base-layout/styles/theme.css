@@ -23525,9 +23525,10 @@ img, iframe, video {
   max-width: 100%;
 }
 
-h1, .h1, h2, .h2, h4, .h4, h3, .h3, h5, .h5 {
+h1, .h1, h2, .h2, h3, .h3, .display-4, .display-5 {
   font-family: mon-v, sans-serif;
   text-transform: capitalize;
+  font-weight: 800;
 }
 
 p {
@@ -23609,14 +23610,12 @@ a i.fab:hover {
 
 picture {
   width: 0 !important;
+  padding: 0 !important;
+  height: 0 !important;
 }
 
 hr.special {
   height: 4px;
-}
-
-.m-logo {
-  max-width: 200px;
 }
 
 .s-logo {
@@ -23871,14 +23870,14 @@ hr.special {
   color: #f8f9fa !important;
 }
 
-.btn-tertiary {
+.btn-info {
   border-radius: 25rem;
   background-image: linear-gradient(45deg, #ffeb32 50%, transparent 50%);
   background-position: 100%;
   background-size: 400%;
   transition: all ease 0.6s;
 }
-.btn-tertiary:hover {
+.btn-info:hover {
   background-position: 0;
 }
 
@@ -23954,6 +23953,12 @@ hr.special {
 .overlay.gradient.dark.bottom {
   background: linear-gradient(to top, #212529 0%, rgba(33, 37, 41, 0.75) 35%, rgba(33, 37, 41, 0) 75%);
 }
+.overlay.gradient.dark.right {
+  background: linear-gradient(to left, #212529 0%, rgba(33, 37, 41, 0.75) 35%, rgba(33, 37, 41, 0) 75%);
+}
+.overlay.gradient.dark.left {
+  background: linear-gradient(to right, #212529 0%, rgba(33, 37, 41, 0.75) 35%, rgba(33, 37, 41, 0) 75%);
+}
 .overlay.gradient.dark.special {
   background: linear-gradient(45deg, #212529 0%, rgba(33, 37, 41, 0.75) 25%, rgba(33, 37, 41, 0.2) 50%, rgba(33, 37, 41, 0.75) 75%, #212529 100%);
 }
@@ -23961,6 +23966,21 @@ hr.special {
   .overlay.gradient.dark.top {
     background: rgba(0, 0, 0, 0);
   }
+}
+.overlay.gradient.light.top {
+  background: linear-gradient(to bottom, #f8f9fa 0%, rgba(248, 249, 250, 0.75) 35%, rgba(248, 249, 250, 0) 75%);
+}
+.overlay.gradient.light.bottom {
+  background: linear-gradient(to top, #f8f9fa 0%, rgba(248, 249, 250, 0.75) 35%, rgba(248, 249, 250, 0) 75%);
+}
+.overlay.gradient.light.right {
+  background: linear-gradient(to left, #f8f9fa 0%, rgba(248, 249, 250, 0.75) 35%, rgba(248, 249, 250, 0) 75%);
+}
+.overlay.gradient.light.left {
+  background: linear-gradient(to right, #f8f9fa 0%, rgba(248, 249, 250, 0.75) 35%, rgba(248, 249, 250, 0) 75%);
+}
+.overlay.gradient.light.special {
+  background: linear-gradient(45deg, #f8f9fa 0%, rgba(248, 249, 250, 0.75) 25%, rgba(248, 249, 250, 0.2) 50%, rgba(248, 249, 250, 0.75) 75%, #f8f9fa 100%);
 }
 .overlay.gradient.black.left {
   background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.2) 100%);
@@ -24007,15 +24027,6 @@ hr.special {
 @media (max-width: 767.98px) {
   .overlay.gradient.tertiary.left, .overlay.gradient.tertiary.right {
     background: rgba(122, 146, 86, 0.8);
-  }
-}
-
-.bg-image {
-  min-height: 500px;
-}
-@media (max-width: 767.98px) {
-  .bg-image {
-    min-height: 300px;
   }
 }
 
@@ -24119,7 +24130,7 @@ hr.special {
   width: 100%;
 }
 
-.rap-bg {
+.chara-bg {
   position: absolute;
   z-index: 1;
   top: 50%;
@@ -24128,12 +24139,12 @@ hr.special {
   height: 110%;
 }
 @media (max-width: 1199.98px) {
-  .rap-bg {
+  .chara-bg {
     transform: translate(-16%, -50%);
   }
 }
 @media (max-width: 991.98px) {
-  .rap-bg {
+  .chara-bg {
     display: none;
   }
 }
@@ -24427,13 +24438,6 @@ footer.fb-ftr-2 {
 footer.fb-ftr-2 .bg-picture, footer.fb-ftr-2 .bg-picture-top, footer.fb-ftr-2 .bg-picture-center, footer.fb-ftr-2 .bg-picture-bottom, footer.fb-ftr-2 .bg-picture-left, footer.fb-ftr-2 .bg-picture-right {
   z-index: 0;
   filter: brightness(0.5);
-}
-
-.icon-fr {
-  color: #1b9bcb;
-}
-.icon-fr:hover {
-  color: #acbe90;
 }
 
 footer.fb-ftr-1 h4, footer.fb-ftr-1 .h4, footer.fb-ftr-2 h4, footer.fb-ftr-2 .h4, footer.fb-ftr-3 h4, footer.fb-ftr-3 .h4 {
@@ -24847,7 +24851,7 @@ ul.service-areas li:last-of-type::after {
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-  background-color: #7a9256;
+  background-color: #082b71;
   overflow: auto;
   z-index: 11;
   width: 70%;
@@ -24863,7 +24867,7 @@ ul.service-areas li:last-of-type::after {
   text-decoration: none;
   text-align: left;
   padding: 0.75rem 1.25rem;
-  color: #f8f9fa;
+  color: #FFF;
 }
 
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > a {

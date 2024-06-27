@@ -58,6 +58,12 @@
 			&.bottom {
 				background:linear-gradient(to top, rgba(map-get($theme-colors, dark), 1) 0%, rgba(map-get($theme-colors, dark), .75) 35%, rgba(map-get($theme-colors, dark), 0) 75%);
 			}
+			&.right {
+				background:linear-gradient(to left, rgba(map-get($theme-colors, dark), 1) 0%, rgba(map-get($theme-colors, dark), .75) 35%, rgba(map-get($theme-colors, dark), 0) 75%);
+			}
+			&.left {
+				background:linear-gradient(to right, rgba(map-get($theme-colors, dark), 1) 0%, rgba(map-get($theme-colors, dark), .75) 35%, rgba(map-get($theme-colors, dark), 0) 75%);
+			}
 			&.special {
 				background:linear-gradient(45deg, rgba(map-get($theme-colors, dark), 1) 0%, rgba(map-get($theme-colors, dark), .75) 25%, rgba(map-get($theme-colors, dark), .2) 50%, rgba(map-get($theme-colors, dark), .75) 75%, rgba(map-get($theme-colors, dark), 1) 100%);
 			}
@@ -65,6 +71,26 @@
 				&.top {
 					background:rgba($black, 0);
 				}
+			}
+		}
+		&.light {
+			&.top {
+				background:linear-gradient(to bottom, rgba(map-get($theme-colors, light), 1) 0%, rgba(map-get($theme-colors, light), .75) 35%, rgba(map-get($theme-colors, light), 0) 75%);
+			}
+			&.bottom {
+				background:linear-gradient(to top, rgba(map-get($theme-colors, light), 1) 0%, rgba(map-get($theme-colors, light), .75) 35%, rgba(map-get($theme-colors, light), 0) 75%);
+			}
+			&.right {
+				background:linear-gradient(to left, rgba(map-get($theme-colors, light), 1) 0%, rgba(map-get($theme-colors, light), .75) 35%, rgba(map-get($theme-colors, light), 0) 75%);
+			}
+			&.left {
+				background:linear-gradient(to right, rgba(map-get($theme-colors, light), 1) 0%, rgba(map-get($theme-colors, light), .75) 35%, rgba(map-get($theme-colors, light), 0) 75%);
+			}
+			&.special {
+				background:linear-gradient(45deg, rgba(map-get($theme-colors, light), 1) 0%, rgba(map-get($theme-colors, light), .75) 25%, rgba(map-get($theme-colors, light), .2) 50%, rgba(map-get($theme-colors, light), .75) 75%, rgba(map-get($theme-colors, light), 1) 100%);
+			}
+			@include media-breakpoint-down(xl) {
+				
 			}
 		}
 		&.black {
@@ -124,12 +150,7 @@
 		}
 	}
 }
-.bg-image {
-	min-height:500px;
-	@include media-breakpoint-down(md) {
-		min-height:300px;
-	}
-}
+
 .slashed {
 	&.right {
 		clip-path: polygon(0 0, 90% 0, 100% 100%, 0% 100%);
@@ -227,7 +248,7 @@ background: linear-gradient(to bottom, $color-second 0%, rgba($color-second, .5)
     height:450px;
     width:100%;
 }
-.rap-bg {
+.chara-bg {
 	position:absolute;
 	z-index:1;
 	top:50%;

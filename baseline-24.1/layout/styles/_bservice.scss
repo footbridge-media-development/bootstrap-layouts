@@ -1,0 +1,80 @@
+.bservice {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	transform:translateY(-50%);
+	.item {
+		height:300px;
+		-webkit-border-radius: 20px;
+		border-radius: 20px;
+		border:3px solid $color-second;
+		position:relative;
+		overflow:hidden;
+		.title {
+			position:absolute;
+			width:90%;
+			text-align:center;
+			left:50%;
+			top:50%;
+			transform:translate(-50%, -50%);
+			z-index:3;
+			font-family:$font-prime;
+			font-size:calc(1rem + .2vw);
+			color:white;
+			text-transform:uppercase;
+			opacity: 0;
+			transition:all ease .3s;
+		}
+		.overlay {
+			position:absolute;
+			z-index:2;
+			height:100%;
+			width:100%;
+			background:rgba($color-prime, 0);
+			top:0;
+			left:0;
+			transition:all ease .3s;
+		}
+		a {
+			height:100%;
+			width:100%;
+			top:0;
+			left:0;
+			position:absolute;
+			z-index:5;
+		}
+	}
+	.bsbutton {
+		position:absolute;
+		z-index:3;
+		bottom:0;
+		left:50%;
+		transform:translate(-50%, 0);
+		width:70%;
+	}
+	> div {
+		&:hover {
+			.item {
+				.title {
+					opacity:1;
+				}
+				.overlay {
+					background:rgba($color-prime, .6);
+				}
+			}
+		}
+	}
+	@include media-breakpoint-down(xl) {
+		.item {
+			height:200px;
+		}
+	}
+	@include media-breakpoint-down(md) {
+		position:relative;
+		transform:translateY(0);
+		.item {
+			height:300px;
+		}
+	}
+}

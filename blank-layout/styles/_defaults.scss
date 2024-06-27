@@ -1,0 +1,82 @@
+$color-prime: map-get($theme-colors, "primary");
+$color-second: map-get($theme-colors, "secondary");
+$color-third: map-get($theme-colors, "tertiary");
+
+$font-prime:  Futura-Bold, sans-serif;
+$font-second: OpenSans-Regular, sans-serif;
+$font-third:  Roboto-Regular, sans-serif;
+
+* {
+    white-space: normal;
+}
+a {
+    cursor: pointer;
+    color: map-get($theme-colors, "secondary");
+    &:hover {
+        text-decoration: none;
+    }
+}
+a.skip-main {
+    position: absolute;
+    top: auto;
+    left: -999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    z-index: -999;
+    &:focus, &:active {
+        background-color: #000000;
+        color: #FFFFFF;
+        top: auto;
+        left: auto;
+        width: 30%;
+        height: auto;
+        overflow: auto;
+        margin: 10px 35%;
+        padding: 5px;
+        border-radius: 15px;
+        border: 4px solid yellow;
+        text-align: center;
+        font-size: 1.2rem;
+        z-index: 999;
+    }
+}
+img, iframe, video {
+    max-width: 100%;
+}
+h1, h2, h4, h5 {
+	font-family: $font-prime;
+}
+p {
+	margin: 1rem 0;
+}
+p, ul, ul li, ul li a, ol, ol li, ol li a {
+	font-family: $font-third;
+	font-size: 0.9rem;
+}
+.f-prime {
+    font-family: $font-prime !important;
+}
+.f-second {
+    font-family: $font-second !important;
+}
+.f-third {
+    font-family: $font-third !important;
+}
+.text-shadow {
+    text-shadow: 1px 2px 5px rgba(0, 0, 0, 0.2);
+}
+.req-num, .req-form {
+	color: map-get($theme-colors, "tertiary") !important;
+    transition: all 0.5s ease;
+	&:hover {
+		color: map-get($theme-colors, "secondary") !important;
+	}
+}
+.call-num, .req-serv {
+	color: map-get($theme-colors, "secondary") !important;
+    transition: all 0.5s ease;
+	&:hover {
+		color: map-get($theme-colors, "tertiary") !important;
+	}
+}

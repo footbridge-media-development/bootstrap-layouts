@@ -57,9 +57,10 @@ a.skip-main {
 img, iframe, video {
     max-width: 100%;
 }
-h1, h2, h4, h3, h5 {
+h1, h2, h3, .display-4, .display-5 {
 	font-family: $font-prime;
 	text-transform:capitalize;
+	font-weight:800;
 }
 h1, h2, h3 {
 	
@@ -143,15 +144,15 @@ a {
 }
 picture {
 	width:0 !important;
+	padding:0 !important;
+	height:0 !important;
 }
 hr {
 	&.special {
 		height:4px;
 	}
 }
-.m-logo {
-	max-width:200px;
-}
+
 .s-logo {
 	max-width:150px;
 }

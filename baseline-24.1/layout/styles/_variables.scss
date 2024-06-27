@@ -1,0 +1,21 @@
+$primary: #082b71;
+$secondary: #7a9256;
+$tertiary: #fff065;
+$white: #FFF;
+$black: #000000;
+
+// Enable rounded?
+$enable-rounded: false;
+
+// Border classes width
+$theme-borders-width: 2px;
+
+//Path to FontAwesome
+$fa-font-path: "../styles/dependencies/font-aw/webfonts";
+$fa-font-display: swap;
+
+@font-face {
+	font-family: 'mon-v';
+	src: url(../fonts/Montserrat-VariableFont_wght.ttf);
+	font-display: swap;
+}

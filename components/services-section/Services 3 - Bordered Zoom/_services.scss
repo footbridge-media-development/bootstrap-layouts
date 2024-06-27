@@ -1,0 +1,78 @@
+.service-bordered-zoom {
+    position: relative;
+    overflow: hidden;
+    img {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        filter: brightness(1);
+        transform: scale(1.25);
+        transition: all 0.5s ease;
+    }
+    .service-content {
+        position: absolute;
+        top: 5%;
+        left: 5%;
+        width: 90%;
+        height: 90%;
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid #FFFFFF;
+        transition: all 0.5s ease;
+        opacity: 0;
+        .service-title {
+            position: absolute;
+            top: 35%;
+            left: 0%;
+            width: 100%;
+            height: auto;
+            font-family: $font-prime;
+            font-weight: normal;
+            font-size: 25px;
+            text-transform: uppercase;
+            text-decoration: none;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .service-button {
+            position: absolute;
+            bottom: 35%;
+            left: 0%;
+            width: 100%;
+            height: auto;
+            text-align: center;
+            .btn-service {
+                background-color: map-get($theme-colors, "primary");
+                font-family: $font-second;
+                font-weight: normal;
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                text-decoration: none;
+                color: #FFFFFF;
+                transition: all 0.5s ease;
+                &:hover {
+                    background-color: map-get($theme-colors, "secondary");
+                    color: #FFFFFF !important;
+                }
+            }
+        }
+    }
+    &:hover {
+        img {
+            transform: scale(1);
+            filter: brightness(0.5);
+        }
+        .service-content {
+            opacity: 1;
+        }
+    }
+    @media screen and (max-width: 1024px) {
+        /* adjusting hover effects for ipad pro screen sizes and smaller */
+        img {
+            transform: scale(1);
+            filter: brightness(0.5);
+        }
+        .service-content {
+            opacity: 1;
+        }
+    }
+}

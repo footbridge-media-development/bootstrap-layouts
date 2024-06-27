@@ -35,7 +35,7 @@
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-	background-color: map-get($theme-colors, "secondary");
+	background-color: map-get($theme-colors, "primary");
 	overflow: auto;
 	z-index: 11;
 	width: 70%;
@@ -50,7 +50,7 @@
 	text-decoration: none;
 	text-align: left;
 	padding: 0.75rem 1.25rem;
-	color: map-get($theme-colors, "light");
+	color:color-contrast($primary);
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > a {
 	display: block;

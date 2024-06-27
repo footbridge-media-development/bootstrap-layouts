@@ -1,0 +1,60 @@
+/* ******************************************************************************************** */
+/* FOOTER STYLING ***************************************************************************** */
+/* ******************************************************************************************** */
+
+footer.fb-ftr-3 {
+    background-color: darken(map-get($theme-colors, "light"), 3%);
+    font-family: $font-third;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: $color-prime;
+}
+footer.fb-ftr-3 h4 {
+    font-family: $font-prime;
+    font-weight: normal;
+    color: $color-prime;
+}
+footer.fb-ftr-3 a {
+    font-family: $font-third;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: $color-prime;
+    transition: all 0.5s ease;
+    &:hover {
+        color: darken($color-second, $amount: 20%);
+    }
+}
+.fb-ftr-3 .quick-links a {
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    padding-right: 6px;
+}
+.fb-ftr-3 .quick-links a:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+.fb-ftr-3 .service-areas a {
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    padding-right: 6px;
+}
+.fb-ftr-3 .service-areas a:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+.fb-ftr-3 .contact p {
+    padding: 0;
+    margin: 0;
+}
+
+.section-border {
+    border-top: .5px solid rgba(0, 0, 0, 0.1);
+}
+
+/* SOCIAL ICONS IN FOOTER */
+.icon-fr {
+	color: $color-prime;
+	&:hover {
+		color: darken($color-second, $amount: 25%);
+	}
+}
+
+/* ******************************************************************************************** */

@@ -1,0 +1,41 @@
+.animated-expand-container {
+  position: relative;
+  display: inline-block;
+
+  & .cover {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    top: 0;
+  }
+}
+
+// Animation classes
+$animation-classes: (
+  "pop-in": (transform: scale(0)),
+  "fade-in-end": (transform: translateX(-100px), opacity: 0),
+  "fade-in-start": (transform: translateX(100px), opacity: 0),
+  "fade-in-top": (opacity: 0),
+  "fade-in-bottom": (opacity: 0),
+  "fade-in-left": (opacity: 0),
+  "fade-in-right": (opacity: 0),
+);
+
+@each $class, $properties in $animation-classes {
+  .animated-#{$class} {
+    @each $property, $value in $properties {
+      #{$property}: $value;
+    }
+  }
+}
+
+.wave-overlay {
+  fill: white;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+}

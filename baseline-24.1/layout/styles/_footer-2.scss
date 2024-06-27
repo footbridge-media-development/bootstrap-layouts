@@ -1,0 +1,64 @@
+/* ******************************************************************************************** */
+/* FOOTER STYLING ***************************************************************************** */
+/* ******************************************************************************************** */
+
+footer.fb-ftr-2 {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: $font-third;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #fff;
+	.bg-picture {
+		z-index:0;
+		filter:brightness(.5);
+	}
+}
+footer.fb-ftr-2 h4 {
+    font-family: $font-prime;
+    font-weight: normal;
+    color: #fff;
+}
+footer.fb-ftr-2 a {
+    font-family: $font-third;
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #fff;
+    transition: all 0.5s ease;
+    &:hover {
+        color: lighten($color-second, $amount: 20%);
+    }
+}
+.fb-ftr-2 .quick-links a {
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    padding-right: 6px;
+}
+.fb-ftr-2 .quick-links a:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+.fb-ftr-2 .service-areas a {
+    border-right: 1px solid rgba(0, 0, 0, 0.25);
+    padding-right: 6px;
+}
+.fb-ftr-2 .service-areas a:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+.fb-ftr-2 .contact p {
+    padding: 0;
+    margin: 0;
+}
+
+.section-border {
+    border-top: .5px solid rgba(0, 0, 0, 0.1);
+}
+
+/* SOCIAL ICONS IN FOOTER */
+.icon-fr {
+	color: #fff;
+	&:hover {
+        color: lighten($color-second, $amount: 20%);
+	}
+}
+
+/* ******************************************************************************************** */

@@ -296,13 +296,13 @@ background: linear-gradient(to bottom, $color-second 0%, rgba($color-second, .5)
 		border:2px solid map-get($theme-colors, dark);
 	}
 	&.primary {
-		border:2px solid map-get($theme-colors, $color-prime);
+		border:2px solid map-get($theme-colors, primary);
 	}
 	&.secondary {
-		border:2px solid map-get($theme-colors, $color-second);
+		border:2px solid map-get($theme-colors, secondary);
 	}
 	&.tertiary {
-		border:2px solid map-get($theme-colors, $color-third);
+		border:2px solid map-get($theme-colors, info);
 	}
 	
 	&.left {

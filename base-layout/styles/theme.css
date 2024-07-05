@@ -23881,7 +23881,7 @@ hr.special {
   background-position: 0;
 }
 
-.btn-tertiary {
+.btn-info {
   animation-fill-mode: forwards;
 }
 
@@ -24189,13 +24189,13 @@ hr.special {
   border: 2px solid #212529;
 }
 .bover.primary {
-  border: 2px solid;
+  border: 2px solid #082b71;
 }
 .bover.secondary {
-  border: 2px solid;
+  border: 2px solid #7a9256;
 }
 .bover.tertiary {
-  border: 2px solid;
+  border: 2px solid #fff065;
 }
 .bover.left {
   top: 0;
@@ -24376,6 +24376,11 @@ hr.special {
   z-index: -1;
   pointer-events: none;
   overflow: hidden;
+}
+@media (max-width: 767.98px) {
+  .vimeo-wrapper {
+    min-height: 400px;
+  }
 }
 
 .vimeo-wrapper iframe {

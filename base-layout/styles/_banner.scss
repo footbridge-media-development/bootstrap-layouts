@@ -105,6 +105,9 @@
    z-index: -1;
    pointer-events: none;
    overflow: hidden;
+	@include media-breakpoint-down(md) {
+		min-height:400px;
+	}
 }
 .vimeo-wrapper iframe {
    width: 100vw;

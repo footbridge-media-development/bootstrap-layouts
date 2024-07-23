@@ -1,0 +1,28 @@
+.pic-hold {
+	position:relative;
+	text-align:center;
+	.pic-2 {
+		position:absolute;
+		z-index:2;
+		transform:translate(50%, -60%);
+		top:50%;
+		top:50%;
+		width:75%;
+		border:2px solid white;
+		-webkit-border-radius: 30px;
+		border-radius: 30px;
+	}
+	.pic-1 {
+		position:relative;
+		z-index:1;
+		-webkit-box-shadow: 3px 2px 3px 1px rgba(0,0,0,.2);
+		box-shadow: 3px 2px 3px 1px rgba(0,0,0,.2);
+		-webkit-border-radius: 30px;
+		border-radius: 30px;
+	}
+	@include media-breakpoint-down(md) {
+		.pic-1 {
+			transform:translate(0, 0);
+		}
+	}
+}

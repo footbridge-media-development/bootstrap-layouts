@@ -94,7 +94,7 @@ p, ul, ul li, ul li a, ol, ol li, ol li a {
 	}
 }
 .call-num, .req-serv {
-	color: map-get($theme-colors, "primary") !important;
+	color: map-get($theme-colors, "info") !important;
     transition: all 0.5s ease;
 	text-decoration: none;
 	&:hover {

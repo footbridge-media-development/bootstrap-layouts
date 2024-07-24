@@ -4,13 +4,21 @@
 	.pic-2 {
 		position:absolute;
 		z-index:2;
-		transform:translate(50%, -60%);
+		transform:translate(0%, -60%);
+		-webkit-transform:translate(0%, -60%);
 		top:50%;
-		top:50%;
+		left:auto;
+		right:-20%;
+		bottom:50%;
 		width:75%;
 		border:2px solid white;
 		-webkit-border-radius: 30px;
 		border-radius: 30px;
+		&.left {
+			left:-20%;
+			right:auto;
+			transform:translate(0, -60%);
+		}
 	}
 	.pic-1 {
 		position:relative;

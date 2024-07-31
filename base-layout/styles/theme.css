@@ -24244,8 +24244,29 @@ hr.special {
 .overlay.light {
   background: #f8f9fa;
 }
+.overlay.dark {
+  background: #212529;
+}
+.overlay.o10 {
+  opacity: 10%;
+}
+.overlay.o20 {
+  opacity: 20%;
+}
+.overlay.o30 {
+  opacity: 30%;
+}
+.overlay.o40 {
+  opacity: 40%;
+}
+.overlay.o50 {
+  opacity: 50%;
+}
 .overlay.o60 {
   opacity: 60%;
+}
+.overlay.o70 {
+  opacity: 70%;
 }
 .overlay.o80 {
   opacity: 80%;
@@ -24291,6 +24312,12 @@ hr.special {
 .overlay.gradient.black.right {
   background: linear-gradient(to left, black 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.2) 100%);
 }
+.overlay.gradient.black.top {
+  background: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.2) 100%);
+}
+.overlay.gradient.black.bottom {
+  background: linear-gradient(to top, black 0%, rgba(0, 0, 0, 0.75) 50%, rgba(0, 0, 0, 0.2) 100%);
+}
 @media (max-width: 767.98px) {
   .overlay.gradient.black.left, .overlay.gradient.black.right {
     background: rgba(0, 0, 0, 0.8);
@@ -24302,6 +24329,12 @@ hr.special {
 .overlay.gradient.primary.right {
   background: linear-gradient(to left, #082b71 0%, rgba(8, 43, 113, 0.75) 60%, rgba(8, 43, 113, 0.2) 100%);
 }
+.overlay.gradient.primary.top {
+  background: linear-gradient(to bottom, #082b71 0%, rgba(8, 43, 113, 0.75) 60%, rgba(8, 43, 113, 0.2) 100%);
+}
+.overlay.gradient.primary.bottom {
+  background: linear-gradient(to top, #082b71 0%, rgba(8, 43, 113, 0.75) 60%, rgba(8, 43, 113, 0.2) 100%);
+}
 @media (max-width: 767.98px) {
   .overlay.gradient.primary.left, .overlay.gradient.primary.right {
     background: rgba(8, 43, 113, 0.8);
@@ -24312,6 +24345,12 @@ hr.special {
 }
 .overlay.gradient.secondary.right {
   background: linear-gradient(to left, #7a9256 0%, rgba(122, 146, 86, 0.75) 50%, rgba(122, 146, 86, 0.2) 100%);
+}
+.overlay.gradient.secondary.top {
+  background: linear-gradient(to bottom, #7a9256 0%, rgba(122, 146, 86, 0.75) 50%, rgba(122, 146, 86, 0.2) 100%);
+}
+.overlay.gradient.secondary.bottom {
+  background: linear-gradient(to top, #7a9256 0%, rgba(122, 146, 86, 0.75) 50%, rgba(122, 146, 86, 0.2) 100%);
 }
 @media (max-width: 767.98px) {
   .overlay.gradient.secondary.left, .overlay.gradient.secondary.right {
@@ -24326,6 +24365,12 @@ hr.special {
 }
 .overlay.gradient.tertiary.right {
   background: linear-gradient(to left, #7a9256 0%, rgba(122, 146, 86, 0.75) 50%, rgba(122, 146, 86, 0.2) 100%);
+}
+.overlay.gradient.tertiary.top {
+  background: linear-gradient(to bottom, #7a9256 0%, rgba(122, 146, 86, 0.75) 50%, rgba(122, 146, 86, 0.2) 100%);
+}
+.overlay.gradient.tertiary.bottom {
+  background: linear-gradient(to top, #7a9256 0%, rgba(122, 146, 86, 0.75) 50%, rgba(122, 146, 86, 0.2) 100%);
 }
 @media (max-width: 767.98px) {
   .overlay.gradient.tertiary.left, .overlay.gradient.tertiary.right {

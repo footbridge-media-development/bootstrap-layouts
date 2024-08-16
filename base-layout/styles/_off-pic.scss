@@ -30,7 +30,16 @@
 	}
 	@include media-breakpoint-down(md) {
 		.pic-1 {
-			transform:translate(0, 0);
+			transform:translate(0%, 0);
+			-webkit-transform:translate(0%, 0);
+		}
+		.pic-2 {
+			transform:translate(-8%, -60%);
+			-webkit-transform:translate(-8%, -60%);
+			&.left {
+				transform:translate(8%, -60%);
+				-webkit-transform:translate(8%, -60%);
+			}
 		}
 	}
 }

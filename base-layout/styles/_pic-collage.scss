@@ -1,0 +1,57 @@
+.pic-collage {
+	
+	.pic-1, .pic-2, .pic-3 {
+		position:relative;
+	}
+	.pic-1 {
+		max-height:80%;
+		min-height:80%;
+		img {
+			border:4px solid map-get($theme-colors, light);
+		}
+		&.info {
+			img { border-color:map-get($theme-colors, info); }
+		}
+	}
+	.pic-2 {
+		border:4px solid map-get($theme-colors, light);
+		&.info {
+			border-color:map-get($theme-colors, info);
+		}
+	}
+	.pic-3 {
+		
+		img {
+			position:absolute;
+			top:auto;
+			left:0;
+			bottom:0;
+			right:auto;
+			width:100%;
+			z-index:2;
+			height:400px;
+			transform:translateY(0);
+			border:4px solid map-get($theme-colors, light);
+			
+		}
+		&.info {
+			img { border-color:map-get($theme-colors, info); }
+		}
+	}
+	@include media-breakpoint-down(md) {
+		.pic-1, .pic-3 {
+			max-height:auto;
+			min-height:300px;
+			img {
+				top:0;
+				left:0;
+				bottom:0;
+				right:0;
+			}
+			
+		}
+		.pic-2 {
+			
+		}
+	}
+}

@@ -1,0 +1,58 @@
+.accordion-rounded {
+	.accordion-item {
+		-webkit-border-radius: 30px;
+		border-radius: 30px;
+	}
+}
+
+.accordion-flush {
+	.accordion-item {
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+	}
+	.accordion-header {
+		button { 
+			&:not(.collapsed) {
+				background:lighten($secondary, 30%);
+				color:$dark;
+			}
+			background:$secondary;
+			color:white;
+			&.collapsed {
+					&::after {
+					filter:invert(1);
+				}
+			}
+
+		}
+
+	}
+	
+}
+#faq-accordion {
+	&.underlined {
+			.btn {
+			border-bottom:1px solid $light;
+			padding-bottom:.5rem;
+			 i {
+				transition: transform $animations-duration;
+				transform: rotate(90deg);
+
+				}
+			 
+			&.collapsed {
+				 i {
+				transition: transform $animations-duration;
+				transform: rotate(0deg);
+
+				}
+			}
+		}
+		.accordion-item {
+			background:none;
+			border:none;
+			color:$light;
+		}
+	}
+	
+}

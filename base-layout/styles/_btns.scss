@@ -55,7 +55,34 @@
 .btn-info {
  animation-fill-mode: forwards;
 }
-.accordion-item {
-	-webkit-border-radius: 30px;
-	border-radius: 30px;
+.accordion-rounded {
+	.accordion-item {
+		-webkit-border-radius: 30px;
+		border-radius: 30px;
+	}
+}
+
+.accordion-flush {
+	.accordion-item {
+		-webkit-border-radius: 0px;
+		border-radius: 0px;
+	}
+	.accordion-header {
+		button { 
+			&:not(.collapsed) {
+				background:lighten($secondary, 30%);
+				color:$dark;
+			}
+			background:$secondary;
+			color:white;
+			&.collapsed {
+					&::after {
+					filter:invert(1);
+				}
+			}
+
+		}
+
+	}
+	
 }

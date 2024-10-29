@@ -6,14 +6,14 @@ footer.fb-ftr-1, footer.fb-ftr-3 {
     background-color:map-get($theme-colors, light);
     font-family: $font-third;
     font-weight: normal;
-    font-size: 0.9rem;
+    
     color: #333;
 }
 footer.fb-ftr-2 {
     background-color: rgba(0, 0, 0, 0.5);
     font-family: $font-third;
     font-weight: normal;
-    font-size: 0.9rem;
+   
     color: #fff;
 	.bg-picture {
 		z-index:0;
@@ -34,7 +34,7 @@ footer.fb-ftr-1 h4, footer.fb-ftr-2 h4, footer.fb-ftr-3 h4  {
 footer.fb-ftr-1 a, footer.fb-ftr-3 a, footer.fb-ftr-2 a {
     font-family: $font-third;
     font-weight: bold;
-    font-size: 0.9rem;
+    
     color:$color-prime;
     transition: all 0.5s ease;
     &:hover {

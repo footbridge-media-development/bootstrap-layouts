@@ -1,0 +1,23 @@
+.arrow {
+	&.light {
+		fill:$light;
+	}
+	&.dark {
+		fill:$dark;
+	}
+	&.primary {
+		fill:$primary;
+	}
+	&.secondary {
+		fill:$light;
+	}
+	&.tertiary {
+		fill:$info;
+	}
+	width:50%;
+	@include media-breakpoint-down(md) {
+		transform:scale(-1, -1) rotate(-10deg);
+		width:50%;
+	}
+	
+}

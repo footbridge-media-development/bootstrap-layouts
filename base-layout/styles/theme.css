@@ -25521,7 +25521,6 @@ footer.fb-ftr-1, footer.fb-ftr-3 {
   background-color: #f8f9fa;
   font-family: mon-v, sans-serif;
   font-weight: normal;
-  font-size: 0.9rem;
   color: #333;
 }
 
@@ -25529,7 +25528,6 @@ footer.fb-ftr-2 {
   background-color: rgba(0, 0, 0, 0.5);
   font-family: mon-v, sans-serif;
   font-weight: normal;
-  font-size: 0.9rem;
   color: #fff;
 }
 footer.fb-ftr-2 .bg-picture, footer.fb-ftr-2 .bg-picture-top, footer.fb-ftr-2 .bg-picture-center, footer.fb-ftr-2 .bg-picture-bottom, footer.fb-ftr-2 .bg-picture-left, footer.fb-ftr-2 .bg-picture-right {
@@ -25546,7 +25544,6 @@ footer.fb-ftr-1 h4, footer.fb-ftr-1 .h4, footer.fb-ftr-2 h4, footer.fb-ftr-2 .h4
 footer.fb-ftr-1 a, footer.fb-ftr-3 a, footer.fb-ftr-2 a {
   font-family: mon-v, sans-serif;
   font-weight: bold;
-  font-size: 0.9rem;
   color: #082b71;
   transition: all 0.5s ease;
 }
@@ -27386,6 +27383,7 @@ ul.timeline li::before {
 .accordion-rounded .accordion-item {
   -webkit-border-radius: 30px;
   border-radius: 30px;
+  border: 0;
 }
 
 .accordion-flush .accordion-item {
@@ -27420,6 +27418,31 @@ ul.timeline li::before {
   background: none;
   border: none;
   color: #f8f9fa;
+}
+
+.arrow {
+  width: 50%;
+}
+.arrow.light {
+  fill: #f8f9fa;
+}
+.arrow.dark {
+  fill: #212529;
+}
+.arrow.primary {
+  fill: #082b71;
+}
+.arrow.secondary {
+  fill: #f8f9fa;
+}
+.arrow.tertiary {
+  fill: #fff065;
+}
+@media (max-width: 767.98px) {
+  .arrow {
+    transform: scale(-1, -1) rotate(-10deg);
+    width: 50%;
+  }
 }
 
 /*# sourceMappingURL=theme.css.map */

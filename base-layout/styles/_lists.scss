@@ -2,7 +2,7 @@
 	list-style-position: inside;
 	padding-inline-start: 0px;
 }
-.checkmark-list, .dashed-list, .squared-list, .icon-list, .icon-no, .underline-list {
+.icon-no, .underline-list, .icon {
 	font-family: $font-third;
 	font-weight: normal;
 	font-size: 0.9rem;
@@ -18,18 +18,7 @@
 			}
 		}
 	}
-	&.larger {
-		li {
-			font-size:calc(1rem + .275vw);
-			font-family:$font-prime;
-			
-			a {
-				font-size:calc(1rem + .275vw);
-				font-family:$font-prime;
-				
-			}
-		}
-	}
+	
 	&.text-light {
 		li {
 			color:map-get($theme-colors, light);
@@ -46,13 +35,28 @@
 			}
 		}
 	}
+	&.icon {
+		li {
+			list-style:none;
+			padding:0;
+			a {
+				padding:0;
+				svg {
+					margin-right:2px;
+					max-width:1rem;
+					width:99%;
+					top:-1px;
+				}
+			}
+		}
+	}
 	&.inline {
 		li {
 			display:inline-block;
 			margin-top:10px;
 			margin-bottom:10px; 
 			&:not(:last-child) {
-				border-right:1px solid map-get($theme-colors, dark);
+				border-right:1px solid $light;
 			}
 			a {
 				padding-right:.4rem;
@@ -72,60 +76,56 @@
 				}
 			}
 		}
-	}
-}
-.checkmark-list {
-	li {
-		&::marker {
-			font-family: "Font Awesome 6 Free";
-			content: '\f00c';
+		&.dark {
+			li {
+				&:not(:last-child) {
+					border-color:$dark !important;
+				}
+			}
 		}
 	}
-}
-.dashed-list {
-	li {
-		&::marker {
-			font-family: "Font Awesome 6 Free";
-			content: '\f773';
-		}
-	}
-}
-.squared-list {
-	li {
-		&::marker {
-			font-family: "Font Awesome 6 Free";
-			content: '\f0fe';
-		}
-	}
-}
-.icon-list {
-	li {
-		padding-left:.5rem;
-		a {
-			padding-left:.5rem;
-		}
-		&::marker {
-			font-family: "Font Awesome 6 Free";
-			content: '\f3c5';
-		}
-	}
-}
-.underline-list {
+	&.underline-list {
 	li {
 		list-style:none;
 		padding:.5rem 0rem;
 		border-bottom:1px solid rgba(0, 0, 0, .3);
 	}
 }
-.icon-no {
+	&.icon-no {
 	li {
 		list-style:none;
-		padding:0;
+		
 		a {
-			padding:0;
+			
 		}
 	}
 }
+	&.larger {
+		li {
+			font-size:calc(1rem + .275vw);
+			font-family:$font-prime;
+			svg {
+					margin-right:2px;
+					max-width:calc(1rem + .275vw);
+					width:99%;
+					top:-1px;
+				}
+			
+			a {
+				font-size:calc(1rem + .275vw);
+				font-family:$font-prime;
+				svg {
+					margin-right:2px;
+					max-width:calc(1rem + .275vw);
+					width:99%;
+					top:-1px;
+				}
+				
+			}
+		}
+	}
+}
+
 @each $color, $value in $theme-colors {
 	.marker-#{$color} {
 		li::marker {		

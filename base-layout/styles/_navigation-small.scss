@@ -35,7 +35,7 @@
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div {
 	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-	background-color: map-get($theme-colors, "primary");
+	background-color:$menu-c2;
 	overflow: auto;
 	z-index: 11;
 	width: 70%;
@@ -50,34 +50,51 @@
 	text-decoration: none;
 	text-align: left;
 	padding: 0.75rem 1.25rem;
-	color:color-contrast($primary);
+	color:$mlink;
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > a {
 	display: block;
 	font-family: $font-second;
 	font-weight: normal;
-	font-size: 0.9rem;
+	font-size: $menu-font;
 	text-transform: uppercase;
 	text-decoration: none;
 	text-align: left;
 	padding: 0.75rem 1.25rem;
 	color: white;
+	svg {
+		&.menu {
+			max-width:calc($menu-font + 1vw);
+			fill:$mlink;
+		}
+	}
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div a:hover {
 	// background-color: map-get($theme-colors, "primary");
-	color: map-get($theme-colors, "dark");
-	background:map-get($theme-colors, "tertiary");
+	color: $mlink;
+	svg {
+		&.menu {
+			fill:$mlink;
+		}
+	}
+	background:darken($menu-c2, 10%);
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links > div > div a {
 	display: block;
 	font-family: $font-third;
 	font-weight: normal;
-	font-size: 0.88rem;
+	font-size: calc($menu-font - .1vw);
 	text-transform: none;
 	text-decoration: none;
 	text-align: left;
 	padding: 0.75rem 1.25rem;
-	color: white;
+	color: $mlink;
+	svg {
+		&.menu {
+			max-width:calc($menu-font + .5vw);
+			fill:$mlink;
+		}
+	}
 }
 #small-navigation-container-1 > .pullout-menu-backdrop > div > .navigation-links div:not(:last-child) > a {
 	border-bottom: 1px solid rgba(255, 255, 255, 0.1);

@@ -48,6 +48,7 @@
 					margin-top:5px;
 					&:hover {
 						background-position:0;
+						background-color:$color-second;
 						color:map-get($theme-colors, light) !important;
 					}
 				}
@@ -93,6 +94,7 @@
 					margin-top:5px;
 					&:hover {
 						background-position:0;
+						background-color:$color-second;
 						color:map-get($theme-colors, light) !important;
 					}
 				}

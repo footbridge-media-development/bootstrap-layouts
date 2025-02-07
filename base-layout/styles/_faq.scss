@@ -35,14 +35,14 @@
 			.btn {
 			border-bottom:1px solid $light;
 			padding-bottom:.5rem;
-			 i {
+			 i, svg {
 				transition: transform $animations-duration;
 				transform: rotate(90deg);
 
 				}
 			 
 			&.collapsed {
-				 i {
+				 i, svg {
 				transition: transform $animations-duration;
 				transform: rotate(0deg);
 

@@ -36,9 +36,9 @@ ul.timeline {
     text-transform: none;
     text-decoration: none;
     text-align: left;
-    color: map-get($theme-colors, "light") !important;
+  
     transition: all 0.5s ease;
     &:hover {
-        color: lighten($color-prime, 10%) !important;
+      
     }
 }

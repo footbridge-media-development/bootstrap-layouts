@@ -8,6 +8,10 @@
 	width:100%;
 	left:0;
 	padding:0;
+	&.fheight {
+		height:100%;
+		//note you need preserveAspectRatio="none" on the svg in html for this to work
+	}
 	&.bottom {
 		bottom:-1px;
 	}

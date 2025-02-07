@@ -1,0 +1,67 @@
+.image-slider{
+	min-height:100px;
+	min-width:177px;
+	position:relative;
+	background-color:black;
+}
+
+.image-slider .slider-controls{
+	position:absolute;
+	top:0;
+	width:45px;
+	height:100%;
+	left:calc(50% - calc(35px / 2));
+	display:flex;
+	align-items:center;
+}
+
+.image-slider .slider-controls .slider-v-bar{
+	width:2px;
+	background-color:white;
+	position:absolute;
+	left:calc(50% - 1px);
+	height:100%;
+	z-index:4;
+}
+
+.image-slider .drag-button{
+	position:relative;
+	z-index:5;
+	background:none;
+	border:1px solid white;
+	background-color:rgb(25 149 255);
+	color:white;
+	width:45px;
+	height:45px;
+	display:flex;
+	align-items:center;
+	border-radius:50%;
+	cursor:pointer;
+	user-select:none;
+}
+
+.image-slider .drag-button:active, .image-slider .drag-button:focus{
+	outline:none;
+}
+
+.images-container{
+	height:100%;
+}
+
+.images-container .image-1, .images-container .image-2{
+	background-size:cover;
+	background-position:center center;
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+}
+
+.images-container .image-1{
+	z-index:2;
+}
+
+.images-container .image-2{
+	z-index:3;
+}
